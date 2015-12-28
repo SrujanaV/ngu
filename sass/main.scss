@@ -5,15 +5,13 @@
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 
 /* Bootstrap Variables Goes Here */
-
 $brand-primary: #0d9dff !default;
 $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
-
+$bg-color: #89d5f6!default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-
 body {
   padding-top: 70px;
 }
@@ -33,4 +31,23 @@ img.doneLoading {
 nav li:hover .dropdown-menu {
   display: block;
 }
+.bg-blue {
+  background: $bg-color;
+}
+.bold {
+  font-weight: 800;
+}
+.row-flex {
+  display: flex;
+}
+.flex-md {
+  flex: 1;
+}
+.flex-md-4 {
+  flex: 1;
+}
+.flex-md-8 {
+  flex: 2;
+}
+
 /* Start writing sass here */
