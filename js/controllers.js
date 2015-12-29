@@ -23,6 +23,23 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // seven: "views/section/section7.html",
   };
 
+  $scope.testimonial = [{
+    cont: "The Never Grow Up &reg; team is a highly motivated &amp; a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for more than five years and they are our key partners.What I like about them is their frank opinions & amp;willingness to speak their mind & amp;not hide behind words.They are a big asset to anyone considering working with them.Just go ahead.",
+    name: "Kartik Sharma",
+    position: "Managing Director",
+    place: "South Asia, Maxus"
+  }, {
+    cont: "The Never Grow Up &reg; team is a highly motivated &amp; a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for more than five years and they are our key partners.What I like about them is their frank opinions & amp;willingness to speak their mind & amp;not hide behind words.They are a big asset to anyone considering working with them.Just go ahead.",
+    name: "Kartik Sharma",
+    position: "Managing Director",
+    place: "South Asia, Maxus"
+  }, {
+    cont: "The Never Grow Up &reg; team is a highly motivated &amp; a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for more than five years and they are our key partners.What I like about them is their frank opinions & amp;willingness to speak their mind & amp;not hide behind words.They are a big asset to anyone considering working with them.Just go ahead.",
+    name: "Kartik Sharma",
+    position: "Managing Director",
+    place: "South Asia, Maxus"
+  }];
+
 })
 
 .controller('headerctrl', function($scope, TemplateService) {
