@@ -70,12 +70,102 @@ nav li:hover .dropdown-menu {
   min-height: 500px;
   overflow: hidden;
 }
-.sky {
-  .sun {
-    position: absolute;
+.awsomeness {
+  .sky {
+    height: 230px;
+    position: relative;
+    .sun {
+      position: absolute;
+      width: 20%;
+      right: 14%;
+      top: 0;
+    }
+    .cloud {
+      position: absolute;
+    }
+    .cloud3 {
+      left: 5%;
+      width: 16%;
+      top: 60%;
+    }
+    .cloud2 {
+      left: 12%;
+      top: 25%;
+      width: 20%;
+    }
+    .cloud1 {
+      right: 24%;
+      top: 45%;
+      width: 20%;
+    }
   }
-  .cloud {
-    position: absolute;
+  .head {
+    img {
+      width: 32%;
+    }
+  }
+  .puppet {
+    min-height: 300px;
+    position: relative;
+    img {
+      position: absolute;
+    }
+    .bubble1 {
+      width: 13%;
+      left: 6%;
+      bottom: 32%;
+    }
+    .superman {
+      left: 11%;
+      width: 13%;
+      bottom: 40%;
+    }
+    .bubble2 {
+      left: 29%;
+      width: 12%;
+      bottom: 55px;
+      transform: rotate(90deg);
+    }
+    .chair {
+      left: 15%;
+      width: 20%;
+      bottom: -15px;
+    }
+    .lady1 {
+      left: 29%;
+      width: 12%;
+      bottom: -36px;
+    }
+    .bubble3 {
+      right: 42%;
+      width: 12%;
+      bottom: 5%;
+    }
+    .guy2 {
+      right: 40%;
+      width: 12%;
+      bottom: 10%;
+    }
+    .bubble4 {
+      bottom: 20px;
+      right: 26%;
+      width: 15%;
+    }
+    .lady2 {
+      bottom: -35px;
+      right: 26%;
+      width: 12%;
+    }
+    .guy1 {
+      right: 5%;
+      bottom: -35px;
+      width: 16%;
+    }
+    .bubble5 {
+      right: 20px;
+      bottom: -35px;
+      width: 16%;
+    }
   }
 }
 /* Start writing sass here */
