@@ -49,5 +49,36 @@ nav li:hover .dropdown-menu {
 .flex-md-8 {
   flex: 2;
 }
-
+.sticky-bottom {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 99;
+  @include transition(all 700ms ease);
+  &.affix {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    width: 100%;
+    left: 0;
+    z-index: 999;
+  }
+}
+.sticky-bottom {
+  top: calc(100% - 0px);
+}
+.section {
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+}
+.sky {
+  .sun {
+    position: absolute;
+  }
+  .cloud {
+    position: absolute;
+  }
+}
 /* Start writing sass here */
