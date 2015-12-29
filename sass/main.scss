@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2|Lato:400,100,300,700,900);
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
@@ -11,6 +12,9 @@ $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
 $bg-color: #89d5f6!default;
+$font-color: #3b2417!default;
+$font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif: "Lato", Georgia, "Times New Roman", Times, serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 img.loading {
   text-align: center;
@@ -84,7 +88,7 @@ nav li:hover .dropdown-menu {
       position: absolute;
     }
     .cloud3 {
-      left: 5%;
+      left: 4%;
       width: 16%;
       top: 60%;
     }
@@ -95,30 +99,31 @@ nav li:hover .dropdown-menu {
     }
     .cloud1 {
       right: 24%;
-      top: 45%;
+      top: 40%;
       width: 20%;
     }
   }
   .head {
+    padding-top: 10px;
     img {
       width: 32%;
     }
   }
   .puppet {
-    min-height: 300px;
+    min-height: 250px;
     position: relative;
     img {
       position: absolute;
     }
     .bubble1 {
       width: 13%;
-      left: 6%;
-      bottom: 32%;
+      left: 5%;
+      bottom: 40%;
     }
     .superman {
-      left: 11%;
+      left: 10%;
       width: 13%;
-      bottom: 40%;
+      bottom: 50%;
     }
     .bubble2 {
       left: 29%;
@@ -127,7 +132,7 @@ nav li:hover .dropdown-menu {
       transform: rotate(90deg);
     }
     .chair {
-      left: 15%;
+      left: 14%;
       width: 20%;
       bottom: -15px;
     }
@@ -165,6 +170,38 @@ nav li:hover .dropdown-menu {
       right: 20px;
       bottom: -35px;
       width: 16%;
+    }
+  }
+}
+.work {
+  .bubble1 {
+    position: relative;
+    top: 40px;
+    left: 67%;
+    transform: rotate(-70deg);
+  }
+  .swing {
+    width: 60%;
+    position: relative;
+    z-index: 2;
+    left: 10%;
+  }
+  .window {
+    position: absolute;
+    z-index: 1;
+    right: -1%;
+    width: 45%;
+    top: 34%;
+  }
+  .content {
+    .head {
+      font-size: 40px;
+      font-weight: 300;
+      color: $font-color;
+    }
+    p {
+      text-align: justify;
+      color: $font-color;
     }
   }
 }
