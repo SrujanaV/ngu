@@ -18,7 +18,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
         templateUrl: "views/template.html",
         controller: 'HomeCtrl'
     })
-
+    .state('awesomeness', {
+        url: "/awesomeness",
+        templateUrl: "views/template.html",
+        controller: 'AwesomenessCtrl'
+    })
     $urlRouterProvider.otherwise("/home");
 
 });

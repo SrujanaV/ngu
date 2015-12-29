@@ -7,41 +7,29 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 
-  $scope.mySlides = [
-    'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-    'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-    'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
-    'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
-  ];
   $scope.section = {
-    one: "views/content/section/section1.html",
-    two: "views/content/section/section2.html",
-    three: "views/content/section/section3.html",
-    four: "views/content/section/section4.html",
-    five: "views/content/section/section5.html",
-    // six: "views/section/section6.html",
-    // seven: "views/section/section7.html",
+    one: "views/content/section/home/section1.html",
+    two: "views/content/section/home/section2.html",
+    three: "views/content/section/home/section3.html",
+    four: "views/content/section/home/section4.html",
+    five: "views/content/section/home/section5.html",
   };
 
-  $scope.testimonial = [{
-    cont: "The Never Grow Up &reg; team is a highly motivated &amp; a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for more than five years and they are our key partners.What I like about them is their frank opinions & amp;willingness to speak their mind & amp;not hide behind words.They are a big asset to anyone considering working with them.Just go ahead.",
-    name: "Kartik Sharma",
-    position: "Managing Director",
-    place: "South Asia, Maxus"
-  }, {
-    cont: "The Never Grow Up &reg; team is a highly motivated &amp; a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for more than five years and they are our key partners.What I like about them is their frank opinions & amp;willingness to speak their mind & amp;not hide behind words.They are a big asset to anyone considering working with them.Just go ahead.",
-    name: "Kartik Sharma",
-    position: "Managing Director",
-    place: "South Asia, Maxus"
-  }, {
-    cont: "The Never Grow Up &reg; team is a highly motivated &amp; a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for more than five years and they are our key partners.What I like about them is their frank opinions & amp;willingness to speak their mind & amp;not hide behind words.They are a big asset to anyone considering working with them.Just go ahead.",
-    name: "Kartik Sharma",
-    position: "Managing Director",
-    place: "South Asia, Maxus"
-  }];
-
 })
-
+.controller('AwesomenessCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+  $scope.template = TemplateService.changecontent("awesomeness");
+  $scope.menutitle = NavigationService.makeactive("Awesomeness");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+  $scope.section = {
+    one: "views/content/section/awesomeness/section1.html",
+    two: "views/content/section/awesomeness/section2.html",
+    three: "views/content/section/awesomeness/section3.html",
+    four: "views/content/section/awesomeness/section4.html",
+    five: "views/content/section/awesomeness/section5.html",
+  };
+})
 .controller('headerctrl', function($scope, TemplateService) {
   $scope.template = TemplateService;
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
