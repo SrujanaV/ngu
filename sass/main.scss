@@ -14,6 +14,9 @@ $brand-info: #000072 !default;
 $bg-color: #89d5f6!default;
 $font-color: #3b2417!default;
 $border-color: #959595!default;
+$box-red-color: #8a2f1d!default;
+$box-yellow-color: #ffb21d!default;
+$box-black-color: #272727!default;
 $font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif: "Lato", Georgia, "Times New Roman", Times, serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
@@ -37,7 +40,7 @@ nav li:hover .dropdown-menu {
   background: $bg-color;
 }
 .bold {
-  font-weight: 800;
+  font-weight: 600;
 }
 .row-flex {
   display: flex;
@@ -49,19 +52,37 @@ nav li:hover .dropdown-menu {
   flex: 1;
 }
 .flex-md-8 {
-  flex: 2;
+  flex: 3;
 }
 .box-white {
   background: #fff;
   padding: 30px;
   margin: 20px 0;
 }
-.head-main {
-  font-size: 40px;
-  font-weight: 500;
+.box-red {
+  background: $box-red-color;
+  padding: 30px;
+  margin: 20px 0;
+  color: #fff;
+}
+.box-yellow {
+  background: $box-yellow-color;
+  padding: 10px;
+  margin: 5px 0;
+  color: $box-red-color;
+}
+.box-black {
+  background: $box-black-color;
+  padding: 30px;
+  margin: 20px 0;
+  color: #fff;
 }
 .bb {
   border-bottom: 1px solid $border-color;
+}
+.head-main {
+  font-size: 40px;
+  font-weight: 500;
 }
 .ps-50 {
   padding: 20px 50px;
@@ -85,6 +106,7 @@ nav li:hover .dropdown-menu {
 p {
   text-align: justify;
   font-size: 16px;
+  font-weight: 300;
 }
 .sticky-bottom {
   top: calc(100% - 0px);
@@ -291,5 +313,109 @@ p {
     }
   }
 }
-
+.thought {
+  .logo-opt {
+    height: 140px;
+    img {
+      width: 33%;
+    }
+  }
+  .logos {
+    height: 120px;
+  }
+  .content.mt {
+    margin-top: 56%;
+  }
+}
+.content-busniess {
+  padding-left: 10px;
+  .small-business {
+    width: 20%;
+  }
+  .head {
+    font-size: 35px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 5px 0 0;
+  }
+  h4 {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  ul.cont {
+    padding-left: 15px;
+    li {
+      list-style: none;
+      line-height: 150%;
+    }
+    li:before {
+      content: '\25A0';
+      display: block;
+      position: relative;
+      max-width: 0;
+      max-height: 0;
+      left: -15px;
+      top: -3px;
+      color: #fed78c;
+      font-size: 20px;
+    }
+  }
+  .model {
+    padding: 5px 0;
+  }
+  .never-grow {
+    width: 75%;
+  }
+}
+.smile-logo {
+  img {
+    margin: 10px auto;
+  }
+  .smilelogo {
+    width: 60%;
+  }
+  .bcpt {
+    width: 70%;
+  }
+  .yesfoundation {
+    width: 90%;
+  }
+}
+.testimonials {
+  .nut {
+    left: 32%;
+    width: 24%;
+    position: absolute;
+    top: 89%;
+    z-index: 1;
+  }
+  .pot {
+    width: 70%;
+    float: right;
+    position: relative;
+    z-index: 2;
+  }
+  .head-main {
+    margin: 45px 0 10px;
+    font-weight: 300;
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+  .yellow-logo {
+    width: 35%;
+  }
+}
+.disclaimer {
+  .box-white {
+    padding: 10px 30px;
+  }
+  h3 {
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+}
 /* Start writing sass here */
