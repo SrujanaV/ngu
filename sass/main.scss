@@ -13,6 +13,7 @@ $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
 $bg-color: #89d5f6!default;
 $font-color: #3b2417!default;
+$border-color: #959595!default;
 $font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif: "Lato", Georgia, "Times New Roman", Times, serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
@@ -59,6 +60,9 @@ nav li:hover .dropdown-menu {
   font-size: 40px;
   font-weight: 500;
 }
+.bb {
+  border-bottom: 1px solid $border-color;
+}
 .ps-50 {
   padding: 20px 50px;
 }
@@ -80,6 +84,7 @@ nav li:hover .dropdown-menu {
 }
 p {
   text-align: justify;
+  font-size: 16px;
 }
 .sticky-bottom {
   top: calc(100% - 0px);
@@ -88,6 +93,11 @@ p {
   position: relative;
   min-height: 500px;
   overflow: hidden;
+}
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 .awsomeness {
   .sky {
@@ -233,11 +243,6 @@ p {
     }
     .logo {
       height: 120px;
-      .helper {
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-      }
     }
     .shopper-stop {
       .logo-shoper {
@@ -261,6 +266,29 @@ p {
   }
   .logos {
     margin-bottom: 15px;
+  }
+}
+.talking {
+  .logo {
+    height: 150px;
+  }
+  .content-opt {
+    .logo-opt {
+      img {
+        margin: auto;
+        width: 70%;
+      }
+    }
+    .cont-opt {
+      p {
+        margin-top: 6%;
+      }
+    }
+    .head-main {
+      img {
+        width: 6%;
+      }
+    }
   }
 }
 
