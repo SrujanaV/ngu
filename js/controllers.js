@@ -1,45 +1,61 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngSanitize', 'angular-flexslider'])
 
 .controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-  //Used to name the .html file
-  $scope.template = TemplateService.changecontent("home");
-  $scope.menutitle = NavigationService.makeactive("Home");
-  TemplateService.title = $scope.menutitle;
-  $scope.navigation = NavigationService.getnav();
+    //Used to name the .html file
+    $scope.template = TemplateService.changecontent("home");
+    $scope.menutitle = NavigationService.makeactive("Home");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
 
-  $scope.section = {
-    one: "views/content/section/home/section1.html",
-    two: "views/content/section/home/section2.html",
-    three: "views/content/section/home/section3.html",
-    four: "views/content/section/home/section4.html",
-    five: "views/content/section/home/section5.html",
-    six: "views/content/section/home/section6.html",
-    seven: "views/content/section/home/section7.html",
-    eight: "views/content/section/home/section8.html",
-    nine: "views/content/section/home/section9.html",
-    nine: "views/content/section/home/section10.html",
-  };
+    $scope.section = {
+      one: "views/content/section/home/section1.html",
+      two: "views/content/section/home/section2.html",
+      three: "views/content/section/home/section3.html",
+      four: "views/content/section/home/section4.html",
+      five: "views/content/section/home/section5.html",
+      six: "views/content/section/home/section6.html",
+      seven: "views/content/section/home/section7.html",
+      eight: "views/content/section/home/section8.html",
+      nine: "views/content/section/home/section9.html",
+      nine: "views/content/section/home/section10.html",
+    };
 
-})
-.controller('AwesomenessCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-  //Used to name the .html file
-  $scope.template = TemplateService.changecontent("awesomeness");
-  $scope.menutitle = NavigationService.makeactive("Awesomeness");
-  TemplateService.title = $scope.menutitle;
-  $scope.navigation = NavigationService.getnav();
-  $scope.section = {
-    one: "views/content/section/awesomeness/section1.html",
-    two: "views/content/section/awesomeness/section2.html",
-    three: "views/content/section/awesomeness/section3.html",
-    four: "views/content/section/awesomeness/section4.html",
-    five: "views/content/section/awesomeness/section5.html",
-  };
-})
-.controller('headerctrl', function($scope, TemplateService) {
-  $scope.template = TemplateService;
-  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-    $(window).scrollTop(0);
-  });
-})
+  })
+  .controller('AwesomenessCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    //Used to name the .html file
+    $scope.template = TemplateService.changecontent("awesomeness");
+    $scope.menutitle = NavigationService.makeactive("Awesomeness");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+    $scope.section = {
+      one: "views/content/section/awesomeness/section1.html",
+      two: "views/content/section/awesomeness/section2.html",
+      three: "views/content/section/awesomeness/section3.html",
+      four: "views/content/section/awesomeness/section4.html",
+      five: "views/content/section/awesomeness/section5.html",
+    };
+    $scope.testimonial = [{
+      desc: "The Never Grow Up &reg; team is a highly motivated &amp; a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working   them for more than five years and they are our key partners.What I like about them is their frank opinions &amp; willingness to speak their mind & amp;not hide behind words.They are a big asset to anyone considering working with them.Just go ahead.",
+      name: "Kartik Sharma",
+      designation: "Managing Director,",
+      place: "South Asia, Maxus."
+    }, {
+      desc: "The team at Never Grow Up &reg; has been associated as Employee Engagement partners with Shoppers Stop for some time now managing a host of activities and initiatives that have helped create a positive impact. We have found their team to be creative, optimistic and dedicated to the task at hand. Key ideas presented and executed by them have also got us recognition in industry forums and have been well appreciated across the company. Would be happy to recommend Never Grow Up and look forward to a long and healthy association.",
+      name: "BVM Rao",
+      designation: "Customer Care Associate & Head,",
+      place: "Human Resources, Shoppers Stop Ltd."
+    }, {
+      desc: "The team at Never Grow Up &reg; has been associated as Employee Engagement partners with Shoppers Stop for some time now managing a host of activities and initiatives that have helped create a positive impact. We have found their team to be creative, optimistic and dedicated to the task at hand. Key ideas presented and executed by them have also got us recognition in industry forums and have been well appreciated across the company. Would be happy to recommend Never Grow Up and look forward to a long and healthy association.",
+      name: "Apoorva Vig",
+      designation: "Talent Partner – Digital,",
+      place: "Lead-Engagement and Fulfilment, GroupM."
+    }, ]
+  })
+  .controller('headerctrl', function($scope, TemplateService) {
+    $scope.template = TemplateService;
+    $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+      $(window).scrollTop(0);
+    });
+  })
 
 ;
