@@ -42,6 +42,13 @@ nav li:hover .dropdown-menu {
 .bold {
   font-weight: 600;
 }
+a{
+  cursor: pointer;
+}
+a:focus {
+    outline:  none;
+    outline: 0px;
+}
 .row-flex {
   display: flex;
 }
@@ -406,8 +413,52 @@ p {
   .yellow-logo {
     width: 35%;
   }
-  .testimonials-slide{
-    padding: 0 20px;
+  .testimonials-slide {
+    padding: 0 15px;
+    img.quote {
+      width: 22%!important;
+      margin: 10px 0;
+    }
+    .name {
+      margin-top: 10px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .flex-direction-nav {
+    a {
+      opacity: 1!important;
+      z-index: 1!important;
+      height: 90px;
+    }
+    a:before {
+      content: url('../img/awsomeness/section5/prev.png')!important;
+    }
+    a.flex-next:before {
+      content: url('../img/awsomeness/section5/nxt.png')!important;
+    }
+    .flex-disabled {
+      opacity: 1!important;
+      z-index: 1!important;
+    }
+    .flex-prev {
+      left: -50px!important;
+    }
+    .flex-next {
+      right: -50px!important;
+    }
+  }
+  ol.flex-control-nav.flex-control-paging {
+    opacity: 0;
+  }
+  .bx-pd {
+    padding: 20px 70px;
+  }
+  .cont {
+    height: 320px;
+    border-bottom: 4px solid $bg-color;
+    overflow: hidden;
   }
 }
 .disclaimer {

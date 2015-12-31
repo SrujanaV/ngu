@@ -45,7 +45,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       designation: "Customer Care Associate & Head,",
       place: "Human Resources, Shoppers Stop Ltd."
     }, {
-      desc: "The team at Never Grow Up &reg; has been associated as Employee Engagement partners with Shoppers Stop for some time now managing a host of activities and initiatives that have helped create a positive impact. We have found their team to be creative, optimistic and dedicated to the task at hand. Key ideas presented and executed by them have also got us recognition in industry forums and have been well appreciated across the company. Would be happy to recommend Never Grow Up and look forward to a long and healthy association.",
+      desc: "It's been an absolute pleasure to have been associated with Never Grow Up ®. I’ve had the opportunity to see this team working with various groups in our organisation across levels. Every time, they've done something unique, whacky and creative. And the good thing is that everything is linked back to the business/organisation objective in a rather interesting way. All the best and never grow up because that's your USP.",
       name: "Apoorva Vig",
       designation: "Talent Partner – Digital,",
       place: "Lead-Engagement and Fulfilment, GroupM."

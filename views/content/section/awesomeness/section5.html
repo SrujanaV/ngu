@@ -4,17 +4,23 @@
       <h3 class="text-center head-main">
         Testimonials
       </h3>
-      <flex-slider flex-slide="item in testimonial track by $index" animation="slide" animation-loop="false" item-width="370" item-margin="0" as-nav-for="#slider" slideshow="false">
-        <li>
-          <div class="testimonials-slide">
-            <p class="text-center">"</p>
-            <p>{{item.desc}}</p>
-            <p class="bold">{{item.name}}</p>
-            <p>{{item.designation}}</p>
-            <p>{{item.place}}</p>
-          </div>
-        </li>
-      </flex-slider>
+      <div class="box-white bx-pd">
+        <flex-slider flex-slide="item in testimonial track by $index" animation="slide" animation-loop="false" item-width="320" item-margin="0" as-nav-for="#slider" slideshow="false">
+          <li>
+            <div class="testimonials-slide">
+              <img src="img/awsomeness/section5/quote.png" alt="" class="quote">
+              <div class="cont">
+                <p>{{item.desc}}</p>
+              </div>
+              <div class="name">
+                <p class="bold">{{item.name}}</p>
+                <p>{{item.designation}}</p>
+                <p>{{item.place}}</p>
+              </div>
+            </div>
+          </li>
+        </flex-slider>
+      </div>
     </div>
     <div class="box-black">
       <div class="row">
