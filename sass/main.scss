@@ -494,4 +494,19 @@ p {
     text-transform: capitalize;
   }
 }
+.home {
+  min-height: 550px;
+  .puppet {
+    min-height: 550px;
+  }
+  .all-windows {
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+  }
+  .window {
+    width: 32%;
+    padding: 0 25px;
+  }
+}
 /* Start writing sass here */
