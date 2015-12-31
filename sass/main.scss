@@ -33,6 +33,22 @@ img {
 img.doneLoading {
   opacity: 1;
 }
+.navbar-brand {
+  padding: 0;
+  position: relative;
+  top: -20px;
+}
+.navbar-default {
+  background-color: #ffca20;
+  border-color: #ffca20;
+  a {
+    font-size: 16px;
+    &:hover {
+      background-color: darken(#ffca20, 10%)!important;
+      border-color: darken(#ffca20, 10%);
+    }
+  }
+}
 nav li:hover .dropdown-menu {
   display: block;
 }
@@ -42,12 +58,18 @@ nav li:hover .dropdown-menu {
 .bold {
   font-weight: 600;
 }
-a{
+a {
   cursor: pointer;
+  color: $font-color;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $font-color;
+  }
 }
 a:focus {
-    outline:  none;
-    outline: 0px;
+  outline: none;
+  outline: 0;
 }
 .row-flex {
   display: flex;
@@ -230,7 +252,7 @@ p {
 .work {
   .bubble1 {
     position: relative;
-    top: 65px;
+    top: 35px;
     left: 67%;
     @include transform(rotate(-70deg));
   }
@@ -239,14 +261,14 @@ p {
     position: relative;
     z-index: 2;
     left: 10%;
-    top: 90px;
+    top: 40px;
   }
   .window {
     position: absolute;
     z-index: 1;
     right: 7%;
     width: 40%;
-    top: 61%;
+    top: 50%;
   }
   .content {
     .head {
