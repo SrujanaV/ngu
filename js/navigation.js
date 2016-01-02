@@ -5,27 +5,27 @@ var navigationservice = angular.module('navigationservice', [])
     name: "About Us",
     classis: "active",
     link: "#",
-  },{
+  }, {
     name: "Services",
     classis: "active",
     link: "#",
-  },{
+  }, {
     name: "HQ",
     classis: "active",
     link: "#",
-  },{
+  }, {
     name: "Blog",
     classis: "active",
     link: "#",
-  },{
+  }, {
     name: "Media",
     classis: "active",
     link: "#",
-  },{
+  }, {
     name: "Clients",
     classis: "active",
     link: "#",
-  },{
+  }, {
     name: "Contact Us",
     classis: "active",
     link: "#",
@@ -45,6 +45,5 @@ var navigationservice = angular.module('navigationservice', [])
       }
       return menuname;
     },
-
   }
 });

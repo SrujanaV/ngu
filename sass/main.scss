@@ -49,6 +49,9 @@ img.doneLoading {
     }
   }
 }
+.navbar-fixed-top {
+  top: 30px;
+}
 nav li:hover .dropdown-menu {
   display: block;
 }
@@ -507,6 +510,26 @@ p {
   .window {
     width: 32%;
     padding: 0 25px;
+  }
+}
+.tabs {
+  padding-top: 150px;
+  overflow: hidden;
+}
+.tab-menu {
+  ul {
+    padding-left: 75px;
+  }
+  li {
+    list-style: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    @include transition (all ease 300ms);
+    &.active,
+    &:hover {
+      background: #FFCA20;
+      font-weight: 600;
+    }
   }
 }
 /* Start writing sass here */
