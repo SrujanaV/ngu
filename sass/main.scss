@@ -4,13 +4,15 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
 @import "../bower_components/flexslider/flexslider.css";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
-
 /* Bootstrap Variables Goes Here */
 $brand-primary: #0d9dff !default;
 $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
+$brand-brown: #3b2415 !default;
+$brand-yellow: #ffca20 !default;
+$brand-pink: #f0a5ac !default;
 $bg-color: #89d5f6!default;
 $font-color: #3b2417!default;
 $border-color: #959595!default;
@@ -39,13 +41,13 @@ img.doneLoading {
   top: -20px;
 }
 .navbar-default {
-  background-color: #ffca20;
-  border-color: #ffca20;
+  background-color: $brand-yellow;
+  border-color: $brand-yellow;
   a {
     font-size: 16px;
     &:hover {
-      background-color: darken(#ffca20, 10%)!important;
-      border-color: darken(#ffca20, 10%);
+      background-color: darken($brand-yellow, 10%)!important;
+      border-color: darken($brand-yellow, 10%);
     }
   }
 }
@@ -527,9 +529,50 @@ p {
     @include transition (all ease 300ms);
     &.active,
     &:hover {
-      background: #FFCA20;
+      background: $brand-yellow;
       font-weight: 600;
     }
+  }
+}
+// home
+form {
+  .form-control {
+    border-radius: 0;
+    background-color: transparent;
+    border-color: $brand-brown;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  button {
+    border-radius: 0;
+    border-color: $brand-brown;
+    background-color: $brand-brown;
+    color: #fff;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+.relate {
+  position: relative;
+}
+.ab {
+  position: absolute;
+}
+.contactus {
+  background-color: $brand-pink;
+}
+.subscribe {
+  padding: 40px 0;
+  background-color: $brand-yellow;
+  .img-holder {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .subscribe-me {
+    margin: 50px 0;
   }
 }
 /* Start writing sass here */
