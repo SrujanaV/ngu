@@ -13,7 +13,10 @@ $brand-info: #000072 !default;
 $brand-brown: #3b2415 !default;
 $brand-yellow: #ffca20 !default;
 $brand-pink: #f0a5ac !default;
+$bg-color-skin: #ffb098 !default;
 $bg-color: #89d5f6!default;
+$bg-color-skin-main: #e9cfa5!default;
+$bg-color-green: #00a07f!default;
 $font-color: #3b2417!default;
 $border-color: #959595!default;
 $box-red-color: #8a2f1d!default;
@@ -47,13 +50,17 @@ img.doneLoading {
 .navbar-brand {
   padding: 0;
   position: relative;
-  top: -20px;
+  top: -26px;
 }
 .navbar-default {
   background-color: $brand-yellow;
   border-color: $brand-yellow;
+  .navbar-nav {
+    padding-left: 30px;
+  }
   a {
     font-size: 16px;
+    padding: 8px 20px;
     &:hover {
       background-color: darken($brand-yellow, 10%)!important;
       border-color: darken($brand-yellow, 10%);
@@ -127,6 +134,10 @@ a:focus {
   font-size: 40px;
   font-weight: 500;
 }
+.home-head {
+  font-size: 70px;
+  font-weight: 300;
+}
 .ps-50 {
   padding: 20px 50px;
 }
@@ -150,13 +161,14 @@ p {
   text-align: justify;
   font-size: 16px;
   font-weight: 300;
+  line-height: 130%;
 }
 .sticky-bottom {
   top: calc(100% - 0px);
 }
 .section {
   position: relative;
-  min-height: 500px;
+  min-height: 667px;
   overflow: hidden;
 }
 .helper {
@@ -225,11 +237,13 @@ p {
       left: 14%;
       width: 20%;
       bottom: -15px;
+      z-index: 1;
     }
     .lady1 {
       left: 29%;
       width: 12%;
       bottom: -36px;
+      z-index: 2;
     }
     .bubble3 {
       right: 42%;
@@ -250,6 +264,7 @@ p {
       bottom: -35px;
       right: 26%;
       width: 12%;
+      z-index: 2;
     }
     .guy1 {
       right: 5%;
@@ -498,6 +513,7 @@ p {
   }
 }
 .disclaimer {
+  min-height: 360px;
   .box-white {
     padding: 10px 30px;
   }
@@ -543,6 +559,7 @@ p {
     }
   }
 }
+
 // home
 form {
   .form-control {
@@ -572,12 +589,14 @@ form {
 .ab {
   position: absolute;
 }
-.heading {
-  font-size: 70px;
-}
+
+// .heading {
+//   font-size: 70px;
+// }
 .floor {
   bottom: 0;
 }
+
 // about
 .about-us {
   padding: 90px 0;
@@ -586,7 +605,10 @@ form {
 .about-info {
   min-height: 650px;
 }
-.window-right,.window-full,.girl,.boy {
+.window-right,
+.window-full,
+.girl,
+.boy {
   img {
     width: 70%;
   }
@@ -613,15 +635,44 @@ form {
   top: -10px;
   left: 40%;
 }
+
 // contact
 .contactus {
   padding: 50px 0;
   background-color: $brand-pink;
   .heading {
-    margin:  0 0 50px 0;
+    margin: 0 0 50px;
   }
   textarea {
     resize: none;
+    color: $brand-brown;
+  }
+  input {
+    color: $brand-brown;
+  }
+  textarea::-webkit-input-placeholder {
+    color: $brand-brown;
+  }
+  textarea:-moz-placeholder {
+    color: $brand-brown;
+  }
+  textarea::-moz-placeholder {
+    color: $brand-brown;
+  }
+  textarea:-ms-input-placeholder {
+    color: $brand-brown;
+  }
+  input::-webkit-input-placeholder {
+    color: $brand-brown;
+  }
+  input:-moz-placeholder {
+    color: $brand-brown;
+  }
+  input::-moz-placeholder {
+    color: $brand-brown;
+  }
+  input:-ms-input-placeholder {
+    color: $brand-brown;
   }
 }
 .contact-info {
@@ -634,26 +685,33 @@ form {
     width: 80%;
   }
 }
-.contact-boy,.email,.contact-girl {
+.contact-boy,
+.email,
+.contact-girl {
   z-index: 1;
   img {
     width: 70%;
   }
 }
+.window-left {
+  top: 20%;
+}
 .contact-girl {
-  left: 190px;
+  left: 25%;
+  bottom: 40px;
 }
 .email {
-  right: -71px;
-top: -120px;
+  bottom: 200px;
+  left: 35%;
 }
 .contact-boy {
-  top: -10px;
-  right: -90px;
+  bottom: 50px;
+  left: 50%;
 }
 .door {
   right: -20px;
-  top: 187px;
+  bottom: 14%;
+  width: 10%;
   img {
     width: 90%;
   }
@@ -663,9 +721,13 @@ top: -120px;
   letter-spacing: 2px;
   p {
     margin: 0;
+    font-size: 14px;
+    letter-spacing: 0.78px;
   }
-  span,a{
+  span,
+  a {
     font-size: 16px;
+    letter-spacing: 0.78px;
   }
   .space {
     margin: 10px 0;
@@ -675,22 +737,27 @@ top: -120px;
   margin-top: 50px;
   ul {
     padding: 0;
-  li {
-    padding-right: 5px;
-    display: inline-block;
-  a {
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    display: inline-block;
-    background-color: $brand-brown;
-    color: $brand-pink;
-    line-height: 30px;
-    text-align: center;
+    li {
+      padding-right: 5px;
+      display: inline-block;
+      a {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        display: inline-block;
+        background-color: $brand-brown;
+        color: $brand-pink;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.78px;
+        &:hover {
+          background-color: darken($brand-brown, 10%);
+        }
+      }
+    }
   }
 }
-}
-}
+
 // subscribe
 .subscribe {
   padding: 40px 0;
@@ -703,7 +770,230 @@ top: -120px;
     margin: 50px 0;
     input {
       width: 250px;
+      color: $brand-brown;
     }
+    input::-webkit-input-placeholder {
+      color: $brand-brown;
+    }
+    input:-moz-placeholder {
+      color: $brand-brown;
+    }
+    input::-moz-placeholder {
+      color: $brand-brown;
+    }
+    input:-ms-input-placeholder {
+      color: $brand-brown;
+    }
+  }
+}
+.section-ngu {
+  background: $bg-color;
+  .slate {
+    width: 8%;
+    right: 8%;
+    z-index: 99;
+    top: 5px;
+  }
+  .bubble {
+    top: 35px;
+    left: 32%;
+    @include transform(rotate(-100deg));
+  }
+  .window-right {
+    right: -260px;
+  }
+  .ngu {
+    width: 70%;
+    top: 130px;
+    left: 20%;
+  }
+  .rocket {
+    top: 50%;
+    @include transform(rotate(-25deg));
+    width: 8%;
+    left: 75px;
+  }
+  .content {
+    top: 130px;
+    width: 70%;
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+  .dolphin {
+    bottom: 25px;
+    z-index: 1;
+    width: 18%;
+    left: 66px;
+  }
+  .snail {
+    bottom: 70px;
+    z-index: 1;
+    width: 8%;
+    left: 40%;
+  }
+}
+.services {
+  background: $bg-color-skin;
+  .services-info {
+    padding: 0 14%;
+    top: 36px;
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+  .services-badge {
+    margin-bottom: 20px;
+    figcaption {
+      margin-top: 10px;
+    }
+  }
+  .bubble {
+    top: 35px;
+    left: 32%;
+    @include transform(rotate(-100deg));
+  }
+  .coffee {
+    width: 10%;
+    position: absolute;
+    left: 21%;
+    bottom: 8%;
+  }
+  .window-left {
+    bottom: 20%;
+    top: initial;
+  }
+  .pb30 {
+    padding-bottom: 30px;
+  }
+}
+.hq-bg {
+  background: $bg-color-green;
+  .social-links {
+    padding-right: 15px;
+    padding-top: 20px;
+    ul {
+      list-style: none;
+      float: right;
+      li {
+        width: 65%;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .hq-confess {
+    width: 40%;
+    bottom: 110px;
+    z-index: 1;
+    left: 0;
+  }
+  .hq-logo {
+    img {
+      width: 30%;
+    }
+  }
+  .clock {
+    left: 0;
+    top: 16%;
+    img {
+      width: 65%;
+    }
+  }
+  p {
+    font-size: 14px;
+    padding: 0 20px;
+    color: #fff;
+  }
+  .btn {
+    background: $brand-yellow;
+    border-color: $brand-yellow;
+    color: $bg-color-green;
+    border-radius: 0;
+    padding: 4px 8px;
+    &:hover {
+      background: darken($brand-yellow, 10%);
+      border-color: darken($brand-yellow, 10%);
+    }
+  }
+}
+.client {
+  .logos {
+    height: 120px;
+  }
+  .client-happy {
+    bottom: 90px;
+    left: 0;
+    width: 14%;
+  }
+}
+.pb50 {
+  padding-bottom: 50px;
+}
+.pt100 {
+  padding-top: 100px;
+}
+.bg-skin-main {
+  background: $bg-color-skin-main;
+}
+.media {
+  .media-partners {
+    background: #fff;
+    padding: 30px;
+  }
+  .media-cont {
+    width: 75%;
+    margin: 0 auto;
+    .media-head {
+      padding-left: 20px;
+      padding-bottom: 20px;
+      p {
+        margin-bottom: 0;
+        font-size: 20px;
+      }
+    }
+    .media-imgholder {
+      padding: 20px;
+    }
+  }
+  .bubble {
+    top: -14px;
+    left: 29.5%;
+    @include transform(rotate(-100deg));
+  }
+  .window-right {
+    top: 8%;
+  }
+  .window-left {
+    top: 36%;
+  }
+  .clickhere {
+    padding-left: 20px;
+  }
+  .news {
+    position: absolute;
+    width: 18%;
+    bottom: 50px;
+    right: 3%;
+  }
+  .xerox {
+    width: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 20%;
+  }
+  .pb140 {
+    padding-bottom: 140px;
+  }
+  .rocket {
+    top: 11%;
+    left: 7%;
+    width: 8%;
+    @include transform(rotate(10deg));
+  }
+  .pt50 {
+    padding-top: 50px;
   }
 }
 /* Start writing sass here */
