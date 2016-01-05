@@ -169,7 +169,7 @@ p {
 .section {
   position: relative;
   min-height: 667px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .helper {
   display: inline-block;
@@ -541,7 +541,6 @@ p {
 }
 .tabs {
   padding-top: 150px;
-  overflow: hidden;
 }
 .tab-menu {
   ul {
@@ -550,12 +549,14 @@ p {
   li {
     list-style: none;
     padding: 8px 16px;
+    margin: 5px 0;
     cursor: pointer;
-    @include transition (all ease 300ms);
+    @include transition(all ease 300ms);
     &.active,
     &:hover {
       background: $brand-yellow;
-      font-weight: 600;
+
+      // font-weight: 600;
     }
   }
 }
@@ -996,4 +997,109 @@ form {
     padding-top: 50px;
   }
 }
+.hq-cont-yellow {
+  .head-yellow {
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 0;
+    img {
+      height: 90px;
+      vertical-align: bottom;
+    }
+  }
+  .head-tabs {
+    border-bottom: 3px solid #FFCA20;
+    margin-bottom: 20px;
+  }
+}
+.tabs {
+  .people {
+    z-index: 1;
+    position: relative;
+    img {
+      width: 30%;
+      right: 5px;
+    }
+  }
+  .bt-engage {
+    bottom: 45px;
+  }
+  .bt-happness {
+    bottom: 82px;
+  }
+  .bt-workshop {
+    bottom: 200px;
+  }
+  .bt-corporate {
+    bottom: 25px;
+    img {
+      width: 15%;
+      right: 142px;
+    }
+  }
+  .bt-internal {
+    bottom: 60px;
+  }
+  .bt-digital {
+    bottom: 55px;
+    img {
+      width: 25%;
+      right: 85px;
+    }
+  }
+  .bt-wrk-space {
+    bottom: 170px;
+    img {
+      right: 160px;
+      width: 25%;
+    }
+  }
+  .bt-employer {
+    bottom: 25px;
+    img {
+      right: 45px;
+    }
+  }
+  .bt-quirkey {
+    bottom: -45px;
+    img {
+      width: 19%;
+      right: 135px;
+    }
+  }
+  .window-right {
+    img {
+      width: 75%;
+      right: -40px;
+      position: absolute;
+      top: 125px;
+    }
+  }
+  .digital {
+    img {
+      top: 90px;
+    }
+  }
+  .interal-img {
+    img {
+      top: 100px;
+    }
+  }
+  .corporate {
+    img {
+      top: 115px;
+    }
+  }
+  p {
+    font-size: 14px;
+  }
+  .floor {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+.row-tabs {
+  padding-bottom: 30px;
+}
+
 /* Start writing sass here */
