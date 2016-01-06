@@ -19,7 +19,22 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       nine: "views/content/section/home/section9.html",
       ten: "views/content/section/home/section10.html",
     };
-
+    $scope.clientSpeaks = [{
+      desc: "The Never Grow Up ® team is a highly motivated &amp; a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for more than five years and they are our key partners. What I like about them is their frank opinions &amp; willingness to speak their mind &amp; not hide behind words. They are a big asset to anyone considering working with them. Just go ahead",
+      name: "Kartik Sharma",
+      designation: "Managing Director,",
+      place: "South Asia, Maxus."
+    }, {
+      desc: "The team at Never Grow Up ® has been associated as Employee Engagement partners with Shoppers Stop for some time now managing a host of activities and initiatives that have helped create a positive impact. We have found their team to be creative, optimistic and dedicated to the task at hand. Key ideas presented and executed by them have also got us recognition in industry forums and have been well appreciated across the company. Would be happy to recommend Never Grow Up and look forward to a long and healthy association.",
+      name: "BVM Rao",
+      designation: "Customer Care Associate & Head,",
+      place: "Human Resources, Shoppers Stop Ltd."
+    }, {
+      desc: "It's been an absolute pleasure to have been associated with Never Grow Up ®. I’ve had the opportunity to see this team working with various groups in our organisation across levels. Every time, they've done something unique, whacky and creative. And the good thing is that everything is linked back to the business/organisation objective in a rather interesting way. All the best and never grow up because that's your USP.",
+      name: "Apoorva Vig",
+      designation: "Talent Partner – Digital,",
+      place: "Lead-Engagement and Fulfilment, GroupM."
+    }, ]
   })
   .controller('AwesomenessCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
@@ -51,8 +66,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       place: "Lead-Engagement and Fulfilment, GroupM."
     }, ]
   })
-
-.controller('ConsultingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  .controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    //Used to name the .html file
+    $scope.template = TemplateService.changecontent("about");
+    $scope.menutitle = NavigationService.makeactive("About");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+    TemplateService.header = "views/header-other.html";
+  })
+  .controller('ConsultingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("consulting");
     $scope.menutitle = NavigationService.makeactive("Consulting");

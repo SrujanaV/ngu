@@ -1,7 +1,34 @@
-<section class="cleint-speaks">
+<section class="client-speaks pt100">
   <div class="container">
-    <div class="slider">
+    <div class="client-desk">
       <div class="row">
+        <div class="col-sm-10">
+          <h2 class="home-head">Client<br>
+            <span>Speak</span>
+          </h2>
+          <div class="client">
+            <img src="img/home/client-speak.png" alt="" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-client">
+      <flex-slider flex-slide="item in clientSpeaks track by $index" animation="slide" animation-loop="false" item-width="340" item-margin="0" as-nav-for="#slider" slideshow="false">
+        <li class="">
+          <div class="client-slide pad20">
+            <img src="img/home/semi-colon-white.png" alt="" class="quote">
+            <div class="cont">
+              <p>{{item.desc}}</p>
+            </div>
+            <div class="name">
+              <p class="bold">{{item.name}}</p>
+              <p>{{item.designation}}</p>
+              <p>{{item.place}}</p>
+            </div>
+          </div>
+        </li>
+      </flex-slider>
+      <!-- <div class="row">
         <div class="col-md-2">
           <h2 class="home-head">Client
             <span>speaks</span>
@@ -11,12 +38,12 @@
           </div>
         </div>
         <div class="col-md-5">
-          <div class="colon text-center">
+          <div class="colon">
             <img src="img/home/semi-colon-white.png" alt="" class="">
           </div>
           <div class="client-desc">
-            <p class="text-justify">The Never Grow Up ® team is a highly motivated & a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for
-              more than five years and they are our key partners. What I like about them is their frank opinions & willingness to speak their mind & not hide behind words. They are a big asset to anyone considering working with them. Just go ahead.</p>
+            <p class="text-justify">The Never Grow Up ® team is a highly motivated &amp; a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for
+              more than five years and they are our key partners. What I like about them is their frank opinions &amp; willingness to speak their mind &amp; not hide behind words. They are a big asset to anyone considering working with them. Just go ahead.</p>
           </div>
           <div class="client-info">
             <h4>Kartik Sharma </h4>
@@ -25,12 +52,12 @@
           </div>
         </div>
         <div class="col-md-5">
-          <div class="colon text-center">
+          <div class="colon">
             <img src="img/home/semi-colon-white.png" alt="" class="">
           </div>
           <div class="client-desc">
-            <p class="text-justify">The Never Grow Up ® team is a highly motivated & a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for
-              more than five years and they are our key partners. What I like about them is their frank opinions & willingness to speak their mind & not hide behind words. They are a big asset to anyone considering working with them. Just go ahead.</p>
+            <p class="text-justify">The Never Grow Up ® team is a highly motivated &amp; a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for
+              more than five years and they are our key partners. What I like about them is their frank opinions &amp; willingness to speak their mind &amp; not hide behind words. They are a big asset to anyone considering working with them. Just go ahead.</p>
           </div>
           <div class="client-info">
             <h4>Kartik Sharma </h4>
@@ -38,7 +65,7 @@
             <span>South Asia, Maxus.</span>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="wifi">

@@ -17,6 +17,7 @@ $bg-color-skin: #ffb098 !default;
 $bg-color: #89d5f6!default;
 $bg-color-skin-main: #e9cfa5!default;
 $bg-color-green: #00a07f!default;
+$bg-color-abt: #ffaf79!default;
 $font-color: #3b2417!default;
 $border-color: #959595!default;
 $box-red-color: #8a2f1d!default;
@@ -75,6 +76,9 @@ nav li:hover .dropdown-menu {
 }
 .bg-blue {
   background: $bg-color;
+}
+.bg-brown {
+  background: $brand-brown;
 }
 .bold {
   font-weight: 600;
@@ -137,6 +141,7 @@ a:focus {
 .home-head {
   font-size: 70px;
   font-weight: 300;
+  text-transform: capitalize;
 }
 .ps-50 {
   padding: 20px 50px;
@@ -175,6 +180,9 @@ p {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
+}
+.bg-color-abt {
+  background: $bg-color-abt;
 }
 .awsomeness {
   .sky {
@@ -485,9 +493,11 @@ p {
     }
     a:before {
       content: url('../img/awsomeness/section5/prev.png')!important;
+      cursor: pointer;
     }
     a.flex-next:before {
       content: url('../img/awsomeness/section5/nxt.png')!important;
+      cursor: pointer;
     }
     .flex-disabled {
       opacity: 1!important;
@@ -1101,5 +1111,182 @@ form {
 .row-tabs {
   padding-bottom: 30px;
 }
-
-/* Start writing sass here */
+.about {
+  .abt-cont {
+    h2 {
+      font-size: 45px;
+      font-weight: 300;
+    }
+    .guy1-abt {
+      bottom: -40px;
+    }
+  }
+  img.areoplane {
+    top: 1%;
+    left: 50%;
+    width: 30%;
+    @include transform(rotate(10deg));
+  }
+  .guy1-abt {
+    bottom: -40px;
+  }
+  .min-hght {
+    min-height: 950px;
+  }
+  .window-right {
+    top: 7%;
+  }
+  .window-left {
+    top: initial;
+    bottom: 18%;
+  }
+  .cont-main {
+    padding-right: 40px;
+    position: relative;
+    .salute-left {
+      position: absolute;
+      left: -55px;
+      width: 15%;
+    }
+    .clock-right {
+      width: 23%;
+      top: -2px;
+      position: absolute;
+      right: 10px;
+    }
+    h3 {
+      font-size: 30px;
+      font-weight: 300;
+      img {
+        vertical-align: bottom;
+      }
+    }
+    img.thumbsup-right {
+      width: 26%;
+    }
+    img.width-right {
+      width: 15%;
+    }
+  }
+}
+.client-speaks {
+  .client-desk {
+    float: left;
+  }
+  .slider-client {
+    float: left;
+    .testimonials-slide img.quote {
+      width: 22% !important;
+      margin: 10px 0;
+    }
+    .cont {
+      height: 320px;
+      border-bottom: 4px solid #fff;
+      overflow: hidden;
+    }
+    .name {
+      margin-top: 10px;
+    }
+    .flexslider {
+      background: transparent;
+      border: 0;
+      width: 690px;
+      margin-bottom: 0;
+      p {
+        margin: 0;
+      }
+      .pad20 {
+        padding: 20px !important;
+      }
+      img.quote {
+        width: auto !important;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .wifi img {
+    float: right;
+    margin-bottom: -38px;
+    margin-right: 32px;
+    z-index: 1;
+    position: relative;
+    width: 25%;
+  }
+  ol.flex-control-nav.flex-control-paging {
+    display: none;
+  }
+  .flex-direction-nav {
+    a {
+      opacity: 1!important;
+      z-index: 1!important;
+      height: 90px;
+    }
+    a:before {
+      content: url('../img/awsomeness/section5/prev.png')!important;
+      cursor: pointer;
+    }
+    a.flex-next:before {
+      content: url('../img/awsomeness/section5/nxt.png')!important;
+      cursor: pointer;
+    }
+    .flex-disabled {
+      opacity: 1!important;
+      z-index: 1!important;
+    }
+    .flex-prev {
+      left: -435px !important;
+    }
+    .flex-next {
+      right: -50px!important;
+    }
+  }
+}
+footer {
+  padding: 20px;
+  .nav-footer {
+    ul {
+      list-style: none;
+      display: block;
+      li {
+        display: inline-block;
+        a {
+          color: #fff;
+          padding: 0 8px;
+          &:hover {
+            color: darken(#fff, 20%);
+          }
+        }
+      }
+      li+li {
+        border-left: 1px solid #fff;
+      }
+    }
+  }
+  .nav-footer.mb0 {
+    ul {
+      margin-bottom: 0;
+    }
+  }
+  .nav-footer.pb20 {
+    ul {
+      padding-bottom: 20px;
+    }
+  }
+  .pt20 {
+    padding-top: 20px;
+  }
+  .footer-cont {
+    padding: 20px 0;
+    p {
+      color: #fff;
+      margin: 0;
+      font-size: 12px;
+      a {
+        color: #fff;
+        &:hover {
+          color: darken(#fff, 20%);
+        }
+      }
+    }
+  }
+}
