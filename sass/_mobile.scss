@@ -1,0 +1,48 @@
+@media (max-width: $screen-sm-max) {
+  .section-ngu {
+    .window-right {
+      display: none;
+    }
+    .content {
+      position: inherit;
+      width: 100%;
+    }
+  }
+  .services {
+    .services-info {
+      padding: 0;
+      position: relative;
+    }
+    .services-badge figcaption {
+      margin-top: 10px;
+      height: 45px;
+    }
+  }
+}
+@media (max-width: $screen-xs-max) {
+  .window-left {
+    display: none;
+  }
+  .coffee {
+    bottom: 4%;
+  }
+  .section-ngu {
+    .ngu {
+      width: 150px;
+      top: 120px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    .content {
+      top: 250px;
+    }
+    .rocket {
+      top: 30%;
+    }
+  }
+  .services {
+    .home-head {
+      font-size: 40px;
+    }
+  }
+}

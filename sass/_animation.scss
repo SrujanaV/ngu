@@ -1,0 +1,22 @@
+.dolphin {
+	@include animation(moving-dolphin 20s linear 0.5s infinite);
+}
+.snail{
+  @include animation(moving-snail 20s linear 0s infinite);
+}
+@include keyframes (moving-dolphin) {
+	0% {
+		@include transform(translate(-700%, 0%));
+	}
+	100% {
+		@include transform(translate(700%, 0%));
+	}
+}
+@include keyframes (moving-snail) {
+	0% {
+		@include transform(translate(-700%, 0%));
+	}
+	100% {
+		@include transform(translate(700%, 0%));
+	}
+}
