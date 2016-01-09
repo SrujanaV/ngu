@@ -17,6 +17,6 @@
 		@include transform(translate(-700%, 0%));
 	}
 	100% {
-		@include transform(translate(700%, 0%));
+		@include transform(translate(900%, 0%));
 	}
 }
