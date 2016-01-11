@@ -112,23 +112,37 @@ firstapp.directive('autoHeight', function($compile, $parse) {
   };
 });
 
-firstapp.directive('onlyDigits', function() {
-  return {
-    require: 'ngModel',
-    link: function(scope, element, attr, ngModelCtrl) {
-      function fromUser(text) {
-        if (text) {
-          var transformedInput = text.replace(/[^0-9]/g, '');
-
-          if (transformedInput !== text) {
-            ngModelCtrl.$setViewValue(transformedInput);
-            ngModelCtrl.$render();
-          }
-          return transformedInput;
-        }
-        return undefined;
-      }
-      ngModelCtrl.$parsers.push(fromUser);
-    }
-  };
+firstapp.directive("scroll", function($window) {
+    return function(scope, element, attrs) {
+        angular.element($window).bind("scroll", function() {
+              var windowHeight = $( window ).height();
+            if (this.pageYOffset >= windowHeight) {
+              console.log(windowHeight);
+                element.addClass('affix');
+            } else {
+                element.removeClass('affix');
+            }
+        });
+    };
 });
+//
+// firstapp.directive('onlyDigits', function() {
+//   return {
+//     require: 'ngModel',
+//     link: function(scope, element, attr, ngModelCtrl) {
+//       function fromUser(text) {
+//         if (text) {
+//           var transformedInput = text.replace(/[^0-9]/g, '');
+//
+//           if (transformedInput !== text) {
+//             ngModelCtrl.$setViewValue(transformedInput);
+//             ngModelCtrl.$render();
+//           }
+//           return transformedInput;
+//         }
+//         return undefined;
+//       }
+//       ngModelCtrl.$parsers.push(fromUser);
+//     }
+//   };
+// });

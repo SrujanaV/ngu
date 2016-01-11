@@ -68,6 +68,10 @@ img.doneLoading {
       border-color: darken($brand-yellow, 10%);
     }
   }
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+    background-color: transparent!important;
+  }
 }
 .navbar-fixed-top {
   top: 30px;
@@ -109,6 +113,9 @@ a:focus {
 .flex-md-8 {
   flex: 3;
 }
+.min-hgt {
+  min-height: 650px;
+}
 .box-white {
   background: #fff;
   padding: 30px;
@@ -119,6 +126,9 @@ a:focus {
   padding: 30px;
   margin: 20px 0;
   color: #fff;
+}
+.client-slider {
+  min-height: 550px;
 }
 .rl {
   position: relative;
@@ -152,17 +162,15 @@ a:focus {
 }
 .sticky-bottom {
   position: absolute;
-  top: 0;
+
+  // top: 0;
   width: 100%;
   left: 0;
-  z-index: 99;
+  z-index: 999;
   @include transition(all 700ms ease);
   &.affix {
     position: fixed;
-    top: 0;
-    bottom: auto;
-    width: 100%;
-    left: 0;
+    top: 25px;
     z-index: 999;
   }
 }
@@ -173,7 +181,7 @@ p {
   line-height: 130%;
 }
 .sticky-bottom {
-  top: calc(100% - 0px);
+  top: calc(101% - 0px);
 }
 .section {
   position: relative;
@@ -190,6 +198,7 @@ p {
   background: $bg-color-abt;
 }
 .awsomeness {
+  min-height: 650px;
   .sky {
     height: 230px;
     position: relative;
@@ -199,6 +208,7 @@ p {
       right: 14%;
       top: 0;
     }
+    
     .cloud {
       position: absolute;
     }
@@ -206,6 +216,7 @@ p {
       left: 4%;
       width: 16%;
       top: 60%;
+      opacity: 0;
     }
     .cloud2 {
       left: 12%;
@@ -227,7 +238,6 @@ p {
   .puppet {
     min-height: 450px;
     width: 100%;
-    bottom: 0;
     .bubble1 {
 
       // width: 175px;
@@ -801,7 +811,7 @@ form {
         text-align: center;
         letter-spacing: 0.78px;
         &:hover {
-          background-color: darken($brand-brown, 10%);
+          background-color: lighten($brand-brown, 5%);
         }
       }
     }
@@ -841,8 +851,8 @@ form {
   .slate {
     width: 8%;
     right: 8%;
-    z-index: 99;
-    top: 5px;
+    z-index: 999;
+    top: 10px;
   }
   .bubble {
     top: 35px;
@@ -896,6 +906,9 @@ form {
   }
   .services-badge {
     margin-bottom: 20px;
+    .col-md-4 {
+      margin-bottom: 20px;
+    }
     figcaption {
       margin-top: 10px;
     }
@@ -1233,7 +1246,7 @@ form {
     .flexslider {
       background: transparent;
       border: 0;
-      width: 690px;
+      width: 600px;
       margin-bottom: 0;
       p {
         margin: 0;

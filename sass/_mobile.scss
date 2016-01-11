@@ -13,11 +13,14 @@
       padding-left: 35px;
     }
     .flex-direction-nav .flex-prev {
-      left: -400px !important;
+      left: -410px !important;
     }
     .flex-direction-nav .flex-next {
-      right: 15px !important;
+      right: -35px !important;
     }
+  }
+  .hq-img {
+    right: 100px;
   }
   .talking {
     .logos {
@@ -29,7 +32,8 @@
   .window-left {
     left: -270px;
   }
-  .thought {
+  .thought,
+  .client {
     .logo-opt {
       height: 100px;
     }
@@ -90,6 +94,9 @@
       width: 100%;
     }
   }
+  .tab-menu ul {
+    padding-left: 0;
+  }
   .tabcontent {
     .window-right {
       display: none;
@@ -126,9 +133,6 @@
       .home-head {
         padding-left: 35px;
       }
-    }
-    .flex-direction-nav .flex-next {
-      right: -10px !important;
     }
     .flex-direction-nav .flex-prev {
       left: -300px !important;
@@ -191,12 +195,35 @@
   .boy {
     left: 35%;
   }
+  .tabs .people img {
+    display: none;
+  }
 }
 @media (max-width: $screen-xs-max) {
   .navbar-default {
     .navbar-nav {
       padding-left: 0;
       text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      li + li {
+        border-top: 1px solid #fff;
+      }
+      li {
+        a {
+          padding: 12px 8px;
+        }
+      }
+    }
+    .navbar-toggle {
+      border-color: #fff;
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+      .icon-bar {
+        background-color: #fff;
+      }
     }
   }
   .tab-menu {
@@ -232,6 +259,9 @@
   }
   .window-left {
     display: none;
+  }
+  ul.flex-direction-nav {
+    zoom: 0.6;
   }
   .floor {
     display: none;
@@ -363,7 +393,7 @@
       float: none;
       zoom: 1;
       .flexslider {
-        width: 340px!important;
+        width: 300px!important;
         margin: 0 auto;
       }
       .flex-direction-nav .flex-next {
@@ -402,10 +432,11 @@
   }
   .contact-boy,
   .email,
-  .contact-girl {
-    img {
-      display: none;
-    }
+  .contact-girl,
+  .xerox,
+  .news,
+  .client .client-happy {
+    display: none;
   }
 }
 @media (max-width:480px) {
@@ -432,7 +463,7 @@
   .client-speaks {
     .slider-client {
       .flexslider {
-        width: 340px !important;
+        width: 300px !important;
         margin: 0 auto;
         zoom: 0.75;
       }
