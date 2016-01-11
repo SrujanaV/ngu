@@ -226,6 +226,12 @@
       }
     }
   }
+  .navbar-brand {
+    top: -20px;
+    img {
+      width: 80px;
+    }
+  }
   .tab-menu {
     position: absolute;
     right: 0;
@@ -256,6 +262,20 @@
   }
   .home-head {
     font-size: 40px;
+  }
+  .awsomeness {
+    .puppet {
+      .bubble5 {
+        right: 6%;
+        bottom: 150px;
+      }
+      .bubble2 {
+        bottom: 180px;
+      }
+    }
+  }
+  .hq-img {
+    position: inherit;
   }
   .window-left {
     display: none;
