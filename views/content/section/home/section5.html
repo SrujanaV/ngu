@@ -4,9 +4,23 @@
       <h2 class="home-head">Clients</h2>
       <div class="client-slider">
         <div class="col-md-offset-1 col-md-10">
-          <div class="logos">
-            <div class="row bb">
-              <div class="col-md-3 col-xs-6">
+          <div class="slider-client">
+            <flex-slider flex-slide="slide in clients track by $index" animation="slide" animation-loop="false" as-nav-for="#sliders" slideshow="false">
+              <li class="" >
+                <div class="logos" >
+                    <div class="row bb" ng-repeat="row in slide">
+                    <div class="col-md-3 col-xs-6" ng-repeat="client in row">
+                      <div class="image-holder text-center">
+                        <!-- <span class="helper"></span> -->
+                        <img ng-src="{{client.image}}" class="doneLoading" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </flex-slider>
+          </div>
+          <!-- <div class="col-md-3 col-xs-6">
                 <div class="logos text-center">
                   <span class="helper"></span>
                   <img src="img/awsomeness/section4/logo1.png" class="doneLoading" alt="" width="170">
@@ -29,9 +43,11 @@
                   <span class="helper"></span>
                   <img src="img/awsomeness/section4/logo4.png" class="doneLoading" alt="" width="50">
                 </div>
-              </div>
-            </div>
-            <div class="row bb">
+              </div> -->
+          <!-- </div>
+          </div>
+        </div> -->
+          <!-- <div class="row bb">
               <div class="col-md-3 col-xs-6">
                 <div class="logos text-center">
                   <span class="helper"></span>
@@ -82,10 +98,10 @@
                   <img src="img/awsomeness/section4/logo12.png" class="doneLoading" alt="" width="120">
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="row">
+            </div> -->
+          <!-- </div>
+        </div> -->
+          <!-- <div class="row">
         <div class="col-md-3">
           <div class="client-imgholder">
             <img src="img/home/client-logo/shopper-stop.png" alt="" class="img-responsive">
@@ -152,6 +168,7 @@
         </div>
       </div>
     </div>-->
+        </div>
       </div>
     </div>
   </div>
