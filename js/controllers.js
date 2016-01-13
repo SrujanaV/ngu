@@ -32,6 +32,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $location.replace();
     };
 
+    $scope.clientSpeakThumbArr = ["img/home/client-speak.png", "img/home/abt-girl.png", "img/home/abt-girl.png"];
+    $scope.activeThumb = 0;
+    $scope.speakChange = function() {
+      $scope.activeThumb = $(".client-speaks .slider-client ol.flex-control-nav.flex-control-paging li a").index($(".client-speaks .slider-client ol.flex-control-nav.flex-control-paging li a.flex-active"));
+
+    };
+
 
 
     $scope.section = {
@@ -151,7 +158,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       one: "views/content/section/home/section1.html"
     };
   })
-  .controller('ConsultingCtrl', function($scope, TemplateService, NavigationService, $timeout,$location) {
+  .controller('ConsultingCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("consulting");
     $scope.menutitle = NavigationService.makeactive("Consulting");
@@ -161,7 +168,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     $scope.changeURL = function(id) {
       console.log(id);
-      $location.path("home/"+id);
+      $location.path("home/" + id);
     };
 
   })
