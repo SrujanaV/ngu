@@ -1,11 +1,38 @@
-angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngSanitize', 'angular-flexslider'])
+angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngSanitize', 'angular-flexslider', 'duScroll'])
 
-.controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('HomeCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("home");
     $scope.menutitle = NavigationService.makeactive("Home");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+
+    function makeAnimation(id) {
+      if (_.isEmpty(id)) {
+        id = "home";
+      }
+      var someElement = angular.element(document.getElementById(id));
+      $document.scrollToElement(someElement, 0, 1400);
+    }
+
+    $scope.$on('$viewContentLoaded', function(event) {
+      setTimeout(function() {
+        makeAnimation($stateParams.id);
+      }, 1000);
+    });
+
+
+    $scope.changeURL = function(id) {
+      $state.transitionTo('homeid', {
+        id: id
+      }, {
+        notify: false
+      });
+      makeAnimation(id);
+      $location.replace();
+    };
+
+
 
     $scope.section = {
       one: "views/content/section/home/section1.html",
@@ -61,7 +88,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       image: "img/awsomeness/section4/logo10.png"
     }, {
       image: "img/awsomeness/section4/logo11.png"
-    }]
+    }];
     $scope.clients = _.chunk($scope.clients, 12);
     for (var i = 0; i < $scope.clients.length; i++) {
       $scope.clients[i] = _.chunk($scope.clients[i], 4);
@@ -81,7 +108,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       name: "Apoorva Vig",
       designation: "Talent Partner – Digital,",
       place: "Lead-Engagement and Fulfilment, GroupM."
-    }, ]
+    }];
   })
   .controller('AwesomenessCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
@@ -111,7 +138,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       name: "Apoorva Vig",
       designation: "Talent Partner – Digital,",
       place: "Lead-Engagement and Fulfilment, GroupM."
-    }, ]
+    }];
   })
   .controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
@@ -124,13 +151,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       one: "views/content/section/home/section1.html"
     };
   })
-  .controller('ConsultingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  .controller('ConsultingCtrl', function($scope, TemplateService, NavigationService, $timeout,$location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("consulting");
     $scope.menutitle = NavigationService.makeactive("Consulting");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
+
+    $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("home/"+id);
+    };
+
   })
   .controller('HappynessCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file

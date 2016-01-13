@@ -4,15 +4,15 @@ var navigationservice = angular.module('navigationservice', [])
   var navigation = [{
     name: "About Us",
     classis: "active",
-    link: "#",
+    anchor: "about",
   }, {
     name: "Services",
     classis: "active",
-    link: "#",
+    anchor: "services",
   }, {
     name: "Happyness Quotient",
     classis: "active",
-    link: "#",
+    anchor: "happyness-quotient",
   }, {
     name: "Blog",
     classis: "active",
@@ -20,15 +20,15 @@ var navigationservice = angular.module('navigationservice', [])
   }, {
     name: "Media",
     classis: "active",
-    link: "#",
+    anchor: "media",
   }, {
     name: "Clients",
     classis: "active",
-    link: "#",
+    anchor: "clients",
   }, {
     name: "Contact Us",
     classis: "active",
-    link: "#",
+    anchor: "contact",
   }];
 
   return {
@@ -46,5 +46,5 @@ var navigationservice = angular.module('navigationservice', [])
       return menuname;
     },
 
-  }
+  };
 });
