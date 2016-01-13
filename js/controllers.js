@@ -20,51 +20,51 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       ten: "views/content/section/home/section10.html",
     };
     $scope.clients = [{
-      image : "img/awsomeness/section4/logo1.png"
+      image: "img/awsomeness/section4/logo1.png"
     }, {
-      image : "img/awsomeness/section4/logo2.png"
+      image: "img/awsomeness/section4/logo2.png"
     }, {
-      image : "img/awsomeness/section4/logo3.png"
+      image: "img/awsomeness/section4/logo3.png"
     }, {
-      image : "img/awsomeness/section4/logo4.png"
+      image: "img/awsomeness/section4/logo4.png"
     }, {
-      image : "img/awsomeness/section4/logo5.png"
+      image: "img/awsomeness/section4/logo5.png"
     }, {
-      image : "img/awsomeness/section4/logo6.png"
+      image: "img/awsomeness/section4/logo6.png"
     }, {
-      image : "img/awsomeness/section4/logo7.png"
+      image: "img/awsomeness/section4/logo7.png"
     }, {
-      image : "img/awsomeness/section4/logo8.png"
+      image: "img/awsomeness/section4/logo8.png"
     }, {
-      image : "img/awsomeness/section4/logo9.png"
+      image: "img/awsomeness/section4/logo9.png"
     }, {
-      image : "img/awsomeness/section4/logo10.png"
+      image: "img/awsomeness/section4/logo10.png"
     }, {
-      image : "img/awsomeness/section4/logo11.png"
+      image: "img/awsomeness/section4/logo11.png"
     }, {
-      image  : "img/awsomeness/section4/logo12.png"
+      image: "img/awsomeness/section4/logo12.png"
     }, {
-      image : "img/awsomeness/section4/logo3.png"
+      image: "img/awsomeness/section4/logo3.png"
     }, {
-      image : "img/awsomeness/section4/logo4.png"
+      image: "img/awsomeness/section4/logo4.png"
     }, {
-      image : "img/awsomeness/section4/logo5.png"
+      image: "img/awsomeness/section4/logo5.png"
     }, {
-      image : "img/awsomeness/section4/logo6.png"
+      image: "img/awsomeness/section4/logo6.png"
     }, {
-      image : "img/awsomeness/section4/logo7.png"
+      image: "img/awsomeness/section4/logo7.png"
     }, {
-      image : "img/awsomeness/section4/logo8.png"
+      image: "img/awsomeness/section4/logo8.png"
     }, {
-      image : "img/awsomeness/section4/logo9.png"
+      image: "img/awsomeness/section4/logo9.png"
     }, {
-      image : "img/awsomeness/section4/logo10.png"
+      image: "img/awsomeness/section4/logo10.png"
     }, {
-      image : "img/awsomeness/section4/logo11.png"
+      image: "img/awsomeness/section4/logo11.png"
     }]
     $scope.clients = _.chunk($scope.clients, 12);
-    for(var i=0;i<$scope.clients.length;i++){
-      $scope.clients[i]=_.chunk($scope.clients[i],4);
+    for (var i = 0; i < $scope.clients.length; i++) {
+      $scope.clients[i] = _.chunk($scope.clients[i], 4);
     }
     $scope.clientSpeaks = [{
       desc: "The Never Grow Up ® team is a highly motivated &amp; a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for more than five years and they are our key partners. What I like about them is their frank opinions &amp; willingness to speak their mind &amp; not hide behind words. They are a big asset to anyone considering working with them. Just go ahead",
@@ -120,6 +120,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
+    $scope.section = {
+      one: "views/content/section/home/section1.html"
+    };
   })
   .controller('ConsultingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file

@@ -74,7 +74,7 @@ img.doneLoading {
   }
 }
 .navbar-fixed-top {
-  top: 30px;
+  top: 25px;
 }
 nav li:hover .dropdown-menu {
   display: block;
@@ -128,7 +128,7 @@ a:focus {
   color: #fff;
 }
 .client-slider {
-  min-height: 610px;
+  min-height: 500px;
   .slider-client {
     .flex-direction-nav {
       .flex-next {
@@ -195,9 +195,9 @@ a:focus {
 }
 p {
   text-align: justify;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 130%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
 }
 .sticky-bottom {
   top: calc(101% - 0px);
@@ -577,7 +577,7 @@ p {
     opacity: 0;
   }
   .bx-pd {
-    padding: 20px 70px;
+    padding: 20px 80px;
   }
   .cont {
     height: 320px;
@@ -612,16 +612,16 @@ p {
   }
 }
 .tabs {
-  padding-top: 150px;
+  padding-top: 130px;
 }
 .tab-menu {
   ul {
-    padding-left: 75px;
+    padding-left: 50px;
   }
   li {
     list-style: none;
     padding: 8px 16px;
-    margin: 5px 0;
+    margin: 1px 0;
     cursor: pointer;
     @include transition(all ease 300ms);
     &.active,
@@ -698,7 +698,7 @@ form {
 }
 .window-right {
   top: 30%;
-  right: -250px;
+  right: -350px;
 }
 .girl {
   left: 12%;
@@ -762,7 +762,7 @@ form {
 // }
 .window-left {
   top: 183px;
-  left: -200px;
+  left: -250px;
   img {
     width: 80%;
   }
@@ -800,10 +800,10 @@ form {
 }
 .contact-detail {
   width: 90%;
+  padding: 0 20px;
   letter-spacing: 2px;
   p {
     margin: 0;
-    font-size: 14px;
     letter-spacing: 0.78px;
   }
   span,
@@ -900,13 +900,10 @@ form {
     left: 32%;
     @include transform(rotate(-100deg));
   }
-  .window-right {
-    right: -260px;
-  }
   .ngu {
-    width: 70%;
-    top: 130px;
-    left: 20%;
+    width: 65%;
+    top: 110px;
+    left: 10%;
   }
   .rocket {
     top: 50%;
@@ -915,10 +912,9 @@ form {
     left: 75px;
   }
   .content {
-    top: 130px;
-    width: 70%;
+    width: 90%;
+    padding-top: 130px;
     p {
-      font-size: 14px;
       margin-bottom: 20px;
     }
   }
@@ -938,7 +934,7 @@ form {
 .services {
   background: $bg-color-skin;
   .services-info {
-    padding: 0 14%;
+    padding: 0 5%;
     top: 36px;
     p {
       font-size: 14px;
@@ -949,9 +945,20 @@ form {
     margin-bottom: 20px;
     .col-md-4 {
       margin-bottom: 20px;
+      cursor: pointer;
+      @include transition(all ease 300ms);
+      figure {
+        @include transition(all ease 300ms);
+      }
+      &:hover {
+        figure {
+          @include transform(scale(1.1));
+        }
+      }
     }
     figcaption {
       margin-top: 10px;
+      font-weight: 600;
     }
   }
   .bubble {
@@ -974,6 +981,10 @@ form {
   .pb30 {
     padding-bottom: 30px;
   }
+}
+.hq-img.ab {
+  left: 0;
+  width: 100%;
 }
 .hq-bg {
   background: $bg-color-green;
@@ -1008,7 +1019,6 @@ form {
     }
   }
   p {
-    font-size: 14px;
     padding: 0 20px;
     color: #fff;
   }
@@ -1022,13 +1032,16 @@ form {
       background: darken($brand-yellow, 10%);
       border-color: darken($brand-yellow, 10%);
     }
+    .btn:active {
+      @include box-shadow(inset(none));
+    }
   }
 }
 .client {
   .logos {
     .image-holder {
       position: relative;
-      height: 140px;
+      height: 80px;
       margin: 10px 0;
       img {
         max-width: 100%;
@@ -1070,7 +1083,6 @@ form {
       padding-bottom: 20px;
       p {
         margin-bottom: 0;
-        font-size: 20px;
       }
     }
     .media-imgholder {
@@ -1087,9 +1099,6 @@ form {
   }
   .window-left {
     top: 36%;
-  }
-  .clickhere {
-    padding-left: 20px;
   }
   .news {
     position: absolute;
@@ -1117,6 +1126,9 @@ form {
   }
 }
 .hq-cont-yellow {
+  height: 330px;
+  overflow-y: scroll;
+  margin-bottom: 8px;
   .head-yellow {
     font-size: 36px;
     font-weight: 300;
@@ -1128,7 +1140,7 @@ form {
   }
   .head-tabs {
     border-bottom: 3px solid #FFCA20;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 .tabs {
@@ -1139,88 +1151,73 @@ form {
       width: 280px;
       right: 5px;
     }
+    &.bt-workshop img {
+      width: 200px;
+    }
   }
   .bt-engage {
-    bottom: 45px;
+    bottom: 110px;
   }
   .bt-happness {
-    bottom: 82px;
+    bottom: 120px;
   }
   .bt-workshop {
-    bottom: 200px;
+    bottom: 150px;
   }
   .bt-corporate {
-    bottom: 25px;
+    bottom: 120px;
     img {
       width: 15%;
       right: 142px;
     }
   }
   .bt-internal {
-    bottom: 60px;
+    bottom: 120px;
   }
   .bt-digital {
-    bottom: 55px;
+    bottom: 140px;
     img {
       width: 25%;
-      right: 85px;
+      right: 70px;
     }
   }
   .bt-wrk-space {
-    bottom: 170px;
+    bottom: 250px;
     img {
-      right: 160px;
+      right: 150px;
       width: 25%;
     }
   }
   .bt-employer {
-    bottom: 25px;
+    bottom: 100px;
     img {
-      right: 45px;
+      right: 25px;
     }
   }
   .bt-quirkey {
-    bottom: -45px;
+    bottom: 140px;
     img {
       width: 19%;
-      right: 135px;
+      right: 100px;
     }
   }
   .window-right {
     img {
       width: 75%;
-      right: -40px;
+      right: -70px;
       position: absolute;
-      top: 125px;
-    }
-  }
-  .digital {
-    img {
-      top: 90px;
-    }
-  }
-  .interal-img {
-    img {
-      top: 100px;
-    }
-  }
-  .corporate {
-    img {
-      top: 115px;
+      top: 50px;
     }
   }
   p {
     font-size: 14px;
+    padding-right: 15px;
   }
   .floor {
     margin-left: -15px;
     margin-right: -15px;
   }
 }
-
-// .row-tabs {
-//   padding-bottom: 30px;
-// }
 .about {
   .abt-cont {
     h2 {

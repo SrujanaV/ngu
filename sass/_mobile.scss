@@ -65,7 +65,7 @@
     }
   }
   .tab-menu ul {
-    padding-left: 25px;
+    padding-left: 0px;
   }
   .tabs .people img {
     width: 240px;
@@ -197,6 +197,27 @@
   }
   .tabs .people img {
     display: none;
+  }
+  .about {
+    .cont-main {
+      padding-right: 25px;
+      .salute-left {
+        left: -40px;
+      }
+      .clock-right {
+        right: -5px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+    }
+    .abt-cont {
+      .guy1-abt {
+        bottom: -40px;
+        left: -100px;
+        width: 150px;
+      }
+    }
   }
 }
 @media (max-width: $screen-xs-max) {
@@ -457,6 +478,32 @@
   .news,
   .client .client-happy {
     display: none;
+  }
+  .abt-cont {
+    padding: 50px 0 50px 50px;
+  }
+  .about {
+    .cont-main {
+      .salute-left {
+        width: 40px;
+        left: -45px;
+      }
+      img.width-right {
+        width: 38px;
+            right: 10px;
+
+      }
+      img.thumbsup-right {
+        width: 65px;
+      }
+      .clock-right {
+        width: 50px;
+        right: 10px;
+      }
+    }
+    .min-hght {
+      display: none;
+    }
   }
 }
 @media (max-width:480px) {

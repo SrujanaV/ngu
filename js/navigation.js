@@ -10,7 +10,7 @@ var navigationservice = angular.module('navigationservice', [])
     classis: "active",
     link: "#",
   }, {
-    name: "HQ",
+    name: "Happyness Quotient",
     classis: "active",
     link: "#",
   }, {
