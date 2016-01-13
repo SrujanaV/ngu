@@ -186,7 +186,6 @@ a:focus {
   width: 100%;
   left: 0;
   z-index: 999;
-  @include transition(all 700ms ease);
   &.affix {
     position: fixed;
     top: 25px;
