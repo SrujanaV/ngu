@@ -14,20 +14,16 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
   $stateProvider
 
     .state('home', {
-      url: "/home",
+      url: "/",
       templateUrl: "views/template.html",
       controller: 'HomeCtrl'
     })
-    .state('homeid', {
-      url: "/home/:id",
-      templateUrl: "views/template.html",
-      controller: 'HomeCtrl'
-    })
-    .state('about', {
-      url: "/about",
-      templateUrl: "views/template.html",
-      controller: 'AboutCtrl'
-    })
+    // 
+    // .state('about', {
+    //   url: "/about",
+    //   templateUrl: "views/template.html",
+    //   controller: 'AboutCtrl'
+    // })
     .state('awesomeness', {
       url: "/awesomeness",
       templateUrl: "views/template.html",
@@ -78,7 +74,12 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
       templateUrl: "views/template-tabs.html",
       controller: 'QuirkyCtrl'
     })
-  $urlRouterProvider.otherwise("/home");
+    .state('homeid', {
+      url: "/:id",
+      templateUrl: "views/template.html",
+      controller: 'HomeCtrl'
+    })
+  $urlRouterProvider.otherwise("/");
 });
 
 

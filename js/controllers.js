@@ -168,7 +168,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     $scope.changeURL = function(id) {
       console.log(id);
-      $location.path("home/" + id);
+      $location.path("" + id);
     };
 
   })
