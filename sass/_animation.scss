@@ -72,15 +72,17 @@
   }
 }
 .puppet {
-  .guy2,
+  .guy2 {
+    @include animation(v-shape-animation 5s ease infinite);
+  }
   .bubble3 {
-    @include animation(bounce 5s ease infinite);
+    @include animation(v-shape-animation 5s ease infinite);
     z-index: 1;
   }
-  .superman,
-  .bubble1 {
-    @include animation(fly-superman-animation 20s ease infinite);
-  }
+  // .superman,
+  // .bubble1 {
+  //   @include animation(fly-superman-animation 20s ease infinite);
+  // }
 }
 @include keyframes (fly-superman-animation) {
   0% {
@@ -103,6 +105,20 @@
   }
   60% {
     @include transform(translateY(-10px));
+  }
+}
+@include keyframes(v-shape-animation) {
+  0%,
+  100% {
+    @include transform(translateY(0));
+  }
+  25%,
+  75% {
+    @include transform(translate(0px,60px)rotate(10deg));
+  }
+  50%,
+   {
+    @include transform(translate(40px,0px) rotate(20deg));
   }
 }
 .work {
