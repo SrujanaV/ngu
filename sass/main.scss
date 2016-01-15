@@ -19,6 +19,7 @@ $bg-color: #89d5f6!default;
 $bg-color-skin-main: #e9cfa5!default;
 $bg-color-green: #00a07f!default;
 $bg-color-abt: #ffaf79!default;
+$bg-color-payment: #76e5ba!default;
 $font-color: #3b2417!default;
 $border-color: #959595!default;
 $box-red-color: #8a2f1d!default;
@@ -85,6 +86,21 @@ nav li:hover .dropdown-menu {
 .bg-brown {
   background: $brand-brown;
 }
+.bg-color-payment{
+  background: $bg-color-payment;
+}
+.bg-color-abt {
+  background: $bg-color-abt;
+}
+.bg-blue {
+  background-color: $bg-color;
+}
+.bg-pinkcont {
+  background-color: $brand-pink;
+}
+.bg-skin-main {
+  background: $bg-color-skin-main;
+}
 .bold {
   font-weight: 600;
 }
@@ -128,7 +144,7 @@ a:focus {
   color: #fff;
 }
 .client-slider {
-  min-height: 500px;
+  min-height: 560px;
   .slider-client {
     .flex-direction-nav {
       .flex-next {
@@ -152,6 +168,25 @@ a:focus {
 .rl {
   position: relative;
 }
+.image-holder img {
+  width: auto!important;
+  margin: 0 auto;
+}
+
+// .image-holder {
+//   position: relative;
+//   height: 80px;
+//   margin: 10px 0;
+//   img {
+//     max-width: 100%;
+//     max-height: 100%;
+//     width: auto!important;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     @include transform(translate(-50%,-50%));
+//   }
+// }
 .box-yellow {
   background: $box-yellow-color;
   padding: 10px;
@@ -212,9 +247,6 @@ p {
   height: 100%;
   vertical-align: middle;
 }
-.bg-color-abt {
-  background: $bg-color-abt;
-}
 .awsomeness {
   min-height: 650px;
   .sky {
@@ -255,6 +287,11 @@ p {
   .puppet {
     min-height: 450px;
     width: 100%;
+    .logo-home {
+      width: 8%;
+      left: 5%;
+      bottom: 220px;
+    }
     .bubble1 {
 
       // width: 175px;
@@ -301,6 +338,7 @@ p {
     .guy2 {
       right: 44%;
       width: 12%;
+      z-index: 1;
 
       // width: 160px;
       top: 32%;
@@ -419,9 +457,6 @@ p {
   }
 }
 .talking {
-  .logo {
-    height: 150px;
-  }
   .content-opt {
     .logo-opt {
       img {
@@ -445,11 +480,9 @@ p {
   .logo-opt {
     height: 140px;
     img {
-      width: 33%;
+      width: 30%;
+      margin: 0 20px;
     }
-  }
-  .logos {
-    height: 120px;
   }
   .content.mt {
     margin-top: 56%;
@@ -669,9 +702,6 @@ form {
 .about-us {
   padding: 90px 0;
 }
-.bg-blue {
-  background-color: $bg-color;
-}
 .about-info {
   min-height: 650px;
 }
@@ -715,9 +745,6 @@ form {
 }
 
 // contact
-.bg-pinkcont {
-  background-color: $brand-pink;
-}
 .contactus {
   padding: 50px 0;
   .heading {
@@ -990,6 +1017,8 @@ form {
   .social-links {
     padding-right: 15px;
     padding-top: 20px;
+    position: relative;
+    z-index: 4;
     ul {
       list-style: none;
       float: right;
@@ -1037,22 +1066,6 @@ form {
   }
 }
 .client {
-  .logos {
-    .image-holder {
-      position: relative;
-      height: 80px;
-      margin: 10px 0;
-      img {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        @include transform(translate(-50%,-50%));
-      }
-    }
-  }
   .client-happy {
     bottom: 90px;
     left: 0;
@@ -1065,9 +1078,6 @@ form {
 }
 .pt100 {
   padding-top: 100px;
-}
-.bg-skin-main {
-  background: $bg-color-skin-main;
 }
 .media {
   .media-partners {
@@ -1129,7 +1139,7 @@ form {
   overflow-y: scroll;
   margin-bottom: 8px;
   .head-yellow {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 300;
     margin-top: 0;
     img {

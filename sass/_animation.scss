@@ -79,17 +79,60 @@
     @include animation(v-shape-animation 5s ease infinite);
     z-index: 1;
   }
-  // .superman,
-  // .bubble1 {
-  //   @include animation(fly-superman-animation 20s ease infinite);
+  // .superman {
+  //   @include animation(fly-superman-animation 10s linear infinite);
   // }
 }
+// @keyframes fly-superman-animation {
+//   0% {
+//     left: 0;
+//     top: 0;
+//   }
+//   50% {
+//     left: 244px;
+//     top: 100px;
+//   }
+//   100% {
+//     left: 488px;
+//     top: 0;
+//   }
+// }
 @include keyframes (fly-superman-animation) {
   0% {
-    @include transform(translate(-400px, 0));
+    @include transform(translate(0));
+  }
+  20% {
+    @include transform(translate(220%,-130%) rotate(20deg));
+  }
+  22% {
+    @include transform(translate(250%,-130%) rotate(40deg));
+  }
+  40% {
+    @include transform(translate(500%,-50%) rotate(60deg));
+  }
+  45% {
+    @include transform(translate(450%,-90%) rotate(0deg));
+  }
+  45% {
+    @include transform(translate(470%,-100%) rotate(-20deg));
+  }
+  50% {
+    @include transform(translate(520%,-120%) rotate(-80deg));
+  }
+  55% {
+    @include transform(translate(530%,-140%) rotate(-150deg));
+  }
+  65% {
+    @include transform(translate(220%,-80%) rotate(-150deg));
+  }
+  80% {
+    @include transform(translate(120%,-30%)rotate(-100deg));
+  }
+  90% {
+    @include transform(translate(80%,-10%)rotate(-50deg));
   }
   100% {
-    @include transform(translate(1500px, -300%));
+    @include transform(translate(0) rotate(0deg));
   }
 }
 @include keyframes(bounce) {
@@ -110,7 +153,7 @@
 @include keyframes(v-shape-animation) {
   0%,
   100% {
-    @include transform(translateY(0));
+    @include transform(translate(0));
   }
   25%,
   75% {

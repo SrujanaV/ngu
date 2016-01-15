@@ -18,12 +18,16 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
       templateUrl: "views/template.html",
       controller: 'HomeCtrl'
     })
-    // 
-    // .state('about', {
-    //   url: "/about",
-    //   templateUrl: "views/template.html",
-    //   controller: 'AboutCtrl'
-    // })
+    .state('about', {
+      url: "/about-do",
+      templateUrl: "views/template.html",
+      controller: 'AboutCtrl'
+    })
+    .state('payment', {
+      url: "/payment",
+      templateUrl: "views/template.html",
+      controller: 'PaymentCtrl'
+    })
     .state('awesomeness', {
       url: "/awesomeness",
       templateUrl: "views/template.html",
@@ -109,7 +113,7 @@ firstapp.directive('autoHeight', function($compile, $parse) {
     replace: false,
     link: function($scope, element, attrs) {
       var $element = $(element);
-      var windowHeight = $( window ).height();
+      var windowHeight = $(window).height();
       $element.css("min-height", windowHeight);
       setTimeout(function() {
         $element.css("min-height", windowHeight);
@@ -119,17 +123,17 @@ firstapp.directive('autoHeight', function($compile, $parse) {
 });
 
 firstapp.directive("scroll", function($window) {
-    return function(scope, element, attrs) {
-        angular.element($window).bind("scroll", function() {
-              var windowHeight = $( window ).height();
-            if (this.pageYOffset >= windowHeight) {
-              console.log(windowHeight);
-                element.addClass('affix');
-            } else {
-                element.removeClass('affix');
-            }
-        });
-    };
+  return function(scope, element, attrs) {
+    angular.element($window).bind("scroll", function() {
+      var windowHeight = $(window).height();
+      if (this.pageYOffset >= windowHeight) {
+        console.log(windowHeight);
+        element.addClass('affix');
+      } else {
+        element.removeClass('affix');
+      }
+    });
+  };
 });
 //
 // firstapp.directive('onlyDigits', function() {

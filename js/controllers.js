@@ -54,47 +54,29 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       ten: "views/content/section/home/section10.html",
     };
     $scope.clients = [{
-      image: "img/awsomeness/section4/logo1.png"
+      image: "img/client/client1.png"
     }, {
-      image: "img/awsomeness/section4/logo2.png"
+      image: "img/client/client2.png"
     }, {
-      image: "img/awsomeness/section4/logo3.png"
+      image: "img/client/client3.png"
     }, {
-      image: "img/awsomeness/section4/logo4.png"
+      image: "img/client/client4.png"
     }, {
-      image: "img/awsomeness/section4/logo5.png"
+      image: "img/client/client5.png"
     }, {
-      image: "img/awsomeness/section4/logo6.png"
+      image: "img/client/client6.png"
     }, {
-      image: "img/awsomeness/section4/logo7.png"
+      image: "img/client/client7.png"
     }, {
-      image: "img/awsomeness/section4/logo8.png"
+      image: "img/client/client8.png"
     }, {
-      image: "img/awsomeness/section4/logo9.png"
+      image: "img/client/client9.png"
     }, {
-      image: "img/awsomeness/section4/logo10.png"
+      image: "img/client/client10.png"
     }, {
-      image: "img/awsomeness/section4/logo11.png"
+      image: "img/client/client11.png"
     }, {
-      image: "img/awsomeness/section4/logo12.png"
-    }, {
-      image: "img/awsomeness/section4/logo3.png"
-    }, {
-      image: "img/awsomeness/section4/logo4.png"
-    }, {
-      image: "img/awsomeness/section4/logo5.png"
-    }, {
-      image: "img/awsomeness/section4/logo6.png"
-    }, {
-      image: "img/awsomeness/section4/logo7.png"
-    }, {
-      image: "img/awsomeness/section4/logo8.png"
-    }, {
-      image: "img/awsomeness/section4/logo9.png"
-    }, {
-      image: "img/awsomeness/section4/logo10.png"
-    }, {
-      image: "img/awsomeness/section4/logo11.png"
+      image: "img/client/client12.png"
     }];
     $scope.clients = _.chunk($scope.clients, 12);
     for (var i = 0; i < $scope.clients.length; i++) {
@@ -151,6 +133,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("about");
     $scope.menutitle = NavigationService.makeactive("About");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+    TemplateService.header = "views/header-other.html";
+    $scope.section = {
+      one: "views/content/section/home/section1.html"
+    };
+  })
+  .controller('PaymentCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    //Used to name the .html file
+    $scope.template = TemplateService.changecontent("payment");
+    $scope.menutitle = NavigationService.makeactive("Payment");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
