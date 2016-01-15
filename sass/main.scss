@@ -86,7 +86,7 @@ nav li:hover .dropdown-menu {
 .bg-brown {
   background: $brand-brown;
 }
-.bg-color-payment{
+.bg-color-payment {
   background: $bg-color-payment;
 }
 .bg-color-abt {
@@ -142,6 +142,12 @@ a:focus {
   padding: 30px;
   margin: 20px 0;
   color: #fff;
+}
+.mar-btm20 {
+  margin-bottom: 20px;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 .client-slider {
   min-height: 560px;
@@ -214,6 +220,7 @@ a:focus {
 .ps-50 {
   padding: 20px 50px;
 }
+.pay-abt-header .sticky-bottom-abtpay,
 .sticky-bottom {
   position: absolute;
 
@@ -233,6 +240,7 @@ p {
   font-weight: 400;
   line-height: 150%;
 }
+.pay-abt-header .sticky-bottom-abtpay,
 .sticky-bottom {
   top: calc(101% - 7px);
 }
@@ -299,12 +307,17 @@ p {
       left: 5%;
       top: 35%;
     }
-    .superman {
-      left: 10%;
-      width: 13%;
 
-      // width: 175px;
-      top: 34%;
+    //     .super-animation {
+    //     left: 10%;
+    //     width: 100%;
+    //     top: 34%;
+    //     // transform: translate(350px,-150px);
+    // }
+    .superman {
+      left: 5%;
+      width: 13%;
+      top: 24%;
     }
     .bubble2 {
       left: 29%;
@@ -321,9 +334,8 @@ p {
       z-index: 1;
     }
     .lady1 {
-      left: 29%;
-      width: 12%;
-
+      left: 26%;
+      width:15%;
       // width: 190px;
       bottom: 140px;
       z-index: 2;
@@ -558,6 +570,15 @@ p {
     position: relative;
     z-index: 2;
   }
+  .box-black {
+    a {
+      color: #fff;
+      @include transition(all ease 300ms);
+      &:hover {
+        color: darken(#fff, 20%);
+      }
+    }
+  }
   .head-main-black {
     margin: 45px 0 10px;
     font-weight: 300;
@@ -711,11 +732,6 @@ form {
     width: 70%;
   }
 }
-.girl {
-  img {
-    width: 60%;
-  }
-}
 .boy {
   img {
     width: 70%;
@@ -730,9 +746,12 @@ form {
   right: -350px;
 }
 .girl {
-  left: 12%;
+  left: 10%;
   bottom: 13%;
   z-index: 1;
+  img {
+    width: 78%;
+  }
 }
 .boy {
   left: 25%;
@@ -814,7 +833,7 @@ form {
 }
 .contact-boy {
   bottom: 160px;
-  left: 43%;
+  left: 30%;
 }
 .door {
   right: -20px;
@@ -1406,6 +1425,28 @@ footer {
         }
       }
     }
+  }
+}
+.payment {
+  padding: 0 20px;
+  .min-hght {
+    min-height: 550px;
+  }
+  h2 {
+    font-size: 45px;
+    font-weight: 300;
+  }
+  .sub-head {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .address p {
+    margin-bottom: 0;
+  }
+  .locker {
+    bottom: -50px;
+    width: 100%;
+    right: 20%;
   }
 }
 @import "animation.scss";

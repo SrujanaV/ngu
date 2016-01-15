@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "homepage": "https://www.wohlig.com",
   "authors": [
-    "tushar@wohlig.com"
+    "sohan@wohlig.com"
   ],
-  "description": "Simi Events",
+  "description": "NGU",
   "license": "MIT",
   "ignore": [
     "**/.*",

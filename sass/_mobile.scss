@@ -542,6 +542,14 @@
   .thought .logo-opt img {
     width: auto;
   }
+  .box-red {
+    .row-flex {
+      display: block;
+      .img-busniess img {
+        width: 100%;
+      }
+    }
+  }
 }
 @media (max-width:480px) {
   .thought {
@@ -609,5 +617,21 @@
   .image-holder img {
     width: 100px!important;
     margin: 0 auto;
+  }
+  .awsomeness {
+    .puppet {
+      min-height: 200px;
+      .bubble2,
+      .chair,
+      .lady2,
+      .bubble4,
+      .bubble5,
+      .guy1 {
+        bottom: 250px;
+      }
+      .lady1 {
+        bottom: 240px;
+      }
+    }
   }
 }
