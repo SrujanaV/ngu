@@ -79,11 +79,26 @@
     @include animation(v-shape-animation 5s ease infinite);
     z-index: 1;
   }
-  // .superman {
-  //   @include animation(fly-superman-animation 10s linear infinite);
+  // .super-animation {
+  //   @include animation(fly-superman-animation 5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64));
   // }
+  .superman {
+    @include animation( yAxis 5s infinite cubic-bezier(0.02, 0.01, 0.21, 1));
+  }
 }
+// @keyframes yAxis {
+//   50% {
+//     @include animation-timing-function(cubic-bezier(0.02, 0.01, 0.21, 1));
+//     @include transform(translateY(400px));
+//   }
+// }
 @include keyframes (fly-superman-animation) {
+  // 50% {
+  //   -webkit-animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+  //   @include animation-timing-function(cubic-bezier(0.3, 0.27, 0.07, 1.64));
+  //   @include transform(translateX(400px));
+  // }
+
   0% {
     @include transform(translate(0));
   }
@@ -100,42 +115,41 @@
     @include transform(translate(250%,0%) rotate(60deg));
   }
   25% {
-    @include transform(translate(450%,-50%) rotate(60deg));
+    @include transform(translate(300%,-50%) rotate(60deg));
   }
   30% {
-    @include transform(translate(500%,-90%) rotate(40deg));
+    @include transform(translate(400%,-90%) rotate(40deg));
   }
   35% {
-    @include transform(translate(530%,-120%) rotate(0deg));
+    @include transform(translate(530%,-120%) rotate(20deg));
   }
   40% {
-    @include transform(translate(560%,-130%) rotate(-40deg));
+    @include transform(translate(560%,-130%) rotate(-0deg));
   }
   45% {
-    @include transform(translate(590%,-140%) rotate(-60deg));
+    @include transform(translate(590%,-140%) rotate(-20deg));
   }
   50% {
-    @include transform(translate(620%,-150%) rotate(-80deg));
+    @include transform(translate(620%,-150%) rotate(-40deg));
   }
   55% {
-    @include transform(translate(650%,-160%) rotate(-100deg));
+    @include transform(translate(650%,-160%) rotate(-60deg));
   }
   60% {
-    @include transform(translate(680%,-180%) rotate(-120deg));
+    @include transform(translate(680%,-180%) rotate(-80deg));
   }
   65% {
-    @include transform(translate(710%,-200%)rotate(-160deg));
+    @include transform(translate(710%,-200%)rotate(-110deg));
   }
-  // 70% {
-  //   @include transform(translate(740%,-140%)rotate(-160deg));
-  // }
-
-  // 90% {
-  //   @include transform(translate(80%,-10%)rotate(-50deg));
-  // }
-  // 100% {
-  //   @include transform(translate(0) rotate(0deg));
-  // }
+  70% {
+    @include transform(translate(740%,-140%)rotate(-150deg));
+  }
+  90% {
+    @include transform(translate(80%,-10%)rotate(-50deg));
+  }
+  100% {
+    @include transform(translate(0) rotate(0deg));
+  }
 }
 @include keyframes(bounce) {
   0%,

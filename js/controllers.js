@@ -150,6 +150,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.section = {
       one: "views/content/section/home/section1.html"
     };
+    $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
   })
   .controller('ConsultingCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file

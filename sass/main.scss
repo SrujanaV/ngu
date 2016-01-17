@@ -178,21 +178,6 @@ a:focus {
   width: auto!important;
   margin: 0 auto;
 }
-
-// .image-holder {
-//   position: relative;
-//   height: 80px;
-//   margin: 10px 0;
-//   img {
-//     max-width: 100%;
-//     max-height: 100%;
-//     width: auto!important;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     @include transform(translate(-50%,-50%));
-//   }
-// }
 .box-yellow {
   background: $box-yellow-color;
   padding: 10px;
@@ -250,11 +235,12 @@ p {
   // min-height: 667px;
   overflow-x: hidden;
 }
-.helper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
+
+// .helper {
+//   display: inline-block;
+//   height: 100%;
+//   vertical-align: middle;
+// }
 .awsomeness {
   min-height: 650px;
   .sky {
@@ -308,11 +294,10 @@ p {
       top: 35%;
     }
 
-    //     .super-animation {
-    //     left: 10%;
-    //     width: 100%;
-    //     top: 34%;
-    //     // transform: translate(350px,-150px);
+    // .super-animation {
+    //   left: 10%;
+    //   width: 100%;
+    //   top: 34%;
     // }
     .superman {
       left: 5%;
@@ -335,7 +320,8 @@ p {
     }
     .lady1 {
       left: 26%;
-      width:15%;
+      width: 15%;
+
       // width: 190px;
       bottom: 140px;
       z-index: 2;
@@ -703,9 +689,11 @@ form {
     border-color: $brand-brown;
     background-color: $brand-brown;
     color: #fff;
-    &:focus {
+    &:focus,
+    &:hover {
       box-shadow: none;
       outline: none;
+      color: #fff;
     }
   }
 }
@@ -1079,8 +1067,12 @@ form {
       background: darken($brand-yellow, 10%);
       border-color: darken($brand-yellow, 10%);
     }
-    .btn:active {
+    &:active {
       @include box-shadow(inset(none));
+    }
+    &:active:focus {
+      outline: 0;
+      outline-offset: 0;
     }
   }
 }
