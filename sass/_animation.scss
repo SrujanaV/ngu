@@ -60,15 +60,15 @@
     @include transform(translateY(-5px));
   }
 }
-.rocket div {
-  @include animation(fly-rocket-animation 6s ease forwards);
-}
+// .rocket div {
+//   @include animation(fly-rocket-animation 6s ease forwards);
+// }
 @include keyframes (fly-rocket-animation) {
   0% {
     @include transform(translate(0, 0));
   }
   100% {
-    @include transform(translate(850%,650%));
+    @include transform(translate(1002%,800%));
   }
 }
 .puppet {

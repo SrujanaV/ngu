@@ -160,6 +160,7 @@ firstapp.directive('taxiAnimation', function ($compile, $parse) {
 		}
 	};
 });
+
 //
 // firstapp.directive('onlyDigits', function() {
 //   return {

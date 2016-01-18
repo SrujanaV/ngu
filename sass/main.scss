@@ -3,6 +3,7 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
 @import "../bower_components/flexslider/flexslider.css";
+@import "../bower_components/animate.css/animate.min.css";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 
 /* Bootstrap Variables Goes Here */
@@ -938,11 +939,12 @@ form {
     top: 110px;
     left: 10%;
   }
+
   .rocket {
     top: 50%;
     @include transform(rotate(-25deg));
     width: 8%;
-    left: 75px;
+    left: 50px;
   }
   .content {
     width: 90%;
@@ -1394,6 +1396,7 @@ footer {
   .nav-footer.mb0 {
     ul {
       margin-bottom: 0;
+      padding: 0;
     }
   }
   .nav-footer.pb20 {
