@@ -135,31 +135,6 @@ firstapp.directive("scroll", function($window) {
     });
   };
 });
-var taxiAni = true;
-firstapp.directive('taxiAnimation', function ($compile, $parse) {
-	return {
-		restrict: 'EA',
-		replace: false,
-		link: function ($scope, element, attrs) {
-      new ScrollMagic.Scene({triggerElement: ".taxiAnimation", duration: 200})
-                .addTo(controller)
-                //.addIndicators() // add indicators (requires plugin)
-                .on("enter", function (e) {
-                  console.log("Taxi Enter");
-                  setTimeout(function() {
-                    taxiAni = true;
-                  }, 6000);
-                  if(taxiAni == true)
-                  {
-                    $(".taxiAnimation").attr("src","img/gif/taxianimation.gif");
-                  }
-                  taxiAni = false;
-
-
-                })
-		}
-	};
-});
 
 //
 // firstapp.directive('onlyDigits', function() {

@@ -237,11 +237,6 @@ p {
   overflow-x: hidden;
 }
 
-// .helper {
-//   display: inline-block;
-//   height: 100%;
-//   vertical-align: middle;
-// }
 .awsomeness {
   min-height: 650px;
   .sky {
@@ -288,18 +283,10 @@ p {
       bottom: 220px;
     }
     .bubble1 {
-
-      // width: 175px;
       width: 12%;
       left: 5%;
       top: 35%;
     }
-
-    // .super-animation {
-    //   left: 10%;
-    //   width: 100%;
-    //   top: 34%;
-    // }
     .superman {
       left: 5%;
       width: 13%;
@@ -308,15 +295,24 @@ p {
     .bubble2 {
       left: 29%;
       width: 14%;
-
-      // width: 180px;
       bottom: 210px;
       @include transform (rotate(90deg));
     }
+	.supermans {
+    left: 12%;
+    width: 13%;
+    top: 30%;
+	}
     .chair {
       left: 14%;
       width: 20%;
       bottom: 180px;
+      z-index: 1;
+    }    
+	  .chair-home {
+      left: 5%;
+      width: 20%;
+      bottom: 130px;
       z-index: 1;
     }
     .lady1 {
@@ -644,6 +640,39 @@ p {
     position: absolute;
     top: 12%;
   }
+	.rectangle-box{ 
+	.rectangle {
+    width: 100%;
+    left: 0;
+    height: 45px;
+	}
+	}
+	.lights1,
+	.lights2 {
+    width: 6%;
+			}
+	.lights1{
+    left: 30%;
+	}
+	.lights2{
+	right: 30%;
+	}
+	.all-windows-home{
+	padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+	width: 100%;
+	.window3{
+		float: right;
+		}	
+		.window1{
+		float: left;
+		}
+	.window-home {
+   width: 16%;
+			}
+	}
   .m12 {
     margin: 0 5%;
   }
@@ -1383,6 +1412,7 @@ footer {
         a {
           color: #fff;
           padding: 0 8px;
+			display: block;
           &:hover {
             color: darken(#fff, 20%);
           }
