@@ -556,6 +556,24 @@
 	.client-slider {
     min-height: auto;
 }
+.home
+{
+.lights1,.lights2 {
+    width: 15%;
+}
+	.lights1 {
+    left: 10%;
+}
+	.lights2 {
+    right: 10%;
+}
+}
+	.section-ngu .slate {
+    width: 18%;
+    right: 8%;
+    z-index: 999;
+    top: 45px;
+}
 }
 @media (max-width:480px) {
   .thought {
@@ -600,9 +618,14 @@
       zoom: 0.7;
     }
   }
-  .subscribe .subscribe-me input {
-    width: 150px;
+  .subscribe{ .subscribe-me input {
+    width: 175px;
   }
+	form button.submit {
+	padding: 6px 8px;
+	}
+  }
+	
   .hq-cont-yellow .head-yellow {
     font-size: 16px;
     img {
