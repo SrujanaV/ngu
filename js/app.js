@@ -1,4 +1,5 @@
 // JavaScript Document
+var controller = new ScrollMagic.Controller();
 var firstapp = angular.module('firstapp', [
   'ui.router',
   'phonecatControllers',
@@ -136,24 +137,41 @@ firstapp.directive("scroll", function($window) {
   };
 });
 
-//
-// firstapp.directive('onlyDigits', function() {
-//   return {
-//     require: 'ngModel',
-//     link: function(scope, element, attr, ngModelCtrl) {
-//       function fromUser(text) {
-//         if (text) {
-//           var transformedInput = text.replace(/[^0-9]/g, '');
-//
-//           if (transformedInput !== text) {
-//             ngModelCtrl.$setViewValue(transformedInput);
-//             ngModelCtrl.$render();
-//           }
-//           return transformedInput;
-//         }
-//         return undefined;
-//       }
-//       ngModelCtrl.$parsers.push(fromUser);
-//     }
-//   };
-// });
+var nguAni = true;
+var nguAni2 = true;
+firstapp.directive('ngu', function ($compile, $parse) {
+	return {
+		restrict: 'EA',
+		replace: false,
+		link: function ($scope, element, attrs) {
+      new ScrollMagic.Scene({triggerElement: ".ngu-animation", duration: 200})
+                .addTo(controller)
+//                .addIndicators() // add indicators (requires plugin)
+                .on("enter", function (e) {
+                  console.log("NGU");
+//                  setTimeout(function() {
+//                    nguAni = true;
+//                  }, 5000);
+                  if(nguAni == true)
+                  {
+                    $(".ngu-animation").attr("src","img/home/ngu.gif");
+					  nguAni = false;
+                  }                 
+                })    
+	  new ScrollMagic.Scene({triggerElement: ".ngu-2", duration: 200})
+                .addTo(controller)
+//                .addIndicators() // add indicators (requires plugin)
+                .on("enter", function (e) {
+                  console.log("shark and snail Enter");
+                  setTimeout(function() {
+                    nguAni2 = true;
+                  }, 5000);              
+		  		if(nguAni2 == true)
+                  {
+                    $(".ngu-2 .shark-animation").attr("src","img/home/Shark-Snail.gif");
+					  nguAni2 = false;
+                  }                  
+                })     
+		}
+	};
+});

@@ -78,6 +78,9 @@ img.doneLoading {
 .navbar-fixed-top {
   top: 25px;
 }
+.full-image{
+width: 100%;
+}
 nav li:hover .dropdown-menu {
   display: block;
 }
@@ -368,7 +371,48 @@ p {
       // width: 215px;
       width: 15%;
     }
+	  .lights {
+    right: 14%;
+    width: 12%;
+    bottom: 142px;
+    z-index: 1;
+	}
+	  .home-guy1{
+	      right: 5%;
+    bottom: 130px;
+    width: 13%;
+		  z-index: 1;}
   }
+	img.door-home {
+    width: 12%;
+    bottom: 180px;
+    right: 28%;
+}
+.clock-full {
+    width: 6%;
+    bottom: 200px;
+    left: 46%;
+    top: 28%;
+    transform: translateY(-28%);
+}
+	.home-areoplane {
+    bottom: 110px;
+    right: 22%;
+    z-index: 1;
+    width: 5%;
+}
+	.bookshelf {
+    top: 38%;
+    transform: translateY(-38%);
+    width: 10%;
+    left: 31%;
+}
+	.home-lady2 {
+    bottom: 120px;
+    right: 26%;
+    width: 11%;
+    z-index: 2;
+}
   &.placing {
     .puppet {
       min-height: 400px;
@@ -735,6 +779,7 @@ form {
 }
 .floor {
   bottom: 0;
+	left: 0;
 }
 
 // about
@@ -994,6 +1039,18 @@ form {
     width: 110px;
     left: 40%;
   }
+	
+.animate-dol-snail {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+	padding: 10px 0;
+	img{
+	width: 100%;
+	}
+}
 }
 .services {
   background: $bg-color-skin;
@@ -1053,16 +1110,44 @@ form {
 .hq-bg {
   background: $bg-color-green;
   .social-links {
-    padding-right: 15px;
-    padding-top: 20px;
-    position: relative;
+    padding-right: 0px;
     z-index: 4;
+    right: 0;
+    top: 30%;
     ul {
       list-style: none;
       float: right;
       li {
-        width: 65%;
-        padding-bottom: 5px;
+        padding-bottom: 0px;
+		  position: relative;
+		  img{
+		  width: 40px;
+		  }
+		  i {
+			position: absolute;
+			top: 55%;
+			left: 50%;
+			transform: translate(-55%, -50%);
+			font-size: 24px;
+			  &.fa-facebook{
+		  color: #36619f
+		  }
+			  &.fa-twitter{
+			  color: #28a8e0;
+			  }	 
+			  
+			  &.fa-linkedin{
+			  color: #046c9a;
+			  }		
+			  
+			  &.fa-google-plus{
+			  color: #d95342;
+			  } 
+			  &.fa-instagram{
+			  color: #785043;
+			  }
+		}
+
       }
     }
   }
@@ -1108,6 +1193,11 @@ form {
   }
 }
 .client {
+	.bubble1 {
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+	}
   .client-happy {
     bottom: 90px;
     left: 0;
@@ -1177,7 +1267,7 @@ form {
   }
 }
 .hq-cont-yellow {
-  height: 330px;
+  height: 349px;
   overflow-y: scroll;
   margin-bottom: 8px;
   .head-yellow {
@@ -1328,6 +1418,20 @@ form {
   }
 }
 .client-speaks {
+		  .client {
+	text-align: center;
+    padding: 20px 0;
+    border: 10px solid #fff;
+    width: 200px;
+    margin-right: 25px;
+	img{
+	margin: 0 auto;
+	}
+	.client-img{
+	position: relative;
+		z-index: 2;
+	}
+	  }
   .client-desk {
     float: left;
   }
@@ -1394,7 +1498,7 @@ form {
       z-index: 1!important;
     }
     .flex-prev {
-      left: -435px !important;
+      left: -300px !important;
     }
     .flex-next {
       right: -50px!important;
@@ -1423,6 +1527,34 @@ footer {
       }
     }
   }
+	.social-links-footer{
+    		margin-top: 20px;
+		ul{
+			display: block;
+			text-align: center;
+			padding-left: 0;
+		}
+		li{
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			display: inline-block;
+			background: $brand-yellow;
+			margin-right: 5px;
+			@include transition(all ease 300ms);
+			&:hover{
+				background: darken($brand-yellow,10%);
+			}
+			a{
+				display: block;
+				i{
+				font-size: 20px;
+				color:$brand-brown;
+				line-height: 1.8;
+				}
+			}
+		}
+	}
   .nav-footer.mb0 {
     ul {
       margin-bottom: 0;

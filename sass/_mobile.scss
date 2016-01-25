@@ -6,9 +6,6 @@
     .client-desk {
       zoom: 0.8;
     }
-    .client {
-      padding-left: 35px;
-    }
     .home-head {
       padding-left: 35px;
     }
@@ -74,12 +71,6 @@
       height: 50px;
     }
   }
-  .social-links ul {
-    margin-right: -25px;
-    li a img {
-      width: 45px;
-    }
-  }
   .window-left {
     left: -300px!important;
   }
@@ -118,13 +109,16 @@
       margin-top: 10px;
       height: 45px;
     }
+	.coffee {
+    width: 100px;
+			}
+	  .window-left {
+		display: none;
+				}
   }
   .hq-bg {
     .hq-confess {
       display: none;
-    }
-    .social-links ul li {
-      width: 50%;
     }
   }
   .client-speaks {
@@ -132,10 +126,7 @@
       zoom: 0.7;
     }
     .client-desk {
-      zoom: 0.5;
-      .client {
-        padding-left: 35px;
-      }
+      zoom: 0.7;
       .home-head {
         padding-left: 35px;
       }
@@ -380,13 +371,15 @@
   .hq-bg {
     .social-links {
       ul {
-        position: absolute;
-        right: 5px;
         z-index: 5;
         margin: 0;
         li {
-          width: 25px;
-          padding-bottom: 5px;
+			i {
+    	  font-size: 18px;
+		   }
+			img {
+    	  width: 30px;
+			}
         }
       }
     }
@@ -559,6 +552,9 @@
   }
 	footer .nav-footer ul{
     padding-left: 0px;
+}
+	.client-slider {
+    min-height: auto;
 }
 }
 @media (max-width:480px) {

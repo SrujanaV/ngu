@@ -32,7 +32,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $location.replace();
     };
 
-    $scope.clientSpeakThumbArr = ["img/home/client-speak.png", "img/home/abt-girl.png", "img/home/abt-girl.png"];
+    $scope.clientSpeakThumbArr = ["img/home/client/1.png", "img/home/client/2.png", "img/home/client/3.png", "img/home/client/4.png", "img/home/client/5.png", "img/home/client/6.png", "img/home/client/7.png", "img/home/client/8.png", "img/home/client/9.png", "img/home/client/10.png", "img/home/client/11.png", "img/home/client/12.png", "img/home/client/13.png", "img/home/client/15.png"];
     $scope.activeThumb = 0;
     $scope.speakChange = function() {
       $scope.activeThumb = $(".client-speaks .slider-client ol.flex-control-nav.flex-control-paging li a").index($(".client-speaks .slider-client ol.flex-control-nav.flex-control-paging li a.flex-active"));

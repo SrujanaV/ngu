@@ -16,7 +16,7 @@ var navigationservice = angular.module('navigationservice', [])
   }, {
     name: "Blog",
     classis: "active",
-    link: "#",
+    link: "http://www.willnevergrowup.com/blog/",
   }, {
     name: "Media",
     classis: "active",
