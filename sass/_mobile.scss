@@ -109,12 +109,12 @@
       margin-top: 10px;
       height: 45px;
     }
-	.coffee {
-    width: 100px;
-			}
-	  .window-left {
-		display: none;
-				}
+    .coffee {
+      width: 100px;
+    }
+    .window-left {
+      display: none;
+    }
   }
   .hq-bg {
     .hq-confess {
@@ -374,12 +374,12 @@
         z-index: 5;
         margin: 0;
         li {
-			i {
-    	  font-size: 18px;
-		   }
-			img {
-    	  width: 30px;
-			}
+          i {
+            font-size: 18px;
+          }
+          img {
+            width: 30px;
+          }
         }
       }
     }
@@ -550,30 +550,35 @@
   .img-busniess {
     width: 200px;
   }
-	footer .nav-footer ul{
-    padding-left: 0px;
-}
-	.client-slider {
+  footer .nav-footer ul {
+    padding-left: 0;
+  }
+  .client-slider {
     min-height: auto;
-}
-.home
-{
-.lights1,.lights2 {
-    width: 15%;
-}
-	.lights1 {
-    left: 10%;
-}
-	.lights2 {
-    right: 10%;
-}
-}
-	.section-ngu .slate {
+  }
+  .home {
+    .lights1,
+    .lights2 {
+      width: 15%;
+    }
+    .lights1 {
+      left: 10%;
+    }
+    .lights2 {
+      right: 10%;
+    }
+  }
+  .section-ngu .slate {
     width: 18%;
     right: 8%;
     z-index: 999;
     top: 45px;
-}
+  }
+  nav li:hover a.menu-custom:before,
+  nav li.active a.menu-custom:before {
+    width: 0;
+    height: 0;
+  }
 }
 @media (max-width:480px) {
   .thought {
@@ -618,14 +623,14 @@
       zoom: 0.7;
     }
   }
-  .subscribe{ .subscribe-me input {
-    width: 175px;
+  .subscribe {
+    .subscribe-me input {
+      width: 175px;
+    }
+    form button.submit {
+      padding: 6px 8px;
+    }
   }
-	form button.submit {
-	padding: 6px 8px;
-	}
-  }
-	
   .hq-cont-yellow .head-yellow {
     font-size: 16px;
     img {
@@ -649,6 +654,7 @@
   }
   .awsomeness {
     min-height: auto;
+
     // .puppet {
     //   min-height: 200px;
     //   .bubble2,

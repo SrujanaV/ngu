@@ -60,6 +60,7 @@
     @include transform(translateY(-5px));
   }
 }
+
 // .rocket div {
 //   @include animation(fly-rocket-animation 6s ease forwards);
 // }
@@ -79,78 +80,50 @@
     @include animation(v-shape-animation 5s ease infinite);
     z-index: 1;
   }
-  // .super-animation {
-  //   @include animation(fly-superman-animation 5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64));
-  // }
-  .superman {
-    @include animation( yAxis 5s infinite cubic-bezier(0.02, 0.01, 0.21, 1));
+  .supermans {
+    @include animation( fly-superman-animation 15s linear infinite);
   }
 }
-// @keyframes yAxis {
-//   50% {
-//     @include animation-timing-function(cubic-bezier(0.02, 0.01, 0.21, 1));
-//     @include transform(translateY(400px));
-//   }
-// }
-@include keyframes (fly-superman-animation) {
-  // 50% {
-  //   -webkit-animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-  //   @include animation-timing-function(cubic-bezier(0.3, 0.27, 0.07, 1.64));
-  //   @include transform(translateX(400px));
-  // }
 
-  0% {
-    @include transform(translate(0));
-  }
-  5% {
-    @include transform(translate(110%,-90%) rotate(20deg));
-  }
-  10% {
-    @include transform(translate(130%,-50%) rotate(30deg));
-  }
-  15% {
-    @include transform(translate(200%,-30%) rotate(40deg));
-  }
-  20% {
-    @include transform(translate(250%,0%) rotate(60deg));
-  }
-  25% {
-    @include transform(translate(300%,-50%) rotate(60deg));
-  }
-  30% {
-    @include transform(translate(400%,-90%) rotate(40deg));
-  }
-  35% {
-    @include transform(translate(530%,-120%) rotate(20deg));
-  }
-  40% {
-    @include transform(translate(560%,-130%) rotate(-0deg));
-  }
-  45% {
-    @include transform(translate(590%,-140%) rotate(-20deg));
-  }
-  50% {
-    @include transform(translate(620%,-150%) rotate(-40deg));
-  }
-  55% {
-    @include transform(translate(650%,-160%) rotate(-60deg));
-  }
-  60% {
-    @include transform(translate(680%,-180%) rotate(-80deg));
-  }
-  65% {
-    @include transform(translate(710%,-200%)rotate(-110deg));
-  }
-  70% {
-    @include transform(translate(740%,-140%)rotate(-150deg));
-  }
-  90% {
-    @include transform(translate(80%,-10%)rotate(-50deg));
-  }
-  100% {
-    @include transform(translate(0) rotate(0deg));
-  }
+
+@keyframes fly-superman-animation {
+	from { 	transform: rotate(360deg) translateX(250px); }
+	to   {  transform: rotate(0deg) translateX(250px); }
 }
+  // 0% {
+  //   @include transform(translate(0));
+  // }
+  // 5% {
+  //   @include transform(translate(110%,-90%) rotate(45deg));
+  // }
+  // 20% {
+  //   @include transform(translate(200%,-100%) rotate(60deg));
+  // }
+  // 50% {
+  //   @include transform(translate(400%,20%) rotate(0deg));
+  // }
+  // 55% {
+  //   @include transform(translate(400%,20%) rotate(10deg));
+  // }
+  // 60% {
+  //   @include transform(translate(500%,-20%) rotate(-25deg));
+  // }
+  // 65% {
+  //   @include transform(translate(550%,-60%) rotate(-50deg));
+  // }
+  // 75% {
+  //   @include transform(translate(500%,-100%) rotate(-120deg));
+  // }
+  // 75% {
+  //   @include transform(translate(450%,-100%) rotate(-180deg));
+  // }
+  // 90% {
+  //   @include transform(translate(300%,20%)rotate(-120deg));
+  // }
+  // 100% {
+  //   @include transform(translate(0) rotate(0deg));
+  // }
+// }
 @include keyframes(bounce) {
   0%,
   20%,

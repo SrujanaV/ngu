@@ -41,6 +41,9 @@ img.loading {
 .text-lighter {
   font-weight: 300;
 }
+.navbar-fixed-top{
+    border-width: 0 0 0px;
+}
 .block {
   display: block;
 }
@@ -305,13 +308,14 @@ p {
     left: 12%;
     width: 13%;
     top: 30%;
+    z-index: 5;
 	}
     .chair {
       left: 14%;
       width: 20%;
       bottom: 180px;
       z-index: 1;
-    }    
+    }
 	  .chair-home {
       left: 5%;
       width: 20%;
@@ -684,7 +688,7 @@ p {
     position: absolute;
     top: 12%;
   }
-	.rectangle-box{ 
+	.rectangle-box{
 	.rectangle {
     width: 100%;
     left: 0;
@@ -709,7 +713,7 @@ p {
 	width: 100%;
 	.window3{
 		float: right;
-		}	
+		}
 		.window1{
 		float: left;
 		}
@@ -788,6 +792,8 @@ form {
 }
 .about-info {
   min-height: 650px;
+  z-index: 1;
+  position: relative;
 }
 .window-right,
 .window-full {
@@ -1039,13 +1045,13 @@ form {
     width: 110px;
     left: 40%;
   }
-	
+
 .animate-dol-snail {
     z-index: 1;
     position: absolute;
-    width: 100%;
+    width: 115%;
     left: 0;
-    bottom: 0;
+    bottom: 58px;
 	padding: 10px 0;
 	img{
 	width: 100%;
@@ -1114,6 +1120,8 @@ form {
     z-index: 4;
     right: 0;
     top: 30%;
+    position: fixed;
+    z-index: 999999;
     ul {
       list-style: none;
       float: right;
@@ -1134,15 +1142,15 @@ form {
 		  }
 			  &.fa-twitter{
 			  color: #28a8e0;
-			  }	 
-			  
+			  }
+
 			  &.fa-linkedin{
 			  color: #046c9a;
-			  }		
-			  
+			  }
+
 			  &.fa-google-plus{
 			  color: #d95342;
-			  } 
+			  }
 			  &.fa-instagram{
 			  color: #785043;
 			  }

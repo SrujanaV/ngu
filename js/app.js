@@ -156,8 +156,8 @@ firstapp.directive('ngu', function ($compile, $parse) {
                   {
                     $(".ngu-animation").attr("src","img/home/ngu.gif");
 					  nguAni = false;
-                  }                 
-                })    
+                  }
+                })
 	  new ScrollMagic.Scene({triggerElement: ".ngu-2", duration: 200})
                 .addTo(controller)
 //                .addIndicators() // add indicators (requires plugin)
@@ -165,13 +165,13 @@ firstapp.directive('ngu', function ($compile, $parse) {
                   console.log("shark and snail Enter");
                   setTimeout(function() {
                     nguAni2 = true;
-                  }, 5000);              
+                  }, 5000);
 		  		if(nguAni2 == true)
                   {
-                    $(".ngu-2 .shark-animation").attr("src","img/home/Shark-Snail.gif");
+                    $(".ngu-2 .shark-animation").attr("src","img/home/Shark-Snail1.gif");
 					  nguAni2 = false;
-                  }                  
-                })     
+                  }
+                })
 		}
 	};
 });
