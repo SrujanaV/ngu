@@ -60,10 +60,6 @@
     @include transform(translateY(-5px));
   }
 }
-
-// .rocket div {
-//   @include animation(fly-rocket-animation 6s ease forwards);
-// }
 @include keyframes (fly-rocket-animation) {
   0% {
     @include transform(translate(0, 0));
@@ -81,49 +77,29 @@
     z-index: 1;
   }
   .supermans {
-    @include animation( fly-superman-animation 15s linear infinite);
+    @include animation( fly-superman-linear 15s linear infinite);
   }
 }
 
 
-@keyframes fly-superman-animation {
-	from { 	transform: rotate(360deg) translateX(250px); }
-	to   {  transform: rotate(0deg) translateX(250px); }
-}
-  // 0% {
-  //   @include transform(translate(0));
-  // }
-  // 5% {
-  //   @include transform(translate(110%,-90%) rotate(45deg));
-  // }
-  // 20% {
-  //   @include transform(translate(200%,-100%) rotate(60deg));
-  // }
-  // 50% {
-  //   @include transform(translate(400%,20%) rotate(0deg));
-  // }
-  // 55% {
-  //   @include transform(translate(400%,20%) rotate(10deg));
-  // }
-  // 60% {
-  //   @include transform(translate(500%,-20%) rotate(-25deg));
-  // }
-  // 65% {
-  //   @include transform(translate(550%,-60%) rotate(-50deg));
-  // }
-  // 75% {
-  //   @include transform(translate(500%,-100%) rotate(-120deg));
-  // }
-  // 75% {
-  //   @include transform(translate(450%,-100%) rotate(-180deg));
-  // }
-  // 90% {
-  //   @include transform(translate(300%,20%)rotate(-120deg));
-  // }
-  // 100% {
-  //   @include transform(translate(0) rotate(0deg));
-  // }
+// @keyframes fly-superman-animation {
+// 	from { 	transform: rotate(360deg) translateX(250px); }
+// 	to   {  transform: rotate(0deg) translateX(250px); }
 // }
+@keyframes fly-superman-linear {
+    0%,100% {
+      @include transform(translate(-500%, 250%));
+    }
+    99%{
+       @include transform(translate(-600%, 250%) rotate(180deg));
+    }
+    50% {
+      @include transform(translate(400%, -300%));
+    }
+    51%{
+       @include transform(translate(400%, -300%) rotate(180deg));
+     }
+}
 @include keyframes(bounce) {
   0%,
   20%,

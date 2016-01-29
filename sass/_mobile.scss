@@ -264,6 +264,42 @@
       width: 80px;
     }
   }
+  .puppet {
+        min-height: 0!important;
+      }
+  .awsomeness{
+    .sky {
+        height: 150px;
+    }
+    .placing {
+    .puppet {
+          min-height: 0!important;
+      .bubble3 {
+        top: 40%;
+      }
+      .bubble1 {
+        top: 24%;
+      }
+      .lady1 {
+        bottom: 235px;
+      }
+      .bubble4,
+      .bubble2,
+      .bubble5,
+      .lady2,
+      .guy1 {
+        bottom: 0;
+      }
+      .chair {
+        bottom: 0;
+      }
+    }
+  }
+}
+@keyframes fly-superman-animation {
+	from { 	transform: rotate(360deg) translateX(150px); }
+	to   {  transform: rotate(0deg) translateX(150px); }
+}
   .tab-menu {
     position: absolute;
     right: 0;
