@@ -294,22 +294,30 @@ p {
       left: 5%;
       top: 35%;
     }
-    // .superman {
-    //   left: 5%;
-    //   width: 13%;
-    //   top: 24%;
-    // }
+    .superman {
+      left: 5%;
+      width: 13%;
+      top: 24%;
+    }
     .bubble2 {
       left: 29%;
       width: 14%;
       bottom: 210px;
       @include transform (rotate(90deg));
     }
+
+    // .supermans {
+    //   left: 4%;
+    //   width: 13%;
+    //   top: 40%;
+    //   transform: translate(-50%,-50%);
+    //   z-index: 5;
+    // }
     .supermans {
-      left: 50%;
+      left: 18%;
       width: 13%;
-      top: 40%;
-      transform: translate(-50%,-50%);
+      top: 44%;
+      @include transform(translate(-50%,-50%));
       z-index: 5;
     }
     .chair {
@@ -351,22 +359,16 @@ p {
       bottom: 180px;
       right: 28%;
       width: 16%;
-
-      // width: 230px;
     }
     .lady2 {
       bottom: 150px;
-      right: 28%;
-      width: 12%;
-
-      // width: 190px;
+      right: 26%;
+      width: 13%;
       z-index: 2;
     }
     .guy1 {
       right: 8%;
       bottom: 140px;
-
-      // width: 220px;
       width: 15%;
       z-index: 1;
     }
@@ -416,8 +418,8 @@ p {
   }
   .home-lady2 {
     bottom: 120px;
-    right: 26%;
-    width: 11%;
+    right: 25.5%;
+    width: 13%;
     z-index: 2;
   }
   &.placing {

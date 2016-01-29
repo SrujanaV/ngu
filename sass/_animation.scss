@@ -77,29 +77,52 @@
     z-index: 1;
   }
   .supermans {
-    @include animation( fly-superman-linear 15s linear infinite);
+    @include animation( fly-superman-animation 10s ease);
+    transition: all 300ms ease;
   }
 }
 
-
-// @keyframes fly-superman-animation {
-// 	from { 	transform: rotate(360deg) translateX(250px); }
-// 	to   {  transform: rotate(0deg) translateX(250px); }
-// }
-@keyframes fly-superman-linear {
-    0%,100% {
-      @include transform(translate(-500%, 250%));
-    }
-    99%{
-       @include transform(translate(-600%, 250%) rotate(180deg));
-    }
-    50% {
-      @include transform(translate(400%, -300%));
-    }
-    51%{
-       @include transform(translate(400%, -300%) rotate(180deg));
-     }
+@keyframes fly-superman-animation {
+	0% {@include transform(translate(-100%,-150%) rotate(40deg)); }
+	100% {@include transform(translate(800%, -150%) rotate(40deg));}
 }
+// @keyframes fly-superman-linear {
+//     0%,100% {
+//       @include transform(translate(-500%, 250%));
+//     }
+//     99%{
+//        @include transform(translate(-600%, 250%) rotate(180deg));
+//     }
+//     50% {
+//       @include transform(translate(400%, -300%));
+//     }
+//     51%{
+//        @include transform(translate(400%, -300%) rotate(180deg));
+//      }
+// }
+// @include keyframes (fly-superman-animation) {
+//   0% {
+//     @include transform(translate(-50%,-50%));
+//   }
+//   10% {
+//     @include transform(translate(200%,-120%) rotate(40deg));
+//   }
+//   30% {
+//     @include transform(translate(550%,-120%) rotate(40deg));
+//   }
+//   40% {
+//     @include transform(translate(600%,150%) rotate(200deg));
+//   }
+//   60% {
+//     @include transform(translate(300%,80%) rotate(180deg));
+//   }
+//  80% {
+//     @include transform(translate(0%,80%) rotate(180deg));
+//   }
+//  100% {
+//     @include transform(translate(-50%,-50%) rotate(-20deg));
+//   }
+// }
 @include keyframes(bounce) {
   0%,
   20%,
