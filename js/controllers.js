@@ -113,22 +113,53 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       five: "views/content/section/awesomeness/section5.html",
     };
     $scope.testimonial = [{
-      desc: "The Never Grow Up &reg; team is a highly motivated &amp; a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working   them for more than five years and they are our key partners.What I like about them is their frank opinions &amp; willingness to speak their mind & amp;not hide behind words.They are a big asset to anyone considering working with them.Just go ahead.",
-      name: "Kartik Sharma",
+      desc: "The Never Grow Up &reg; team is a highly motivated & a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for more than five years and they are our key partners. What I like about them is their frank opinions & willingness to speak their mind & not hide behind words. They are a big asset to anyone considering working with them. Just go ahead.",
+      name: "Kartik Sharma,",
       designation: "Managing Director,",
       place: "South Asia, Maxus."
     }, {
       desc: "The team at Never Grow Up &reg; has been associated as Employee Engagement partners with Shoppers Stop for some time now managing a host of activities and initiatives that have helped create a positive impact. We have found their team to be creative, optimistic and dedicated to the task at hand. Key ideas presented and executed by them have also got us recognition in industry forums and have been well appreciated across the company. Would be happy to recommend Never Grow Up and look forward to a long and healthy association.",
-      name: "BVM Rao",
+      name: "BVM Rao,",
       designation: "Customer Care Associate & Head,",
       place: "Human Resources, Shoppers Stop Ltd."
     }, {
-      desc: "It's been an absolute pleasure to have been associated with Never Grow Up ®. I’ve had the opportunity to see this team working with various groups in our organisation across levels. Every time, they've done something unique, whacky and creative. And the good thing is that everything is linked back to the business/organisation objective in a rather interesting way. All the best and never grow up because that's your USP.",
-      name: "Apoorva Vig",
+      desc: "It's been an absolute pleasure to have been associated with Never Grow Up &reg;. I’ve had the opportunity to see this team working with various groups in our organisation across levels. Every time, they've done something unique, whacky and creative. And the good thing is that everything is linked back to the business/organisation objective in a rather interesting way. All the best and never grow up because that's your USP.",
+      name: "Apoorva Vig,",
       designation: "Talent Partner – Digital,",
       place: "Lead-Engagement and Fulfilment, GroupM."
+    }, {
+      desc: "Never Grow Up &reg; is an apt brand name. I would say so since the team never grows up! And that is the best part about the entire team. They have such explosive ideas that can wrap your mind into a whirlpool of thoughts that you would be thinking what to choose from and how exciting this would turn out to be for your organization. There have been quite a few programs that we have been doing with Never Grow Up on the employee engagement front, Shoppers Stop I Pledge event & SSL Radio mainly. Great to have them as a business partner.",
+      name: "Rahul Nayar,",
+      designation: "Talent Partner – Digital,",
+      place: "Lead-Engagement and Fulfilment, Shoppers Stop Limited."
+    }, {
+      desc: "We were struggling to get all that we wanted in one shot. With no time left in hand to plan, it was only Never Grow Up &reg; who made it possible. Arranging for various activities, training, coaching and workshops all in a day's offsite for the leadership team. Unbelievable and that too within my budget! Hats off to them and their creativity! You guys rock! I am confident you are on the right track. Top qualities: Great Results, Good Value, On Time.",
+      name: "Anju Jumde,",
+      designation: "Training Head,",
+      place: "Barclays Bank"
+    }, {
+      desc: "Never Grow Up &reg; has worked with us more than once and every time have left us delighted & positively surprised! His team is extremely creative and the ideas they generate are unheard of. Their expertise can be evaluated from the fact that they have worked across the spectrum, right from training the Top Management of Investment Bank to organizing an event for Kids and families and delighting the audience from both the segments. I wish them all the best for his successful journey towards creating a new concept in India! Top Qualities: Great Results, Expert & Creative.",
+      name: "Sumeet Khutale,",
+      designation: "Vice President,",
+      place: "J P Morgan"
+    }, {
+      desc: "Am falling short of adjectives to describe Never Grow Up &reg;. The word impossible doesn’t exist in their dictionary and that’s what I like the most about them. Life is sorted when you have them. NGU Rocks!",
+      name: "Sumita Sahu",
+      designation: "Manager,",
+      place: "Human Resources, Reliance Capital"
+    }, {
+      desc: "I have known Never Grow Up &reg; since 2010. The team has a bunch of crazy guys who come up with these weird ideas which ultimately become a super hit with employees. A bunch of dedicated team members who work like there is no tomorrow – all set to meet their deadlines. It’s a fun organization and it ensures that the organizations that they deal with also have a fun element in their engagement activities. They are the creators of great ideas who ensure that the child in you never dies. I thank God for “Never Grow Up”!",
+      name: "Binny Mathen,",
+      designation: "Customer Care Associate & Manager Human Resources,",
+      place: "Crossword Bookstores Ltd"
+    }, {
+      desc: "Great fun, kept energy levels despite being the graveyard session (post lunch). It was very well structured with lessons, practice and a competition. I'd be happy to refer you to other organizations.",
+      name: "Seema Padman,",
+      designation: "Director HR Asia,",
+      place: "ARM"
     }];
     new WOW().init();
+    
   })
   .controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file

@@ -139,39 +139,42 @@ firstapp.directive("scroll", function($window) {
 
 var nguAni = true;
 var nguAni2 = true;
-firstapp.directive('ngu', function ($compile, $parse) {
-	return {
-		restrict: 'EA',
-		replace: false,
-		link: function ($scope, element, attrs) {
-      new ScrollMagic.Scene({triggerElement: ".ngu-animation", duration: 200})
-                .addTo(controller)
-//                .addIndicators() // add indicators (requires plugin)
-                .on("enter", function (e) {
-                  console.log("NGU");
-//                  setTimeout(function() {
-//                    nguAni = true;
-//                  }, 5000);
-                  if(nguAni == true)
-                  {
-                    $(".ngu-animation").attr("src","img/home/ngu.gif");
-					  nguAni = false;
-                  }
-                })
-	  new ScrollMagic.Scene({triggerElement: ".ngu-2", duration: 200})
-                .addTo(controller)
-//                .addIndicators() // add indicators (requires plugin)
-                .on("enter", function (e) {
-                  console.log("shark and snail Enter");
-                  setTimeout(function() {
-                    nguAni2 = true;
-                  }, 5000);
-		  		if(nguAni2 == true)
-                  {
-                    $(".ngu-2 .shark-animation").attr("src","img/home/Shark-Snail1.gif");
-					  nguAni2 = false;
-                  }
-                })
-		}
-	};
+firstapp.directive('ngu', function($compile, $parse) {
+  return {
+    restrict: 'EA',
+    replace: false,
+    link: function($scope, element, attrs) {
+      new ScrollMagic.Scene({
+          triggerElement: ".ngu-animation",
+          duration: 200
+        })
+        .addTo(controller)
+        //                .addIndicators() // add indicators (requires plugin)
+        .on("enter", function(e) {
+          console.log("NGU");
+          //                  setTimeout(function() {
+          //                    nguAni = true;
+          //                  }, 5000);
+          if (nguAni == true) {
+            $(".ngu-animation").attr("src", "img/home/ngu.gif");
+            nguAni = false;
+          }
+        })
+      new ScrollMagic.Scene({
+          triggerElement: ".ngu-2",
+          duration: 200
+        })
+        .addTo(controller) //                .addIndicators() // add indicators (requires plugin)
+        .on("enter", function(e) {
+          console.log("shark and snail Enter");
+          setTimeout(function() {
+            nguAni2 = true;
+          }, 5000);
+          if (nguAni2 == true) {
+            $(".ngu-2 .shark-animation").attr("src", "img/home/Shark-Snail1.gif");
+            nguAni2 = false;
+          }
+        })
+    }
+  };
 });
