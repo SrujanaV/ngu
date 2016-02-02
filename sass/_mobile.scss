@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+  .about-info {
+    width: 80%;
+  }
   .client-speaks {
     .slider-client {
       zoom: 0.8;
@@ -46,7 +49,16 @@
     left: 45%;
   }
   .email {
-    left: 37%;
+    left: 50%;
+  }
+  .girl img {
+    width: 60%;
+  }
+  .boy {
+    left: 26%;
+    img {
+      width: 54%;
+    }
   }
   .contact-girl {
     left: 32%;
@@ -76,6 +88,11 @@
   }
 }
 @media (max-width: $screen-sm-max) {
+  .about-info,
+  .services .services-info,
+  .contact-detail {
+    width: 90%;
+  }
   .navbar-default .navbar-nav {
     padding-left: 0;
   }
@@ -230,6 +247,16 @@
   .head-main {
     font-size: 30px;
   }
+  .about img.areoplane {
+    width: 70%;
+    &.rocketfly {
+      top: 20%;
+      left: 500%;
+    }
+  }
+  .payment .locker {
+    bottom: -75px;
+  }
 }
 @media (max-width: $screen-xs-max) {
   .navbar-default {
@@ -265,41 +292,45 @@
     }
   }
   .puppet {
-        min-height: 0!important;
-      }
-  .awsomeness{
+    min-height: 0!important;
+  }
+  .awsomeness {
     .sky {
-        height: 150px;
+      height: 150px;
     }
     .placing {
-    .puppet {
-          min-height: 0!important;
-      .bubble3 {
-        top: 40%;
-      }
-      .bubble1 {
-        top: 24%;
-      }
-      .lady1 {
-        bottom: 235px;
-      }
-      .bubble4,
-      .bubble2,
-      .bubble5,
-      .lady2,
-      .guy1 {
-        bottom: 0;
-      }
-      .chair {
-        bottom: 0;
+      .puppet {
+        min-height: 0!important;
+        .bubble3 {
+          top: 40%;
+        }
+        .bubble1 {
+          top: 24%;
+        }
+        .lady1 {
+          bottom: 235px;
+        }
+        .bubble4,
+        .bubble2,
+        .bubble5,
+        .lady2,
+        .guy1 {
+          bottom: 0;
+        }
+        .chair {
+          bottom: 0;
+        }
       }
     }
   }
-}
-@keyframes fly-superman-animation {
-	from { 	transform: rotate(360deg) translateX(150px); }
-	to   {  transform: rotate(0deg) translateX(150px); }
-}
+  @keyframes fly-superman-animation {
+    from {
+      transform: rotate(360deg) translateX(150px);
+    }
+    to {
+      transform: rotate(0deg) translateX(150px);
+    }
+  }
   .tab-menu {
     position: absolute;
     right: 0;
@@ -555,7 +586,6 @@
     }
   }
   .contact-detail {
-    width: 100%;
     padding: 0;
   }
   .social-icon {
@@ -605,8 +635,6 @@
     }
   }
   .section-ngu .slate {
-    width: 18%;
-    right: 8%;
     z-index: 999;
     top: 45px;
   }

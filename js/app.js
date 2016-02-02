@@ -139,17 +139,20 @@ firstapp.directive("scroll", function($window) {
 
 var nguAni = true;
 var nguAni2 = true;
+var nguAni3 = true;
+var nguAni4 = true;
+var nguAni5 = true;
 firstapp.directive('ngu', function($compile, $parse) {
   return {
     restrict: 'EA',
     replace: false,
     link: function($scope, element, attrs) {
       new ScrollMagic.Scene({
-          triggerElement: ".ngu-animation",
+          triggerElement: ".ngu-2",
           duration: 200
         })
         .addTo(controller)
-        //                .addIndicators() // add indicators (requires plugin)
+        // .addIndicators() // add indicators (requires plugin)
         .on("enter", function(e) {
           console.log("NGU");
           //                  setTimeout(function() {
@@ -173,6 +176,51 @@ firstapp.directive('ngu', function($compile, $parse) {
           if (nguAni2 == true) {
             $(".ngu-2 .shark-animation").attr("src", "img/home/Shark-Snail1.gif");
             nguAni2 = false;
+          }
+        })
+      new ScrollMagic.Scene({
+          triggerElement: ".ngu-2",
+          duration: 200
+        })
+        .addTo(controller) //                .addIndicators() // add indicators (requires plugin)
+        .on("enter", function(e) {
+          console.log("plane flyed");
+          setTimeout(function() {
+            nguAni3 = true;
+          }, 5000);
+          if (nguAni3 == true) {
+            $(".rocket").addClass("rocketfly");
+            nguAni3 = false;
+          }
+        })
+      new ScrollMagic.Scene({
+          triggerElement: ".media-ngu",
+          duration: 200
+        })
+        .addTo(controller) //                .addIndicators() // add indicators (requires plugin)
+        .on("enter", function(e) {
+          console.log("plane flyed right");
+          setTimeout(function() {
+            nguAni4 = true;
+          }, 5000);
+          if (nguAni4 == true) {
+            $(".rockets").addClass("rocketflys");
+            nguAni4 = false;
+          }
+        })
+      new ScrollMagic.Scene({
+          triggerElement: ".bg-color-abt",
+          duration: 200
+        })
+        .addTo(controller) //                .addIndicators() // add indicators (requires plugin)
+        .on("enter", function(e) {
+          console.log("plane flyed right");
+          setTimeout(function() {
+            nguAni5 = true;
+          }, 5000);
+          if (nguAni5 == true) {
+            $(".areoplane").addClass("rocketfly");
+            nguAni5 = false;
           }
         })
     }

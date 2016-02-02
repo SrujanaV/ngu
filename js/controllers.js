@@ -159,7 +159,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       place: "ARM"
     }];
     new WOW().init();
-    
+
   })
   .controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
@@ -169,7 +169,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
     $scope.section = {
-      one: "views/content/section/home/section1.html"
+      one: "views/content/toppage.html"
     };
     $scope.changeURL = function(id) {
       console.log(id);
@@ -184,7 +184,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
     $scope.section = {
-      one: "views/content/section/home/section1.html"
+      one: "views/content/toppage.html"
     };
     $scope.changeURL = function(id) {
       console.log(id);

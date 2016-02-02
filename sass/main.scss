@@ -305,15 +305,8 @@ p {
       bottom: 210px;
       @include transform (rotate(90deg));
     }
-
-    // .supermans {
-    //   left: 4%;
-    //   width: 13%;
-    //   top: 40%;
-    //   transform: translate(-50%,-50%);
-    //   z-index: 5;
-    // }
-    .supermans {
+    .supermans,
+    .supermans1 {
       left: 18%;
       width: 13%;
       top: 44%;
@@ -335,24 +328,18 @@ p {
     .lady1 {
       left: 26%;
       width: 15%;
-
-      // width: 190px;
-      bottom: 140px;
+      bottom: 120px;
       z-index: 2;
     }
     .bubble3 {
       right: 43%;
       width: 12%;
-
-      // width: 160px;
       top: 32%;
     }
     .guy2 {
       right: 44%;
-      width: 12%;
+      width: 11%;
       z-index: 1;
-
-      // width: 160px;
       top: 32%;
     }
     .bubble4 {
@@ -380,15 +367,15 @@ p {
       width: 15%;
     }
     .lights {
-      right: 14%;
-      width: 12%;
-      bottom: 142px;
+      right: 15%;
+      width: 14%;
+      bottom: 135px;
       z-index: 1;
     }
     .home-guy1 {
-      right: 5%;
-      bottom: 130px;
-      width: 13%;
+      right: 4%;
+      bottom: 110px;
+      width: 17%;
       z-index: 1;
     }
   }
@@ -405,7 +392,7 @@ p {
     transform: translateY(-28%);
   }
   .home-areoplane {
-    bottom: 110px;
+    bottom: 90px;
     right: 22%;
     z-index: 1;
     width: 5%;
@@ -417,9 +404,9 @@ p {
     left: 31%;
   }
   .home-lady2 {
-    bottom: 120px;
-    right: 25.5%;
-    width: 13%;
+    bottom: 105px;
+    right: 26.5%;
+    width: 14%;
     z-index: 2;
   }
   &.placing {
@@ -432,6 +419,13 @@ p {
         top: 50%;
       }
     }
+  }
+  .lady1-noani,
+  .lady2-noani {
+    width: 12%!important;
+  }
+  .guy1-noani {
+    width: 15%!important;
   }
 }
 .work {
@@ -808,7 +802,7 @@ form {
 }
 .boy {
   img {
-    width: 70%;
+    width: 62%;
   }
 }
 .window-full {
@@ -824,7 +818,7 @@ form {
   bottom: 9%;
   z-index: 1;
   img {
-    width: 78%;
+    width: 70%;
   }
 }
 .boy {
@@ -1027,8 +1021,15 @@ form {
   .rocket {
     top: 50%;
     @include transform(rotate(-25deg));
-    width: 8%;
+    width: 6%;
     left: 50px;
+    z-index: 2;
+    @include transition( all ease 3000ms);
+    transition-delay: 1s;
+  }
+  .rocket.rocketfly {
+    top: 21%;
+    left: 90%;
   }
   .content {
     width: 90%;
@@ -1207,7 +1208,7 @@ form {
     z-index: 0;
   }
   .client-happy {
-    bottom: 90px;
+    bottom: 100px;
     left: 0;
     width: 14%;
     z-index: 1;
@@ -1264,11 +1265,18 @@ form {
   .pb140 {
     padding-bottom: 140px;
   }
-  .rocket {
+  .rockets {
     top: 11%;
     left: 7%;
     width: 8%;
     @include transform(rotate(10deg));
+    z-index: 2;
+    @include transition( all ease 4000ms);
+    transition-delay: 1s;
+  }
+  .rockets.rocketflys {
+    top: 21%;
+    left: 82%;
   }
   .pt50 {
     padding-top: 50px;
@@ -1375,6 +1383,7 @@ form {
     }
     .guy1-abt {
       bottom: -40px;
+      width: 70%;
     }
   }
   img.areoplane {
@@ -1382,9 +1391,14 @@ form {
     left: 50%;
     width: 30%;
     @include transform(rotate(10deg));
-  }
-  .guy1-abt {
-    bottom: -40px;
+    @include transition(all ease 4000ms);
+    transition-delay: 1s;
+    z-index: 2;
+    opacity: 1;
+    &.rocketfly {
+      top: 20%;
+      left: 320%;
+    }
   }
   .min-hght {
     min-height: 950px;
@@ -1615,5 +1629,17 @@ footer {
     right: 20%;
   }
 }
+img.bubble-middle {
+  opacity: 0.7;
+}
+.email img {
+  opacity: 0.5;
+}
+.min-hgt-hq{
+  min-height: 700px;
+}
+.bubble {
+    opacity: 0.6;
+  }
 @import "animation.scss";
 @import "mobile.scss";
