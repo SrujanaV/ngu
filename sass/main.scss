@@ -89,6 +89,14 @@ section#home {
 nav li:hover .dropdown-menu {
   display: block;
 }
+.rocket {
+  width: 100%;
+  left: 0;
+  z-index: 2;
+  img {
+    width: 100%;
+  }
+}
 .bg-blue {
   background: $bg-color;
 }
@@ -393,10 +401,10 @@ p {
     transform: translateY(-28%);
   }
   .home-areoplane {
-    bottom: 90px;
-    right: 22%;
+    bottom:0px;
+    left: 0;
     z-index: 1;
-    width: 5%;
+    width: 100%;
   }
   .bookshelf {
     top: 38%;
@@ -460,10 +468,6 @@ p {
       color: $font-color;
       text-align: justify;
     }
-  }
-  .areoplane {
-    padding: 30px 0 35px;
-    width: 100px;
   }
   .client-speak {
     .content {
@@ -1019,40 +1023,6 @@ form {
     top: 110px;
     left: 10%;
   }
-  .rocket {
-    top: 50%;
-    @include transform(rotate(-25deg));
-    width: 6%;
-    left: 50px;
-    z-index: 2;
-    @include transition( all ease 3000ms);
-    transition-delay: 1s;
-  }
-
-  .rocket.rocketfly {
-    @include animation(rocketfly-random1 10s linear 0s alternate);
-    animation-fill-mode: forwards;
-  }
-  @include keyframes (rocketfly-random1) {
-    0% {
-      @include transform(translate(00px, 0%)rotate(-25deg));
-    }
-    20% {
-      @include transform(translate(500%,-500%) rotate(-45deg));
-    }
-    25% {
-      @include transform(translate(500%,-500%) rotate(-0deg));
-    }
-    35% {
-      @include transform(translate(775%,0%) rotate(-20deg));
-    }
-    65% {
-      @include transform(translate(1000%,0%) rotate(-0deg));
-    }
-    100% {
-      @include transform(translate(1700%,-500%) rotate(-40deg));
-    }
-  }
   .content {
     width: 90%;
     padding-top: 130px;
@@ -1287,19 +1257,6 @@ form {
   .pb140 {
     padding-bottom: 140px;
   }
-  .rockets {
-    top: 11%;
-    left: 7%;
-    width: 8%;
-    @include transform(rotate(10deg));
-    z-index: 2;
-    @include transition( all ease 4000ms);
-    transition-delay: 1s;
-  }
-  .rockets.rocketflys {
-    top: 21%;
-    left: 82%;
-  }
   .pt50 {
     padding-top: 50px;
   }
@@ -1416,20 +1373,6 @@ form {
     .guy1-abt {
       bottom: -40px;
       width: 70%;
-    }
-  }
-  img.areoplane {
-    top: 1%;
-    left: 50%;
-    width: 30%;
-    @include transform(rotate(10deg));
-    @include transition(all ease 4000ms);
-    transition-delay: 1s;
-    z-index: 2;
-    opacity: 1;
-    &.rocketfly {
-      top: 20%;
-      left: 320%;
     }
   }
   .min-hght {

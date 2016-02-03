@@ -137,11 +137,75 @@ firstapp.directive("scroll", function($window) {
   };
 });
 
+// var nguAni = true;
+// var nguAni2 = true;
+// var nguAni3 = true;
+// firstapp.directive('ngu', function($compile, $parse) {
+//   return {
+//     restrict: 'EA',
+//     replace: false,
+//     link: function($scope, element, attrs) {
+//       new ScrollMagic.Scene({
+//           triggerElement: ".ngu-2",
+//           duration: 200
+//         })
+//         .addTo(controller)
+//         .addIndicators() // add indicators (requires plugin)
+//         .on("enter", function(e) {
+//           console.log("NGU");
+//           setTimeout(function() {
+//             nguAni = true;
+//           }, 5000);
+//           if (nguAni == true) {
+//             $(".ngu-animation").attr("src", "img/home/ngu.gif");
+//             nguAni = false;
+//           }
+//         })
+//       new ScrollMagic.Scene({
+//           triggerElement: ".ngu-2",
+//           duration: 200
+//         })
+//         .addTo(controller) //
+//         .addIndicators() // add indicators (requires plugin)
+//         .on("enter", function(e) {
+//           console.log("shark and snail Enter");
+//           setTimeout(function() {
+//             nguAni2 = true;
+//           }, 1000000);
+//           if (nguAni2 == true) {
+//             $(".ngu-2 .shark-animation").attr("src", "img/home/Shark-Snail1.gif");
+//             nguAni2 = false;
+//           }
+//         })
+//       new ScrollMagic.Scene({
+//           triggerElement: ".ngu-2",
+//           duration: 200
+//         })
+//         .addTo(controller) //
+//         .on("enter", function(e) {
+//           console.log("shark and snail Enter");
+//           setTimeout(function() {
+//             nguAni3 = true;
+//           }, 100000);
+//           if (nguAni3 == true) {
+//             $(".ngu-2 .rocket").attr("src", "img/gif/Paper-Plane-2a.gif");
+//             nguAni3 = false;
+//           }
+//         })
+//     }
+//   };
+// });
+
+
+
+
+
 var nguAni = true;
 var nguAni2 = true;
 var nguAni3 = true;
 var nguAni4 = true;
 var nguAni5 = true;
+var nguAni6 = true;
 firstapp.directive('ngu', function($compile, $parse) {
   return {
     restrict: 'EA',
@@ -149,15 +213,15 @@ firstapp.directive('ngu', function($compile, $parse) {
     link: function($scope, element, attrs) {
       new ScrollMagic.Scene({
           triggerElement: ".ngu-2",
-          duration: 200
+          duration: 500
         })
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
         .on("enter", function(e) {
-          console.log("NGU");
-          //                  setTimeout(function() {
-          //                    nguAni = true;
-          //                  }, 5000);
+          console.log("NGU Animation");
+          setTimeout(function() {
+            nguAni = true;
+          }, 5000);
           if (nguAni == true) {
             $(".ngu-animation").attr("src", "img/home/ngu.gif");
             nguAni = false;
@@ -167,12 +231,15 @@ firstapp.directive('ngu', function($compile, $parse) {
           triggerElement: ".ngu-2",
           duration: 200
         })
-        .addTo(controller) //                .addIndicators() // add indicators (requires plugin)
+        .addTo(controller)
+        // .addIndicators() // add indicators (requires plugin)
         .on("enter", function(e) {
           console.log("shark and snail Enter");
           setTimeout(function() {
             nguAni2 = true;
+            console.log("done");
           }, 5000);
+
           if (nguAni2 == true) {
             $(".ngu-2 .shark-animation").attr("src", "img/home/Shark-Snail1.gif");
             nguAni2 = false;
@@ -182,14 +249,17 @@ firstapp.directive('ngu', function($compile, $parse) {
           triggerElement: ".ngu-2",
           duration: 200
         })
-        .addTo(controller) //                .addIndicators() // add indicators (requires plugin)
+        .addTo(controller)
+        // .addIndicators() // add indicators (requires plugin)
         .on("enter", function(e) {
-          console.log("plane flyed");
+          console.log("Flying plane");
           setTimeout(function() {
             nguAni3 = true;
+            console.log("done");
           }, 5000);
+
           if (nguAni3 == true) {
-            $(".rocket").addClass("rocketfly");
+            $(".ngu-2 .rocket img").attr("src", "img/gif/Paper-Plane-2a.gif");
             nguAni3 = false;
           }
         })
@@ -197,30 +267,53 @@ firstapp.directive('ngu', function($compile, $parse) {
           triggerElement: ".media-ngu",
           duration: 200
         })
-        .addTo(controller) //                .addIndicators() // add indicators (requires plugin)
+        .addTo(controller)
+        // .addIndicators() // add indicators (requires plugin)
         .on("enter", function(e) {
-          console.log("plane flyed right");
+          console.log("Flying plane");
           setTimeout(function() {
             nguAni4 = true;
+            console.log("done");
           }, 5000);
+
           if (nguAni4 == true) {
-            $(".rockets").addClass("rocketflys");
+            $(".media-ngu .rocket img").attr("src", "img/gif/Paper-Plane-1.gif");
             nguAni4 = false;
           }
         })
       new ScrollMagic.Scene({
-          triggerElement: ".bg-color-abt",
+          triggerElement: ".pay-abt-header .rocket",
           duration: 200
         })
-        .addTo(controller) //                .addIndicators() // add indicators (requires plugin)
+        .addTo(controller)
+        // .addIndicators() // add indicators (requires plugin)
         .on("enter", function(e) {
-          console.log("plane flyed right");
+          console.log("Flying plane payment");
           setTimeout(function() {
             nguAni5 = true;
+            console.log("done");
           }, 5000);
+
           if (nguAni5 == true) {
-            $(".areoplane").addClass("rocketfly");
+            $(".pay-abt-header .rocket img").attr("src", "img/gif/Paper-Plane-2a.gif");
             nguAni5 = false;
+          }
+        })
+      new ScrollMagic.Scene({
+          triggerElement: ".work .rocket",
+          duration: 200
+        })
+        .addTo(controller)
+        // .addIndicators() // add indicators (requires plugin)
+        .on("enter", function(e) {
+          console.log("Flying plane work");
+          setTimeout(function() {
+            nguAni6 = true;
+            console.log("done");
+          }, 5000);
+          if (nguAni6 == true) {
+            $(".work .rocket img").attr("src", "img/gif/Paper-Plane-2a.gif");
+            nguAni6 = false;
           }
         })
     }
