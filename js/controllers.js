@@ -99,12 +99,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       place: "Lead-Engagement and Fulfilment, GroupM."
     }];
   })
-  .controller('AwesomenessCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  .controller('AwesomenessCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("awesomeness");
     $scope.menutitle = NavigationService.makeactive("Awesomeness");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    TemplateService.header = "views/header-other.html";
+
+    $scope.changeURL = function(id) {
+      console.log(id);
+      $location.path("" + id);
+    };
     $scope.section = {
       one: "views/content/section/awesomeness/section1.html",
       two: "views/content/section/awesomeness/section2.html",
@@ -168,9 +174,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
-    $scope.section = {
-      one: "views/content/toppage.html"
-    };
     $scope.changeURL = function(id) {
       console.log(id);
       $location.path("" + id);
@@ -183,9 +186,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
-    $scope.section = {
-      one: "views/content/toppage.html"
-    };
     $scope.changeURL = function(id) {
       console.log(id);
       $location.path("" + id);

@@ -215,6 +215,7 @@ a:focus {
   padding: 20px 50px;
 }
 .pay-abt-header .sticky-bottom-abtpay,
+.awsomeness-header .sticky-bottom-abtpay,
 .sticky-bottom {
   position: absolute;
 
@@ -234,7 +235,7 @@ p {
   font-weight: 400;
   line-height: 150%;
 }
-.pay-abt-header .sticky-bottom-abtpay,
+.awsomeness-header,
 .sticky-bottom {
   top: calc(101% - 4px);
 }
@@ -1027,9 +1028,30 @@ form {
     @include transition( all ease 3000ms);
     transition-delay: 1s;
   }
+
   .rocket.rocketfly {
-    top: 21%;
-    left: 90%;
+    @include animation(rocketfly-random1 10s linear 0s alternate);
+    animation-fill-mode: forwards;
+  }
+  @include keyframes (rocketfly-random1) {
+    0% {
+      @include transform(translate(00px, 0%)rotate(-25deg));
+    }
+    20% {
+      @include transform(translate(500%,-500%) rotate(-45deg));
+    }
+    25% {
+      @include transform(translate(500%,-500%) rotate(-0deg));
+    }
+    35% {
+      @include transform(translate(775%,0%) rotate(-20deg));
+    }
+    65% {
+      @include transform(translate(1000%,0%) rotate(-0deg));
+    }
+    100% {
+      @include transform(translate(1700%,-500%) rotate(-40deg));
+    }
   }
   .content {
     width: 90%;
@@ -1317,15 +1339,23 @@ form {
   }
   .bt-happness {
     bottom: 120px;
+    img {
+      width: 270px;
+    }
   }
   .bt-workshop {
     bottom: 150px;
+    img {
+      width: 200px;
+      bottom: -200px;
+    }
   }
   .bt-corporate {
     bottom: 120px;
     img {
-      width: 15%;
-      right: 142px;
+      width: 15%!important;
+      right: 128px;
+      bottom: -175px;
     }
   }
   .bt-internal {
@@ -1348,13 +1378,15 @@ form {
   .bt-employer {
     bottom: 100px;
     img {
-      right: 25px;
+      width: 320px;
+      right: 10px;
+      bottom: -122px;
     }
   }
   .bt-quirkey {
     bottom: 140px;
     img {
-      width: 19%;
+      width: 19%!important;
       right: 100px;
     }
   }
@@ -1635,11 +1667,11 @@ img.bubble-middle {
 .email img {
   opacity: 0.5;
 }
-.min-hgt-hq{
+.min-hgt-hq {
   min-height: 700px;
 }
 .bubble {
-    opacity: 0.6;
-  }
+  opacity: 0.6;
+}
 @import "animation.scss";
 @import "mobile.scss";

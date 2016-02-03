@@ -1,8 +1,3 @@
-.dolphin,
-.snail,
- {
-  @include animation(moving-straight 20s linear 0s infinite);
-}
 @include keyframes (moving-straight) {
   0% {
     @include transform(translate(-900px, 0%));
