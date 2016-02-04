@@ -401,7 +401,7 @@ p {
     transform: translateY(-28%);
   }
   .home-areoplane {
-    bottom:0px;
+    bottom: 0;
     left: 0;
     z-index: 1;
     width: 100%;
@@ -1200,9 +1200,9 @@ form {
     z-index: 0;
   }
   .client-happy {
-    bottom: 100px;
-    left: 0;
-    width: 14%;
+    bottom: 125px;
+    left: 17px;
+    width: 12%;
     z-index: 1;
   }
 }
@@ -1223,6 +1223,8 @@ form {
     .media-head {
       padding-left: 20px;
       padding-bottom: 20px;
+      position: relative;
+      z-index: 9;
       p {
         margin-bottom: 0;
       }

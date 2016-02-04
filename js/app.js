@@ -137,69 +137,6 @@ firstapp.directive("scroll", function($window) {
   };
 });
 
-// var nguAni = true;
-// var nguAni2 = true;
-// var nguAni3 = true;
-// firstapp.directive('ngu', function($compile, $parse) {
-//   return {
-//     restrict: 'EA',
-//     replace: false,
-//     link: function($scope, element, attrs) {
-//       new ScrollMagic.Scene({
-//           triggerElement: ".ngu-2",
-//           duration: 200
-//         })
-//         .addTo(controller)
-//         .addIndicators() // add indicators (requires plugin)
-//         .on("enter", function(e) {
-//           console.log("NGU");
-//           setTimeout(function() {
-//             nguAni = true;
-//           }, 5000);
-//           if (nguAni == true) {
-//             $(".ngu-animation").attr("src", "img/home/ngu.gif");
-//             nguAni = false;
-//           }
-//         })
-//       new ScrollMagic.Scene({
-//           triggerElement: ".ngu-2",
-//           duration: 200
-//         })
-//         .addTo(controller) //
-//         .addIndicators() // add indicators (requires plugin)
-//         .on("enter", function(e) {
-//           console.log("shark and snail Enter");
-//           setTimeout(function() {
-//             nguAni2 = true;
-//           }, 1000000);
-//           if (nguAni2 == true) {
-//             $(".ngu-2 .shark-animation").attr("src", "img/home/Shark-Snail1.gif");
-//             nguAni2 = false;
-//           }
-//         })
-//       new ScrollMagic.Scene({
-//           triggerElement: ".ngu-2",
-//           duration: 200
-//         })
-//         .addTo(controller) //
-//         .on("enter", function(e) {
-//           console.log("shark and snail Enter");
-//           setTimeout(function() {
-//             nguAni3 = true;
-//           }, 100000);
-//           if (nguAni3 == true) {
-//             $(".ngu-2 .rocket").attr("src", "img/gif/Paper-Plane-2a.gif");
-//             nguAni3 = false;
-//           }
-//         })
-//     }
-//   };
-// });
-
-
-
-
-
 var nguAni = true;
 var nguAni2 = true;
 var nguAni3 = true;
