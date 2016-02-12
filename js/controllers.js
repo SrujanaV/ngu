@@ -75,9 +75,86 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       image: "img/client/client10.png"
     }, {
       image: "img/client/client11.png"
-    }, {
+    }
+    , {
       image: "img/client/client12.png"
-    }];
+    }
+    , {
+      image: "img/client/client13.png"
+    }
+    , {
+      image: "img/client/client14.png"
+    }
+    , {
+      image: "img/client/client15.png"
+    }
+    , {
+      image: "img/client/client16.png"
+    }
+    , {
+      image: "img/client/client17.png"
+    }
+    , {
+      image: "img/client/client18.png"
+    }
+    , {
+      image: "img/client/client19.png"
+    }
+    , {
+      image: "img/client/client20.png"
+    }
+    , {
+      image: "img/client/client22.png"
+    }
+    , {
+      image: "img/client/client23.png"
+    }
+    , {
+      image: "img/client/client24.png"
+    }
+    , {
+      image: "img/client/client25.png"
+    }
+    , {
+      image: "img/client/client26.png"
+    }
+    , {
+      image: "img/client/client27.png"
+    }
+    , {
+      image: "img/client/client28.png"
+    }
+    , {
+      image: "img/client/client29.png"
+    }
+    , {
+      image: "img/client/client30.png"
+    }
+    , {
+      image: "img/client/client31.png"
+    }
+    , {
+      image: "img/client/client32.png"
+    }
+    , {
+      image: "img/client/client33.png"
+    }
+    , {
+      image: "img/client/client34.png"
+    }
+    , {
+      image: "img/client/client35.png"
+    }
+    , {
+      image: "img/client/client36.png"
+    }
+    , {
+      image: "img/client/client37.png"
+    }
+    , {
+      image: "img/client/client38.png"
+    }
+  ];
     $scope.clients = _.chunk($scope.clients, 12);
     for (var i = 0; i < $scope.clients.length; i++) {
       $scope.clients[i] = _.chunk($scope.clients[i], 4);
