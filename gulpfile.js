@@ -4,6 +4,7 @@ var jsArray = [
   './bower_components/gsap/src/minified/TweenMax.min.js',
   './bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js',
   './bower_components/flexslider/jquery.flexslider-min.js',
+  './bower_components/angular-scroll/angular-scroll.min.js',
   './bower_components/wowjs/dist/wow.min.js',
   './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
   './bower_components/lodash/lodash.min.js',
@@ -15,13 +16,14 @@ var jsArray = [
   './bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
   './bower_components/ui-router/release/angular-ui-router.min.js',
   './bower_components/angular-flexslider/angular-flexslider.js',
-  './bower_components/angular-scroll/angular-scroll.min.js',
+
 
   //uesr's js
   './js/app.js',
   './js/controllers.js',
   './js/templateservice.js',
   './js/navigation.js',
+  './js/jquery.mixitup.min.js',
 
   //please do not change it
   './w/js/templates.js',
@@ -131,6 +133,25 @@ gulp.task('clean:tmp', function() {
     }));
 });
 
+gulp.task('clean:pImages', function() {
+  return gulp.src('./production/img', {
+      read: false
+    })
+    .pipe(wait(200))
+    .pipe(clean({
+      force: true
+    }));
+});
+
+gulp.task('clean:pFont', function() {
+  return gulp.src('./production/fonts', {
+      read: false
+    })
+    .pipe(wait(200))
+    .pipe(clean({
+      force: true
+    }));
+});
 
 gulp.task('clean:w', function() {
   return gulp.src('./w', {
@@ -315,6 +336,7 @@ gulp.task('development', ["sass:development", "watch:all"]);
 gulp.task('minifyhtml', ["minify:indexHTML", "minify:views", "templatecache"]);
 gulp.task('copy', ["copy:img", "copy:fonts"]);
 
-
+gulp.task('clearimage', ["clean:pImages", "clean:pFont"]);
 gulp.task('production', gulpSequence(["copy:img", "copy:fonts", "sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', "concat:js", 'clean:tmp', "templatecache", "uglify:js","minify:css", 'clean:tmp', "inlinesource", 'clean:tmp', "gzipfile", 'clean:tmp', 'clean:tmp', "zip"));
+gulp.task('productionc', gulpSequence(["copy:img", "copy:fonts", "sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', "concat:js", 'clean:tmp', "templatecache", "uglify:js","minify:css", 'clean:tmp', "inlinesource", 'clean:tmp', "gzipfile", 'clean:tmp', 'clean:tmp', "zip","clearimage"));
 gulp.task('production2', gulpSequence(["copy:img", "copy:fonts", "sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp',  "concat:js", 'clean:tmp',"templatecache","uglify:js", "minify:css", 'clean:tmp', "inlinesource", 'clean:tmp', "copy:indexhtml", 'clean:tmp', 'clean:tmp', "zip"));
