@@ -62,17 +62,19 @@ section#home {
   overflow: hidden;
 }
 .navbar-default {
-  background-color: $brand-yellow;
-  border-color: $brand-yellow;
+  background-color: $brand-brown;
+  border-color: $brand-brown;
   .navbar-nav {
     padding-left: 30px;
   }
   a {
     font-size: 16px;
     padding: 8px 20px;
-    &:hover {
-      background-color: darken($brand-yellow, 10%)!important;
-      border-color: darken($brand-yellow, 10%);
+    color: #fff!important;
+    &:hover,
+    &.active {
+      background-color: lighten($brand-brown, 10%)!important;
+      border-color: lighten($brand-brown, 10%);
     }
   }
   .navbar-brand:hover,
@@ -120,6 +122,10 @@ nav li:hover .dropdown-menu {
 }
 .bold {
   font-weight: 600;
+}
+.width90 {
+  width: 90%;
+  padding-right: 20px;
 }
 a {
   cursor: pointer;
@@ -219,6 +225,9 @@ a:focus {
   font-size: 70px;
   font-weight: 300;
   text-transform: capitalize;
+}
+.pl20 {
+  padding-left: 20px;
 }
 .ps-50 {
   padding: 20px 50px;
@@ -788,6 +797,9 @@ form {
 // about
 .about-us {
   padding: 90px 0;
+  a {
+    font-weight: 600;
+  }
 }
 .about-info {
   min-height: 650px;
@@ -923,6 +935,9 @@ form {
     font-size: 16px;
     letter-spacing: 0.78px;
   }
+  a {
+    font-weight: 600;
+  }
   .space {
     margin: 10px 0;
   }
@@ -1038,9 +1053,9 @@ form {
   .animate-dol-snail {
     z-index: 1;
     position: absolute;
-    width: 115%;
+    width: 100%;
     left: 0;
-    bottom: 58px;
+    bottom: 0;
     padding: 10px 0;
     img {
       width: 100%;
@@ -1055,6 +1070,9 @@ form {
     p {
       font-size: 14px;
       margin-bottom: 20px;
+    }
+    a{
+      font-weight: 600;
     }
   }
   .services-badge {
@@ -1153,7 +1171,8 @@ form {
   }
   .hq-logo {
     img {
-      width: 30%;
+      width: 50%;
+      margin-bottom: 20px;
     }
   }
   .clock {
@@ -1164,7 +1183,7 @@ form {
     }
   }
   p {
-    padding: 0 20px;
+    // padding: 0 20px;
     color: #fff;
   }
   .btn {
@@ -1239,9 +1258,9 @@ form {
   }
   .news {
     position: absolute;
-    width: 22%;
+    width: 11%;
     bottom: 50px;
-    right: 3%;
+    right: 12%;
   }
   .xerox {
     width: 50%;
@@ -1257,9 +1276,12 @@ form {
   }
 }
 .hq-cont-yellow {
-  height: 349px;
-  overflow-y: scroll;
+  height: 396px;
+  overflow-y: auto;
   margin-bottom: 8px;
+  a{
+    font-weight: 600;
+  }
   .head-yellow {
     font-size: 34px;
     font-weight: 300;
@@ -1279,67 +1301,66 @@ form {
     z-index: 1;
     position: relative;
     img {
-      width: 280px;
+      width: 33%;
       right: 5px;
     }
     &.bt-workshop img {
-      width: 200px;
+      width: 220px;
     }
   }
   .bt-engage {
-    bottom: 110px;
+    bottom: 140px;
   }
   .bt-happness {
     bottom: 120px;
     img {
-      width: 270px;
+      width: 300px;
     }
   }
   .bt-workshop {
     bottom: 150px;
     img {
       width: 200px;
-      bottom: -200px;
+      right: 50px;
     }
   }
   .bt-corporate {
-    bottom: 120px;
+    bottom: 145px;
     img {
-      width: 15%!important;
-      right: 128px;
-      bottom: -175px;
+      width: 16%!important;
+      right: 100px;
     }
   }
   .bt-internal {
-    bottom: 120px;
+    bottom: 145px;
   }
   .bt-digital {
-    bottom: 140px;
+    bottom: 150px;
     img {
-      width: 25%;
-      right: 70px;
+      width: 27%;
+      right: 40px;
     }
   }
   .bt-wrk-space {
-    bottom: 250px;
+    bottom: 260px;
     img {
       right: 150px;
-      width: 25%;
+      width: 26%;
     }
   }
   .bt-employer {
     bottom: 100px;
     img {
-      width: 320px;
+      width: 33%;
       right: 10px;
       bottom: -122px;
     }
   }
   .bt-quirkey {
-    bottom: 140px;
+    bottom: 150px;
     img {
-      width: 19%!important;
-      right: 100px;
+      width: 20% !important;
+      right: 70px;
     }
   }
   .window-right {
@@ -1610,6 +1631,12 @@ img.bubble-middle {
 }
 .bubble {
   opacity: 0.6;
+}
+.main-head,
+.payment .sub-head,
+.cont {
+  position: relative;
+  z-index: 2;
 }
 @import "animation.scss";
 @import "mobile.scss";
