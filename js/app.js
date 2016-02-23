@@ -85,10 +85,10 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
       controller: 'HomeCtrl'
     })
     .state('awesomenessid', {
-      url: "/:id",
+      url: "/awesomeness/:id",
       templateUrl: "views/template.html",
       controller: 'AwesomenessCtrl'
-    })
+    });
   $urlRouterProvider.otherwise("/");
 });
 
