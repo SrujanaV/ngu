@@ -66,6 +66,9 @@ section#home {
   border-color: $brand-brown;
   .navbar-nav {
     padding-left: 30px;
+    .active > a {
+      background-color: $brand-brown;
+    }
   }
   a {
     font-size: 16px;
@@ -161,7 +164,7 @@ a:focus {
   margin: 20px 0;
 }
 .box-red {
-  background: $box-red-color;
+  background: $brand-brown;
   padding: 30px;
   margin: 20px 0;
   color: #fff;
@@ -213,8 +216,11 @@ a:focus {
   margin: 20px 0;
   color: #fff;
 }
+.bb + .bb {
+  border-top: 1px solid $border-color;
+}
 .bb {
-  border-bottom: 1px solid $border-color;
+  // border-bottom: 1px solid $border-color;
   margin-right: 0;
 }
 .head-main {
@@ -245,6 +251,9 @@ a:focus {
     top: 25px;
     z-index: 999;
   }
+}
+.pay-abt-header .sticky-bottom-abtpay {
+  position: fixed;
 }
 p {
   text-align: justify;
@@ -844,7 +853,7 @@ form {
 }
 // contact
 .contactus {
-  padding: 50px 0;
+  padding: 90px 0;
   .heading {
     margin: 0 0 50px;
   }
@@ -987,7 +996,7 @@ form {
 }
 // subscribe
 .subscribe {
-  padding: 40px 0;
+  padding: 90px 0;
   background-color: $brand-yellow;
   .img-holder {
     width: 75%;
@@ -1034,6 +1043,8 @@ form {
   .content {
     width: 90%;
     padding-top: 130px;
+    z-index: 3;
+    position: relative;
     p {
       margin-bottom: 20px;
     }
@@ -1071,11 +1082,12 @@ form {
       font-size: 14px;
       margin-bottom: 20px;
     }
-    a{
+    a {
       font-weight: 600;
     }
   }
   .services-badge {
+    width: 96%;
     margin-bottom: 20px;
     .col-md-4 {
       margin-bottom: 20px;
@@ -1122,6 +1134,10 @@ form {
 }
 .hq-bg {
   background: $bg-color-green;
+  a {
+    color: #fff;
+    font-weight: 500;
+  }
   .social-links {
     padding-right: 0;
     z-index: 4;
@@ -1279,7 +1295,7 @@ form {
   height: 396px;
   overflow-y: auto;
   margin-bottom: 8px;
-  a{
+  a {
     font-weight: 600;
   }
   .head-yellow {

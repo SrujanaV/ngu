@@ -3,12 +3,6 @@
     width: 80%;
   }
   .client-speaks {
-    .slider-client {
-      zoom: 0.8;
-    }
-    .client-desk {
-      zoom: 0.8;
-    }
     .home-head {
       padding-left: 35px;
     }
@@ -57,7 +51,7 @@
   .boy {
     left: 26%;
     img {
-      width: 54%;
+      width: 44%;
     }
   }
   .contact-girl {
@@ -140,13 +134,12 @@
     .hq-confess {
       display: none;
     }
+    .clock {
+      top: 10%;
+    }
   }
   .client-speaks {
-    .slider-client {
-      zoom: 0.7;
-    }
     .client-desk {
-      zoom: 0.7;
       .home-head {
         padding-left: 35px;
       }
@@ -324,14 +317,6 @@
           bottom: 0;
         }
       }
-    }
-  }
-  @keyframes fly-superman-animation {
-    from {
-      transform: rotate(360deg) translateX(150px);
-    }
-    to {
-      transform: rotate(0deg) translateX(150px);
     }
   }
   .tab-menu {
@@ -673,7 +658,6 @@
       .flexslider {
         width: 300px !important;
         margin: 0 auto;
-        zoom: 0.75;
       }
     }
   }

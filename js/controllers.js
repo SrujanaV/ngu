@@ -39,8 +39,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     };
 
-
-
     $scope.section = {
       one: "views/content/section/home/section1.html",
       two: "views/content/section/home/section2.html",
@@ -55,105 +53,114 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     };
     $scope.clients = [{
       image: "img/client/client1.png"
-    }, {
-      image: "img/client/client2.png"
-    }, {
-      image: "img/client/client3.png"
-    }, {
+    },
+    // {
+    //   image: "img/client/client2.png"
+    // },
+    //  {
+    //   // image: "img/client/client3.png"
+    // },
+     {
       image: "img/client/client4.png"
     }, {
       image: "img/client/client5.png"
-    }, {
-      image: "img/client/client6.png"
-    }, {
-      image: "img/client/client7.png"
-    }, {
-      image: "img/client/client8.png"
-    }, {
+    }
+    // , {
+    //   image: "img/client/client6.png"
+    // }
+    // , {
+    //   image: "img/client/client7.png"
+    // }, {
+    //   image: "img/client/client8.png"
+    // }
+
+
+    ,{
       image: "img/client/client9.png"
     }, {
       image: "img/client/client10.png"
-    }, {
-      image: "img/client/client11.png"
-    }
-    , {
-      image: "img/client/client12.png"
-    }
-    , {
-      image: "img/client/client13.png"
-    }
-    , {
-      image: "img/client/client14.png"
-    }
-    , {
-      image: "img/client/client15.png"
-    }
-    , {
-      image: "img/client/client16.png"
-    }
-    , {
-      image: "img/client/client17.png"
-    }
-    , {
-      image: "img/client/client18.png"
-    }
-    , {
-      image: "img/client/client19.png"
-    }
-    , {
-      image: "img/client/client20.png"
-    }
-    , {
-      image: "img/client/client22.png"
-    }
-    , {
-      image: "img/client/client23.png"
-    }
-    , {
-      image: "img/client/client24.png"
-    }
-    , {
-      image: "img/client/client25.png"
-    }
-    , {
-      image: "img/client/client26.png"
-    }
-    , {
-      image: "img/client/client27.png"
-    }
-    , {
-      image: "img/client/client28.png"
-    }
-    , {
-      image: "img/client/client29.png"
-    }
-    , {
-      image: "img/client/client30.png"
-    }
-    , {
-      image: "img/client/client31.png"
-    }
-    , {
-      image: "img/client/client32.png"
-    }
-    , {
-      image: "img/client/client33.png"
-    }
-    , {
-      image: "img/client/client34.png"
-    }
-    , {
-      image: "img/client/client35.png"
-    }
-    , {
-      image: "img/client/client36.png"
-    }
-    , {
-      image: "img/client/client37.png"
-    }
-    , {
-      image: "img/client/client38.png"
-    }
+    },
+    //  {
+    //   image: "img/client/client11.png"
+    // }
+    // , {
+    //   image: "img/client/client12.png"
+    // }
+    // , {
+    //   image: "img/client/client13.png"
+    // }
+    // , {
+    //   image: "img/client/client14.png"
+    // }
+    // , {
+    //   image: "img/client/client15.png"
+    // }
+    // , {
+    //   image: "img/client/client16.png"
+    // }
+    // , {
+    //   image: "img/client/client17.png"
+    // }
+    // , {
+    //   image: "img/client/client18.png"
+    // }
+    // , {
+    //   image: "img/client/client19.png"
+    // }
+    // , {
+    //   image: "img/client/client20.png"
+    // }
+    // , {
+    //   image: "img/client/client22.png"
+    // }
+    // , {
+    //   image: "img/client/client23.png"
+    // }
+    // , {
+    //   image: "img/client/client24.png"
+    // }
+    // , {
+    //   image: "img/client/client25.png"
+    // }
+    // , {
+    //   image: "img/client/client26.png"
+    // }
+    // , {
+    //   image: "img/client/client27.png"
+    // }
+    // , {
+    //   image: "img/client/client28.png"
+    // }
+    // , {
+    //   image: "img/client/client29.png"
+    // }
+    // , {
+    //   image: "img/client/client30.png"
+    // }
+    // , {
+    //   image: "img/client/client31.png"
+    // }
+    // , {
+    //   image: "img/client/client32.png"
+    // }
+    // , {
+    //   image: "img/client/client33.png"
+    // }
+    // , {
+    //   image: "img/client/client34.png"
+    // }
+    // , {
+    //   image: "img/client/client35.png"
+    // }
+    // , {
+    //   image: "img/client/client36.png"
+    // }
+    // , {
+    //   image: "img/client/client37.png"
+    // }
+    // , {
+    //   image: "img/client/client38.png"
+    // }
   ];
     $scope.clients = _.chunk($scope.clients, 12);
     for (var i = 0; i < $scope.clients.length; i++) {
@@ -206,17 +213,36 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       place: "ARM"
     }];
   })
-  .controller('AwesomenessCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
+  .controller('AwesomenessCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("awesomeness");
     $scope.menutitle = NavigationService.makeactive("Awesomeness");
     TemplateService.title = $scope.menutitle;
-    $scope.navigation = NavigationService.getnav();
-    TemplateService.header = "views/header-other.html";
+    $scope.navigation = NavigationService.getnav2();
+    // TemplateService.header = "views/header2.html";
+
+    function makeAnimation(id) {
+      if (_.isEmpty(id)) {
+        id = "awsomeness";
+      }
+      var someElement = angular.element(document.getElementById(id));
+      $document.scrollToElement(someElement, 0, 1400);
+    }
+
+    $scope.$on('$viewContentLoaded', function(event) {
+      setTimeout(function() {
+        makeAnimation($stateParams.id);
+      }, 1000);
+    });
 
     $scope.changeURL = function(id) {
-      console.log(id);
-      $location.path("" + id);
+      $state.transitionTo('awesomenessid', {
+        id: id
+      }, {
+        notify: false
+      });
+      makeAnimation(id);
+      $location.replace();
     };
     $scope.section = {
       one: "views/content/section/awesomeness/section1.html",
@@ -272,7 +298,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       place: "ARM"
     }];
     new WOW().init();
-
   })
   .controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
@@ -408,11 +433,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $location.path("" + id);
     };
   })
+
   .controller('headerctrl', function($scope, TemplateService) {
     $scope.template = TemplateService;
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
       $(window).scrollTop(0);
     });
-  })
-
-;
+  });

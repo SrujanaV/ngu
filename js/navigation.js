@@ -8,11 +8,11 @@ var navigationservice = angular.module('navigationservice', [])
   }, {
     name: "Services",
     classis: "active",
-    anchor: "services",
+    anchor: "employeeengagement",
   }, {
     name: "Happyness Quotient",
     classis: "active",
-    anchor: "happyness-quotient",
+    anchor: "happynessquotient",
   }, {
     name: "Blog",
     classis: "active",
@@ -31,9 +31,30 @@ var navigationservice = angular.module('navigationservice', [])
     anchor: "contact",
   }];
 
+  var navigation2 = [{
+    name: "Client Work",
+    classis: "active",
+    anchor: "clientwork",
+  }, {
+    name: "Business Award",
+    classis: "active",
+    anchor: "businessaward",
+  }, {
+    name: "Testimonial",
+    classis: "active",
+    anchor: "testimonial",
+  }, {
+    name: "A New Wave",
+    classis: "active",
+    anchor: "newwave",
+  }];
+
   return {
     getnav: function() {
       return navigation;
+    },
+    getnav2: function() {
+      return navigation2;
     },
     makeactive: function(menuname) {
       for (var i = 0; i < navigation.length; i++) {
@@ -45,6 +66,5 @@ var navigationservice = angular.module('navigationservice', [])
       }
       return menuname;
     },
-
   };
 });

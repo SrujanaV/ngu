@@ -45,37 +45,37 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
       controller: 'HappynessCtrl'
     })
     .state('workshops', {
-      url: "/workshops",
+      url: "/workshopsoffsites",
       templateUrl: "views/template-tabs.html",
       controller: 'WorkshopsCtrl'
     })
     .state('employer-branding', {
-      url: "/employer-branding",
+      url: "/employerbranding",
       templateUrl: "views/template-tabs.html",
       controller: 'EmployerCtrl'
     })
     .state('internal', {
-      url: "/internal",
+      url: "/internalcommunication",
       templateUrl: "views/template-tabs.html",
       controller: 'InternalCtrl'
     })
     .state('workspace', {
-      url: "/workspace",
+      url: "/workspacedesign",
       templateUrl: "views/template-tabs.html",
       controller: 'WorkspaceCtrl'
     })
     .state('corporate', {
-      url: "/corporate",
+      url: "/corporatesocial",
       templateUrl: "views/template-tabs.html",
       controller: 'CorporateCtrl'
     })
     .state('digital', {
-      url: "/digital",
+      url: "/digitaltechnology",
       templateUrl: "views/template-tabs.html",
       controller: 'DigitalCtrl'
     })
     .state('quirky', {
-      url: "/quirky",
+      url: "/beingquirky",
       templateUrl: "views/template-tabs.html",
       controller: 'QuirkyCtrl'
     })
