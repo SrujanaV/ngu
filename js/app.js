@@ -65,7 +65,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
       controller: 'WorkspaceCtrl'
     })
     .state('corporate', {
-      url: "/corporatesocial",
+      url: "/csr",
       templateUrl: "views/template-tabs.html",
       controller: 'CorporateCtrl'
     })
@@ -133,7 +133,7 @@ firstapp.directive("scroll", function($window) {
     angular.element($window).bind("scroll", function() {
       var windowHeight = $(window).height();
       if (this.pageYOffset >= windowHeight) {
-        console.log(windowHeight);
+        // console.log(windowHeight);
         element.addClass('affix');
       } else {
         element.removeClass('affix');
@@ -160,7 +160,7 @@ firstapp.directive('ngu', function($compile, $parse) {
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
         .on("enter", function(e) {
-          console.log("NGU Animation");
+          // console.log("NGU Animation");
           setTimeout(function() {
             nguAni = true;
           }, 5000);
@@ -176,10 +176,10 @@ firstapp.directive('ngu', function($compile, $parse) {
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
         .on("enter", function(e) {
-          console.log("shark and snail Enter");
+          // console.log("shark and snail Enter");
           setTimeout(function() {
             nguAni2 = true;
-            console.log("done");
+            // console.log("done");
           }, 5000);
 
           if (nguAni2 == true) {
@@ -194,10 +194,10 @@ firstapp.directive('ngu', function($compile, $parse) {
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
         .on("enter", function(e) {
-          console.log("Flying plane");
+          // console.log("Flying plane");
           setTimeout(function() {
             nguAni3 = true;
-            console.log("done");
+            // console.log("done");
           }, 5000);
 
           if (nguAni3 == true) {
@@ -212,10 +212,10 @@ firstapp.directive('ngu', function($compile, $parse) {
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
         .on("enter", function(e) {
-          console.log("Flying plane");
+          // console.log("Flying plane");
           setTimeout(function() {
             nguAni4 = true;
-            console.log("done");
+            // console.log("done");
           }, 5000);
 
           if (nguAni4 == true) {
@@ -230,10 +230,10 @@ firstapp.directive('ngu', function($compile, $parse) {
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
         .on("enter", function(e) {
-          console.log("Flying plane payment");
+          // console.log("Flying plane payment");
           setTimeout(function() {
             nguAni5 = true;
-            console.log("done");
+            // console.log("done");
           }, 5000);
 
           if (nguAni5 == true) {
@@ -248,10 +248,10 @@ firstapp.directive('ngu', function($compile, $parse) {
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
         .on("enter", function(e) {
-          console.log("Flying plane work");
+          // console.log("Flying plane work");
           setTimeout(function() {
             nguAni6 = true;
-            console.log("done");
+            // console.log("done");
           }, 5000);
           if (nguAni6 == true) {
             $(".work .rocket img").attr("src", "img/gif/Paper-Plane-2a.gif");

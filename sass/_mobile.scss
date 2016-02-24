@@ -3,11 +3,11 @@
     width: 80%;
   }
   .client-speaks {
-    .home-head {
-      padding-left: 35px;
-    }
+    // .home-head {
+    //   padding-left: 35px;
+    // }
     .flex-direction-nav .flex-prev {
-      left: -410px !important;
+      left: -310px !important;
     }
     .flex-direction-nav .flex-next {
       right: -35px !important;
@@ -84,8 +84,15 @@
 @media (max-width: $screen-sm-max) {
   .about-info,
   .services .services-info,
-  .contact-detail {
-    width: 90%;
+  .contact-detail,
+  .hq-info,
+  .media-head,
+  .section-ngu .content p {
+    width: 90%!important;
+  }
+  .width90 {
+    width: auto;
+    padding-right: 0;
   }
   .animate-dol-snail {
     display: none;
@@ -145,7 +152,7 @@
       }
     }
     .flex-direction-nav .flex-prev {
-      left: -300px !important;
+      left: -35px !important;
     }
   }
   .about-us {
@@ -501,7 +508,7 @@
     }
     .slider-client {
       float: none;
-      zoom: 1;
+      zoom: 0.8;
       .flexslider {
         width: 300px!important;
         margin: 0 auto;
@@ -531,6 +538,7 @@
     .media-partners {
       background: #fff;
       padding: 10px;
+      margin-right: 20px;
     }
   }
   .wifi {
@@ -676,10 +684,11 @@
   }
   .subscribe {
     .subscribe-me input {
-      width: 175px;
+      width: 160px;
     }
     form button.submit {
-      padding: 6px 8px;
+      padding: 6px;
+      font-size: 11px;
     }
   }
   .hq-cont-yellow .head-yellow {
@@ -720,6 +729,27 @@
     //     bottom: 240px;
     //   }
     // }
+  }
+  .awsomeness {
+    .puppet {
+      .guy2 {
+        bottom: 38%;
+        top: inherit;
+      }
+      .lady1 {
+        bottom: 140px;
+      }
+      .home-lady2 {
+        bottom: 140px;
+      }
+      .home-guy1 {
+        bottom: 128px;
+      }
+    }
+  }
+  .services figcaption {
+    font-size: 10px;
+    height: 35px !important;
   }
 }
 @media screen and (max-device-width: 580px) and (orientation : landscape) {

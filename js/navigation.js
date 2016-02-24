@@ -33,19 +33,19 @@ var navigationservice = angular.module('navigationservice', [])
 
   var navigation2 = [{
     name: "Client Work",
-    classis: "active",
+    classis: "actives",
     anchor: "clientwork",
   }, {
     name: "Business Award",
-    classis: "active",
+    classis: "actives",
     anchor: "businessaward",
   }, {
     name: "Testimonial",
-    classis: "active",
+    classis: "actives",
     anchor: "testimonial",
   }, {
     name: "A New Wave",
-    classis: "active",
+    classis: "actives",
     anchor: "newwave",
   }];
 
@@ -56,15 +56,27 @@ var navigationservice = angular.module('navigationservice', [])
     getnav2: function() {
       return navigation2;
     },
-    makeactive: function(menuname) {
+    makeactive: function(id) {
+      console.log(id);
       for (var i = 0; i < navigation.length; i++) {
-        if (navigation[i].name == menuname) {
+        if (navigation[i].anchor == id) {
           navigation[i].classis = "active";
         } else {
           navigation[i].classis = "";
         }
       }
-      return menuname;
+      return id;
+    },
+    makeactive2: function(id) {
+      console.log(id);
+      for (var i = 0; i < navigation2.length; i++) {
+        if (navigation2[i].anchor == id) {
+          navigation2[i].classis = "actives";
+        } else {
+          navigation2[i].classis = "";
+        }
+      }
+      return id;
     },
   };
 });
