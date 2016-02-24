@@ -51,116 +51,187 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       nine: "views/content/section/home/section9.html",
       ten: "views/content/section/home/section10.html",
     };
-    $scope.clients = [{
-        image: "img/client/client1.png"
-      },
-      // {
-      //   image: "img/client/client2.png"
-      // },
-      //  {
-      //   // image: "img/client/client3.png"
-      // },
+    $scope.clients = [
       {
-        image: "img/client/client4.png"
-      }, {
-        image: "img/client/client5.png"
-      }
-      // , {
-      //   image: "img/client/client6.png"
-      // }
-      // , {
-      //   image: "img/client/client7.png"
-      // }, {
-      //   image: "img/client/client8.png"
-      // }
-
-
-      , {
-        image: "img/client/client9.png"
-      }, {
-        image: "img/client/client10.png"
+        image: "img/client/Tata-Sky.png"
       },
-      //  {
-      //   image: "img/client/client11.png"
-      // }
-      // , {
-      //   image: "img/client/client12.png"
-      // }
-      // , {
-      //   image: "img/client/client13.png"
-      // }
-      // , {
-      //   image: "img/client/client14.png"
-      // }
-      // , {
-      //   image: "img/client/client15.png"
-      // }
-      // , {
-      //   image: "img/client/client16.png"
-      // }
-      // , {
-      //   image: "img/client/client17.png"
-      // }
-      // , {
-      //   image: "img/client/client18.png"
-      // }
-      // , {
-      //   image: "img/client/client19.png"
-      // }
-      // , {
-      //   image: "img/client/client20.png"
-      // }
-      // , {
-      //   image: "img/client/client22.png"
-      // }
-      // , {
-      //   image: "img/client/client23.png"
-      // }
-      // , {
-      //   image: "img/client/client24.png"
-      // }
-      // , {
-      //   image: "img/client/client25.png"
-      // }
-      // , {
-      //   image: "img/client/client26.png"
-      // }
-      // , {
-      //   image: "img/client/client27.png"
-      // }
-      // , {
-      //   image: "img/client/client28.png"
-      // }
-      // , {
-      //   image: "img/client/client29.png"
-      // }
-      // , {
-      //   image: "img/client/client30.png"
-      // }
-      // , {
-      //   image: "img/client/client31.png"
-      // }
-      // , {
-      //   image: "img/client/client32.png"
-      // }
-      // , {
-      //   image: "img/client/client33.png"
-      // }
-      // , {
-      //   image: "img/client/client34.png"
-      // }
-      // , {
-      //   image: "img/client/client35.png"
-      // }
-      // , {
-      //   image: "img/client/client36.png"
-      // }
-      // , {
-      //   image: "img/client/client37.png"
-      // }
-      // , {
-      //   image: "img/client/client38.png"
-      // }
+      {
+        image: "img/client/DHL-GLobal-Forwarding.png"
+      },
+      {
+        image: "img/client/Loreal-India.png"
+      },
+      {
+        image: "img/client/Aditya-Birla-Nuvo.png"
+      },
+      {
+        image: "img/client/Housing.png"
+      },
+      {
+        image: "img/client/Flipkart.png"
+      },
+      {
+        image: "img/client/Shoppers-Stop.png"
+      },
+      {
+        image: "img/client/Maxus.png"
+      },
+      {
+        image: "img/client/Reliance-Brands-Limited.png"
+      },
+      {
+        image: "img/client/Indus-Towers.png"
+      },
+      {
+        image: "img/client/Accenture.png"
+      },
+      {
+        image: "img/client/Star-Plus.png"
+      },
+      {
+        image: "img/client/HDFC-Home-Loans.png"
+      },
+      {
+        image: "img/client/Reliance.png"
+      },
+      {
+        image: "img/client/ICICI-Prudential.png"
+      },
+      {
+        image: "img/client/Max-Bupa.png"
+      },
+      {
+        image: "img/client/DHL.png"
+      },
+      {
+        image: "img/client/EMC2.png"
+      },
+      {
+        image: "img/client/Timberland.png"
+      },
+      {
+        image: "img/client/Groupm.png"
+      },
+      {
+        image: "img/client/Hamleys.png"
+      },
+      {
+        image: "img/client/Minda.png"
+      },
+      {
+        image: "img/client/Barclays.png"
+      },
+      {
+        image: "img/client/Cogitate.png"
+      },
+      {
+        image: "img/client/Hypercity.png"
+      },
+      {
+        image: "img/client/CWD.png"
+      },
+      {
+        image: "img/client/Novo-Nordisk.png"
+      },
+      {
+        image: "img/client/Infradebt.png"
+      },
+      {
+        image: "img/client/ARM.png"
+      },
+      {
+        image: "img/client/IMT.png"
+      },
+      {
+        image: "img/client/Godrej-Properties.png"
+      },
+      {
+        image: "img/client/TRAAIN.png"
+      },
+      {
+        image: "img/client/JP-Morgan.png"
+      },
+      {
+        image: "img/client/Marsh.png"
+      },
+      {
+        image: "img/client/PepsiCo.png"
+      },
+      {
+        image: "img/client/KPMG.png"
+      },
+      {
+        image: "img/client/Oracle.png"
+      },
+      {
+        image: "img/client/NAB.png"
+      },
+      {
+        image: "img/client/Quintiles.png"
+      },
+      {
+        image: "img/client/RGA.png"
+      },
+      {
+        image: "img/client/VVF.png"
+      },
+      {
+        image: "img/client/Ingram-Micro.png"
+      },
+      {
+        image: "img/client/Aditya-Birla-Nuvo.png"
+      },
+      {
+        image: "img/client/Pantaloons.png"
+      },
+      {
+        image: "img/client/Tata-Teleservices-Limited.png"
+      },
+      {
+        image: "img/client/Aditya-Birla-Nuvo.png"
+      },
+      {
+        image: "img/client/Tata-Docomo.png"
+      },
+      {
+        image: "img/client/Phoenix-ARC.png"
+      },
+      {
+        image: "img/client/SBI-Life-Insurance.png"
+      },
+      {
+        image: "img/client/DHFL_Brand_Logo.png"
+      },
+      {
+        image: "img/client/NISOS.png"
+      },
+      {
+        image: "img/client/Aditya-Birla-Nuvo.png"
+      },
+      {
+        image: "img/client/JumboKing.png"
+      },
+      {
+        image: "img/client/Raymonds.png"
+      },
+      {
+        image: "img/client/NAB.png"
+      },
+      {
+        image: "img/client/Castrol.png"
+      },
+      {
+        image: "img/client/Shemaroo.png"
+      },
+      {
+        image: "img/client/ESPN.png"
+      },
+      {
+        image: "img/client/IndiaFirst.png"
+      },
+      {
+        image: "img/client/RBL-bank.png"
+      }
     ];
     $scope.clients = _.chunk($scope.clients, 12);
     for (var i = 0; i < $scope.clients.length; i++) {
@@ -295,7 +366,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       designation: "Director HR Asia,",
       place: "ARM"
     }];
-    new WOW().init();
+    // new WOW().init();
   })
   .controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
