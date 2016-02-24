@@ -5,7 +5,6 @@ var jsArray = [
   './bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js',
   './bower_components/flexslider/jquery.flexslider-min.js',
   './bower_components/angular-scroll/angular-scroll.min.js',
-  './bower_components/wowjs/dist/wow.min.js',
   './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
   './bower_components/lodash/lodash.min.js',
 

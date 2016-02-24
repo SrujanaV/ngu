@@ -287,14 +287,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   .controller('AwesomenessCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("awesomeness");
-    $scope.menutitle = NavigationService.makeactive("Awesomeness");
+    // $scope.menutitle = NavigationService.makeactive("Awesomeness");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav2();
     // TemplateService.header = "views/header2.html";
 
     function makeAnimation(id) {
       if (_.isEmpty(id)) {
-        id = "awsomeness";
+        id = "awesomeness";
       }
       var someElement = angular.element(document.getElementById(id));
       $document.scrollToElement(someElement, 0, 1400);
@@ -305,6 +305,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       }, 1000);
     });
     $scope.changeURL = function(id) {
+      $scope.menutitle = NavigationService.makeactive2(id);
       $state.transitionTo('awesomenessid', {
         id: id
       }, {

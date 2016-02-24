@@ -1,4 +1,10 @@
 @media (max-width: 1200px) {
+  .client-slider .slider-client .flex-direction-nav .flex-next {
+    right: -30px;
+  }
+  .client-slider .slider-client .flex-direction-nav .flex-prev {
+    left: -30px;
+  }
   .about-info {
     width: 80%;
   }
@@ -765,6 +771,31 @@
       .bubble5,
       .guy1 {
         top: 60%;
+      }
+    }
+  }
+}
+@media (max-width: $screen-xs-max) and (orientation: landscape) {
+  .awsomeness {
+    .puppet {
+      .lady1,
+      .chair-home,
+      .home-lady2,
+       {
+        bottom: 70px;
+      }
+      .home .lights1,
+      .home .lights2 {
+        width: 8%;
+      }
+      .home-guy1 {
+        bottom: 90px;
+      }
+      .lights {
+        bottom: 90px;
+      }
+      .guy2 {
+        top: 40%;
       }
     }
   }
