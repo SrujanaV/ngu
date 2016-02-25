@@ -55,9 +55,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       {
         image: "img/client/Tata-Sky.png"
       },
-      {
-        image: "img/client/DHL-GLobal-Forwarding.png"
-      },
+      // {
+      //   image: "img/client/DHL-GLobal-Forwarding.png"
+      // },
       {
         image: "img/client/Loreal-India.png"
       },
