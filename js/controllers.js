@@ -3,9 +3,29 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 .controller('HomeCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("home");
-    $scope.menutitle = NavigationService.makeactive("Home");
+    // $scope.menutitle = NavigationService.makeactive("Home");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    $scope.menutitle = NavigationService.makeactive($stateParams.id);
+    $scope.submitContact = function(contactForm, contactFormValid) {
+      if (contactFormValid.$valid == true) {
+        console.log("All is well");
+        $scope.contactFormComplete = true;
+      } else {
+        console.log("There is an error");
+      }
+    };
+
+    $scope.submitSubscribe = function(subscribeForm, subscribeFormValid) {
+      if (subscribeFormValid.$valid == true) {
+        console.log("All is well");
+        $scope.subscribeFormComplete = true;
+      } else {
+        console.log("There is an error");
+      }
+    };
+
+
 
     function makeAnimation(id) {
       if (_.isEmpty(id)) {
@@ -23,6 +43,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
     $scope.changeURL = function(id) {
+      $scope.menutitle = NavigationService.makeactive(id);
       $state.transitionTo('homeid', {
         id: id
       }, {
@@ -36,7 +57,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.activeThumb = 0;
     $scope.speakChange = function() {
       $scope.activeThumb = $(".client-speaks .slider-client ol.flex-control-nav.flex-control-paging li a").index($(".client-speaks .slider-client ol.flex-control-nav.flex-control-paging li a.flex-active"));
-
     };
 
     $scope.section = {
@@ -51,8 +71,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       nine: "views/content/section/home/section9.html",
       ten: "views/content/section/home/section10.html",
     };
-    $scope.clients = [
-      {
+    $scope.clients = [{
         image: "img/client/Tata-Sky.png"
       },
       // {
@@ -60,176 +79,119 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       // },
       {
         image: "img/client/Loreal-India.png"
-      },
-      {
+      }, {
         image: "img/client/Aditya-Birla-Nuvo.png"
-      },
-      {
+      }, {
         image: "img/client/Housing.png"
-      },
-      {
+      }, {
         image: "img/client/Flipkart.png"
-      },
-      {
+      }, {
         image: "img/client/Shoppers-Stop.png"
-      },
-      {
+      }, {
         image: "img/client/Maxus.png"
-      },
-      {
+      }, {
         image: "img/client/Reliance-Brands-Limited.png"
-      },
-      {
+      }, {
         image: "img/client/Indus-Towers.png"
-      },
-      {
+      }, {
         image: "img/client/Accenture.png"
-      },
-      {
+      }, {
         image: "img/client/Star-Plus.png"
-      },
-      {
+      }, {
         image: "img/client/HDFC-Home-Loans.png"
-      },
-      {
+      }, {
         image: "img/client/Reliance.png"
-      },
-      {
+      }, {
         image: "img/client/ICICI-Prudential.png"
-      },
-      {
+      }, {
         image: "img/client/Max-Bupa.png"
-      },
-      {
+      }, {
         image: "img/client/DHL.png"
-      },
-      {
+      }, {
         image: "img/client/EMC2.png"
-      },
-      {
+      }, {
         image: "img/client/Timberland.png"
-      },
-      {
+      }, {
         image: "img/client/Groupm.png"
-      },
-      {
+      }, {
         image: "img/client/Hamleys.png"
-      },
-      {
+      }, {
         image: "img/client/Minda.png"
-      },
-      {
+      }, {
         image: "img/client/Barclays.png"
-      },
-      {
+      }, {
         image: "img/client/Cogitate.png"
-      },
-      {
+      }, {
         image: "img/client/Hypercity.png"
-      },
-      {
+      }, {
         image: "img/client/CWD.png"
-      },
-      {
+      }, {
         image: "img/client/Novo-Nordisk.png"
-      },
-      {
+      }, {
         image: "img/client/Infradebt.png"
-      },
-      {
+      }, {
         image: "img/client/ARM.png"
-      },
-      {
+      }, {
         image: "img/client/IMT.png"
-      },
-      {
+      }, {
         image: "img/client/Godrej-Properties.png"
-      },
-      {
+      }, {
         image: "img/client/TRAAIN.png"
-      },
-      {
+      }, {
         image: "img/client/JP-Morgan.png"
-      },
-      {
+      }, {
         image: "img/client/Marsh.png"
-      },
-      {
+      }, {
         image: "img/client/PepsiCo.png"
-      },
-      {
+      }, {
         image: "img/client/KPMG.png"
-      },
-      {
+      }, {
         image: "img/client/Oracle.png"
-      },
-      {
+      }, {
         image: "img/client/NAB.png"
-      },
-      {
+      }, {
         image: "img/client/Quintiles.png"
-      },
-      {
+      }, {
         image: "img/client/RGA.png"
-      },
-      {
+      }, {
         image: "img/client/VVF.png"
-      },
-      {
+      }, {
         image: "img/client/Ingram-Micro.png"
-      },
-      {
+      }, {
         image: "img/client/Aditya-Birla-Nuvo.png"
-      },
-      {
+      }, {
         image: "img/client/Pantaloons.png"
-      },
-      {
+      }, {
         image: "img/client/Tata-Teleservices-Limited.png"
-      },
-      {
+      }, {
         image: "img/client/Aditya-Birla-Nuvo.png"
-      },
-      {
+      }, {
         image: "img/client/Tata-Docomo.png"
-      },
-      {
+      }, {
         image: "img/client/Phoenix-ARC.png"
-      },
-      {
+      }, {
         image: "img/client/SBI-Life-Insurance.png"
-      },
-      {
+      }, {
         image: "img/client/DHFL_Brand_Logo.png"
-      },
-      {
+      }, {
         image: "img/client/NISOS.png"
-      },
-      {
+      }, {
         image: "img/client/Aditya-Birla-Nuvo.png"
-      },
-      {
+      }, {
         image: "img/client/JumboKing.png"
-      },
-      {
+      }, {
         image: "img/client/Raymonds.png"
-      },
-      {
+      }, {
         image: "img/client/NAB.png"
-      },
-      {
+      }, {
         image: "img/client/Castrol.png"
-      },
-      {
+      }, {
         image: "img/client/Shemaroo.png"
-      },
-      {
+      }, {
         image: "img/client/ESPN.png"
-      },
-      {
+      }, {
         image: "img/client/IndiaFirst.png"
-      },
-      {
+      }, {
         image: "img/client/RBL-bank.png"
       }
     ];
@@ -287,10 +249,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   .controller('AwesomenessCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("awesomeness");
-    // $scope.menutitle = NavigationService.makeactive("Awesomeness");
+    // $scope.menutitle = NavigationService.makeactive2("Awesomeness");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav2();
     // TemplateService.header = "views/header2.html";
+    $scope.menutitle = NavigationService.makeactive2($stateParams.id);
+    console.log($stateParams.id);
 
     function makeAnimation(id) {
       if (_.isEmpty(id)) {

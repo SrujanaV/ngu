@@ -29,34 +29,42 @@
         </div>
         <div class="col-sm-6">
           <div class="contact-detail">
-            <form name="contactForm" >
+            <form name="contactFormValid" ng-hide="contactFormComplete">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name :" ng-model="contact.name" required>
-                    <p class="red-color">Please Enter your Name</p>
+                    <input type="text" class="form-control" placeholder="Name :" name="myName" ng-model="contactForm.name" required>
+                    <div ng-show="contactFormValid.myName.$error.required && contactFormValid.myName.$touched" class="red-color">
+                      Please Enter your Name
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Number :" ng-model="number" only-digits ng-model="contact.number" required>
-                    <p class="red-color">Please Enter your Number</p>
+                    <input type="number" class="form-control" placeholder="Number :" name="myNumber" ng-model="contactForm.number" required>
+                    <div ng-show="contactFormValid.myNumber.$error.required && contactFormValid.myNumber.$touched" role="alert" class="red-color">
+                      Please Enter your Number
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Organization :"  ng-model="contact.organisation" required>
-                <p class="red-color">Please Enter your Organization Name</p>
+                <input type="text" class="form-control" placeholder="Organization :" name="myOrganisation" ng-model="contactForm.organisation" required>
+                <div ng-show="contactFormValid.myOrganisation.$error.required && contactFormValid.myOrganisation.$touched" role="alert" class="red-color">
+                  Please Enter your Organization Name
+                </div>
               </div>
               <div class="form-group">
-                <textarea name="" id="" rows="3" class="form-control" placeholder="Query :"  ng-model="contact.query" required></textarea>
-                <p class="red-color">Please Enter your Query</p>
+                <textarea id="" rows="3" class="form-control" placeholder="Query :" name="myQuery" ng-model="contactForm.query" required></textarea>
+                <div ng-show="contactFormValid.myQuery.$error.required && contactFormValid.myQuery.$touched" role="alert" class="red-color">
+                Please Enter your Query
+                </div>
               </div>
               <div class="text-right">
-                <button type="submit" class="submit btn">Submit</button>
+                <button class="submit btn" ng-click="submitContact(contactForm,contactFormValid)">Submit</button>
               </div>
             </form>
-            <h4>Thank you for contacting us</h4>
+            <h4 ng-show="contactFormComplete" class="thankyou">Thank you for Contacting Us</h4>
           </div>
         </div>
       </div>

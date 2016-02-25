@@ -4,13 +4,14 @@
       <img src="img/home/ngu-emo.png" alt="" class="img-responsive">
     </div>
     <div class="subscribe-me text-center">
-      <form action="" class="form-inline">
-        <input type="email" class="form-control" placeholder="Email :">
-        <button type="submit" class="form-control submit">Subscribe Now</button>
+      <form action="" class="form-inline" name="subscribeFormValid"  ng-hide="subscribeFormComplete">
+        <input type="email" class="form-control" placeholder="Email :" name="myMessage" ng-model="subscribeForm.message" required>
+        <button ng-click="submitSubscribe(subscribeForm,subscribeFormValid)" class="form-control submit">Subscribe Now</button>
+        <div ng-show="subscribeFormValid.myMessage.$error.required && subscribeFormValid.myMessage.$touched">
+        Please Enter your Email
+        </div>
       </form>
-      <!-- <div class="thank">
-        <p>Thank You For Subscribing</p>
-      </div> -->
+      <h4 class="thankyou" ng-show="subscribeFormComplete">Thank you for Subscription</h4>
     </div>
   </div>
 </section>

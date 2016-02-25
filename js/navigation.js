@@ -33,19 +33,15 @@ var navigationservice = angular.module('navigationservice', [])
 
   var navigation2 = [{
     name: "Client Work",
-    classis: "actives",
     anchor: "clientwork",
   }, {
     name: "Business Award",
-    classis: "actives",
     anchor: "businessaward",
   }, {
     name: "Testimonial",
-    classis: "actives",
     anchor: "testimonial",
   }, {
     name: "A New Wave",
-    classis: "actives",
     anchor: "newwave",
   }];
 
