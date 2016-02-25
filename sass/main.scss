@@ -23,6 +23,7 @@ $bg-color-payment: #76e5ba!default;
 $font-color: #3b2417!default;
 $border-color: #959595!default;
 $box-red-color: #8a2f1d!default;
+$red:#DC0000!default;
 $box-yellow-color: #ffb21d!default;
 $box-black-color: #272727!default;
 $font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
@@ -33,6 +34,9 @@ img.loading {
   opacity: 1;
   width: 32px !important;
   height: auto;
+}
+.red-color{
+  color: $red;
 }
 .text-bold {
   font-weight: 700;

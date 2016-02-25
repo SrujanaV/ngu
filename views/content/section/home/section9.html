@@ -29,29 +29,34 @@
         </div>
         <div class="col-sm-6">
           <div class="contact-detail">
-            <form action="">
+            <form name="contactForm" >
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name :">
+                    <input type="text" class="form-control" placeholder="Name :" ng-model="contact.name" required>
+                    <p class="red-color">Please Enter your Name</p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Number :" ng-model="number" only-digits>
+                    <input type="text" class="form-control" placeholder="Number :" ng-model="number" only-digits ng-model="contact.number" required>
+                    <p class="red-color">Please Enter your Number</p>
                   </div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Organization :">
+                <input type="text" class="form-control" placeholder="Organization :"  ng-model="contact.organisation" required>
+                <p class="red-color">Please Enter your Organization Name</p>
               </div>
               <div class="form-group">
-                <textarea name="" id="" rows="3" class="form-control" placeholder="Query :"></textarea>
+                <textarea name="" id="" rows="3" class="form-control" placeholder="Query :"  ng-model="contact.query" required></textarea>
+                <p class="red-color">Please Enter your Query</p>
               </div>
               <div class="text-right">
                 <button type="submit" class="submit btn">Submit</button>
               </div>
             </form>
+            <h4>Thank you for contacting us</h4>
           </div>
         </div>
       </div>
