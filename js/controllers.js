@@ -6,6 +6,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // $scope.menutitle = NavigationService.makeactive("Home");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    console.log($stateParams.id);
     $scope.menutitle = NavigationService.makeactive($stateParams.id);
     $scope.submitContact = function(contactForm, contactFormValid) {
       if (contactFormValid.$valid == true) {

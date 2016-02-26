@@ -15,15 +15,13 @@ var navigationservice = angular.module('navigationservice', [])
     anchor: "happynessquotient",
   }, {
     name: "Blog",
-    classis: "active",
     link: "http://www.willnevergrowup.com/blog/",
+    anchor: ""
   }, {
     name: "Media",
-    classis: "active",
     anchor: "media",
   }, {
     name: "Clients",
-    classis: "active",
     anchor: "clients",
   }, {
     name: "Contact Us",
