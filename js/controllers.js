@@ -9,7 +9,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     console.log($stateParams.id);
     $scope.menutitle = NavigationService.makeactive($stateParams.id);
     $scope.submitContact = function(contactForm, contactFormValid) {
-      if (contactFormValid.$valid == true) {
+      if (contactFormValid.$valid === true) {
         console.log("All is well");
         $scope.contactFormComplete = true;
       } else {
@@ -18,15 +18,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     };
 
     $scope.submitSubscribe = function(subscribeForm, subscribeFormValid) {
-      if (subscribeFormValid.$valid == true) {
+      if (subscribeFormValid.$valid === true) {
         console.log("All is well");
         $scope.subscribeFormComplete = true;
       } else {
         console.log("There is an error");
       }
     };
-
-
 
     function makeAnimation(id) {
       if (_.isEmpty(id)) {
