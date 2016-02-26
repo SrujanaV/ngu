@@ -11,6 +11,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.submitContact = function(contactForm, contactFormValid) {
       if (contactFormValid.$valid === true) {
         console.log("All is well");
+        NavigationService.subscribe(contactForm,function(data) {
+          console.log(data);
+          console.log("Form Submitted Sucessfully");
+        });
         $scope.contactFormComplete = true;
       } else {
         console.log("There is an error");
@@ -20,6 +24,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.submitSubscribe = function(subscribeForm, subscribeFormValid) {
       if (subscribeFormValid.$valid === true) {
         console.log("All is well");
+        NavigationService.subscribe(subscribeForm.email,function(data) {
+          console.log(data);
+          console.log("Form Submitted Sucessfully");
+        });
         $scope.subscribeFormComplete = true;
       } else {
         console.log("There is an error");

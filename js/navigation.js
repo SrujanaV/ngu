@@ -1,4 +1,4 @@
-var adminUrl = "http://wohlig.co.in/ngubackend/index.php";
+var adminUrl = "http://wohlig.co.in/ngubackend/index.php/json/";
 
 var navigationservice = angular.module('navigationservice', [])
 
@@ -64,10 +64,10 @@ var navigationservice = angular.module('navigationservice', [])
       return id;
     },
     subscribe: function(email, callback) {
-      $http.get(adminUrl + "?email=" + email).success(callback);
+      $http.get(adminUrl + "subscribe?email=" + email).success(callback);
     },
     formSubmit: function(form, callback) {
-      $http.post(adminUrl,form).success(callback);
+      $http.post(adminUrl+"contactSubmit",form).success(callback);
     },
     makeactive2: function(id) {
       console.log(id);
