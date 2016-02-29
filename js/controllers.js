@@ -259,7 +259,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // $scope.menutitle = NavigationService.makeactive2("Awesomeness");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav2();
-    // TemplateService.header = "views/header2.html";
+    TemplateService.footer = "views/footer2.html";
     $scope.menutitle = NavigationService.makeactive2($stateParams.id);
     console.log($stateParams.id);
 
