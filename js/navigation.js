@@ -38,8 +38,8 @@ var navigationservice = angular.module('navigationservice', [])
     name: "Business Award",
     anchor: "businessaward",
   }, {
-    name: "Testimonial",
-    anchor: "testimonial",
+    name: "Testimonials",
+    anchor: "testimonials",
   }, {
     name: "A New Wave",
     anchor: "newwave",

@@ -81,9 +81,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.clients = [{
         image: "img/client/Tata-Sky.png"
       },
-      // {
-      //   image: "img/client/DHL-GLobal-Forwarding.png"
-      // },
+      {
+        image: "img/client/DHLGlobalForwarding.png"
+      },
       {
         image: "img/client/Loreal-India.png"
       }, {
@@ -165,13 +165,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       }, {
         image: "img/client/Ingram-Micro.png"
       }, {
-        image: "img/client/Aditya-Birla-Nuvo.png"
-      }, {
         image: "img/client/Pantaloons.png"
       }, {
         image: "img/client/Tata-Teleservices-Limited.png"
-      }, {
-        image: "img/client/Aditya-Birla-Nuvo.png"
       }, {
         image: "img/client/Tata-Docomo.png"
       }, {
@@ -182,8 +178,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         image: "img/client/DHFL_Brand_Logo.png"
       }, {
         image: "img/client/NISOS.png"
-      }, {
-        image: "img/client/Aditya-Birla-Nuvo.png"
       }, {
         image: "img/client/JumboKing.png"
       }, {

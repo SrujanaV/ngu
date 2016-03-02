@@ -627,7 +627,7 @@
   .home {
     .lights1,
     .lights2 {
-      width: 15%;
+      width: 12%;
     }
     .lights1 {
       left: 10%;
@@ -647,6 +647,12 @@
   }
 }
 @media (max-width:480px) {
+  .home {
+    .lights1,
+    .lights2 {
+      width: 12%;
+    }
+  }
   .thought {
     .logo-opt {
       height: 140px;

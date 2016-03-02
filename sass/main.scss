@@ -23,19 +23,13 @@ $bg-color-payment: #76e5ba!default;
 $font-color: #3b2417!default;
 $border-color: #959595!default;
 $box-red-color: #8a2f1d!default;
-$red:#DC0000!default;
+$red: #DC0000!default;
 $box-yellow-color: #ffb21d!default;
 $box-black-color: #272727!default;
 $font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif: "Lato", Georgia, "Times New Roman", Times, serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-img.loading {
-  text-align: center;
-  opacity: 1;
-  width: 32px !important;
-  height: auto;
-}
-.red-color{
+.red-color {
   color: $red;
 }
 .text-bold {
@@ -65,13 +59,13 @@ img.doneLoading {
 section#home {
   overflow: hidden;
 }
-
 .navbar-default {
   background-color: $brand-brown;
   border-color: $brand-brown;
   .navbar-nav {
     padding-left: 30px;
-    .active > a ,.actives > a {
+    .active > a,
+    .actives > a {
       background-color: lighten($brand-brown, 10%)!important;
       border-color: lighten($brand-brown, 10%);
     }
@@ -81,7 +75,7 @@ section#home {
     padding: 8px 20px;
     color: #fff!important;
     &:hover,
-    {
+     {
       background-color: lighten($brand-brown, 10%)!important;
       border-color: lighten($brand-brown, 10%);
     }
@@ -91,7 +85,7 @@ section#home {
     background-color: transparent!important;
   }
 }
-.awsomeness-header{
+.awsomeness-header {
   .navbar-default {
     background-color: $brand-brown;
     border-color: $brand-brown;
@@ -149,7 +143,6 @@ nav li:hover .dropdown-menu {
   width: 90%;
   padding-right: 20px;
 }
-
 a {
   cursor: pointer;
   color: $font-color;
@@ -562,9 +555,20 @@ p {
 .thought {
   .logo-opt {
     height: 140px;
+    position: relative;
     img {
       width: 30%;
       margin: 0 20px;
+    }
+    .image-hold {
+      top: 40%;
+      transform: translatey(-50%);
+    }
+    .image-hold2 {
+      left: 10%;
+    }
+    .image-hold1 {
+      right: 10%;
     }
   }
   .content.mt {
@@ -914,7 +918,7 @@ form {
 // }
 .window-left {
   top: 183px;
-  left: -250px;
+  left: -280px;
   img {
     width: 80%;
   }
@@ -1096,7 +1100,7 @@ form {
 .services {
   background: $bg-color-skin;
   .services-info {
-    padding: 0 5%;
+    padding: 0 20px;
     top: 36px;
     p {
       font-size: 14px;
@@ -1142,7 +1146,7 @@ form {
   .window-left {
     bottom: 20%;
     top: initial;
-    left: -250px;
+    left: -280px;
   }
   .pb30 {
     padding-bottom: 30px;
@@ -1662,7 +1666,6 @@ img.bubble-middle {
 .email img {
   opacity: 0.5;
 }
-
 .min-hgt-hq {
   min-height: 700px;
 }
@@ -1672,15 +1675,20 @@ img.bubble-middle {
 .main-head,
 .payment .sub-head,
 .cont {
-  position: relative;
   z-index: 2;
 }
 .pt90 {
   margin-top: 90px;
 }
 .thankyou {
-    font-size: 26px;
-    text-align: center;
+  font-size: 26px;
+  text-align: center;
+}
+img.loading {
+  text-align: center;
+  opacity: 1;
+  width: 32px !important;
+  height: auto;
 }
 @import "animation.scss";
 @import "mobile.scss";
