@@ -1,20 +1,23 @@
 var jsArray = [
-  './bower_components/jquery/dist/jquery.min.js',
+  './bower_components/jquery/dist/jquery.js',
   './bower_components/ScrollMagic/scrollmagic/minified/ScrollMagic.min.js',
   './bower_components/gsap/src/minified/TweenMax.min.js',
   './bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js',
+  './bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.velocity.min.js',
+  './bower_components/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
   './bower_components/flexslider/jquery.flexslider-min.js',
-  './bower_components/angular-scroll/angular-scroll.min.js',
   './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
   './bower_components/lodash/lodash.min.js',
 
-  './bower_components/angular/angular.min.js',
+  './bower_components/angular/angular.js',
+  './bower_components/angular-messages/angular-messages.min.js',
   './bower_components/angular-sanitize/angular-sanitize.min.js',
   './bower_components/angular-animate/angular-animate.min.js',
   './bower_components/angular-bootstrap/ui-bootstrap.min.js',
   './bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
   './bower_components/ui-router/release/angular-ui-router.min.js',
   './bower_components/angular-flexslider/angular-flexslider.js',
+  './bower_components/angular-scroll/angular-scroll.min.js',
 
 
   //uesr's js
@@ -22,7 +25,6 @@ var jsArray = [
   './js/controllers.js',
   './js/templateservice.js',
   './js/navigation.js',
-  './js/jquery.mixitup.min.js',
 
   //please do not change it
   './w/js/templates.js',
