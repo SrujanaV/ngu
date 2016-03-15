@@ -2,7 +2,7 @@ var adminUrl = "http://wohlig.co.in/ngubackend/index.php/json/";
 
 var navigationservice = angular.module('navigationservice', [])
 
-.factory('NavigationService', function() {
+.factory('NavigationService', function($http) {
   var navigation = [{
     name: "About Us",
     classis: "active",

@@ -11,6 +11,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.submitContact = function(contactForm, contactFormValid) {
       if (contactFormValid.$valid === true) {
         console.log("All is well");
+        console.log(contactForm);
         NavigationService.subscribe(contactForm, function(data) {
           console.log(data);
           console.log("Form Submitted Sucessfully");
@@ -24,7 +25,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.submitSubscribe = function(subscribeForm, subscribeFormValid) {
       if (subscribeFormValid.$valid === true) {
         console.log("All is well");
-        NavigationService.subscribe(subscribeForm.email, function(data) {
+        NavigationService.formSubmit(subscribeForm.email, function(data) {
           console.log(data);
           console.log("Form Submitted Sucessfully");
         });
