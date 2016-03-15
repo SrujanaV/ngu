@@ -7,7 +7,7 @@ var firstapp = angular.module('firstapp', [
   'navigationservice'
 ]);
 
-firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
+firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider,$locationProvider) {
 
   // for http request with session
   $httpProvider.defaults.withCredentials = true;
@@ -90,6 +90,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
       controller: 'AwesomenessCtrl'
     });
   $urlRouterProvider.otherwise("/");
+  $locationProvider.html5Mode(isproduction);
 });
 
 

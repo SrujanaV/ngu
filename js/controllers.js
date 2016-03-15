@@ -3,7 +3,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 .controller('HomeCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("home");
-    // $scope.menutitle = NavigationService.makeactive("Home");
+    $scope.menutitle = NavigationService.makeactive("Home");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     console.log($stateParams.id);
@@ -12,7 +12,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       if (contactFormValid.$valid === true) {
         console.log("All is well");
         console.log(contactForm);
-        NavigationService.subscribe(contactForm, function(data) {
+        NavigationService.formSubmit(contactForm, function(data) {
           console.log(data);
           console.log("Form Submitted Sucessfully");
         });
@@ -25,7 +25,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.submitSubscribe = function(subscribeForm, subscribeFormValid) {
       if (subscribeFormValid.$valid === true) {
         console.log("All is well");
-        NavigationService.formSubmit(subscribeForm.email, function(data) {
+        NavigationService.subscribe(subscribeForm.email, function(data) {
           console.log(data);
           console.log("Form Submitted Sucessfully");
         });
