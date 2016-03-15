@@ -10,7 +10,6 @@ var jsArray = [
   './bower_components/lodash/lodash.min.js',
 
   './bower_components/angular/angular.js',
-  './bower_components/angular-messages/angular-messages.min.js',
   './bower_components/angular-sanitize/angular-sanitize.min.js',
   './bower_components/angular-animate/angular-animate.min.js',
   './bower_components/angular-bootstrap/ui-bootstrap.min.js',
@@ -33,9 +32,9 @@ var replacehostFrom = "http://localhost/demo/";
 var replacehostTo = "http://wohlig.co.in/demo2/";
 
 
-var ftpString = "U2FsdGVkX1+jcFED/CJbcYNiOJ42eBsjlxqmrcKWSIPH9Sao/4535zPQX5Fa7VYGAHSfkKCXbDpiUfJhkRRijaerS1lJ/k+dSfqsfl45ICkzMTJ7fBNVDj/242ur9ZG4HZDhSe1O/J4vEUboWDRBhg==";
+var ftpString = "U2FsdGVkX1+cs+LBpSvXUgsJ0Dl2aXv9vCLM7NeMoGvxavoIkbutkJnu3spVV49MT6g4Erg98BL8WTuuNLI0wDF5GjGKYcS285rPRX7A4TBIJj4zrmzvMfPJKYb606ul+Fh8yqVnJDYHVST6x0kgHA==";
 
-var uploadingFolder = "nguweb";
+var uploadingFolder = "";
 var password = "";
 
 
