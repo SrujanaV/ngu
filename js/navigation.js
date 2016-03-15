@@ -1,4 +1,4 @@
-var adminUrl = "http://wohlig.co.in/ngubackend/index.php/json/";
+var adminUrl = "http://willnevergrowup.com/admin/index.php/json/";
 
 var navigationservice = angular.module('navigationservice', [])
 
