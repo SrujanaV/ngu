@@ -129,6 +129,17 @@ firstapp.directive('autoHeight', function($compile, $parse) {
   };
 });
 
+firstapp.filter('serverimage', function() {
+  return function(input) {
+    if (input) {
+      return imageUrl + input;
+      // return  "http://wohlig.co.in/newfynx/uploads/" + input;
+    } else {
+      return "img/logo.png";
+    }
+  };
+});
+
 firstapp.directive("scroll", function($window) {
   return function(scope, element, attrs) {
     angular.element($window).bind("scroll", function() {

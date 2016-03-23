@@ -17,74 +17,10 @@
         <p class="clickhere"><a href="http://www.willnevergrowup.com/blog/category/inthenews/" class="bold" target="_blank">Click here</a> if you'd like to open up the Pandora's Box</p>
       </div>
       <div class="media-partners">
-        <div class="row-flex">
-          <div class="flex-md">
+        <div class="row-flex" ng-repeat="medias in allmedia">
+          <div class="flex-md" ng-repeat="media in medias">
             <div class="image-holder">
-              <img src="img/home-media/economic.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="flex-md">
-            <div class="image-holder">
-              <img src="img/home-media/people-matters.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="flex-md">
-            <div class="image-holder">
-              <img src="img/home-media/shrmLogo.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="flex-md">
-            <div class="image-holder">
-              <img src="img/home-media/hr-com-logo.png" alt="" class="img-responsive">
-            </div>
-          </div>
-        </div>
-        <div class="row-flex">
-          <div class="flex-md">
-            <div class="image-holder">
-              <img src="img/home-media/outlook.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="flex-md">
-            <div class="image-holder">
-              <img src="img/home-media/timesjobs.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="flex-md">
-            <div class="image-holder">
-              <img src="img/home-media/YourStory.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="flex-md">
-            <div class="image-holder">
-              <img src="img/home-media/business-standard-logo.png" alt="" class="img-responsive">
-            </div>
-          </div>
-        </div>
-        <div class="row-flex">
-          <div class="flex-md">
-            <div class="image-holder">
-              <img src="img/home-media/indain-express.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="flex-md">
-            <div class="image-holder">
-              <img src="img/home-media/social-samosa.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="flex-md">
-            <div class="image-holder">
-              <img src="img/home-media/Lokmat.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="flex-md">
-            <div class="image-holder">
-              <img src="img/home-media/midday.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="flex-md">
-            <div class="image-holder">
-              <img src="img/home-media/Entrepreneur.png" alt="" class="img-responsive">
+              <img ng-src="{{media.image|serverimage}}" style="width:140px;height:140px;" alt="" class="img-responsive">
             </div>
           </div>
         </div>

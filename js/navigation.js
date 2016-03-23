@@ -1,4 +1,6 @@
-var adminUrl = "http://willnevergrowup.com/admin/index.php/json/";
+var admin = "http://willnevergrowup.com/admin/";
+var adminUrl = admin+ "index.php/json/";
+var imageUrl = admin+ "uploads/";
 
 var navigationservice = angular.module('navigationservice', [])
 
@@ -71,6 +73,12 @@ var navigationservice = angular.module('navigationservice', [])
     },
     getAllTestimonial: function(callback) {
       $http.get(adminUrl + "getalltestimonial").success(callback);
+    },
+    getAllClient: function(callback) {
+      $http.get(adminUrl + "getallclient").success(callback);
+    },
+    getAllMedia: function(callback) {
+      $http.get(adminUrl + "getallmedia").success(callback);
     },
     makeactive2: function(id) {
       for (var i = 0; i < navigation2.length; i++) {

@@ -11,7 +11,7 @@
                     <div class="row bb" ng-repeat="row in slide">
                     <div class="col-md-3 col-xs-6" ng-repeat="client in row">
                       <div class="image-holder text-center">
-                        <img ng-src="{{client.image}}" class="doneLoading" alt="">
+                        <img ng-src="{{client.image|serverimage}}" style="width:140px;height:140px;" class="doneLoading" alt="">
                       </div>
                     </div>
                     <div class="clearfix"></div>
