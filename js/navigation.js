@@ -67,10 +67,12 @@ var navigationservice = angular.module('navigationservice', [])
       $http.get(adminUrl + "subscribe?email=" + email).success(callback);
     },
     formSubmit: function(form, callback) {
-      $http.post(adminUrl+"contactSubmit",form).success(callback);
+      $http.post(adminUrl + "contactSubmit", form).success(callback);
+    },
+    getAllTestimonial: function(callback) {
+      $http.get(adminUrl + "getalltestimonial").success(callback);
     },
     makeactive2: function(id) {
-      console.log(id);
       for (var i = 0; i < navigation2.length; i++) {
         if (navigation2[i].anchor == id) {
           navigation2[i].classis = "actives";
