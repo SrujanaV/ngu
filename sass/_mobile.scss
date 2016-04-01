@@ -88,14 +88,14 @@
   }
 }
 @media (max-width: $screen-sm-max) {
-  .about-info,
-  .services .services-info,
-  .contact-detail,
-  .hq-info,
-  .media-head,
-  .section-ngu .content p {
-    width: 90%!important;
-  }
+  // .about-info,
+  // .services .services-info,
+  // .contact-detail,
+  // .hq-info,
+  // .media-head,
+  // .section-ngu .content p {
+  //   width: 90% !important;
+  // }
   .width90 {
     width: auto;
     padding-right: 0;
@@ -703,7 +703,7 @@
       width: 160px;
     }
     form button.submit {
-      padding: 6px;
+      padding: 9px;
       font-size: 11px;
     }
   }
@@ -767,6 +767,12 @@
     font-size: 10px;
     height: 35px !important;
   }
+.width90{
+  width: 100%;
+}
+// .about-info, .services .services-info, .contact-detail, .hq-info, .media-head, .section-ngu .content p {
+//     width: 100% !important;
+// }
 }
 @media screen and (max-device-width: 580px) and (orientation : landscape) {
   .awsomeness {
