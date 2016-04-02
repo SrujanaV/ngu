@@ -88,14 +88,14 @@
   }
 }
 @media (max-width: $screen-sm-max) {
-  // .about-info,
-  // .services .services-info,
-  // .contact-detail,
-  // .hq-info,
-  // .media-head,
-  // .section-ngu .content p {
-  //   width: 90% !important;
-  // }
+  .about-info,
+  .services .services-info,
+  .contact-detail,
+  .hq-info,
+  .media-head,
+  .section-ngu .content p {
+    width: 90% !important;
+  }
   .width90 {
     width: auto;
     padding-right: 0;
@@ -767,12 +767,25 @@
     font-size: 10px;
     height: 35px !important;
   }
-.width90{
-  width: 100%;
+.hq-bg .hq-logo img {
+    width: 60%;
+  }
+.about-info, .services .services-info, .contact-detail, .hq-info, .media-head{
+    width: 100% !important;
 }
-// .about-info, .services .services-info, .contact-detail, .hq-info, .media-head, .section-ngu .content p {
-//     width: 100% !important;
-// }
+.section-ngu .content p {
+  width: 89% !important;
+  margin: 0 auto;
+}
+.services .services-badge {
+    width: 106%;
+  }
+  .media .media-partners {
+    margin-right:0px;
+  }
+  .media .media-cont .media-head {
+    padding-left: 0px;
+  }
 }
 @media screen and (max-device-width: 580px) and (orientation : landscape) {
   .awsomeness {
