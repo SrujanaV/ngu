@@ -7,10 +7,10 @@ var firstapp = angular.module('firstapp', [
   'navigationservice'
 ]);
 
-firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider,$locationProvider) {
+firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
 
   // for http request with session
-  $httpProvider.defaults.withCredentials = true;
+  // $httpProvider.defaults.withCredentials = true;
 
   $stateProvider
 
@@ -90,7 +90,12 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider,$loca
       controller: 'AwesomenessCtrl'
     });
   $urlRouterProvider.otherwise("/");
-  $locationProvider.html5Mode(isproduction);
+  if (isproduction === true) {
+    $locationProvider.html5Mode(true);
+  } else {
+    $locationProvider.html5Mode(false);
+  }
+
 });
 
 

@@ -1,17 +1,19 @@
 <section>
   <div class="container">
-    <div class="img-holder">
-      <img src="img/home/ngu-emo.png" alt="" class="img-responsive">
-    </div>
-    <div class="subscribe-me text-center">
-      <form class="form-inline" name="subscribeFormValid"  ng-hide="subscribeFormComplete">
-        <input type="email" class="form-control" placeholder="Email :" name="myMessage" ng-model="subscribeForm.email" required>
-        <button ng-click="submitSubscribe(subscribeForm,subscribeFormValid)" class="form-control submit">Subscribe Now</button>
-        <div ng-show="subscribeFormValid.myMessage.$error.required && subscribeFormValid.myMessage.$touched">
-        Please Enter your Email
-        </div>
-      </form>
-      <h4 class="thankyou" ng-show="subscribeFormComplete">Thank You for Subscribing to Happyness At Work!</h4>
+    <div class="center-aligned">
+      <div class="img-holder">
+        <img src="img/home/ngu-emo.png" alt="" class="img-responsive">
+      </div>
+      <div class="subscribe-me text-center">
+        <form class="form-inline" name="subscribeFormValid" ng-hide="subscribeFormComplete">
+          <input type="email" class="form-control" placeholder="Email :" name="myMessage" ng-model="subscribeForm.email" required>
+          <button ng-click="submitSubscribe(subscribeForm,subscribeFormValid)" class="form-control submit">Subscribe Now</button>
+          <div ng-show="subscribeFormValid.myMessage.$error.required && subscribeFormValid.myMessage.$touched">
+            Please Enter your Email
+          </div>
+        </form>
+        <h4 class="thankyou" ng-show="subscribeFormComplete">Thank You for Subscribing to Happyness At Work!</h4>
+      </div>
     </div>
   </div>
 </section>

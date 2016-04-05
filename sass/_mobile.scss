@@ -268,6 +268,13 @@
   }
 }
 @media (max-width: $screen-xs-max) {
+  .center-aligned {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    @include transform(translate(-50%,-50%));
+  }
   .mobile-pb {
     padding-bottom: 20px;
   }
@@ -649,17 +656,22 @@
     width: 0;
     height: 0;
   }
-  .about-info, .services .services-info, .contact-detail, .hq-info, .media-head,.section-ngu .content p {
+  .about-info,
+  .services .services-info,
+  .contact-detail,
+  .hq-info,
+  .media-head,
+  .section-ngu .content p {
     width: 100% !important;
-}
-.services .services-badge {
+  }
+  .services .services-badge {
     margin: 0 auto;
   }
   .media .media-partners {
-    margin-right:0px;
+    margin-right: 0;
   }
   .media .media-cont .media-head {
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 @media (max-width:480px) {
@@ -779,20 +791,19 @@
     font-size: 10px;
     height: 35px !important;
   }
-.hq-bg .hq-logo img {
+  .hq-bg .hq-logo img {
     width: 60%;
   }
-// .about-info, .services .services-info, .contact-detail, .hq-info, .media-head{
-//     width: 100% !important;
-// }
-.section-ngu .content p {
-  width: 89% !important;
-  margin: 0 auto;
-}
-// .services .services-badge {
-//     width: 106%;
-//   }
-
+  // .about-info, .services .services-info, .contact-detail, .hq-info, .media-head{
+  //     width: 100% !important;
+  // }
+  .section-ngu .content p {
+    width: 89% !important;
+    margin: 0 auto;
+  }
+  // .services .services-badge {
+  //     width: 106%;
+  //   }
 }
 @media screen and (max-device-width: 580px) and (orientation : landscape) {
   .awsomeness {
@@ -803,7 +814,6 @@
       .chair,
       .lady2,
       .bubble4,
-      .lady1,
       .bubble5,
       .guy1 {
         top: 60%;
@@ -818,21 +828,40 @@
       .chair-home,
       .home-lady2,
        {
-        bottom: 70px;
+        bottom: 55px;
       }
       .home .lights1,
       .home .lights2 {
         width: 8%;
       }
       .home-guy1 {
-        bottom: 90px;
+        bottom: 70px;
       }
       .lights {
-        bottom: 90px;
+        bottom: 70px;
       }
       .guy2 {
         top: 40%;
       }
     }
+  }
+  .home .all-windows-home {
+    top: 27%;
+  }
+  .min-hgt {
+    min-height: 500px;
+  }
+  .min-hgt-hq {
+    min-height: 530px;
+  }
+  .home .lights1,
+  .home .lights2 {
+    width: 8%;
+  }
+  .awsomeness img.door-home {
+    bottom: 90px;
+  }
+  .subscribe {
+    height: 450px;
   }
 }

@@ -1,6 +1,6 @@
 var admin = "http://willnevergrowup.com/admin/";
-var adminUrl = admin+ "index.php/json/";
-var imageUrl = admin+ "uploads/";
+var adminUrl = admin + "index.php/json/";
+var imageUrl = admin + "uploads/";
 
 var navigationservice = angular.module('navigationservice', [])
 
@@ -9,14 +9,17 @@ var navigationservice = angular.module('navigationservice', [])
     name: "About Us",
     classis: "active",
     anchor: "about",
+    target: "_self",
   }, {
     name: "Services",
     classis: "active",
     anchor: "employeeengagement",
+    target: "_self",
   }, {
     name: "Happyness Quotient",
     classis: "active",
     anchor: "happynessquotient",
+    target: "_self",
   }, {
     name: "Blog",
     link: "http://www.willnevergrowup.com/blog/",
@@ -24,27 +27,34 @@ var navigationservice = angular.module('navigationservice', [])
   }, {
     name: "Media",
     anchor: "media",
+    target: "_self",
   }, {
     name: "Clients",
     anchor: "clients",
+    target: "_self",
   }, {
     name: "Contact Us",
     classis: "active",
     anchor: "contact",
+    target: "_self",
   }];
 
   var navigation2 = [{
     name: "Client Work",
     anchor: "clientwork",
+    target: "_self",
   }, {
     name: "Business Award",
     anchor: "businessaward",
+    target: "_self",
   }, {
     name: "Testimonials",
     anchor: "testimonials",
+    target: "_self",
   }, {
     name: "A New Wave",
     anchor: "newwave",
+    target: "_self",
   }];
 
   return {
@@ -75,7 +85,7 @@ var navigationservice = angular.module('navigationservice', [])
       $http.get(adminUrl + "getalltestimonial").success(callback);
     },
     getAllClient: function(callback) {
-      $http.get(adminUrl + "getallclient?maxlength="+100).success(callback);
+      $http.get(adminUrl + "getallclient?maxlength=" + 100).success(callback);
     },
     getAllMedia: function(callback) {
       $http.get(adminUrl + "getallmedia").success(callback);
