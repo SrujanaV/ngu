@@ -75,7 +75,7 @@ var navigationservice = angular.module('navigationservice', [])
       $http.get(adminUrl + "getalltestimonial").success(callback);
     },
     getAllClient: function(callback) {
-      $http.get(adminUrl + "getallclient").success(callback);
+      $http.get(adminUrl + "getallclient?maxlength="+100).success(callback);
     },
     getAllMedia: function(callback) {
       $http.get(adminUrl + "getallmedia").success(callback);

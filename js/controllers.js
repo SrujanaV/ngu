@@ -10,17 +10,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive($stateParams.id);
 
   function AllTestimonial(data, status) {
-    $scope.clientSpeaks = data.queryresult;
+    $scope.clientSpeaks = data;
   }
 
   function AllMedia(data, status) {
-    $scope.allmedia = data.queryresult;
+    $scope.allmedia = data;
     console.log(data.queryresult);
     $scope.allmedia = _.chunk($scope.allmedia, 5);
   }
 
   function AllClient(data, status) {
-    $scope.clients = data.queryresult;
+    $scope.clients = data;
     $scope.clients = _.chunk($scope.clients, 12);
     for (var i = 0; i < $scope.clients.length; i++) {
       $scope.clients[i] = _.chunk($scope.clients[i], 4);
