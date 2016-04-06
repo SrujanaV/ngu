@@ -279,7 +279,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     function AllTestimonial(data, status) {
 
-      $scope.testimonial = data.queryresult;
+      $scope.testimonial = data;
     }
     NavigationService.getAllTestimonial(AllTestimonial);
 
