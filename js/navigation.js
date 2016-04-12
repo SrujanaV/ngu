@@ -1,4 +1,4 @@
-var admin = "http://willnevergrowup.com/admin/";
+var admin = "http://admin.willnevergrowup.com/";
 var adminUrl = admin + "index.php/json/";
 var imageUrl = admin + "uploads/";
 
