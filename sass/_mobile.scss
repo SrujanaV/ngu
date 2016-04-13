@@ -96,6 +96,10 @@
   .section-ngu .content p {
     width: 90% !important;
   }
+  .box-white {
+    z-index: 1;
+    position: relative;
+  }
   .width90 {
     width: auto;
     padding-right: 0;
@@ -266,6 +270,11 @@
   .payment .locker {
     bottom: -75px;
   }
+  .img-awards img {
+    top: 0;
+    left: 0;
+    width: 150px;
+  }
 }
 @media (max-width: $screen-xs-max) {
   .center-aligned {
@@ -274,6 +283,10 @@
     left: 50%;
     width: 100%;
     @include transform(translate(-50%,-50%));
+  }
+  .img-awards img {
+    position: static;
+    width: 180px;
   }
   .mobile-pb {
     padding-bottom: 20px;

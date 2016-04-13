@@ -580,6 +580,7 @@ p {
 }
 .content-busniess {
   padding-left: 10px;
+  padding-bottom: 120px;
   .small-business {
     width: 20%;
   }
@@ -1693,6 +1694,13 @@ img.loading {
   opacity: 1;
   width: 32px !important;
   height: auto;
+}
+.img-awards {
+  img {
+    top: 0;
+    left: 0;
+    width: 180px;
+  }
 }
 @import "animation.scss";
 @import "mobile.scss";
