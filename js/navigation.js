@@ -22,7 +22,7 @@ var navigationservice = angular.module('navigationservice', [])
     target: "_self",
   }, {
     name: "Blog",
-    link: "http://www.willnevergrowup.com/blog/",
+    link: "http://blog.willnevergrowup.com/",
     anchor: ""
   }, {
     name: "Media",
