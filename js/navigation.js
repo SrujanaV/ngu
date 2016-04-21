@@ -26,10 +26,12 @@ var navigationservice = angular.module('navigationservice', [])
     anchor: ""
   }, {
     name: "Media",
+    classis: "active",
     anchor: "media",
     target: "_self",
   }, {
     name: "Clients",
+    classis: "active",
     anchor: "clients",
     target: "_self",
   }, {
@@ -41,18 +43,22 @@ var navigationservice = angular.module('navigationservice', [])
 
   var navigation2 = [{
     name: "Client Work",
+    classis: "active",
     anchor: "clientwork",
     target: "_self",
   }, {
     name: "Business Award",
+    classis: "active",
     anchor: "businessaward",
     target: "_self",
   }, {
     name: "Testimonials",
+    classis: "active",
     anchor: "testimonials",
     target: "_self",
   }, {
     name: "A New Wave",
+    classis: "active",
     anchor: "newwave",
     target: "_self",
   }];
