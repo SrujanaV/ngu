@@ -1,6 +1,8 @@
-var admin = "http://admin.willnevergrowup.com/";
+// var admin = "http://admin.willnevergrowup.com/";
+var admin = "http://localhost/ngubackend/";
 var adminUrl = admin + "index.php/json/";
-var imageUrl = admin + "uploads/";
+// var imageUrl = admin + "uploads/";
+var imageUrl = "http://admin.willnevergrowup.com/uploads/";
 
 var navigationservice = angular.module('navigationservice', [])
 
@@ -89,6 +91,9 @@ var navigationservice = angular.module('navigationservice', [])
     },
     getAllTestimonial: function(callback) {
       $http.get(adminUrl + "getalltestimonial").success(callback);
+    },
+    getClientWithDescription: function(callback) {
+      $http.get(adminUrl + "getClientWithDescription").success(callback);
     },
     getAllClient: function(callback) {
       $http.get(adminUrl + "getallclient?maxlength=" + 100).success(callback);

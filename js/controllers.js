@@ -283,6 +283,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     }
     NavigationService.getAllTestimonial(AllTestimonial);
 
+    function ClientWithDescription(data, status) {
+
+      $scope.ClientWithDescription = data;
+
+      $scope.ClientWithDescription=_.chunk($scope.ClientWithDescription, 3);
+      console.log($scope.ClientWithDescription);
+    }
+    NavigationService.getClientWithDescription(ClientWithDescription);
+
     function makeAnimation(id) {
       if (_.isEmpty(id)) {
         id = "awesomeness";

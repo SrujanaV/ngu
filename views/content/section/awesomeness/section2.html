@@ -21,7 +21,7 @@
     </div>
     <div class="client-speak">
       <div class="box-white">
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-md-4 col-sm-6">
             <div class="content">
               <div class="logo text-center">
@@ -90,6 +90,19 @@
               <p>
                 For the vibrant bunch that they are, we have conceptualised and implemented an extremely innovative and relevant Induction program for over 350 of its new joinees till date. By conducting a customized experiential program spread over days, their motto
                 of 'Look Up' has been executed effortlessly across levels and roles.
+              </p>
+            </div>
+          </div>
+        </div> -->
+        <div class="row" ng-repeat="ClientWithDescriptions in ClientWithDescription">
+          <div class="col-md-4 col-sm-6" ng-repeat="client in ClientWithDescriptions">
+            <div class="content">
+              <div class="logo text-center">
+                <span class="helper"></span>
+                <img src="{{client.image| serverimage}}" width="200">
+              </div>
+              <p>
+          {{client.content}}
               </p>
             </div>
           </div>
