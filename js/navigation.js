@@ -1,5 +1,5 @@
-// var admin = "http://admin.willnevergrowup.com/";
-var admin = "http://localhost/ngubackend/";
+var admin = "http://admin.willnevergrowup.com/";
+// var admin = "http://localhost/ngubackend/";
 var adminUrl = admin + "index.php/json/";
 // var imageUrl = admin + "uploads/";
 var imageUrl = "http://admin.willnevergrowup.com/uploads/";
