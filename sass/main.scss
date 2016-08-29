@@ -77,14 +77,14 @@ section#home {
     font-size: 16px;
     padding: 8px 20px;
     color: #fff!important;
-    &:hover,
-     {
+    ,
+     &:hover {
       background-color: lighten($brand-brown, 10%)!important;
       border-color: lighten($brand-brown, 10%);
     }
   }
-  .navbar-brand:hover,
-  .navbar-brand:focus {
+  .navbar-brand:focus,
+  .navbar-brand:hover {
     background-color: transparent!important;
   }
 }
@@ -149,8 +149,8 @@ nav li:hover .dropdown-menu {
 a {
   cursor: pointer;
   color: $font-color;
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     text-decoration: none;
     color: $font-color;
   }
@@ -254,8 +254,8 @@ a:focus {
 .ps-50 {
   padding: 20px 50px;
 }
-.pay-abt-header .sticky-bottom-abtpay,
 .awsomeness-header .sticky-bottom-abtpay,
+.pay-abt-header .sticky-bottom-abtpay,
 .sticky-bottom {
   position: absolute;
   // top: 0;
@@ -510,6 +510,10 @@ p {
     }
     .logo {
       height: 120px;
+      img {
+        max-height: 100%;
+        width: auto !important;
+      }
     }
     .shopper-stop {
       .logo-shoper {
@@ -843,8 +847,8 @@ form {
   z-index: 1;
   position: relative;
 }
-.window-right,
-.window-full {
+.window-full,
+.window-right {
   img {
     width: 70%;
   }
@@ -928,8 +932,8 @@ form {
   }
 }
 .contact-boy,
-.email,
-.contact-girl {
+.contact-girl,
+.email {
   z-index: 1;
   img {
     width: 55%;
@@ -967,8 +971,8 @@ form {
     margin: 0;
     letter-spacing: 0.78px;
   }
-  span,
-  a {
+  a,
+  span {
     font-size: 16px;
     letter-spacing: 0.78px;
   }
@@ -1680,9 +1684,9 @@ img.bubble-middle {
 .bubble {
   opacity: 0.6;
 }
+.cont,
 .main-head,
-.payment .sub-head,
-.cont {
+.payment .sub-head {
   z-index: 2;
 }
 .pt90 {
