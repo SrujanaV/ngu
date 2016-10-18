@@ -75,7 +75,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
       controller: 'DigitalCtrl'
     })
     .state('quirky', {
-      url: "/beingquirky",
+      url: "/QuirkyMerchandise",
       templateUrl: "views/template-tabs.html",
       controller: 'QuirkyCtrl'
     })
