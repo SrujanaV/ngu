@@ -1,6 +1,6 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngSanitize', 'angular-flexslider', 'duScroll'])
 
-.controller('HomeCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
+.controller('HomeCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
   //Used to name the .html file
   $scope.template = TemplateService.changecontent("home");
   $scope.menutitle = NavigationService.makeactive("Home");
@@ -30,11 +30,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   NavigationService.getAllClient(AllClient);
   NavigationService.getAllMedia(AllMedia);
 
-  $scope.submitContact = function(contactForm, contactFormValid) {
+  $scope.submitContact = function (contactForm, contactFormValid) {
     if (contactFormValid.$valid === true) {
       console.log("All is well");
       console.log(contactForm);
-      NavigationService.formSubmit(contactForm, function(data) {
+      NavigationService.formSubmit(contactForm, function (data) {
         console.log(data);
         console.log("Form Submitted Sucessfully");
       });
@@ -44,10 +44,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     }
   };
 
-  $scope.submitSubscribe = function(subscribeForm, subscribeFormValid) {
+  $scope.submitSubscribe = function (subscribeForm, subscribeFormValid) {
     if (subscribeFormValid.$valid === true) {
       console.log("All is well");
-      NavigationService.subscribe(subscribeForm.email, function(data) {
+      NavigationService.subscribe(subscribeForm.email, function (data) {
         console.log(data);
         console.log("Form Submitted Sucessfully");
       });
@@ -65,14 +65,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $document.scrollToElement(someElement, 0, 1400);
   }
 
-  $scope.$on('$viewContentLoaded', function(event) {
-    setTimeout(function() {
+  $scope.$on('$viewContentLoaded', function (event) {
+    setTimeout(function () {
       makeAnimation($stateParams.id);
     }, 1000);
   });
 
 
-  $scope.changeURL = function(id) {
+  $scope.changeURL = function (id) {
     $scope.menutitle = NavigationService.makeactive(id);
     $state.transitionTo('homeid', {
       id: id
@@ -85,7 +85,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   $scope.clientSpeakThumbArr = ["img/home/client/1.png", "img/home/client/2.png", "img/home/client/3.png", "img/home/client/4.png", "img/home/client/5.png", "img/home/client/6.png", "img/home/client/7.png", "img/home/client/8.png", "img/home/client/9.png", "img/home/client/10.png", "img/home/client/11.png", "img/home/client/12.png", "img/home/client/13.png", "img/home/client/15.png"];
   $scope.activeThumb = 0;
-  $scope.speakChange = function() {
+  $scope.speakChange = function () {
     $scope.activeThumb = $(".client-speaks .slider-client ol.flex-control-nav.flex-control-paging li a").index($(".client-speaks .slider-client ol.flex-control-nav.flex-control-paging li a.flex-active"));
   };
 
@@ -100,6 +100,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     eight: "views/content/section/home/section8.html",
     nine: "views/content/section/home/section9.html",
     ten: "views/content/section/home/section10.html",
+    eleven: "views/content/section/home/section11.html",
   };
   // $scope.clients = [{
   //   image: "img/client/Tata-Sky.png"
@@ -267,7 +268,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   // }];
 })
 
-.controller('AwesomenessCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
+.controller('AwesomenessCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("awesomeness");
     // $scope.menutitle = NavigationService.makeactive2("Awesomeness");
@@ -287,7 +288,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
       $scope.ClientWithDescription = data;
 
-      $scope.ClientWithDescription=_.chunk($scope.ClientWithDescription, 3);
+      $scope.ClientWithDescription = _.chunk($scope.ClientWithDescription, 3);
       console.log($scope.ClientWithDescription);
     }
     NavigationService.getClientWithDescription(ClientWithDescription);
@@ -299,12 +300,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       var someElement = angular.element(document.getElementById(id));
       $document.scrollToElement(someElement, 0, 1400);
     }
-    $scope.$on('$viewContentLoaded', function(event) {
-      setTimeout(function() {
+    $scope.$on('$viewContentLoaded', function (event) {
+      setTimeout(function () {
         makeAnimation($stateParams.id);
       }, 1000);
     });
-    $scope.changeURL = function(id) {
+    $scope.changeURL = function (id) {
       $scope.menutitle = NavigationService.makeactive2(id);
       $state.transitionTo('awesomenessid', {
         id: id
@@ -369,31 +370,31 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // }];
     // new WOW().init();
   })
-  .controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
+  .controller('AboutCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("about");
     $scope.menutitle = NavigationService.makeactive("About");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
-    $scope.changeURL = function(id) {
+    $scope.changeURL = function (id) {
       console.log(id);
       $location.path("" + id);
     };
   })
-  .controller('PaymentCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
+  .controller('PaymentCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("payment");
     $scope.menutitle = NavigationService.makeactive("Payment");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
-    $scope.changeURL = function(id) {
+    $scope.changeURL = function (id) {
       console.log(id);
       $location.path("" + id);
     };
   })
-  .controller('ConsultingCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
+  .controller('ConsultingCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("consulting");
     $scope.menutitle = NavigationService.makeactive("Consulting");
@@ -401,112 +402,112 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
 
-    $scope.changeURL = function(id) {
+    $scope.changeURL = function (id) {
       console.log(id);
       $location.path("" + id);
     };
 
   })
-  .controller('HappynessCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
+  .controller('HappynessCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("happyness");
     $scope.menutitle = NavigationService.makeactive("Happyness");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
-    $scope.changeURL = function(id) {
+    $scope.changeURL = function (id) {
       console.log(id);
       $location.path("" + id);
     };
   })
-  .controller('WorkshopsCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
+  .controller('WorkshopsCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("workshops");
     $scope.menutitle = NavigationService.makeactive("Workshops");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
-    $scope.changeURL = function(id) {
+    $scope.changeURL = function (id) {
       console.log(id);
       $location.path("" + id);
     };
   })
-  .controller('EmployerCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
+  .controller('EmployerCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("employer-branding");
     $scope.menutitle = NavigationService.makeactive("Employer");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
-    $scope.changeURL = function(id) {
+    $scope.changeURL = function (id) {
       console.log(id);
       $location.path("" + id);
     };
   })
-  .controller('InternalCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
+  .controller('InternalCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("internal");
     $scope.menutitle = NavigationService.makeactive("Internal");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
-    $scope.changeURL = function(id) {
+    $scope.changeURL = function (id) {
       console.log(id);
       $location.path("" + id);
     };
   })
-  .controller('WorkspaceCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
+  .controller('WorkspaceCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("workspace");
     $scope.menutitle = NavigationService.makeactive("Workspace");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
-    $scope.changeURL = function(id) {
+    $scope.changeURL = function (id) {
       console.log(id);
       $location.path("" + id);
     };
   })
-  .controller('CorporateCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
+  .controller('CorporateCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("corporate");
     $scope.menutitle = NavigationService.makeactive("Corporate");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
-    $scope.changeURL = function(id) {
+    $scope.changeURL = function (id) {
       console.log(id);
       $location.path("" + id);
     };
   })
-  .controller('DigitalCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
+  .controller('DigitalCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("digital");
     $scope.menutitle = NavigationService.makeactive("Digital");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
-    $scope.changeURL = function(id) {
+    $scope.changeURL = function (id) {
       console.log(id);
       $location.path("" + id);
     };
   })
-  .controller('QuirkyCtrl', function($scope, TemplateService, NavigationService, $timeout, $location) {
+  .controller('QuirkyCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("quirky");
     $scope.menutitle = NavigationService.makeactive("Quirky");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "views/header-other.html";
-    $scope.changeURL = function(id) {
+    $scope.changeURL = function (id) {
       console.log(id);
       $location.path("" + id);
     };
   })
 
-.controller('headerctrl', function($scope, TemplateService) {
+.controller('headerctrl', function ($scope, TemplateService) {
   $scope.template = TemplateService;
-  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+  $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
     $(window).scrollTop(0);
   });
 });
