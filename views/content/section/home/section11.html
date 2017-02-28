@@ -2,14 +2,14 @@
     <div class="unplug-relate">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="unplugged-img">
                         <img src="img/unplugged/unplugged-bg.png" alt="" class="img-responsive">
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="content-left">
                         <p>Let’s face it, life can get busy sometimes. These are the times when no matter how hard we try to
                             find a balance between mindful living and mind-full living (Link to blog on the monkey mind),
@@ -39,74 +39,112 @@
                         <p>Write to <a href="mailto:info@willnevergrowup.com">info@willnevergrowup.com</a></p>
                     </div>
                     <div class="unplug-form">
-                        <form name="unplugForm">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="email" class="form-control" id="email" placeholder="Name:">
+                        <form name="unplugForm" ng-submit="unplugDataSubmit(unplugData, cs)">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Name:" ng-model="unplugData.name" required>
+                                        <div ng-show="unplugForm.name.$error.required && unplugForm.name.$touched" class="red-color">
+                                            Please Enter your Name
+                                        </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <input type="email" class="form-control" id="email" placeholder="Mobile:">
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Mobile:" ng-model="unplugData.mobile" required>
+                                        <div ng-show="unplugForm.mobile.$error.required && unplugForm.mobile.$touched" class="red-color">
+                                            Please Enter your Mobile
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <input type="email" class="form-control" id="email" placeholder="Email Address:">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Email Address:" ng-model="unplugData.email"
+                                            required>
+                                        <div ng-show="unplugForm.email.$error.required && unplugForm.email.$touched" class="red-color">
+                                            Please Enter your Email
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="text-right">
+                                <button class="register btn" type="submit" ng-disabled="unplugForm.$invalid" disabled="disabled">Register</button>
+                                <p class="btn-text">(Yes, I am ready to slow down!)</p>
+                            </div>
+                            <!--<div class="text-right">
+                                <button class="register btn" type="submit" ng-disabled="unplugForm.$invalid">Register</button>
+                                <p>(Yes, I am ready to slow down!)</p>
+                            </div>-->
                         </form>
+                        <!--<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Mobile</th>
+									<th>Email</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="data in myData">
+									<td></td>
+								</tr>
+							</tbody>
+						</table>-->
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="stress">
-                        <div>
-                            <h1>stress</h1>
-                            <p>Stress is a leading cause of problems in the workforce today. Moreover, the mental health of
-                                every employee is often at stake.
+                        <div class="stress-sec1">
+                            <h1 class="stress-head">stress</h1>
+                            <p><strong>Stress</strong> is a <strong>leading cause of</strong> problems in the <strong>workforce</strong>today.
+                                Moreover, the <strong>mental health</strong> of every employee is often at stake.
                             </p>
                         </div>
                         <div class="statistics">
-                            <ul class="list-inline list-unstyled">
+                            <p class="color-white"><strong>Research statistics</strong> point towards the fact that</p>
+                            <ul class="list-inline list-unstyled stat-count">
                                 <li>
-                                    <p>50%</p>
-                                    <p>Employees in India are</p>
+                                    <p>50<sup>%</sup></p>
+                                    <p>Employees<br>in India are</p>
                                     <p>Under Stress</p>
                                 </li>
                                 <li>
-                                    <p>30%</p>
-                                    <p>Employees in India are</p>
-                                    <p>Under Stress</p>
+                                    <p>30<sup>%</sup></p>
+                                    <p>Battle with</p>
+                                    <p>Substance<br>Abuse</p>
                                 </li>
                                 <li>
-                                    <p>20%</p>
-                                    <p>Employees in India are</p>
+                                    <p>20<sup>%</sup></p>
+                                    <p>Individuals<br>suffer from</p>
                                     <p>Under Stress</p>
                                 </li>
                             </ul>
-                            <p>These number are glaring indication that something must change.</p>
+                            <p>These number are <strong>glaring indication</strong> that something <strong>must change.</strong></p>
                         </div>
-                        <div>
-                            <p>UnPluggd is about more than just a workshop. It’s our calling. It’s about disconnecting to reconnect.
-                                The programme is one intense learning journey created to help you immerse yourself in an
-                                interactive offline experience. Using a diverse set of mini-sessions and role-play based
-                                activities, from group destressing to mindfulness training, we have a line-up that will truly
-                                help you pull the plug on stress!</p>
+                    </div>
+                    <div class="stress-sec3">
+                        <p>UnPluggd is about more than just a workshop. It’s our calling. It’s about disconnecting to reconnect.
+                            The programme is one intense learning journey created to help you immerse yourself in an interactive
+                            offline experience. Using a diverse set of mini-sessions and role-play based activities, from
+                            group destressing to mindfulness training, we have a line-up that will truly help you pull the
+                            plug on stress!</p>
+                        <div class="gif-img hidden-xs">
+                            <img src="img/unplugged/Unplugged-3.gif" alt="" class="img-responsive">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="lamps">
+        <div class="lamps hidden-xs">
             <img src="img/unplugged/lamps.png" alt="lamps" class="img-responsive">
         </div>
     </div>
     <!--<div class="bubble ab">
         <img src="img/bubble.png" alt="" class="img-responsive">
     </div>-->
-    <div class="window-right ab">
+    <div class="window-right ab hidden-sm hidden-xs">
         <img src="img/awsomeness/section2/window.png" alt="" class="img-responsive">
     </div>
     <!--<div class="window-full ab">

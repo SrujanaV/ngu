@@ -1,4 +1,18 @@
 @media (max-width: 1200px) {
+  // Unplugged Section css
+  .navbar-default .navbar-nav {
+    padding: 0;
+  }
+  // .nav>li>a {
+  //   position: relative;
+  //   display: block;
+  //   padding: 10px 12px;
+  // }
+  .unplugged .stress-sec3 .gif-img img {
+    bottom: -68%;
+    left: 10%;
+  }
+  //End Unplugged Section css
   .client-slider .slider-client .flex-direction-nav .flex-next {
     right: -30px;
   }
@@ -87,7 +101,39 @@
     left: -300px!important;
   }
 }
+
 @media (max-width: $screen-sm-max) {
+  // Unplugged Section css
+  .nav>li>a {
+    font-size: 12px;
+  }
+  .unplugged .stress .statistics {
+    li+li {
+      padding: 0 0 0 18px;
+      &:before {
+        height: 76px;
+        top: 5px;
+        margin: 0 -14px;
+      }
+    }
+    li p:nth-child(1) {
+      font-size: 40px;
+      letter-spacing: -2px;
+    }
+    li p>sup {
+      top: -10px;
+      font-size: 20px;
+      left: 4px;
+    }
+  }
+  .unplugged-img {
+    width: 350px;
+  }
+  .unplugged .unplug-relate .lamps {
+    right: 10px;
+    width: 80px;
+  }
+  //End Unplugged Section css
   .about-info,
   .services .services-info,
   .contact-detail,
@@ -110,7 +156,7 @@
   .navbar-default .navbar-nav {
     padding-left: 0;
   }
-  .nav > li > a {
+  .nav>li>a {
     padding: 15px 7px;
   }
   .section-ngu {
@@ -279,13 +325,22 @@
     width: 150px;
   }
 }
+
 @media (max-width: $screen-xs-max) {
+  // Unplugged Section css
+  .unplugged-img {
+    width: initial;
+  }
+  .unplugged .stress-sec3 p {
+    width: 100%;
+  }
+  //End Unplugged Section css
   .center-aligned {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
-    @include transform(translate(-50%,-50%));
+    @include transform(translate(-50%, -50%));
   }
   .img-awards img {
     position: static;
@@ -300,7 +355,7 @@
       text-align: center;
       margin-top: 0;
       margin-bottom: 0;
-      li + li {
+      li+li {
         border-top: 1px solid #fff;
       }
       li {
@@ -690,7 +745,34 @@
     padding-left: 0;
   }
 }
+
 @media (max-width:480px) {
+  // Unplugged Css Here
+  .stat-count {
+    li {
+      display: block;
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .unplugged .stress .statistics li+li {
+    padding: 0;
+    margin-top: 15px;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 1px solid #ff6e3d;
+      width: 150px;
+      top: 0;
+      height: 0;
+      left: 50%;
+      margin: -8px 0;
+      transform: translate(-50%, 0);
+    }
+  }
+  //End Unplugged Css Here
   .home {
     .lights1,
     .lights2 {
@@ -821,7 +903,8 @@
   //     width: 106%;
   //   }
 }
-@media screen and (max-device-width: 580px) and (orientation : landscape) {
+
+@media screen and (max-device-width: 580px) and (orientation: landscape) {
   .awsomeness {
     min-height: auto;
     .puppet {
@@ -837,13 +920,14 @@
     }
   }
 }
+
 @media (max-width: $screen-xs-max) and (orientation: landscape) {
   .awsomeness {
     .puppet {
       .lady1,
       .chair-home,
       .home-lady2,
-       {
+      {
         bottom: 55px;
       }
       .home .lights1,

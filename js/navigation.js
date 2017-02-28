@@ -6,7 +6,7 @@ var imageUrl = "http://admin.willnevergrowup.com/uploads/";
 
 var navigationservice = angular.module('navigationservice', [])
 
-.factory('NavigationService', function($http) {
+.factory('NavigationService', function ($http) {
   var navigation = [{
     name: "About Us",
     classis: "active",
@@ -41,6 +41,11 @@ var navigationservice = angular.module('navigationservice', [])
     classis: "active",
     anchor: "contact",
     target: "_self",
+  }, {
+    name: "Unpluggd",
+    classis: "active",
+    anchor: "unplugged",
+    target: "_self",
   }];
 
   var navigation2 = [{
@@ -66,13 +71,13 @@ var navigationservice = angular.module('navigationservice', [])
   }];
 
   return {
-    getnav: function() {
+    getnav: function () {
       return navigation;
     },
-    getnav2: function() {
+    getnav2: function () {
       return navigation2;
     },
-    makeactive: function(id) {
+    makeactive: function (id) {
       console.log(id);
       for (var i = 0; i < navigation.length; i++) {
         if (navigation[i].anchor == id) {
@@ -83,25 +88,25 @@ var navigationservice = angular.module('navigationservice', [])
       }
       return id;
     },
-    subscribe: function(email, callback) {
+    subscribe: function (email, callback) {
       $http.get(adminUrl + "subscribe?email=" + email).success(callback);
     },
-    formSubmit: function(form, callback) {
+    formSubmit: function (form, callback) {
       $http.post(adminUrl + "contactSubmit", form).success(callback);
     },
-    getAllTestimonial: function(callback) {
+    getAllTestimonial: function (callback) {
       $http.get(adminUrl + "getalltestimonial").success(callback);
     },
-    getClientWithDescription: function(callback) {
+    getClientWithDescription: function (callback) {
       $http.get(adminUrl + "getClientWithDescription").success(callback);
     },
-    getAllClient: function(callback) {
+    getAllClient: function (callback) {
       $http.get(adminUrl + "getallclient?maxlength=" + 100).success(callback);
     },
-    getAllMedia: function(callback) {
+    getAllMedia: function (callback) {
       $http.get(adminUrl + "getallmedia").success(callback);
     },
-    makeactive2: function(id) {
+    makeactive2: function (id) {
       for (var i = 0; i < navigation2.length; i++) {
         if (navigation2[i].anchor == id) {
           navigation2[i].classis = "actives";

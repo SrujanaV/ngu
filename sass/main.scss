@@ -1840,6 +1840,9 @@ img.loading {
 
 // unplugged section css starts here
 .unplugged {
+  .unplugged-img {
+    margin-bottom: 60px;
+  }
   padding: 90px 0 200px;
   .unplug-relate {
     position: relative;
@@ -1848,6 +1851,7 @@ img.loading {
       top: -90px;
       right: 90px;
       width: 128px;
+      z-index: 999;
     }
   }
   h1,
@@ -1873,6 +1877,107 @@ img.loading {
   .content-left {
     p {
       margin-bottom: 18px;
+    }
+  }
+  .unplug-form {
+    input::-webkit-input-placeholder {
+      color: $brand-brown;
+    }
+    input:-moz-placeholder {
+      color: $brand-brown;
+    }
+    input::-moz-placeholder {
+      color: $brand-brown;
+    }
+    input:-ms-input-placeholder {
+      color: $brand-brown;
+    }
+    input {
+      border: 2px solid $brand-brown;
+    }
+  }
+  button.register {
+    border-radius: 0;
+    // border-color: $brand-brown;
+    background-color: $brand-white;
+    // border: 2px solid $brand-brown;
+    color: #000;
+    ;
+    &:focus,
+    &:hover {
+      box-shadow: none;
+      outline: none;
+      color: #000;
+    }
+  }
+  .btn-text {
+    font-size: 9px;
+    color: $brand-white;
+    white-space: nowrap;
+    text-align: right;
+  }
+  .stress {
+    background: #f0282b;
+    padding: 0 30px 30px;
+    .stress-head {
+      color: #ff6e3d;
+      text-transform: uppercase;
+      font-size: 64px;
+      font-weight: 300;
+      line-height: 0.7;
+      margin-bottom: 16px;
+    }
+    .statistics {
+      margin-top: 16px;
+      .stat-count {
+        margin-top: 16px;
+        li>p {
+          line-height: 1;
+          font-weight: bold;
+        }
+      }
+      li {
+        position: relative;
+        p>sup {
+          top: -36px;
+          font-size: 30px;
+        }
+        p:nth-child(odd) {
+          color: $brand-white;
+          font-weight: bold;
+        }
+        p:nth-child(1) {
+          font-size: 82px;
+          line-height: 1;
+          letter-spacing: -4px;
+        }
+      }
+      li+li {
+        padding: 0 0 0 24px;
+        &:before {
+          content: '';
+          display: block;
+          border-left: 2px solid #ff6e3d;
+          height: 110px;
+          position: absolute;
+          top: 12px;
+          margin: 0 -14px;
+        }
+      }
+    }
+  }
+  .stress-sec3 {
+    position: relative;
+    p {
+      margin-top: 50px;
+      width: 70%;
+    }
+    .gif-img {
+      img {
+        position: absolute;
+        bottom: -86%;
+        left: 20%;
+      }
     }
   }
 }
