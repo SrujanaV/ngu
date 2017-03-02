@@ -1980,6 +1980,29 @@ img.loading {
       }
     }
   }
+  .disclaim {
+    color: $brand-white;
+    margin-top: 80px;
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+// Awesomeness css here
+.best-award {
+  h1 {
+    text-transform: uppercase;
+    color: $brand-white;
+    text-align: right;
+  }
+}
+
+.encore {
+  @extend .best-award;
+  h1 {
+    text-align: left
+  }
 }
 
 @import "animation.scss";

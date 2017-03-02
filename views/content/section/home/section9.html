@@ -11,16 +11,17 @@
                 <div class="col-sm-6">
                     <div class="contact-info">
                         <div class="contact-detail">
-                            <p class="text-justify">For details on our engagement solutions, ideas on how to make life at work more interesting or to address any specific requirement for your organization, reach out to us at</p>
+                            <p class="text-justify">For details on our engagement solutions, ideas on how to make life at work more interesting or
+                                to address any specific requirement for your organization, reach out to us at</p>
                             <a href="mailto:info@willnevergrowup.com" class="block text-bold">info@willnevergrowup.com</a>
                             <span class="space text-lighter block">or</span>
                             <span class="text-lighter">call us on <a href="tel:919892338317"> +91 919892338317</a> / <a href="tel:9029038317" class="block">+91 9029038317</a></span>
                             <div class="social-icon">
                                 <ul>
-                                    <li><a href="https://www.linkedin.com/company/1650364?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A1650364%2Cidx%3A3-1-4%2CtarId%3A1455282776964%2Ctas%3Anever%20grow%20up" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/1650364?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A1650364%2Cidx%3A3-1-4%2CtarId%3A1455282776964%2Ctas%3Anever%20grow%20up"
+                                            target="_blank"><i class="fa fa-linkedin"></i></a></li>
                                     <li><a href="https://twitter.com/HappynessAtWork" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                     <li><a href="https://www.facebook.com/WorkplaceHappyness" target="_blank"><i class="fa fa-facebook"></i></a></li>
-
                                     <!-- <li><a href="https://www.instagram.com/HappynessAtWork/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                   <li><a href=" https://plus.google.com/+NeverGrowUpWPL" target="_blank"><i class="fa fa-google-plus"></i></a></li> -->
                                 </ul>
@@ -50,7 +51,14 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Organization :" name="myOrganisation" ng-model="contactForm.organization" required>
+                                <input type="text" class="form-control" placeholder="Email :" name="myEmail" ng-model="contactForm.email" required>
+                                <div ng-show="contactFormValid.myEmail.$error.required && contactFormValid.myEmail.$touched" role="alert" class="red-color">
+                                    Please Enter your Email
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Organization :" name="myOrganisation" ng-model="contactForm.organization"
+                                    required>
                                 <div ng-show="contactFormValid.myOrganisation.$error.required && contactFormValid.myOrganisation.$touched" role="alert" class="red-color">
                                     Please Enter your Organization Name
                                 </div>
