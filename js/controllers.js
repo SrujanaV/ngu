@@ -77,8 +77,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $state.transitionTo('homeid', {
         id: id
       }, {
-          notify: false
-        });
+        notify: false
+      });
       makeAnimation(id);
       $location.replace();
     };
@@ -107,10 +107,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.unplugData = {};
     $scope.unplugDataSubmit = function (data) {
       console.log(data);
-      // $scope.myData.push(data);
-      // console.log(myData);
-
-    }
+      NavigationService.unpluggedSubmit(data, function (data) {
+        console.log(data);
+      });
+      $scope.unpluggedFormComplete = true;
+    };
     // $scope.clients = [{
     //   image: "img/client/Tata-Sky.png"
     // }, {
@@ -319,8 +320,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $state.transitionTo('awesomenessid', {
         id: id
       }, {
-          notify: false
-        });
+        notify: false
+      });
       makeAnimation(id);
       $location.replace();
     };

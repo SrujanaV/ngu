@@ -39,7 +39,7 @@
                         <p>Write to <a href="mailto:info@willnevergrowup.com">info@willnevergrowup.com</a></p>
                     </div>
                     <div class="unplug-form">
-                        <form name="unplugForm" ng-submit="unplugDataSubmit(unplugData, cs)">
+                        <form name="unplugForm" ng-hide="unpluggedFormComplete" ng-submit="unplugDataSubmit(unplugData, cs)">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <div class="form-group">
@@ -51,8 +51,8 @@
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <div class="form-group">
-                                        <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Mobile:" ng-model="unplugData.mobile" required>
-                                        <div ng-show="unplugForm.mobile.$error.required && unplugForm.mobile.$touched" class="red-color">
+                                        <input type="text" name="number" class="form-control" id="mobile" placeholder="Mobile:" ng-model="unplugData.number" required>
+                                        <div ng-show="unplugForm.number.$error.required && unplugForm.number.$touched" class="red-color">
                                             Please Enter your Mobile
                                         </div>
                                     </div>
@@ -73,25 +73,8 @@
                                 <button class="register btn" type="submit" ng-disabled="unplugForm.$invalid" disabled="disabled">Register</button>
                                 <p class="btn-text">(Yes, I am ready to slow down!)</p>
                             </div>
-                            <!--<div class="text-right">
-                                <button class="register btn" type="submit" ng-disabled="unplugForm.$invalid">Register</button>
-                                <p>(Yes, I am ready to slow down!)</p>
-                            </div>-->
                         </form>
-                        <!--<table>
-							<thead>
-								<tr>
-									<th>Name</th>
-									<th>Mobile</th>
-									<th>Email</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr ng-repeat="data in myData">
-									<td></td>
-								</tr>
-							</tbody>
-						</table>-->
+                        <h4 ng-show="unpluggedFormComplete" class="thankyou">Thank you</h4>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
