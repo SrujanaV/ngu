@@ -1999,10 +1999,15 @@ img.loading {
 }
 
 .encore {
+  margin-bottom: 160px;
   @extend .best-award;
   h1 {
     text-align: left
   }
+}
+
+.award2 {
+  position: absolute;
 }
 
 @import "animation.scss";
