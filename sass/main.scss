@@ -1841,7 +1841,17 @@ img.loading {
 // unplugged section css starts here
 .unplugged {
   .unplugged-img {
+    position: relative;
+    .bubbles {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+    }
     margin-bottom: 60px;
+    .unplug__img {
+      width: 44%;
+    }
   }
   padding: 90px 0 200px;
   .unplug-relate {
@@ -1858,13 +1868,10 @@ img.loading {
   p {
     margin: 0;
   }
-  .color-white {
-    color: $brand-white;
-    font-weight: bold;
-  }
   .interested-sec {
     margin-bottom: 18px;
     p {
+      color: #011426;
       a {
         font-weight: bold;
         color: #000;
@@ -1877,9 +1884,17 @@ img.loading {
   .content-left {
     p {
       margin-bottom: 18px;
+      color: #011426;
     }
   }
+  .color-white {
+    color: $brand-white !important;
+    font-weight: bold;
+  }
   .unplug-form {
+    .form-group .form-control {
+      color: #000;
+    }
     input::-webkit-input-placeholder {
       color: $brand-brown;
     }
@@ -1911,7 +1926,7 @@ img.loading {
     }
   }
   .btn-text {
-    font-size: 9px;
+    font-size: 12px;
     color: $brand-white;
     white-space: nowrap;
     text-align: right;
@@ -1919,35 +1934,40 @@ img.loading {
   .stress {
     background: #f0282b;
     padding: 0 30px 30px;
+    color: #000;
     .stress-head {
       color: #ff6e3d;
       text-transform: uppercase;
       font-size: 64px;
       font-weight: 300;
-      line-height: 0.7;
+      line-height: 0.6;
       margin-bottom: 16px;
     }
     .statistics {
+      .color-white {
+        font-weight: 500;
+      }
       margin-top: 16px;
       .stat-count {
         margin-top: 16px;
         li>p {
-          line-height: 1;
+          line-height: 1.1;
           font-weight: bold;
         }
       }
       li {
         position: relative;
         p>sup {
-          top: -36px;
-          font-size: 30px;
+          top: -18px;
+          left: 3px;
+          font-size: 26px;
         }
         p:nth-child(odd) {
           color: $brand-white;
           font-weight: bold;
         }
         p:nth-child(1) {
-          font-size: 82px;
+          font-size: 56px;
           line-height: 1;
           letter-spacing: -4px;
         }
@@ -1958,7 +1978,7 @@ img.loading {
           content: '';
           display: block;
           border-left: 2px solid #ff6e3d;
-          height: 110px;
+          height: 84px;
           position: absolute;
           top: 12px;
           margin: 0 -14px;
@@ -1968,21 +1988,20 @@ img.loading {
   }
   .stress-sec3 {
     position: relative;
+    min-height: 200px;
     p {
       margin-top: 50px;
       width: 70%;
     }
     .gif-img {
-      img {
-        position: absolute;
-        bottom: -86%;
-        left: 20%;
-      }
+      position: absolute;
+      bottom: -86%;
+      left: 20%;
     }
   }
   .disclaim {
     color: $brand-white;
-    margin-top: 80px;
+    margin-top: 130px;
     p {
       font-size: 12px;
     }
@@ -2002,7 +2021,7 @@ img.loading {
   margin-bottom: 160px;
   @extend .best-award;
   h1 {
-    text-align: left
+    text-align: left;
   }
 }
 

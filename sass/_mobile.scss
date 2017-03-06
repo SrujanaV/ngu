@@ -8,9 +8,15 @@
   //   display: block;
   //   padding: 10px 12px;
   // }
-  .unplugged .stress-sec3 .gif-img img {
-    bottom: -68%;
-    left: 10%;
+  .unplugged .stress-sec3 .gif-img {
+    bottom: -34%;
+    left: 20%;
+  }
+  .unplugged .disclaim {
+    margin-top: 50px;
+  }
+  .unplugged .unplugged-img .unplug__img {
+    width: 100%;
   }
   //End Unplugged Section css
   .client-slider .slider-client .flex-direction-nav .flex-next {
@@ -103,7 +109,24 @@
 }
 
 @media (max-width: $screen-sm-max) {
+  // Awesomeness css here
+  .best-award {
+    h1 {
+      font-size: 26px;
+    }
+  }
+  .encore {
+    margin-bottom: 68px;
+  }
   // Unplugged Section css
+  // .unplugged .stress-sec3 .gif-img {
+  //   bottom: -100%;
+  //   left: 20%;
+  // }
+  .unplugged .stress-sec3 .gif-img {
+    bottom: -22%;
+    left: 36%;
+  }
   .nav>li>a {
     font-size: 12px;
   }
@@ -133,6 +156,9 @@
     right: 10px;
     width: 80px;
   }
+  // .unplugged .stress-sec3 p {
+  //   width: 100%;
+  // }
   //End Unplugged Section css
   .about-info,
   .services .services-info,
@@ -327,12 +353,33 @@
 }
 
 @media (max-width: $screen-xs-max) {
+  // Awesomeness css here
+  .best-award h1 {
+    font-size: 22px;
+    text-align: left;
+  }
+  .award2 {
+    position: inherit;
+    margin-bottom: 30px;
+  }
+  .encore {
+    margin-bottom: 0;
+  }
   // Unplugged Section css
   .unplugged-img {
     width: initial;
   }
-  .unplugged .stress-sec3 p {
-    width: 100%;
+  .unplugged .unplugged-img .unplug__img {
+    width: 70%;
+  }
+  // .unplugged .stress-sec3 p {
+  //   width: 100%;
+  // }
+  // .unplugged .disclaim {
+  //   margin-top: 150px;
+  // }
+  .unplugged .disclaim {
+    margin-top: 120px;
   }
   //End Unplugged Section css
   .center-aligned {
@@ -746,8 +793,21 @@
   }
 }
 
+// @media (max-width:350px) and (max-width:600px) {}
 @media (max-width:480px) {
   // Unplugged Css Here
+  .unplugged .unplugged-img .unplug__img {
+    width: 100%;
+  }
+  .unplugged .stress-sec3 p {
+    width: 100%;
+  }
+  .unplugged .stress-sec3 .gif-img {
+    // bottom: -44%;
+    // left: 10%;
+    bottom: -48%;
+    left: 44%;
+  }
   .stat-count {
     li {
       display: block;
