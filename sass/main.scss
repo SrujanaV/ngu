@@ -1886,6 +1886,13 @@ img.loading {
       margin-bottom: 18px;
       color: #011426;
     }
+    a{
+      color: #011426;
+      font-weight: 800;
+      &:hover{
+      color: lighten(#011426, 10%);
+      }
+    }
   }
   .color-white {
     color: $brand-white !important;
