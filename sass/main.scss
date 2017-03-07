@@ -1886,11 +1886,11 @@ img.loading {
       margin-bottom: 18px;
       color: #011426;
     }
-    a{
+    a {
       color: #011426;
       font-weight: 800;
-      &:hover{
-      color: lighten(#011426, 10%);
+      &:hover {
+        color: lighten(#011426, 10%);
       }
     }
   }
@@ -1999,6 +1999,7 @@ img.loading {
     p {
       margin-top: 50px;
       width: 70%;
+      color: #011426;
     }
     .gif-img {
       position: absolute;
