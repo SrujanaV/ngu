@@ -1885,6 +1885,7 @@ img.loading {
     p {
       margin-bottom: 18px;
       color: #011426;
+      text-align: initial;
     }
     a {
       color: #011426;
@@ -1957,6 +1958,7 @@ img.loading {
       margin-top: 16px;
       .stat-count {
         margin-top: 16px;
+        text-align: center;
         li>p {
           line-height: 1.1;
           font-weight: bold;
@@ -1964,6 +1966,8 @@ img.loading {
       }
       li {
         position: relative;
+        padding: 0 30px;
+        // margin: 0 40px;
         p>sup {
           top: -18px;
           left: 3px;
@@ -1980,16 +1984,16 @@ img.loading {
         }
       }
       li+li {
-        padding: 0 0 0 24px;
-        &:before {
-          content: '';
-          display: block;
-          border-left: 2px solid #ff6e3d;
-          height: 84px;
-          position: absolute;
-          top: 12px;
-          margin: 0 -14px;
-        }
+        border-left: 2px solid #ff6e3d;
+        // &:before {
+        //   content: '';
+        //   display: block;
+        //   border-left: 2px solid #ff6e3d;
+        //   height: 84px;
+        //   position: absolute;
+        //   top: 12px;
+        //   margin: 0 -50px;
+        // }
       }
     }
   }
@@ -1997,8 +2001,9 @@ img.loading {
     position: relative;
     min-height: 200px;
     p {
-      margin-top: 50px;
-      width: 70%;
+      text-align: initial;
+      margin-top: 32px;
+      width: 80%;
       color: #011426;
     }
     .gif-img {
