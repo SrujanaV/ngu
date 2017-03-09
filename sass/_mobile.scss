@@ -246,9 +246,9 @@
 }
 
 .hq-bg {
-  .hq-confess {
-    display: none;
-  }
+  // .hq-confess {
+  //   display: none;
+  // }
   .clock {
     top: 10%;
   }
@@ -400,6 +400,11 @@
   .best-award h1 {
     font-size: 22px;
     text-align: left;
+  }
+  .hq-bg {
+    .hq-confess {
+      display: none;
+    }
   }
   .award2 {
     position: inherit;
