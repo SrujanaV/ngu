@@ -1857,6 +1857,9 @@ img.loading {
   padding: 90px 0 200px;
   .unplug-relate {
     position: relative;
+    .padd20 {
+      padding: 0 20px;
+    }
     .lamps {
       position: absolute;
       top: -90px;
@@ -1959,7 +1962,7 @@ img.loading {
       margin-top: 16px;
       .stat-count {
         margin-top: 16px;
-        text-align: left;
+        text-align: center;
         li>p {
           line-height: 1.1;
           font-weight: bold;
@@ -1967,7 +1970,7 @@ img.loading {
       }
       li {
         position: relative;
-        padding: 0 30px;
+        padding: 0 38px;
         // margin: 0 40px;
         p>sup {
           top: -18px;

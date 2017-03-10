@@ -8,11 +8,9 @@
     li {
       // margin: 0 22px;
     }
-    // li+li {
-    //   &:before {
-    //     margin: 0 -36px;
-    //   }
-    // }
+    .unplugged .stress .statistics li {
+      padding: 0 30px;
+    }
     .stat-count {
       text-align: left;
     }

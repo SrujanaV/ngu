@@ -1,102 +1,103 @@
 <section class="unplugged about-us">
 	<div class="unplug-relate">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="unplugged-img">
-						<img src="img/unplugged/unplugged-bg.png" alt="" class="img-responsive unplug__img">
-						<div class="bubbles">
-							<img src="img/unplugged/bubbles.png" alt="bubbles" class="img-responsive">
+			<div class="padd20">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="unplugged-img">
+							<img src="img/unplugged/unplugged-bg.png" alt="" class="img-responsive unplug__img">
+							<div class="bubbles">
+								<img src="img/unplugged/bubbles.png" alt="bubbles" class="img-responsive">
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-5 col-sm-6 col-xs-12">
-					<div class="content-left">
-						<p>Let’s face it, life can get busy sometimes. These are the times when no matter how hard we try to find a balance between
-							mindful living and mind-full living, <a href="http://blog.willnevergrowup.com/?p=3276" target="_blank">
+				<div class="row">
+					<div class="col-md-5 col-sm-6 col-xs-12">
+						<div class="content-left">
+							<p>Let’s face it, life can get busy sometimes. These are the times when no matter how hard we try to find a balance between
+								mindful living and mind-full living, <a href="http://blog.willnevergrowup.com/?p=3276" target="_blank">
                             our inner Zen eludes us</a>. Every time you try to tune into yourself, a message notification
-							beeps, a mail chimes in your inbox, a reminder pings impatiently, an alarm buzzes and you go on repeat. This cycle
-							goes on till you feel the weight of the world on your shoulders and get looped into a torrent of your work-life and
-							personal life spilling into each other.
-						</p>
-						<p class="color-white">
-							Say hello to UnPluggd by Never Grow Up <sup>&reg;</sup>
-						</p>
-						<p>
-							A unique, fun, experiential learning framework rooted in theories, research and practical concepts from Psychology, Neuroscience
-							and Creativity meant to address (and redress) the stress caused by our essential digital dependence and the ‘instant-world’
-							we live in.
-						</p>
-						<p>
-							Experience the joy of plugging out of things and rediscovering a whole lot by plugging back into the things that matter,
-							a <strong>detached attachment,</strong> if you will. Take a break, un-wire before you un-hinge, unwind the
-							coils of professional and personal expectations and breathe. ‘Un’ a lot things to Plug into something valuable.
-						</p>
-						<!--<p>
+								beeps, a mail chimes in your inbox, a reminder pings impatiently, an alarm buzzes and you go on repeat. This cycle
+								goes on till you feel the weight of the world on your shoulders and get looped into a torrent of your work-life and
+								personal life spilling into each other.
+							</p>
+							<p class="color-white">
+								Say hello to UnPluggd by Never Grow Up <sup>&reg;</sup>
+							</p>
+							<p>
+								A unique, fun, experiential learning framework rooted in theories, research and practical concepts from Psychology, Neuroscience
+								and Creativity meant to address (and redress) the stress caused by our essential digital dependence and the ‘instant-world’
+								we live in.
+							</p>
+							<p>
+								Experience the joy of plugging out of things and rediscovering a whole lot by plugging back into the things that matter,
+								a <strong>detached attachment,</strong> if you will. Take a break, un-wire before you un-hinge, unwind the
+								coils of professional and personal expectations and breathe. ‘Un’ a lot things to Plug into something valuable.
+							</p>
+							<!--<p>
                             Stress is a leading cause of problems in the workforce today. Moreover, the mental health of every employee is often at stake.
                             Research statistics point towards the fact that 50% employees in India are under stress and over
                             20% individuals suffer from depression. These numbers are a glaring indication that something
                             must change.
                         </p>-->
-					</div>
-					<div class="interested-sec">
-						<p>Interested? Sign Up for one of upcoming workshops.</p>
-						<p>Want this to be done in your workplace during work hours or for a larger group?</p>
-						<p>Write to <a href="mailto:info@willnevergrowup.com">info@willnevergrowup.com</a></p>
-					</div>
-					<div class="unplug-form">
-						<form name="unplugForm" ng-hide="unpluggedFormComplete" ng-submit="unplugDataSubmit(unplugData, cs)">
-							<div class="row">
-								<div class="col-md-6 col-sm-6 col-xs-12">
-									<div class="form-group">
-										<input type="text" name="name" class="form-control" id="name" placeholder="Name" ng-model="unplugData.name" required>
-										<div ng-show="unplugForm.name.$error.required && unplugForm.name.$touched" class="red-color">
-											Please Enter your Name
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-6 col-xs-12">
-									<div class="form-group">
-										<input type="text" name="number" class="form-control" id="mobile" placeholder="Mobile" maxlength="10" ng-model="unplugData.number"
-											required>
-										<div ng-show="unplugForm.number.$error.required && unplugForm.number.$touched" class="red-color">
-											Please Enter your Mobile
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12 col-sm-12 col-xs-12">
-									<div class="form-group">
-										<input type="email" name="email" class="form-control" id="email" placeholder="Email Address" ng-model="unplugData.email"
-											required>
-										<div ng-show="unplugForm.email.$error.required && unplugForm.email.$touched" class="red-color">
-											Please Enter your Email
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="text-right">
-								<button class="register btn" type="submit" ng-disabled="unplugForm.$invalid" disabled="disabled">Register</button>
-								<p class="btn-text">(Yes, I am ready to slow down!)</p>
-							</div>
-						</form>
-						<h4 ng-show="unpluggedFormComplete" class="thankyou">Thanks! You will hear from us soon!</h4>
-					</div>
-				</div>
-				<div class="col-md-5 col-sm-6 col-xs-12">
-					<div class="stress">
-						<div class="stress-sec1">
-							<h1 class="stress-head">stress</h1>
-							<p><strong>Stress</strong> is a <strong>leading cause of</strong> problems in the <strong>workforce</strong> today. Moreover,
-								the <strong>mental health</strong> of every employee is often at stake.
-							</p>
 						</div>
-						<div class="statistics">
-							<p class="color-white"><strong>Research statistics</strong> point towards the <strong>fact</strong> that</p>
-							<!--<div class="stat-count">
+						<div class="interested-sec">
+							<p>Interested? Sign Up for one of upcoming workshops.</p>
+							<p>Want this to be done in your workplace during work hours or for a larger group?</p>
+							<p>Write to <a href="mailto:info@willnevergrowup.com">info@willnevergrowup.com</a></p>
+						</div>
+						<div class="unplug-form">
+							<form name="unplugForm" ng-hide="unpluggedFormComplete" ng-submit="unplugDataSubmit(unplugData, cs)">
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<div class="form-group">
+											<input type="text" name="name" class="form-control" id="name" placeholder="Name" ng-model="unplugData.name" required>
+											<div ng-show="unplugForm.name.$error.required && unplugForm.name.$touched" class="red-color">
+												Please Enter your Name
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<div class="form-group">
+											<input type="text" name="number" class="form-control" id="mobile" placeholder="Mobile" maxlength="10" ng-model="unplugData.number"
+												required>
+											<div ng-show="unplugForm.number.$error.required && unplugForm.number.$touched" class="red-color">
+												Please Enter your Mobile
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group">
+											<input type="email" name="email" class="form-control" id="email" placeholder="Email Address" ng-model="unplugData.email"
+												required>
+											<div ng-show="unplugForm.email.$error.required && unplugForm.email.$touched" class="red-color">
+												Please Enter your Email
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="text-right">
+									<button class="register btn" type="submit" ng-disabled="unplugForm.$invalid" disabled="disabled">Register</button>
+									<p class="btn-text">(Yes, I am ready to slow down!)</p>
+								</div>
+							</form>
+							<h4 ng-show="unpluggedFormComplete" class="thankyou">Thanks! You will hear from us soon!</h4>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-6 col-xs-12">
+						<div class="stress">
+							<div class="stress-sec1">
+								<h1 class="stress-head">stress</h1>
+								<p><strong>Stress</strong> is a <strong>leading cause of</strong> problems in the <strong>workforce</strong> today.
+									Moreover, the <strong>mental health</strong> of every employee is often at stake.
+								</p>
+							</div>
+							<div class="statistics">
+								<p class="color-white"><strong>Research statistics</strong> point towards the <strong>fact</strong> that</p>
+								<!--<div class="stat-count">
 								<div class="row">
 									<div class="col-md-6">
 										<div class="stat-count-sec">
@@ -114,37 +115,38 @@
 									</div>
 								</div>
 							</div>-->
-							<ul class="list-inline list-unstyled stat-count">
-								<li>
-									<p>50<sup>%</sup></p>
-									<p>Employees<br>in India are</p>
-									<p>Under Stress</p>
-								</li>
-								<li>
-									<p>20<sup>%</sup></p>
-									<p>Individuals<br>suffer from</p>
-									<p>Depression</p>
-								</li>
-							</ul>
-							<p>These numbers are <strong>glaring indication</strong> that something <strong>must change.</strong></p>
+								<ul class="list-inline list-unstyled stat-count">
+									<li>
+										<p>50<sup>%</sup></p>
+										<p>Employees<br>in India are</p>
+										<p>Under Stress</p>
+									</li>
+									<li>
+										<p>20<sup>%</sup></p>
+										<p>Individuals<br>suffer from</p>
+										<p>Depression</p>
+									</li>
+								</ul>
+								<p>These numbers are <strong>glaring indication</strong> that something <strong>must change.</strong></p>
+							</div>
 						</div>
-					</div>
-					<div class="stress-sec3">
-						<p><strong>UnPluggd</strong> is about more than just a workshop. It’s our calling. It’s about disconnecting to reconnect.
-							The programme is one intense learning journey created to help you immerse yourself in an interactive <strong>offline experience</strong>.
-							Using a diverse set of mini-sessions and role-play based activities, from group destressing to mindfulness training,
-							we have a line-up that will truly help you pull the plug on stress!</p>
-						<div class="gif-img">
-							<img src="img/unplugged/Unplugged-3.gif" alt="" class="img-responsive">
+						<div class="stress-sec3">
+							<p><strong>UnPluggd</strong> is about more than just a workshop. It’s our calling. It’s about disconnecting to reconnect.
+								The programme is one intense learning journey created to help you immerse yourself in an interactive <strong>offline experience</strong>.
+								Using a diverse set of mini-sessions and role-play based activities, from group destressing to mindfulness training,
+								we have a line-up that will truly help you pull the plug on stress!</p>
+							<div class="gif-img">
+								<img src="img/unplugged/Unplugged-3.gif" alt="" class="img-responsive">
+							</div>
 						</div>
-					</div>
-					<!--<div class="gif-img visible-xs">
+						<!--<div class="gif-img visible-xs">
                         <img src="img/unplugged/Unplugged-3.gif" alt="" class="img-responsive">
                     </div>-->
-					<div class="disclaim">
-						<p>Disclaimer:<br>We are sorry that you had use an electronic device to read about us. But then, that's the irony of it
-							ya?
-						</p>
+						<div class="disclaim">
+							<p>Disclaimer:<br>We are sorry that you had use an electronic device to read about us. But then, that's the irony of
+								it ya?
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
