@@ -143,9 +143,13 @@
   .unplugged .stress-sec3 .gif-img {
     bottom: -38%;
     left: 36%;
+    display: none;
   }
   .nav>li>a {
     font-size: 12px;
+  }
+  .unplugged .stress-sec3 p {
+    width: 100%;
   }
   .unplugged .unplugged-img .unplug__img {
     width: 100%;
@@ -404,7 +408,8 @@
   //   margin-top: 150px;
   // }
   .unplugged .disclaim {
-    margin-top: 120px;
+    // margin-top: 120px;
+    margin-top: 0;
   }
   //End Unplugged Section css
   .center-aligned {
@@ -832,6 +837,7 @@
     // left: 10%;
     bottom: -48%;
     left: 44%;
+    display: none;
   }
   .stat-count {
     li {

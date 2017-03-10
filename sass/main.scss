@@ -1889,7 +1889,6 @@ img.loading {
     p {
       margin-bottom: 18px;
       color: #011426;
-      text-align: initial;
     }
     a {
       color: #011426;
@@ -1966,11 +1965,12 @@ img.loading {
         li>p {
           line-height: 1.1;
           font-weight: bold;
+          font-size: 16px;
         }
       }
       li {
         position: relative;
-        padding: 0 38px;
+        padding: 0 22px;
         // margin: 0 40px;
         p>sup {
           top: -18px;
@@ -1982,7 +1982,7 @@ img.loading {
           font-weight: bold;
         }
         p:nth-child(1) {
-          font-size: 56px;
+          font-size: 58px;
           line-height: 1;
           letter-spacing: -4px;
         }
@@ -2005,7 +2005,7 @@ img.loading {
     position: relative;
     min-height: 200px;
     p {
-      text-align: initial;
+      // text-align: initial;
       margin-top: 32px;
       width: 80%;
       color: #011426;
