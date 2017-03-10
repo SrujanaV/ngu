@@ -558,7 +558,12 @@ button{
   ul.flex-direction-nav {
     zoom: 0.6;
   }
-
+ .floor {
+  display: none;
+}
+#home .floor {
+  display: block;
+}
   .coffee {
     bottom: 4%;
   }
