@@ -382,6 +382,22 @@
     font-size: 22px;
     text-align: left;
   }
+  li p:nth-child(1) {
+    font-size: 14px;
+    letter-spacing: 0;
+}
+    .subscribe .subscribe-me {
+    width: 80%;
+    margin: 50px auto;
+    input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+button{
+  width:250px;
+  margin: 0 auto;
+}
+}
   .hq-bg {
     .hq-confess {
       display: none;
