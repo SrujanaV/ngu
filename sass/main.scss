@@ -950,6 +950,7 @@ form {
 }
 
 .window-right {
+  z-index: 1;
   top: 30%;
   right: -350px;
 }
@@ -1850,7 +1851,7 @@ img.loading {
     }
     margin-bottom: 60px;
     .unplug__img {
-      width: 44%;
+      width: 34%;
       margin-left: 10px;
     }
   }
@@ -1946,6 +1947,9 @@ img.loading {
     background: #f0282b;
     padding: 0 30px 30px;
     color: #000;
+    margin-left: 50px;
+    z-index: 6;
+    position: relative;
     .stress-head {
       color: #ff6e3d;
       text-transform: uppercase;
@@ -2004,10 +2008,11 @@ img.loading {
   .stress-sec3 {
     position: relative;
     min-height: 200px;
+    margin-left: 50px;
     p {
       // text-align: initial;
       margin-top: 32px;
-      width: 80%;
+      width: auto;
       color: #011426;
     }
     .gif-img {
@@ -2046,5 +2051,14 @@ img.loading {
   position: absolute;
 }
 
+.hq-padding {
+  .min-hgt-hq {
+    min-height: auto;
+  }
+}
+
+// section {
+//   min-height: 623px;
+// }
 @import "animation.scss";
 @import "mobile.scss";

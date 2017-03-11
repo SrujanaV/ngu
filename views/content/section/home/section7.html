@@ -1,48 +1,58 @@
 <section class="media-ngu" ngu>
-<div class="media pt100">
-  <div class="rocket ab">
-    <img src="img/gif/Paper-Plane-1.png" class="home-areoplane ab">
-  </div>
-  <div class="window-right ab">
-    <img src="img/awsomeness/section2/window.png" alt="" class="img-responsive">
-  </div>
-  <div class="bubble ab">
-    <img src="img/bubble.png" alt="" class="doneLoading">
-  </div>
-  <div class="container pb140">
-    <div class="media-cont">
-      <div class="media-head">
-        <h2 class="home-head">Media</h2>
-        <p>It's nice to be loved and written about. Even better when you get featured.</p>
-        <p class="clickhere"><a href="http://blog.willnevergrowup.com/?cat=194" class="bold" target="_blank">Click here</a> if you'd like to open up the Pandora's Box.</p>
-      </div>
-      <!-- <div class="media-head">
+  <div class="media pt100">
+    <div class="rocket ab">
+      <img src="img/gif/Paper-Plane-1.png" class="home-areoplane ab">
+    </div>
+    <div class="window-right ab">
+      <img src="img/awsomeness/section2/window.png" alt="" class="img-responsive">
+    </div>
+    <div class="bubble ab">
+      <img src="img/bubble.png" alt="" class="doneLoading">
+    </div>
+    <div class="container pb140">
+      <div class="media-cont">
+        <div class="media-head">
+          <h2 class="home-head">Media</h2>
+          <p>It's nice to be loved and written about. Even better when you get featured.</p>
+          <p class="clickhere"><a href="http://blog.willnevergrowup.com/?cat=194" class="bold" target="_blank">Click here</a> if you'd like to
+            open up the Pandora's Box.</p>
+        </div>
+        <!-- <div class="media-head">
         <h2 class="home-head">Media</h2>
         <p>It's nice to be loved and written about. Even better when you get featured.</p>
         <p class="clickhere"><a href="http://blog.willnevergrowup.com/category/inthenews/" class="bold" target="_blank">Click here</a> if you'd like to open up the Pandora's Box.</p>
       </div> -->
-      <div class="media-partners">
-        <div class="row-flex" ng-repeat="medias in allmedia">
-          <div class="flex-md" ng-repeat="media in medias">
-            <div class="image-holder">
-              <img ng-src="{{media.image|serverimage}}" style="width:140px;height:140px;" alt="" class="img-responsive">
+        <div class="media-partners hidden-xs">
+          <div class="row-flex" ng-repeat="medias in allmedia">
+            <div class="flex-md" ng-repeat="media in medias">
+              <div class="image-holder">
+                <img ng-src="{{media.image|serverimage}}" style="width:140px;height:140px;" alt="" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="media-partners hidden-md hidden-sm visible-xs">
+          <div class="row" ng-repeat="medias in allmediaxs">
+            <div class="col-xs-4" ng-repeat="media in medias">
+              <div class="image-holder">
+                <img ng-src="{{media.image|serverimage}}" alt="" class="img-responsive">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="window-left ab">
+      <img src="img/awsomeness/section2/window.png" alt="" class="img-responsive">
+    </div>
+    <div class="news">
+      <img src="img/home/reading_news.png" alt="" class="img-responsive">
+    </div>
+    <div class="xerox">
+      <img src="img/gif/xerox-machine.gif" alt="" class="img-responsive">
+    </div>
+    <div class="floor">
+      <img src="img/floor.jpg" alt="" class="">
+    </div>
   </div>
-  <div class="window-left ab">
-    <img src="img/awsomeness/section2/window.png" alt="" class="img-responsive">
-  </div>
-  <div class="news">
-    <img src="img/home/reading_news.png" alt="" class="img-responsive">
-  </div>
-  <div class="xerox">
-    <img src="img/gif/xerox-machine.gif" alt="" class="img-responsive">
-  </div>
-  <div class="floor">
-    <img src="img/floor.jpg" alt="" class="">
-  </div>
-</div>
 </section>

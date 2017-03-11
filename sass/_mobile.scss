@@ -377,6 +377,9 @@
 }
 
 @media (max-width: $screen-xs-max) {
+  // .section {
+  //   min-height: auto !important;
+  // }
   // Awesomeness css here
   .best-award h1 {
     font-size: 22px;
@@ -385,19 +388,19 @@
   li p:nth-child(1) {
     font-size: 14px;
     letter-spacing: 0;
-}
-    .subscribe .subscribe-me {
+  }
+  .subscribe .subscribe-me {
     width: 80%;
     margin: 50px auto;
     input {
-    width: 100%;
-    margin-bottom: 10px;
-}
-button{
-  width:250px;
-  margin: 0 auto;
-}
-}
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 250px;
+      margin: 0 auto;
+    }
+  }
   .hq-bg {
     .hq-confess {
       display: none;
@@ -558,12 +561,12 @@ button{
   ul.flex-direction-nav {
     zoom: 0.6;
   }
- .floor {
-  display: none;
-}
-#home .floor {
-  display: block;
-}
+  .floor {
+    display: none;
+  }
+  #home .floor {
+    display: block;
+  }
   .coffee {
     bottom: 4%;
   }
@@ -571,6 +574,7 @@ button{
     min-height: 380px;
   }
   .section-ngu {
+    min-height: 626px !important;
     .ngu {
       width: 150px;
       top: 80px;
@@ -840,6 +844,49 @@ button{
   .media .media-cont .media-head {
     padding-left: 0;
   }
+  .services {
+    .pt100 {
+      padding-top: 50px;
+    }
+  }
+  .hq-padding {
+    min-height: 626px !important;
+    .pt100 {
+      padding-top: 50px;
+    }
+    .about-us,
+    .contactus,
+    {
+      padding: 50px 0;
+    }
+  }
+  .hq-spacing {
+    min-height: 626px !important;
+    .pt100 {
+      padding-top: 50px;
+    }
+  }
+  .media-ngu {
+    .pt100 {
+      padding-top: 50px;
+    }
+  }
+  .media .pb140 {
+    padding-bottom: 100px;
+  }
+  .subscribe {
+    padding: 50px 0;
+  }
+  .unplugged {
+    padding: 50px 0;
+    .stress {
+      // margin-left: 0;
+      margin: 20px 0 0 0;
+    }
+    .stress-sec3 {
+      margin: 0;
+    }
+  }
 }
 
 // @media (max-width:350px) and (max-width:600px) {}
@@ -958,7 +1005,8 @@ button{
     width: 50%;
   }
   .image-holder img {
-    width: 100px!important;
+    height: auto !important;
+    width: 100px !important;
     margin: 0 auto;
   }
   .awsomeness {
