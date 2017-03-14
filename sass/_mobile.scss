@@ -126,6 +126,18 @@
 }
 
 @media (max-width: $screen-sm-max) {
+  // ruchira css jhol
+  .hq-padding {
+    // min-height: 626px !important;
+    .pt100 {
+      padding-top: 50px;
+    }
+    .about-us,
+    .contactus,
+    {
+      padding: 50px 0;
+    }
+  }
   // Awesomeness css here
   .best-award {
     h1 {
