@@ -1267,9 +1267,12 @@ form {
   }
 }
 
-.hq-img.ab {
-  left: 0;
-  width: 100%;
+// .hq-img.ab {
+//   left: 0;
+//   width: 100%;
+// }
+.hq-img {
+  padding-bottom: 200px;
 }
 
 .hq-bg {
@@ -2053,7 +2056,8 @@ img.loading {
 
 .hq-padding {
   .min-hgt-hq {
-    min-height: auto;
+    // min-height: auto;
+    min-height: 700px;
   }
 }
 
