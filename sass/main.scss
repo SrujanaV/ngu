@@ -2061,6 +2061,40 @@ img.loading {
   }
 }
 
+.blue-bg {
+  position: relative;
+  .plant {
+    .plant-left {
+      position: absolute;
+      width: 70px;
+      top: 25%;
+      z-index: 99;
+    }
+    .plant-right {
+      position: absolute;
+      width: 118px;
+      top: 25%;
+      right: 11%;
+      z-index: 8;
+    }
+  }
+  .lamp {
+    .lamp-left {
+      position: absolute;
+      top: 0;
+      left: 2%;
+      width: 110px;
+    }
+    .lamp-right {
+      position: absolute;
+      top: 0;
+      right: 2%;
+      width: 110px;
+      z-index: 9;
+    }
+  }
+}
+
 // section {
 //   min-height: 623px;
 // }
