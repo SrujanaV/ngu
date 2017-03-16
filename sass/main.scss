@@ -2063,19 +2063,28 @@ img.loading {
 
 .blue-bg {
   position: relative;
+  background: url('../img/section1-gif/blue-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 780px;
   .plant {
     .plant-left {
       position: absolute;
-      width: 70px;
-      top: 25%;
-      z-index: 99;
+      // width: 70px;
+      // top: 25%;
+      width: 5%;
+      top: 22%;
+      z-index: 1;
     }
     .plant-right {
       position: absolute;
-      width: 118px;
-      top: 25%;
+      // width: 118px;
+      // top: 25%;
+      width: 8%;
+      top: 24%;
       right: 11%;
-      z-index: 8;
+      z-index: 1;
     }
   }
   .lamp {
@@ -2083,15 +2092,89 @@ img.loading {
       position: absolute;
       top: 0;
       left: 2%;
-      width: 110px;
+      // width: 110px;
+      width: 6%;
+      z-index: 2;
     }
     .lamp-right {
       position: absolute;
       top: 0;
-      right: 2%;
-      width: 110px;
-      z-index: 9;
+      // right: 14%;
+      // width: 160px;
+      width: 10%;
+      z-index: 2;
     }
+  }
+  .center-img {
+    .floor-table {
+      top: 58%;
+      position: absolute;
+      left: 50%;
+      @include transform (translate(-50%,
+      -50%));
+      z-index: 9;
+      // width: 440px;
+      width: 28%;
+    }
+    .floor-bg {
+      // width: 380px;
+      width: 26%;
+      top: 42%;
+      position: absolute;
+      left: 47%;
+      @include transform (translate(-50%,
+      -50%));
+      z-index: 10;
+    }
+  }
+  .floor-aside {
+    // width: 340px;
+    width: 22%;
+    top: 54%;
+    position: absolute;
+    left: 72%;
+    @include transform (translate(-50%,
+    -50%));
+    z-index: 11;
+  }
+  .classroom {
+    .teacher {
+      position: absolute;
+      top: 52%;
+      left: 5%;
+      // width: 320px;
+      width: 22%;
+      z-index: 11;
+      @include transform (translate(0,
+      -50%));
+    }
+    .student {
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      z-index: 11;
+      // width: 220px;
+      width: 14%;
+    }
+  }
+  .music-headset {
+    position: absolute;
+    bottom: 15%;
+    left: 37%;
+    z-index: 11;
+    // width: 350px;
+    width: 24%;
+    @include transform (translate(-50%,
+    0));
+  }
+  .overboard {
+    position: absolute;
+    bottom: 6%;
+    left: 0%;
+    z-index: 13;
+    // width: 350px;
+    // @include transform (translate(-50%,
+    // 0));
   }
 }
 
