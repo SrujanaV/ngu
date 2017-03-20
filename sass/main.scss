@@ -2075,7 +2075,7 @@ img.loading {
       // top: 25%;
       width: 5%;
       // top: 22%;
-      bottom: 41%;
+      bottom: 32%;
       z-index: 1;
     }
     .plant-right {
@@ -2084,9 +2084,12 @@ img.loading {
       // top: 25%;
       width: 8%;
       // top: 24%;
-      bottom: 41%;
+      bottom: 32%;
       right: 11%;
       z-index: 1;
+    }
+    .mb-plantshow {
+      display: none;
     }
   }
   .lamp {
