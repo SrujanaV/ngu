@@ -384,6 +384,13 @@ p {
       width: 20%;
     }
   }
+  .awesome-head{
+        width: 100%;
+        position: absolute;
+    top: 15%;
+    left: 50%;
+  @include transform(translateX(-50%));
+  }
   .head {
     padding-bottom: 20px;
     img {
