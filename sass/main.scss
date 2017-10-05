@@ -2048,9 +2048,10 @@ img.loading {
     text-align: right;
   }
 }
-
+.display{
+  display: inline-block;
+}
 .encore {
-  margin-bottom: 160px;
   @extend .best-award;
   h1 {
     text-align: left;
