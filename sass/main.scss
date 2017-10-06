@@ -504,7 +504,7 @@ p {
     bottom: 200px;
     left: 46%;
     top: 28%;
-    transform: translateY(-28%);
+    @include transform(translateY(-28%));
   }
   .home-areoplane {
     bottom: 0;
@@ -514,7 +514,7 @@ p {
   }
   .bookshelf {
     top: 38%;
-    transform: translateY(-38%);
+    @include transform(translateY(-38%));
     width: 10%;
     left: 31%;
   }
@@ -646,7 +646,7 @@ p {
     }
     .image-hold {
       top: 40%;
-      transform: translatey(-50%);
+      @include transform(translatey(-50%));
     }
     .image-hold2 {
       left: 10%;
@@ -1308,7 +1308,7 @@ form {
           position: absolute;
           top: 55%;
           left: 50%;
-          transform: translate(-55%, -50%);
+          @include transform(translate(-55%, -50%));
           font-size: 24px;
           &.fa-facebook {
             color: #36619f;
@@ -1857,7 +1857,7 @@ img.loading {
       position: absolute;
       top: 50%;
       left: 0;
-      transform: translate(0, -50%);
+      @include transform(translate(0, -50%));
     }
     margin-bottom: 60px;
     .unplug__img {
