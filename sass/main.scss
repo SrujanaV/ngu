@@ -2064,7 +2064,16 @@ img.loading {
 .award2 {
   position: absolute;
 }
-
+.best-award-para{
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+.top40{
+  width: 300px;
+  margin-bottom: 30px;
+}
 .hq-padding {
   .min-hgt-hq {
     // min-height: auto;
