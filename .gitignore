@@ -4,6 +4,5 @@ w/
 .sass-cache/
 *.tar
 production/
-*.zip
 css/
 img2/
