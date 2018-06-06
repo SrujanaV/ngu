@@ -60,7 +60,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
       controller: 'InternalCtrl'
     })
     .state('workspace', {
-      url: "/workspacedesign",
+      url: "/publicrelations",
       templateUrl: "views/template-tabs.html",
       controller: 'WorkspaceCtrl'
     })
@@ -70,12 +70,12 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
       controller: 'CorporateCtrl'
     })
     .state('digital', {
-      url: "/digitaltechnology",
+      url: "/technology&content",
       templateUrl: "views/template-tabs.html",
       controller: 'DigitalCtrl'
     })
     .state('quirky', {
-      url: "/QuirkyMerchandise",
+      url: "/OfficeQuirkies",
       templateUrl: "views/template-tabs.html",
       controller: 'QuirkyCtrl'
     })
