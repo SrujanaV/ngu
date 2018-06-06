@@ -7,7 +7,7 @@ var firstapp = angular.module('firstapp', [
   'navigationservice'
 ]);
 
-firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
+firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
 
   // for http request with session
   // $httpProvider.defaults.withCredentials = true;
@@ -35,7 +35,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
       controller: 'AwesomenessCtrl'
     })
     .state('consulting', {
-      url: "/consulting",
+      url: "/TalentConsulting",
       templateUrl: "views/template-tabs.html",
       controller: 'ConsultingCtrl'
     })
@@ -45,7 +45,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
       controller: 'HappynessCtrl'
     })
     .state('workshops', {
-      url: "/workshopsoffsites",
+      url: "/Workshops&Interventions",
       templateUrl: "views/template-tabs.html",
       controller: 'WorkshopsCtrl'
     })
@@ -99,16 +99,16 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
 });
 
 
-firstapp.directive('img', function($compile, $parse) {
+firstapp.directive('img', function ($compile, $parse) {
   return {
     restrict: 'E',
     replace: false,
-    link: function($scope, element, attrs) {
+    link: function ($scope, element, attrs) {
       var $element = $(element);
       if (!attrs.noloading) {
         $element.after("<img src='img/loading.gif' class='loading' />");
         var $loading = $element.next(".loading");
-        $element.load(function() {
+        $element.load(function () {
           $loading.remove();
           $(this).addClass("doneLoading");
         });
@@ -119,23 +119,23 @@ firstapp.directive('img', function($compile, $parse) {
   };
 });
 
-firstapp.directive('autoHeight', function($compile, $parse) {
+firstapp.directive('autoHeight', function ($compile, $parse) {
   return {
     restrict: 'EA',
     replace: false,
-    link: function($scope, element, attrs) {
+    link: function ($scope, element, attrs) {
       var $element = $(element);
       var windowHeight = $(window).height();
       $element.css("min-height", windowHeight);
-      setTimeout(function() {
+      setTimeout(function () {
         $element.css("min-height", windowHeight);
       });
     }
   };
 });
 
-firstapp.filter('serverimage', function() {
-  return function(input) {
+firstapp.filter('serverimage', function () {
+  return function (input) {
     if (input) {
       return imageUrl + input;
       // return  "http://wohlig.co.in/newfynx/uploads/" + input;
@@ -145,9 +145,9 @@ firstapp.filter('serverimage', function() {
   };
 });
 
-firstapp.directive("scroll", function($window) {
-  return function(scope, element, attrs) {
-    angular.element($window).bind("scroll", function() {
+firstapp.directive("scroll", function ($window) {
+  return function (scope, element, attrs) {
+    angular.element($window).bind("scroll", function () {
       var windowHeight = $(window).height();
       if (this.pageYOffset >= windowHeight) {
         // console.log(windowHeight);
@@ -165,20 +165,20 @@ var nguAni3 = true;
 var nguAni4 = true;
 var nguAni5 = true;
 var nguAni6 = true;
-firstapp.directive('ngu', function($compile, $parse) {
+firstapp.directive('ngu', function ($compile, $parse) {
   return {
     restrict: 'EA',
     replace: false,
-    link: function($scope, element, attrs) {
+    link: function ($scope, element, attrs) {
       new ScrollMagic.Scene({
           triggerElement: ".ngu-2",
           duration: 500
         })
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
-        .on("enter", function(e) {
+        .on("enter", function (e) {
           // console.log("NGU Animation");
-          setTimeout(function() {
+          setTimeout(function () {
             nguAni = true;
           }, 5000);
           if (nguAni == true) {
@@ -192,9 +192,9 @@ firstapp.directive('ngu', function($compile, $parse) {
         })
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
-        .on("enter", function(e) {
+        .on("enter", function (e) {
           // console.log("shark and snail Enter");
-          setTimeout(function() {
+          setTimeout(function () {
             nguAni2 = true;
             // console.log("done");
           }, 5000);
@@ -210,9 +210,9 @@ firstapp.directive('ngu', function($compile, $parse) {
         })
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
-        .on("enter", function(e) {
+        .on("enter", function (e) {
           // console.log("Flying plane");
-          setTimeout(function() {
+          setTimeout(function () {
             nguAni3 = true;
             // console.log("done");
           }, 5000);
@@ -228,9 +228,9 @@ firstapp.directive('ngu', function($compile, $parse) {
         })
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
-        .on("enter", function(e) {
+        .on("enter", function (e) {
           // console.log("Flying plane");
-          setTimeout(function() {
+          setTimeout(function () {
             nguAni4 = true;
             // console.log("done");
           }, 5000);
@@ -246,9 +246,9 @@ firstapp.directive('ngu', function($compile, $parse) {
         })
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
-        .on("enter", function(e) {
+        .on("enter", function (e) {
           // console.log("Flying plane payment");
-          setTimeout(function() {
+          setTimeout(function () {
             nguAni5 = true;
             // console.log("done");
           }, 5000);
@@ -264,9 +264,9 @@ firstapp.directive('ngu', function($compile, $parse) {
         })
         .addTo(controller)
         // .addIndicators() // add indicators (requires plugin)
-        .on("enter", function(e) {
+        .on("enter", function (e) {
           // console.log("Flying plane work");
-          setTimeout(function() {
+          setTimeout(function () {
             nguAni6 = true;
             // console.log("done");
           }, 5000);
