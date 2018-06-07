@@ -1253,6 +1253,7 @@ form {
     figcaption {
       margin-top: 10px;
       font-weight: 600;
+      min-height: 40px;
     }
   }
   .bubble {
@@ -2037,6 +2038,7 @@ img.loading {
   .disclaim {
     color: $brand-white;
     margin-top: 130px;
+    margin-left: 50px;
     p {
       font-size: 12px;
     }

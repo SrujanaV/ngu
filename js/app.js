@@ -55,7 +55,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
       controller: 'EmployerCtrl'
     })
     .state('internal', {
-      url: "/internalcommunication",
+      url: "/communicationdesign",
       templateUrl: "views/template-tabs.html",
       controller: 'InternalCtrl'
     })
@@ -75,7 +75,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
       controller: 'DigitalCtrl'
     })
     .state('quirky', {
-      url: "/OfficeQuirkies",
+      url: "/officequirkies",
       templateUrl: "views/template-tabs.html",
       controller: 'QuirkyCtrl'
     })
