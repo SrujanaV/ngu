@@ -18,35 +18,45 @@ var navigationservice = angular.module('navigationservice', [])
       anchor: "employeeengagement",
       target: "_self",
     }, {
-      name: "Happyness Quotient",
+      name: "Happyness  Quotient",
       classis: "active",
       anchor: "happynessquotient",
       target: "_self",
-    }, {
-      name: "Blog",
-      link: "http://blog.willnevergrowup.com/",
-      anchor: ""
-    }, {
-      name: "Media",
+    },
+    {
+      name: "ROE",
       classis: "active",
-      anchor: "media",
+      anchor: "happynessquotient",
       target: "_self",
-    }, {
-      name: "Clients",
-      classis: "active",
-      anchor: "clients",
-      target: "_self",
-    }, {
-      name: "Contact Us",
-      classis: "active",
-      anchor: "contact",
-      target: "_self",
-    }, {
+    },
+    {
       name: "Unpluggd",
       classis: "active",
       anchor: "unplugged",
       target: "_self",
-    }];
+    },
+    {
+      name: "Clients",
+      classis: "active",
+      anchor: "clients",
+      target: "_self",
+    },
+      {
+      name: "Media",
+      classis: "active",
+      anchor: "media",
+      target: "_self",
+    },
+    {
+      name: "Blog",
+      link: "http://blog.willnevergrowup.com/",
+      anchor: ""
+    },  {
+      name: "Contact Us",
+      classis: "active",
+      anchor: "contact",
+      target: "_self",
+    }, ];
 
     var navigation2 = [{
       name: "Client Work",

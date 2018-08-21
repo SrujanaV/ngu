@@ -44,7 +44,9 @@ serif !default;
 .red-color {
   color: $red;
 }
-
+.bor-top{
+  border-top:1ps solid white !important;
+}
 .text-bold {
   font-weight: 700;
 }
@@ -73,7 +75,7 @@ img.doneLoading {
 .navbar-brand {
   padding: 0;
   position: relative;
-  top: -26px;
+  top: -13px;
 }
 
 .pt20 {
@@ -86,13 +88,16 @@ section#home {
 
 .navbar-default {
   background-color: $brand-brown;
-  border-color: $brand-brown;
+  // border-color: $brand-brown;
+  border-top:1px solid white;
   .navbar-nav {
-    padding-left: 30px;
+    padding-left: 92px;
     .active>a,
     .actives>a {
-      background-color: lighten($brand-brown, 10%)!important;
-      border-color: lighten($brand-brown, 10%);
+ 
+      background-color:$brand-brown!important;
+      // border-color: lighten($brand-brown, 10%);
+      color:yellow !important;
     }
   }
   a {
@@ -1708,16 +1713,16 @@ footer {
       li {
         display: inline-block;
         a {
-          color: #fff;
+          color: $box-black-color;
           padding: 0 8px;
           display: block;
           &:hover {
-            color: darken(#fff, 20%);
+            color: darken($box-black-color, 20%);
           }
         }
       }
       li+li {
-        border-left: 1px solid #fff;
+        border-left: 1px solid $box-black-color;
       }
     }
   }
@@ -1767,19 +1772,22 @@ footer {
   .footer-cont {
     padding: 20px 0;
     p {
-      color: #fff;
+      padding-bottom: 5px;
+      color: $box-black-color;
       margin: 0;
       font-size: 12px;
       a {
-        color: #fff;
+        color: $box-black-color;
         &:hover {
-          color: darken(#fff, 20%);
+          color: darken($box-black-color, 20%);
         }
       }
     }
   }
 }
-
+.bg-white{
+  background: #fff;
+}
 .payment {
   padding: 0 20px;
   .min-hght {
@@ -2085,7 +2093,7 @@ img.loading {
 
 .blue-bg {
   position: relative;
-  background: url('../img/section1-gif/blue-bg.jpg');
+  background: url('../img/home/newhome/banner.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2189,11 +2197,10 @@ img.loading {
   }
   .music-headset {
     position: absolute;
-    bottom: 15%;
-    left: 37%;
+    bottom: 0%;
+    left: 50%;
     z-index: 11;
-    // width: 350px;
-    width: 24%;
+    width: 73%;
     @include transform (translate(-50%,
     0));
   }
@@ -2208,8 +2215,21 @@ img.loading {
   }
 }
 
+//header css 
+
+.navbar-nav > li > a {
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+
+.navbar-nav > li {
+  float: left;
+  // width: 108px;
+  text-align: center;
+}
 // section {
 //   min-height: 623px;
 // }
 @import "animation.scss";
 @import "mobile.scss";
+@import "custom.scss";
