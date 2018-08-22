@@ -182,7 +182,7 @@ firstapp.directive('ngu', function ($compile, $parse) {
             nguAni = true;
           }, 5000);
           if (nguAni == true) {
-            $(".ngu-animation").attr("src", "img/home/ngu.gif");
+            // $(".ngu-animation").attr("src", "img/home/ngu.gif");
             nguAni = false;
           }
         })

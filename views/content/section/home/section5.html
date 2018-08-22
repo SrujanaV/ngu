@@ -5,10 +5,11 @@
       <div class="client-slider">
         <div class="col-md-offset-1 col-md-10">
           <div class="slider-client">
-            <flex-slider flex-slide="slide in clients track by $index" animation="slide" animation-loop="false" as-nav-for="#sliders" slideshow="false">
-              <li class="" >
-                <div class="logos" >
-                    <div class="row bb" ng-repeat="row in slide">
+            <flex-slider flex-slide="slide in clients track by $index" animation="slide" animation-loop="false" as-nav-for="#sliders"
+              slideshow="false">
+              <li class="">
+                <div class="logos">
+                  <div class="row bb" ng-repeat="row in slide">
                     <div class="col-md-3 col-xs-6" ng-repeat="client in row">
                       <div class="image-holder text-center">
                         <img ng-src="{{client.image|serverimage}}" style="width:140px;height:140px;" class="doneLoading" alt="">
@@ -28,6 +29,6 @@
     <img src="img/gif/FLYING-CLIENT.gif" alt="" class="img-responsive">
   </div>
   <div class="floor ab">
-    <img src="img/floor.jpg" alt="" class="">
+    <img src="img/common-floor.png" alt="" class="img-responsive">
   </div>
 </section>
