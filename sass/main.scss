@@ -30,6 +30,7 @@ $red: #DC0000 !default;
 $box-yellow-color: #ffb21d !default;
 $box-black-color: #272727 !default;
 // new variables
+$new-red:#c0100c;
 $brand-subscribe:#ffc107;
 $brand-subscribe-light:#d89d09;
 $brand-grey: #bfbfbf !default;
@@ -57,6 +58,16 @@ Georgia,
 Times,
 serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@font-face {
+  src: url("fonts/Montserrat/Montserrat-Regular.ttf");
+  font-family: "Montserrat-Regular";
+}
+
+@font-face {
+  src: url("fonts/Myriad-Regular/Myriad-Regular.ttf");
+  font-family: "Myriad-Regular";
+}
+
 .red-color {
   color: $red;
 }
@@ -396,7 +407,7 @@ p {
 // }
 .section {
   position: relative; // min-height: 667px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .awsomeness {
@@ -472,7 +483,8 @@ p {
       left: 18%;
       width: 13%;
       top: 44%;
-      @include transform(translate(-50%, -50%));
+      @include transform(translate(-50%,
+      -50%));
       z-index: 5;
     }
     .chair {
@@ -924,7 +936,7 @@ p {
     @include transition(all ease 300ms);
     &.active,
     &:hover {
-      background: $brand-yellow; // font-weight: 600;
+      color: $new-red; // font-weight: 600;
     }
   }
 }
