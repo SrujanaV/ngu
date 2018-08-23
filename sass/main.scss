@@ -13,9 +13,9 @@ $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
 $brand-brown: #3b2415 !default;
-$brand-yellow: #ffca20 !default;
+$brand-yellow: #ffc107 !default;
 $brand-pink: #f0a5ac !default;
-$brand-unplugged: #ff6e3d !default;
+// $brand-unplugged: #ff6e3d !default;
 $bg-color-skin: #ffb098 !default;
 $bg-color: #89d5f6 !default;
 $brand-white: #fff !default;
@@ -29,6 +29,23 @@ $box-red-color: #8a2f1d !default;
 $red: #DC0000 !default;
 $box-yellow-color: #ffb21d !default;
 $box-black-color: #272727 !default;
+// new variables
+$brand-subscribe:#ffc107;
+$brand-subscribe-light:#d89d09;
+$brand-grey: #bfbfbf !default;
+$brand-greylight: #f1f0f0 !default;
+$brand-blue:#3058a7;
+$brand-bluelight: #7fa1d3;
+$brand-happy:#bebebe;
+$brand-happylight:#eeedec;
+$brand-unpluged:#ff795e;
+$brand-unpluged-light:#ff795e;
+$brand-clent:#62727b;
+$brand-clientspeak:#ff6d00;
+$brand-clientspeaklight:#ff9e40;
+$brand-media:#808080;
+$brand-contact:#ff5252;
+$brand-contact-light:#ff867f;
 $font-family-sans-serif: "Lato",
 "Helvetica Neue",
 Helvetica,
@@ -103,7 +120,7 @@ section#home {
   a {
     font-size: 16px;
     padding: 0px 20px;
-    color: $brand-brown !important; // &:hover {
+    color: $brand-brown; // &:hover {
     //   background-color: lighten($brand-brown, 10%) !important;
     //   border-color: lighten($brand-brown, 10%);
     // }
@@ -170,12 +187,31 @@ nav li:hover .dropdown-menu {
   background-color: $bg-color;
 }
 
-.bg-pinkcont {
-  background-color: $brand-pink;
+.bg-contact {
+  background: $brand-contact url(../img/common-bg.png);
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .bg-unplugged {
-  background-color: $brand-unplugged;
+  background: $brand-unpluged url(../img/common-bg.png);
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply; // background-blend-mode: overlay
+}
+
+.client-speak {
+  background: $brand-clientspeak url(../img/common-bg.png);
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .bg-skin-main {
@@ -327,7 +363,7 @@ a:focus {
 
 .awsomeness-header .sticky-bottom-abtpay,
 .pay-abt-header .sticky-bottom-abtpay,
-.sticky-bottom {
+  {
   position: absolute; // top: 0;
   width: 100%;
   left: 0;
@@ -335,8 +371,12 @@ a:focus {
   &.affix {
     position: fixed;
     top: 25px;
-    z-index: 999;
+    z-index: 99999;
   }
+}
+
+.affix {
+  z-index: 999999;
 }
 
 .pay-abt-header .sticky-bottom-abtpay {
@@ -924,8 +964,13 @@ form {
 }
 
 .floor {
-  bottom: 0;
-  left: 0;
+  background-blend-mode: overlay;
+  background-position: center 85% !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  img {
+    padding-top: 30px;
+  }
 }
 
 // about
@@ -1143,7 +1188,7 @@ form {
 // subscribe
 .subscribe {
   padding: 90px 0;
-  background-color: $brand-yellow;
+  background-color: $brand-subscribe;
   .img-holder {
     width: 75%;
     margin: 0 auto;
@@ -1170,12 +1215,11 @@ form {
 }
 
 .section-ngu {
-  background: #bbbbb9 url(../img/common-bg.png);
+  background: $brand-white url(../img/common-bg.png);
   overflow: hidden;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: overlay;
+  background-size: cover; // background-blend-mode: overlay;
   .slate {
     width: 8%;
     right: 8%;
@@ -1228,7 +1272,12 @@ form {
 }
 
 .services {
-  background: $bg-color-skin;
+  background: $brand-blue url(../img/common-bg.png);
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
   .services-info {
     padding: 0 20px;
     top: 36px;
@@ -1293,9 +1342,13 @@ form {
 }
 
 .hq-bg {
-  background: $bg-color-green;
+  background: #eeedec url(../img/common-bg.png);
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; // background-blend-mode: overlay;
   a {
-    color: #fff;
+    color: black;
     font-weight: 500;
   }
   .social-links {
@@ -1360,7 +1413,7 @@ form {
   }
   p {
     // padding: 0 20px;
-    color: #fff;
+    color: black;
   }
   .btn {
     background: #ffd61e;
@@ -2225,4 +2278,4 @@ img.loading {
 // }
 @import "animation.scss";
 @import "mobile.scss";
-@import "custom.scss";
+@import "custom";

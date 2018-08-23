@@ -8,55 +8,57 @@ var navigationservice = angular.module('navigationservice', [])
 
   .factory('NavigationService', function ($http) {
     var navigation = [{
-      name: "About Us",
-      classis: "active",
-      anchor: "about",
-      target: "_self",
-    }, {
-      name: "Services",
-      classis: "active",
-      anchor: "employeeengagement",
-      target: "_self",
-    }, {
-      name: "Happyness  Quotient",
-      classis: "active",
-      anchor: "happynessquotient",
-      target: "_self",
-    },
-    {
-      name: "ROE",
-      classis: "active",
-      anchor: "happynessquotient",
-      target: "_self",
-    },
-    {
-      name: "Unpluggd",
-      classis: "active",
-      anchor: "unplugged",
-      target: "_self",
-    },
-    {
-      name: "Clients",
-      classis: "active",
-      anchor: "clients",
-      target: "_self",
-    },
+        name: "About Us",
+        classis: "active",
+        anchor: "about",
+        target: "_self",
+      }, {
+        name: "Services",
+        classis: "active",
+        anchor: "employeeengagement",
+        target: "_self",
+      }, {
+        name: "Happyness  Quotient",
+        classis: "active",
+        anchor: "happynessquotient",
+        target: "_self",
+      },
       {
-      name: "Media",
-      classis: "active",
-      anchor: "media",
-      target: "_self",
-    },
-    {
-      name: "Blog",
-      link: "http://blog.willnevergrowup.com/",
-      anchor: ""
-    },  {
-      name: "Contact Us",
-      classis: "active",
-      anchor: "contact",
-      target: "_self",
-    }, ];
+        name: "ROE",
+        classis: "active",
+        anchor: "happynessquotient",
+        target: "_self",
+      },
+      {
+        name: "Unpluggd",
+        classis: "active",
+        anchor: "unplugged",
+        target: "_self",
+      },
+      {
+        name: "Clients",
+        classis: "active",
+        anchor: "clients",
+        target: "_self",
+      },
+      {
+        name: "Media",
+        classis: "active",
+        anchor: "media",
+        target: "_self",
+      },
+      {
+        name: "Blog",
+
+        link: "http://blog.willnevergrowup.com/",
+        anchor: ""
+      }, {
+        name: "Contact Us",
+        classis: "active",
+        anchor: "contact",
+        target: "_self",
+      },
+    ];
 
     var navigation2 = [{
       name: "Client Work",

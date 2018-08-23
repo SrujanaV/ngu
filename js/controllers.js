@@ -13,12 +13,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $scope.clientSpeaks = data;
     }
     $(window).scroll(function () {
-      if ($(document).scrollTop() > 400) {
+      if ($(document).scrollTop() > 600) {
         $(".navbar").css("background", '#3b2415');
-        $(".navbar").css("color", '#ffca20');
+        $(".yellow-color").css("color", '#ffca20');
       } else {
         $(".navbar").css("background", 'transparent');
-        $(".navbar").css("color", '#fff');
+        $(".yellow-color").css("color", '#fff');
       }
     });
     // function AllMedia(data, status) {
