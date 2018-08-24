@@ -1,43 +1,47 @@
 <section class="client-speaks pt100">
   <div class="container">
-    <div class="col-md-offset-1 col-md-11">
-      <div class="client-desk">
-        <div class="row">
-          <div class="col-sm-10">
-            <h2 class="home-head">Client
-              <br>
-              <span>Speak</span>
-            </h2>
+    <div class="">
+      <div class="text-center white-color">
+        <h2 class="home-head">Client Speak
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="client-desk white-color">
             <div class="client">
               <!-- <img src="img/bubble.png" alt="" class="bubble1 ab"> -->
               <img src="{{clientSpeakThumbArr[activeThumb]}}" alt="" class="img-responsive client-img">
             </div>
           </div>
         </div>
-      </div>
-      <div class="slider-client">
-        <flex-slider after="speakChange();" flex-slide="item in clientSpeaks track by $index" animation="slide" animation-loop="false"
-          item-width="300" item-margin="0" as-nav-for="#slider" slideshow="false">
-          <li class="">
-            <div class="client-slide pad20">
-              <img src="img/home/semi-colon-white.png" alt="" class="quote">
-              <div class="cont">
-                <p ng-bind-html="item.testimonial"></p>
-              </div>
-              <div class="name">
-                <p class="bold">{{item.name}}</p>
-                <p>{{item.designation}}</p>
-                <p>{{item.company}}</p>
-              </div>
-            </div>
-          </li>
-        </flex-slider>
+        <div class="col-md-9">
+          <div class="slider-client">
+            <flex-slider after="speakChange();" flex-slide="item in clientSpeaks track by $index" animation="slide" animation-loop="false"
+              item-width="385" item-margin="50" as-nav-for="#slider" slideshow="false">
+              <li class="">
+                <div class="client-slide white-color">
+                  <!-- <img src="img/home/semi-colon-white.png" alt="" class="quote"> -->
+                  <div class="cont">
+                    <p ng-bind-html="item.testimonial"></p>
+                  </div>
+                  <div class="name">
+                    <p class="bold">{{item.name}}</p>
+                    <p>{{item.designation}}</p>
+                    <p>{{item.company}}</p>
+                  </div>
+                </div>
+              </li>
+            </flex-slider>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="wifi">
-    <img src="img/home/client-speak/cs-1.png" alt="" class="img-responsive">
-    <img src="img/home/client-speak/cs-2.png" alt="" class="img-responsive">
+  <div class="book rl">
+    <img src="img/home/client-speak/cs-1.png" alt="" class="img-responsive ab">
+  </div>
+  <div class="grass rl">
+    <img src="img/home/client-speak/cs-2.png" alt="" class="img-responsive ab">
   </div>
   <div class="floor rl client-speak-floor">
     <img src="img/common-floor1.png" alt="" class="img-responsive">

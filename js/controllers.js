@@ -13,12 +13,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $scope.clientSpeaks = data;
     }
     $(window).scroll(function () {
-      if ($(document).scrollTop() > 600) {
+      if ($(document).scrollTop() > 500) {
         $(".navbar").css("background", '#3b2415');
-        $(".yellow-color").css("color", '#ffca20');
+        $(".yellow-color").css("color", '#fff ');
       } else {
         $(".navbar").css("background", 'transparent');
-        $(".yellow-color").css("color", '#fff');
+        $(".yellow-color").css("color", '#3b2415');
       }
     });
     // function AllMedia(data, status) {
@@ -110,7 +110,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $location.replace();
     };
 
-    $scope.clientSpeakThumbArr = ["img/home/client/1.png", "img/home/client/2.png", "img/home/client/3.png", "img/home/client/4.png", "img/home/client/5.png", "img/home/client/6.png", "img/home/client/7.png", "img/home/client/8.png", "img/home/client/9.png", "img/home/client/10.png", "img/home/client/11.png", "img/home/client/12.png", "img/home/client/13.png", "img/home/client/15.png"];
+    $scope.clientSpeakThumbArr = ["img/home/client-speak/client1.png", "img/home/client-speak/client2.png", "img/home/client-speak/client3.png", "img/home/client-speak/client4.png", "img/home/client-speak/client5.png", "img/home/client-speak/client6.png", "img/home/client-speak/client7.png", "img/home/client-speak/client8.png", "img/home/client-speak/client9.png", "img/home/client-speak/client10.png", "img/home/client-speak/client11.png", "img/home/client-speak/client12.png", "img/home/client-speak/client13.png", "img/home/client-speak/client15.png"];
     $scope.activeThumb = 0;
     $scope.speakChange = function () {
       $scope.activeThumb = $(".client-speaks .slider-client ol.flex-control-nav.flex-control-paging li a").index($(".client-speaks .slider-client ol.flex-control-nav.flex-control-paging li a.flex-active"));

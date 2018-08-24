@@ -1,6 +1,6 @@
 <ul class="nav navbar-nav navbar-middle menu-list">
     <li ng-repeat="menu in navigation" class="{{menu.classis}}">
-        <a href="{{menu.link}}" ng-if="menu.link" target="_blank">{{menu.name}}</a>
+        <a href="{{menu.link}}" ng-if="menu.link" target="_blank" class="yellow-color">{{menu.name}}</a>
         <a ng-click="changeURL(menu.anchor)" ng-if="!menu.link" class="yellow-color">{{menu.name}}</a>
     </li>
 </ul>
