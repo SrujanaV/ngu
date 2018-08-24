@@ -964,14 +964,17 @@ p {
     padding-left: 50px;
   }
   li {
+    font-family: "Montserrat-regular";
     list-style: none;
+    font-weight: 500;
     padding: 8px 16px;
     margin: 1px 0;
     cursor: pointer;
     @include transition(all ease 300ms);
     &.active,
     &:hover {
-      color: $new-red; // font-weight: 600;
+      color: $new-red;
+      font-weight: 600;
     }
   }
 }
@@ -1492,7 +1495,7 @@ form {
   }
   .head-yellow {
     font-size: 34px;
-    font-weight: 300;
+    font-family: "Montserrat-regular";
     margin-top: 0;
     img {
       height: 90px;
@@ -1500,8 +1503,8 @@ form {
     }
   }
   .head-tabs {
-    border-bottom: 3px solid #FFCA20;
-    margin-bottom: 10px;
+    // border-bottom: 3px solid #FFCA20;
+    margin-bottom: 20px;
   }
 }
 
@@ -2426,6 +2429,18 @@ img.loading {
     top: 0px;
     right: 12%;
     width: 110px;
+  }
+}
+
+//scss for service page
+//consulting section
+.consulting {
+  .lamp {
+    top: -40%;
+    right: 22%;
+    img {
+      width: 50px;
+    }
   }
 }
 
