@@ -442,7 +442,7 @@ p {
 // }
 .section {
   position: relative; // min-height: 667px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .awsomeness {
@@ -1486,28 +1486,6 @@ form {
   }
 }
 
-.hq-cont-yellow {
-  height: 396px;
-  overflow-y: auto;
-  margin-bottom: 8px;
-  a {
-    font-weight: 600;
-  }
-  .head-yellow {
-    font-size: 34px;
-    font-family: "Montserrat-regular";
-    margin-top: 0;
-    img {
-      height: 90px;
-      vertical-align: bottom;
-    }
-  }
-  .head-tabs {
-    // border-bottom: 3px solid #FFCA20;
-    margin-bottom: 20px;
-  }
-}
-
 .tabs {
   .people {
     z-index: 1;
@@ -1576,12 +1554,12 @@ form {
     }
   }
   .window-right {
-    img {
-      width: 75%;
-      right: -70px;
-      position: absolute;
-      top: 50px;
-    }
+    // img {
+    //   width: 75%;
+    //   right: -70px;
+    //   position: absolute;
+    //   top: 50px;
+    // }
   }
   p {
     font-size: 14px;
@@ -2434,12 +2412,162 @@ img.loading {
 
 //scss for service page
 //consulting section
-.consulting {
+.hq-cont-yellow {
+  height: 440px;
+  overflow-y: auto;
+  margin-bottom: 8px;
+  a {
+    font-weight: 600;
+  }
+  .head-yellow {
+    font-size: 34px;
+    font-family: "Montserrat-regular";
+    margin-top: 0;
+    img {
+      height: 90px;
+      vertical-align: bottom;
+    }
+  }
+  .head-tabs {
+    margin-bottom: 20px;
+  }
+}
+
+.service-common {
+  .window-right {
+    position: absolute;
+    top: 180px !important;
+    width: 100%;
+    right: 12%;
+    z-index: 999;
+  }
+}
+
+.consulting,
+.corporate,
+  {
+  .lamp {
+    top: -35%;
+    right: 21.5%;
+    img {
+      width: 60px;
+    }
+  }
+}
+
+.workshops {
   .lamp {
     top: -40%;
-    right: 22%;
+    right: 28%;
     img {
-      width: 50px;
+      width: 60px;
+    }
+  }
+  .hq-cont-yellow {
+    height: 480px !important;
+  }
+  .window-right {
+    img {
+      width: 400px;
+    }
+  }
+  .wheel {
+    bottom: -12px;
+    z-index: 9;
+    left: 10%;
+    img {
+      width: 130px;
+    }
+  }
+}
+
+.consulting {
+  .grass {
+    z-index: 9;
+    bottom: -40px;
+    left: -24%;
+    img {
+      width: 80px;
+    }
+  }
+  .wheel {
+    bottom: -12px;
+    z-index: 9;
+    left: 10%;
+    img {
+      width: 130px;
+    }
+  }
+}
+
+.happiness {
+  .lamp {
+    top: -60%;
+    right: 14%;
+  }
+  .window-right {
+    position: absolute;
+    top: 180px !important;
+    width: 100%;
+    right: 8%;
+    z-index: 999;
+    img {
+      width: 400px;
+    }
+  }
+  .grass {
+    z-index: 9;
+    bottom: -40px;
+    left: -22%;
+    img {
+      width: 80px;
+    }
+  }
+}
+
+.digital {
+  .lamp {
+    top: -30%;
+    right: 30%;
+    img {
+      width: 100px;
+    }
+  }
+  .window-right {
+    position: absolute;
+    top: 130px !important;
+    width: 100%;
+    right: 12%;
+    z-index: 999;
+  }
+}
+
+.workspace {
+  .lamp {
+    top: -35%;
+    right: 19.5%;
+  }
+  img {
+    width: 120px;
+  }
+}
+
+.employer-branding {
+  .lamp {
+    top: -32%;
+    right: 19%;
+    img {
+      width: 120px;
+    }
+  }
+  .window-right {
+    position: absolute;
+    top: 250px !important;
+    width: 100%;
+    right: 5%;
+    z-index: 999;
+    img {
+      width: 350px;
     }
   }
 }
