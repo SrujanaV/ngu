@@ -13,7 +13,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $scope.clientSpeaks = data;
     }
     $(window).scroll(function () {
-      if ($(document).scrollTop() > 500) {
+      if ($(document).scrollTop() > 100) {
         $(".navbar").css("background", '#3b2415');
         $(".yellow-color").css("color", '#fff ');
       } else {
@@ -89,7 +89,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         id = "home";
       }
       var someElement = angular.element(document.getElementById(id));
-      $document.scrollToElement(someElement, 0, 1400);
+      $document.scrollToElement(someElement, 70, 1400);
     }
 
     $scope.$on('$viewContentLoaded', function (event) {
@@ -304,7 +304,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.changeURL = function (id) {
       console.log(id);
       $location.path("" + id);
+
     };
+    $(window).scroll(function () {
+      if ($(document).scrollTop() > 50) {
+        $(".navbar").css("background", '#3b2415');
+        $(".yellow-color").css("color", '#fff ');
+      } else {
+        $(".navbar").css("background", 'transparent');
+        $(".yellow-color").css("color", '#3b2415');
+      }
+    });
   })
   .controller('EmployerCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
