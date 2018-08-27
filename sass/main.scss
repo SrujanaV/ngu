@@ -1130,7 +1130,7 @@ form {
   ul {
     padding: 0;
     li {
-      padding-right: 5px;
+      padding-right: 15px;
       display: inline-block;
       a {
         width: 50px;
@@ -1144,7 +1144,7 @@ form {
         text-align: center;
         letter-spacing: 0.78px;
         &:hover {
-          background-color: lighten($red, 5%);
+          background-color: lighten($brand-white, 5%);
         }
       }
     }
@@ -1469,7 +1469,7 @@ form {
   }
   .xerox img {
     position: absolute;
-    bottom: -23px;
+    bottom: -50px;
     left: 50%;
     width: 65px;
     z-index: 99999;
