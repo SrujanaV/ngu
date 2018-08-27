@@ -146,7 +146,9 @@ section#home {
 }
 
 .navbar-default {
-  // background-color: $brand-brown; 
+  font-family: "Montserrat-Regular";
+  font-size: 15px;
+  font-weight: 600; // background-color: $brand-brown; 
   background-color: transparent;
   color: $brand-brown; // border-color: $brand-brown;
   border-top: 1px solid white;
@@ -159,7 +161,6 @@ section#home {
     }
   }
   a {
-    font-size: 16px;
     padding: 0px 20px;
     color: $brand-brown; // &:hover {
     //   background-color: lighten($brand-brown, 10%) !important;
@@ -443,6 +444,13 @@ p {
 .section {
   position: relative; // min-height: 667px;
   // overflow: hidden;
+}
+
+.home-main {
+  .section {
+    position: relative; // min-height: 667px;
+    overflow: hidden;
+  }
 }
 
 .awsomeness {
@@ -957,6 +965,16 @@ p {
 
 .tabs {
   padding-top: 130px;
+}
+
+.ngu-2 {
+  .lamp {
+    top: -45px;
+    right: 10%;
+    img {
+      width: 100px;
+    }
+  }
 }
 
 .tab-menu {
@@ -2105,10 +2123,10 @@ img.loading {
   }
   .music-headset {
     position: absolute;
-    bottom: 0%;
+    bottom: 9%;
     left: 50%;
     z-index: 11;
-    width: 73%;
+    width: 65%;
     @include transform (translate(-50%,
     0));
   }
@@ -2343,7 +2361,8 @@ img.loading {
 }
 
 //scss for subscribe
-.subscribe {
+.subscribe,
+  {
   .lamp1 {
     top: -0;
     left: 15%;
@@ -2443,12 +2462,31 @@ img.loading {
   }
 }
 
-.consulting,
 .corporate,
   {
   .lamp {
     top: -35%;
-    right: 21.5%;
+    right: 22.5%;
+    img {
+      width: 60px;
+    }
+  }
+  .window-right {
+    position: absolute;
+    top: 135px !important;
+    width: 100%;
+    right: 0%;
+    z-index: 999;
+    img {
+      width: 350px;
+    }
+  }
+}
+
+.consulting {
+  .lamp {
+    top: -35%;
+    right: 22%;
     img {
       width: 60px;
     }
@@ -2458,7 +2496,7 @@ img.loading {
 .workshops {
   .lamp {
     top: -40%;
-    right: 28%;
+    right: 21.5%;
     img {
       width: 60px;
     }
@@ -2545,14 +2583,35 @@ img.loading {
 .workspace {
   .lamp {
     top: -35%;
-    right: 19.5%;
+    right: 18%;
+    img {
+      width: 140px;
+    }
   }
-  img {
-    width: 120px;
+  .window-right {
+    position: absolute;
+    top: 108px !important;
+    width: 100%;
+    right: 5%;
+    z-index: 999;
+    img {
+      width: 350px;
+    }
   }
 }
 
 .employer-branding {
+  .window-right {
+    position: absolute;
+    top: 250px !important;
+    width: 100%;
+    right: 5%;
+    z-index: 999;
+  }
+}
+
+.employer-branding,
+.internal {
   .lamp {
     top: -32%;
     right: 19%;
@@ -2561,13 +2620,51 @@ img.loading {
     }
   }
   .window-right {
+    img {
+      width: 350px;
+    }
+  }
+}
+
+.employer-branding,
+.internal,
+.workspace {
+  .grass {
+    left: -24%;
+    bottom: -8%;
+    z-index: 9;
+    img {
+      width: 65px;
+    }
+  }
+}
+
+.internal {
+  .window-right {
     position: absolute;
-    top: 250px !important;
+    top: 50px !important;
     width: 100%;
     right: 5%;
     z-index: 999;
+  }
+}
+
+.quirky {
+  .lamp {
+    top: -28%;
+    right: 22%;
     img {
-      width: 350px;
+      width: 55px;
+    }
+  }
+  .window-right {
+    position: absolute;
+    top: 140px !important;
+    width: 100%;
+    right: 0%;
+    z-index: 999;
+    img {
+      width: 330px;
     }
   }
 }
