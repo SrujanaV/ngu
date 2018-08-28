@@ -983,6 +983,14 @@ p {
       width: 100px;
     }
   }
+  a {
+    color: #000;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #000;
+    }
+  }
 }
 
 .tab-menu {
@@ -1019,10 +1027,12 @@ form {
     }
   }
   button.submit {
-    padding: 6px 30px;
+    padding: 10px 50px;
+    margin-top: 20px;
     border-radius: 0;
     border-color: $brand-white;
     background-color: $brand-white;
+    font-family: "Montserrat-SemiBold";
     color: $red;
     &:focus,
     &:hover {
@@ -1415,8 +1425,8 @@ form {
     z-index: 0;
   }
   .client-happy {
-    bottom: 112px;
-    right: 12%;
+    bottom: 105px;
+    right: 8%;
     width: 6%;
     z-index: 1;
   }
@@ -1473,8 +1483,8 @@ form {
   }
   .xerox img {
     position: absolute;
-    bottom: -50px;
-    left: 50%;
+    bottom: -65px;
+    left: 53%;
     width: 65px;
     z-index: 99999;
   }
@@ -1573,6 +1583,7 @@ form {
 
 footer {
   padding: 20px;
+  font-family: "Montserrat-Semibold";
   .nav-footer {
     ul {
       list-style: none;
@@ -1640,6 +1651,7 @@ footer {
     padding: 20px 0;
     p {
       padding-bottom: 5px;
+      font-family: "Montserrat-Semibold";
       color: $box-black-color;
       margin: 0;
       font-size: 12px;
@@ -1939,7 +1951,7 @@ img.loading {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
-  height: 100vh;
+  height: 80vh;
   .plant {
     .plant-left {
       position: absolute; // width: 70px;
@@ -2132,6 +2144,9 @@ img.loading {
   // min-height: 650px;
   z-index: 1;
   position: relative;
+  .home-head {
+    text-transform: inherit;
+  }
 }
 
 .boy {
@@ -2223,8 +2238,9 @@ img.loading {
     z-index: 1;
     img {
       position: absolute;
-      right: 20%;
-      bottom: -85px;
+      right: 18%;
+      bottom: -62px;
+      width: 18%;
     }
   }
   .book img {
@@ -2381,9 +2397,15 @@ img.loading {
   margin-bottom: 8px;
   a {
     font-weight: 600;
+    color: #000;
+    &:hover,
+    &:active {
+      color: #000;
+    }
   }
   .head-yellow {
     font-size: 34px;
+    color: $brand-brown;
     font-family: "Montserrat-regular";
     margin-top: 0;
     img {
@@ -2396,12 +2418,19 @@ img.loading {
   }
 }
 
+.blue-color {
+  color: #000072 !important;
+  &:hover {
+    color: #000072 !important;
+  }
+}
+
 .service-common {
   .window-right {
     position: absolute;
-    top: 180px !important;
+    top: 188px;
     width: 100%;
-    right: 12%;
+    right: 5%;
     z-index: 999;
   }
 }
@@ -2410,7 +2439,7 @@ img.loading {
   {
   .lamp {
     top: -35%;
-    right: 22.5%;
+    right: 22%;
     img {
       width: 60px;
     }
@@ -2439,7 +2468,7 @@ img.loading {
 
 .workshops {
   .lamp {
-    top: -40%;
+    top: -34%;
     right: 21.5%;
     img {
       width: 60px;
@@ -2467,7 +2496,7 @@ img.loading {
   .grass {
     z-index: 9;
     bottom: -40px;
-    left: -24%;
+    left: -25%;
     img {
       width: 80px;
     }
@@ -2485,16 +2514,16 @@ img.loading {
 .happiness {
   .lamp {
     top: -60%;
-    right: 14%;
+    right: 11%;
   }
   .window-right {
     position: absolute;
-    top: 180px !important;
+    top: 175px !important;
     width: 100%;
     right: 8%;
     z-index: 999;
     img {
-      width: 400px;
+      width: 420px;
     }
   }
   .grass {
@@ -2510,14 +2539,14 @@ img.loading {
 .digital {
   .lamp {
     top: -30%;
-    right: 30%;
+    right: 32%;
     img {
-      width: 100px;
+      width: 120px;
     }
   }
   .window-right {
     position: absolute;
-    top: 130px !important;
+    top: 61px !important;
     width: 100%;
     right: 12%;
     z-index: 999;
@@ -2547,9 +2576,9 @@ img.loading {
 .employer-branding {
   .window-right {
     position: absolute;
-    top: 250px !important;
+    top: 230px !important;
     width: 100%;
-    right: 5%;
+    right: 0%;
     z-index: 999;
   }
 }
@@ -2571,7 +2600,6 @@ img.loading {
 }
 
 .employer-branding,
-.internal,
 .workspace {
   .grass {
     left: -24%;
@@ -2586,10 +2614,18 @@ img.loading {
 .internal {
   .window-right {
     position: absolute;
-    top: 50px !important;
+    top: 60px !important;
     width: 100%;
-    right: 5%;
+    right: 0%;
     z-index: 999;
+  }
+  .grass {
+    left: -24%;
+    bottom: -18%;
+    z-index: 9;
+    img {
+      width: 65px;
+    }
   }
 }
 
