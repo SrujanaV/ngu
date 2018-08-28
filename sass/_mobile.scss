@@ -425,7 +425,7 @@
     width: 150px;
   }
   .navbar>.container .navbar-brand {
-    margin-left: -70px;
+    margin-left: -50px;
   }
   .navbar-brand {
     img {
@@ -438,6 +438,15 @@
   .section-ngu {
     .min-hgt {
       min-height: 0px;
+    }
+  }
+  .blue-bg .lamp {
+    .lamp-left {
+      left: 3%;
+    }
+    .lamp-right {
+      top: -3%;
+      right: 15%;
     }
   }
 }
