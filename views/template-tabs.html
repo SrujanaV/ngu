@@ -6,10 +6,14 @@
     </div>
     <div class="col-md-9 col-sm-8">
       <div ng-include="template.tabcontent" class="template tabcontent"></div>
+
     </div>
   </div>
 </div>
-<div class="floor rl service-floor">
+<div class="floor rl service-floor" ng-if="floorChange=='workshops' || floorChange=='consulting' || floorChange=='internal' || floorChange=='corporate' || floorChange=='quirky'">
+  <img src="img/common-floor1.png" alt="" class="img-responsive">
+</div>
+<div class="floor rl service-floor-brown" ng-if="floorChange=='happyness' || floorChange=='employer-branding'|| floorChange=='workspace' || floorChange=='digital' ">
   <img src="img/common-floor1.png" alt="" class="img-responsive">
 </div>
 <div class="template footer" ng-include="template.footer"></div>
