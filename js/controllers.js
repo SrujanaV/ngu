@@ -255,6 +255,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       console.log(id);
       $location.path("" + id);
     };
+    $(window).scroll(function () {
+      if ($(document).scrollTop() > 100) {
+        $(".navbar").css("background", '#3b2415');
+        $(".yellow-color").css("color", '#fff ');
+      } else {
+        $(".navbar").css("background", 'transparent');
+        $(".yellow-color").css("color", '#3b2415');
+      }
+    });
   })
   .controller('PaymentCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
@@ -267,6 +276,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       console.log(id);
       $location.path("" + id);
     };
+    $(window).scroll(function () {
+      if ($(document).scrollTop() > 100) {
+        $(".navbar").css("background", '#3b2415');
+        $(".yellow-color").css("color", '#fff ');
+      } else {
+        $(".navbar").css("background", 'transparent');
+        $(".yellow-color").css("color", '#3b2415');
+      }
+    });
   })
   .controller('ConsultingCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file

@@ -47,6 +47,10 @@ $brand-clientspeaklight:#ff9e40;
 $brand-media:#808080;
 $brand-contact:#ff5252;
 $brand-contact-light:#ff867f;
+$brand-purple: #4A148C;
+$brand-purple-light:#7C43BD;
+$brand-green:#33691E;
+$brand-green-light:#4E8338;
 $font-family-sans-serif: "Lato",
 "Helvetica Neue",
 Helvetica,
@@ -158,18 +162,18 @@ section#home {
   border-top: 1px solid white;
   .navbar-nav {
     padding-left: 92px;
+    li>a {
+      // padding: 0px 20px;
+      color: $brand-brown; // &:hover {
+      //   background-color: lighten($brand-brown, 10%) !important;
+      //   border-color: lighten($brand-brown, 10%);
+      // }
+    }
     .active>a,
     .actives>a {
       background-color: transparent !important; // border-color: lighten($brand-brown, 10%);
       color: $brand-yellow !important;
     }
-  }
-  a {
-    padding: 0px 20px;
-    color: $brand-brown; // &:hover {
-    //   background-color: lighten($brand-brown, 10%) !important;
-    //   border-color: lighten($brand-brown, 10%);
-    // }
   }
   .navbar-brand:focus,
   .navbar-brand:hover {
@@ -187,7 +191,7 @@ section#home {
       padding-left: 30px;
       .active>a {
         background-color: $brand-brown;
-        border-color: $brand-brown;
+        border-color: $brand-brown !important;
       }
     }
   }
@@ -221,12 +225,13 @@ nav li:hover .dropdown-menu {
   background: $brand-brown;
 }
 
-.bg-color-payment {
-  background: $bg-color-payment;
-}
-
 .bg-color-abt {
-  background: $bg-color-abt;
+  background: $brand-purple-light url(../img/common-bg.png);
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .bg-blue {
@@ -420,8 +425,7 @@ a:hover {
   left: 0;
   z-index: 999;
   &.affix {
-    position: fixed;
-    top: 25px;
+    position: fixed; // top: 25px;
     z-index: 99999;
   }
 }
@@ -1567,60 +1571,6 @@ form {
   }
 }
 
-.about {
-  .abt-cont {
-    h2 {
-      font-size: 45px;
-      font-weight: 300;
-    }
-    .guy1-abt {
-      bottom: -40px;
-      width: 70%;
-    }
-  }
-  .min-hght {
-    min-height: 950px;
-  }
-  .window-right {
-    top: 7%;
-  }
-  .window-left {
-    top: initial;
-    bottom: 18%;
-  }
-  .cont-main {
-    padding-right: 40px;
-    position: relative;
-    .salute-left {
-      position: absolute;
-      left: -55px;
-      width: 15%;
-    }
-    .clock-right {
-      width: 23%;
-      top: -2px;
-      position: absolute;
-      right: 10px;
-    }
-    img.width-right-doit {
-      width: 25%;
-    }
-    h3 {
-      font-size: 30px;
-      font-weight: 300;
-      img {
-        vertical-align: bottom;
-      }
-    }
-    img.thumbsup-right {
-      width: 26%;
-    }
-    img.width-right {
-      width: 15%;
-    }
-  }
-}
-
 footer {
   padding: 20px;
   .nav-footer {
@@ -1705,29 +1655,6 @@ footer {
 
 .bg-white {
   background: #fff;
-}
-
-.payment {
-  padding: 0 20px;
-  .min-hght {
-    min-height: 550px;
-  }
-  h2 {
-    font-size: 45px;
-    font-weight: 300;
-  }
-  .sub-head {
-    font-size: 30px;
-    font-weight: 300;
-  }
-  .address p {
-    margin-bottom: 0;
-  }
-  .locker {
-    bottom: -50px;
-    width: 100%;
-    right: 20%;
-  }
 }
 
 img.bubble-middle {
@@ -2599,7 +2526,7 @@ img.loading {
     top: -35%;
     right: 18%;
     img {
-      width: 140px;
+      width: 120px;
     }
   }
   .window-right {
@@ -2681,6 +2608,110 @@ img.loading {
       width: 330px;
     }
   }
+}
+
+//scss for payment page
+.bg-color-payment {
+  background: $brand-green url(../img/common-bg.png); // overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.payment {
+  padding: 150px 0px 50px 0px;
+  p {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+    font-family: "Montserrat-SemiBold";
+  }
+  .sub-head {
+    font-size: 30px;
+    padding: 20px 0;
+    font-family: "Montserrat-Regular";
+  }
+  .address p {
+    margin-bottom: 0;
+  }
+  .account {
+    font-size: 18px;
+    font-family: "Montserrat-Regular";
+  }
+  .locker {
+    top: 350px;
+    right: 0%;
+    z-index: 99;
+    img {
+      width: 80%;
+    }
+  }
+}
+
+//scss for about-do
+.about {
+  p {
+    font-size: 18px;
+  }
+  .abt-cont {
+    h2 {
+      font-size: 40px;
+      font-family: "Montserrat-SemiBold";
+    }
+  }
+  .min-hght {
+    min-height: 950px;
+  }
+  .window-right {
+    top: 7%;
+  }
+  .window-left {
+    top: initial;
+    bottom: 18%;
+  }
+  .cont-main {
+    padding-right: 40px;
+    position: relative;
+    .salute-left {
+      position: absolute;
+      left: -55px;
+      width: 15%;
+    }
+    .clock-right {
+      width: 23%;
+      top: -2px;
+      position: absolute;
+      right: 10px;
+    }
+    img.width-right-doit {
+      width: 25%;
+    }
+    h3 {
+      font-size: 25px;
+      padding: 15px 0;
+      font-family: "Montserrat-SemiBold";
+      img {
+        vertical-align: bottom;
+      }
+    }
+    img.thumbsup-right {
+      width: 26%;
+    }
+    img.width-right {
+      width: 15%;
+    }
+  }
+}
+
+.about-do-people img {
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: -28px;
+  z-index: 9;
+  position: relative;
 }
 
 @import "animation.scss";

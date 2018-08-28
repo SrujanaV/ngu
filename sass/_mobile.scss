@@ -31,10 +31,9 @@
     .stat-count {
       text-align: left;
     }
-  }
-  .navbar-default .navbar-nav {
-    padding: 0;
-  } // .nav>li>a {
+  } // .navbar-default .navbar-nav {
+  //   padding: 0;
+  // } // .nav>li>a {
   //   position: relative;
   //   display: block;
   //   padding: 10px 12px;
@@ -236,14 +235,14 @@
   //   width: 100%;
   // }
   //End Unplugged Section css
-  .about-info,
-  .services .services-info,
-  .contact-detail,
-  .hq-info,
-  .media-head,
-  .section-ngu .content p {
-    width: 90% !important;
-  }
+  // .about-info,
+  // .services .services-info,
+  // .contact-detail,
+  // .hq-info,
+  // .media-head,
+  // .section-ngu .content p {
+  //   width: 90% !important;
+  // }
   .box-white {
     z-index: 1;
     position: relative;
@@ -254,10 +253,9 @@
   }
   .animate-dol-snail {
     display: none;
-  }
-  .navbar-default .navbar-nav {
-    padding-left: 0;
-  }
+  } // .navbar-default .navbar-nav {
+  //   padding-left: 0;
+  // }
   .nav>li>a {
     padding: 15px 7px;
   }
@@ -426,6 +424,22 @@
     left: 0;
     width: 150px;
   }
+  .navbar>.container .navbar-brand {
+    margin-left: -70px;
+  }
+  .navbar-brand {
+    img {
+      width: 60px;
+    }
+  }
+  .navbar-default .navbar-nav {
+    padding-left: 70px;
+  } //scss for home
+  .section-ngu {
+    .min-hgt {
+      min-height: 0px;
+    }
+  }
 }
 
 @media (max-width: $screen-xs-max) {
@@ -525,6 +539,7 @@
   }
   .navbar-brand {
     top: -20px;
+    left: 18px;
     img {
       width: 80px;
     }
