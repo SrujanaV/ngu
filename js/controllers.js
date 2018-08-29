@@ -148,7 +148,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // $scope.menutitle = NavigationService.makeactive2("Awesomeness");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav2();
-    TemplateService.footer = "views/footer2.html";
+    // TemplateService.footer = "views/footer2.html";
     $scope.menutitle = NavigationService.makeactive2($stateParams.id);
     console.log($stateParams.id);
 
@@ -196,6 +196,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       four: "views/content/section/awesomeness/section4.html",
       five: "views/content/section/awesomeness/section5.html",
     };
+    $(window).scroll(function () {
+      if ($(document).scrollTop() > 100) {
+        $(".navbar").css("background", '#3b2415');
+        $(".yellow-color").css("color", '#fff ');
+      } else {
+        $(".navbar").css("background", 'transparent');
+        $(".yellow-color").css("color", '#3b2415');
+      }
+    });
     // $scope.testimonial = [{
     //   desc: "The Never Grow Up &reg; team is a highly motivated & a passionate team always willing to go the extra mile to solve problems. They listen to problems very carefully and come up with break through solutions. Maxus has been working with them for more than five years and they are our key partners. What I like about them is their frank opinions & willingness to speak their mind & not hide behind words. They are a big asset to anyone considering working with them. Just go ahead.",
     //   name: "Kartik Sharma,",

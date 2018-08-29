@@ -1,18 +1,19 @@
 <header class="">
-   <nav class="navbar navbar-default navbar-fixed-top sticky-bottom bor-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" ng-click="changeURL()"><img src="img/logo.png" alt="logo" width="120"> </a>
+    <nav class="navbar navbar-default navbar-fixed-top sticky-bottom bor-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" ng-click="changeURL()">
+                    <img src="img/logo.png" alt="logo" width="120"> </a>
+            </div>
+            <div class="collapse navbar-collapse" id="nav-collapse">
+                <div ng-include="template.menu" class="template menu"></div>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="nav-collapse">
-               <div ng-include="template.menu" class="template menu"></div>
-        </div>
-    </div>
-</nav>
+    </nav>
 </header>

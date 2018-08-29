@@ -9,7 +9,7 @@
   }
   .blue-bg .music-headset {
     bottom: 12%;
-    left: 41%;
+    left: 50%;
   }
   .blue-bg .floor-aside {
     left: 68%;
@@ -141,8 +141,15 @@
 
 @media (max-width: $screen-sm-max) {
   //section .gif-img
+  section#home,
+  .awsomeness {
+    min-height: 0 !important;
+  }
   .mb-planthide {
     display: none;
+  }
+  .blue-bg {
+    height: 30vh;
   }
   .blue-bg .plant .mb-plantshow {
     display: block;
@@ -155,13 +162,14 @@
     bottom: 32%;
   }
   .blue-bg .center-img .floor-table {
-    bottom: 24%;
+    bottom: -8%;
   }
   .blue-bg .classroom .teacher {
     bottom: 16%; // left: 16%;
   }
   .blue-bg .music-headset {
-    bottom: 12%; // left: 41%;
+    bottom: 8%;
+    left: 48%; // left: 41%;
   }
   .blue-bg .floor-aside {
     // left: 68%;
@@ -445,8 +453,8 @@
       left: 3%;
     }
     .lamp-right {
-      top: -3%;
-      right: 15%;
+      top: -6%;
+      right: 20%;
     }
   }
 }

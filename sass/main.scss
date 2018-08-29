@@ -50,6 +50,7 @@ $brand-contact-light:#ff867f;
 $brand-purple: #4A148C;
 $brand-purple-light:#7C43BD;
 $brand-green:#33691E;
+$brand-awesomeness:#0fa8b9;
 $brand-green-light:#4E8338;
 $font-family-sans-serif: "Lato",
 "Helvetica Neue",
@@ -182,13 +183,16 @@ section#home {
 }
 
 .awsomeness-header {
+  section {
+    overflow: hidden;
+  }
   .navbar-default {
     // background-color: $brand-brown;
     background-color: transparent;
     border-color: $brand-brown;
     color: $brand-brown;
     .navbar-nav {
-      padding-left: 30px;
+      padding-left: 80px;
       .active>a {
         background-color: $brand-brown;
         border-color: $brand-brown !important;
@@ -218,7 +222,11 @@ nav li:hover .dropdown-menu {
 }
 
 .bg-blue {
-  background: $bg-color;
+  background: #5fdbe8 url(../img/common-bg.png);
+  background-position: initial;
+  /* background-repeat: no-repeat; */
+  background-size: 100%;
+  background-blend-mode: multiply;
 }
 
 .bg-brown {
@@ -234,10 +242,9 @@ nav li:hover .dropdown-menu {
   background-blend-mode: multiply;
 }
 
-.bg-blue {
-  background-color: $bg-color;
-}
-
+// .bg-blue {
+//   background-color: $bg-color;
+// }
 .bg-contact {
   background: $brand-contact url(../img/common-bg.png);
   overflow: hidden;
@@ -263,6 +270,7 @@ nav li:hover .dropdown-menu {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
+  margin-top: 40px;
 }
 
 .bg-skin-main {
@@ -400,6 +408,7 @@ a:hover {
 
 .head-main {
   font-size: 40px;
+  font-family: "Montserrat-SemiBold";
   font-weight: 500;
 }
 
@@ -443,9 +452,7 @@ p {
   font-size: 14px;
   font-family: "Montserrat-Regular"; // font-weight: 400;
   line-height: 150%;
-}
-
-// .awsomeness-header,
+} // .awsomeness-header,
 // .sticky-bottom {
 //   top: calc(101% - 4px);
 // }
@@ -653,6 +660,7 @@ p {
 }
 
 .work {
+  padding-top: 120px;
   .bubble1 {
     position: relative;
     top: 35px;
@@ -678,6 +686,7 @@ p {
       font-size: 40px;
       font-weight: 300;
       color: $font-color;
+      font-family: "Montserrat-SemiBold";
     }
     p {
       color: $font-color;
@@ -1011,9 +1020,7 @@ p {
       font-weight: 600;
     }
   }
-}
-
-// home
+} // home
 form {
   .form-control {
     border-radius: 0;
@@ -1059,9 +1066,7 @@ form {
   img {
     padding-top: 30px;
   }
-}
-
-// contact
+} // contact
 .contactus {
   // padding: 90px 0;
   .heading {
@@ -1101,9 +1106,7 @@ form {
   .w-200 {
     width: 200px;
   }
-}
-
-// .contact-info {
+} // .contact-info {
 //   min-height: 600px;
 // }
 // .window-left {
@@ -1310,9 +1313,7 @@ form {
   .pb30 {
     padding-bottom: 30px;
   }
-}
-
-// .hq-img.ab {
+} // .hq-img.ab {
 //   left: 0;
 //   width: 100%;
 // }
@@ -1717,9 +1718,7 @@ img.loading {
 
 .td-un {
   text-decoration: underline;
-}
-
-// unplugged section css starts here
+} // unplugged section css starts here
 .unplugged {
   .unplugged-img {
     position: relative;
@@ -1900,9 +1899,7 @@ img.loading {
       font-size: 12px;
     }
   }
-}
-
-// Awesomeness css here
+} // Awesomeness css here
 .best-award {
   h1 {
     text-transform: uppercase;
@@ -1981,8 +1978,8 @@ img.loading {
     }
     .lamp-right {
       position: absolute;
-      top: -5%;
-      right: 17%;
+      top: -8%;
+      right: 22.5%;
       width: 4%;
     }
   }
@@ -2058,9 +2055,7 @@ img.loading {
   .floor img {
     padding-top: 0;
   }
-}
-
-//header css 
+} //header css 
 .navbar-nav>li>a {
   padding-top: 43px;
   padding-bottom: 43px;
@@ -2069,9 +2064,7 @@ img.loading {
 .navbar-nav>li {
   float: left; // width: 108px;
   text-align: center;
-}
-
-//scss for contact page
+} //scss for contact page
 .contact-girl {
   width: 200px;
   top: 12%;
@@ -2116,9 +2109,7 @@ img.loading {
 
 .contact-detail-form {
   padding: 20px;
-}
-
-//scss for about
+} //scss for about
 .about-us {
   padding: 90px 0 0;
   a {
@@ -2184,9 +2175,7 @@ img.loading {
 .bubble {
   top: -10px;
   left: 40%;
-}
-
-//sccs for client speak
+} //sccs for client speak
 .client-speaks {
   .client {
     text-align: center;
@@ -2282,9 +2271,7 @@ img.loading {
   .flexslider .slides>li {
     margin-bottom: 100px
   }
-}
-
-//scss for subscribe
+} //scss for subscribe
 .subscribe {
   line-height: 0;
   iframe {
@@ -2292,9 +2279,7 @@ img.loading {
     width: 100%;
     min-height: 100vh;
   }
-}
-
-// .subscribe,
+} // .subscribe,
 //   {
 //   .lamp1 {
 //     top: -0;
@@ -2387,9 +2372,7 @@ img.loading {
     right: 12%;
     width: 110px;
   }
-}
-
-//scss for service page
+} //scss for service page
 //consulting section
 .hq-cont-yellow {
   height: 440px;
@@ -2647,9 +2630,7 @@ img.loading {
       width: 330px;
     }
   }
-}
-
-//scss for payment page
+} //scss for payment page
 .bg-color-payment {
   background: $brand-green url(../img/common-bg.png); // overflow: hidden;
   background-position: center center;
@@ -2688,9 +2669,7 @@ img.loading {
       width: 80%;
     }
   }
-}
-
-//scss for about-do
+} //scss for about-do
 .about {
   p {
     font-size: 18px;
