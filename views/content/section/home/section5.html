@@ -1,18 +1,19 @@
-<section class="client pt100">
-  <div class="pb50">
+<section class="client">
+  <div class="pt-10">
     <div class="container">
-      <h2 class="home-head pl20">Clients</h2>
+      <h2 class="home-head mb-0 pl-32">Clients</h2>
       <div class="client-slider">
-        <div class="col-md-offset-1 col-md-10">
+        <div class="col-md-12">
           <div class="slider-client">
-            <flex-slider flex-slide="slide in clients track by $index" animation="slide" animation-loop="false" as-nav-for="#sliders"
-              slideshow="false">
+            <flex-slider flex-slide="slide in clients track by $index" animation="slide" animation-loop="false"
+              as-nav-for="#sliders" slideshow="false">
               <li class="">
                 <div class="logos">
                   <div class="row bb" ng-repeat="row in slide">
                     <div class="col-md-3 col-xs-6" ng-repeat="client in row">
                       <div class="image-holder text-center">
-                        <img ng-src="{{client.image|serverimage}}" style="width:140px;height:140px;" class="doneLoading" alt="">
+                        <img ng-src="{{client.image|serverimage}}" style="width:140px;height:140px;" class="doneLoading"
+                          alt="">
                       </div>
                     </div>
                     <div class="clearfix"></div>
