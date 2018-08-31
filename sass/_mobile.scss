@@ -74,7 +74,7 @@
   }
 
   .unplugged .unplugged-img .unplug__img {
-    width: 44%;
+    width: 22%;
   }
 
   // End Unplugged Section css
@@ -190,11 +190,174 @@
   .window-left {
     left: -300px !important;
   }
+
+  .awsomeness {
+    min-height: 592px;
+  }
 }
 
 @media (max-width: $screen-sm-max) {
 
+  //scss for payment page start
+  .payment {
+    .account {
+      font-size: 12px;
+    }
+
+    .locker {
+      top: 300px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    .sub-head {
+      font-size: 25px;
+    }
+  }
+
+  //scss for payment page end
+  //scss for about-do start
+  .about .abt-cont h2 {
+    font-size: 30px;
+  }
+
+  .abt-cont {
+    padding-top: 60px
+  }
+
+  //scss for awesomeness start
+  .work {
+    padding-top: 0px;
+  }
+
+  .top40 {
+    width: 220px;
+  }
+
+  .awsomeness-header section {
+    min-height: 0px !important;
+  }
+
+  //scss for awesomeness end
+  //scss for service inner page start
+  .tabs p,
+  .tab-menu li {
+    font-size: 12px;
+  }
+
+  .consulting {
+    .wheel {
+      left: -18%;
+    }
+
+    .lamp {
+      top: -24%;
+
+      img {
+        width: 40px;
+      }
+    }
+
+    .grass {
+      left: -45%;
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .workshops .lamp {
+    top: -30%;
+
+    img {
+      width: 45px;
+    }
+  }
+
+  .corporate .lamp {
+    top: -35%;
+
+    img {
+      width: 45px;
+    }
+  }
+
+  .quirky .lamp {
+    top: -22%;
+
+    img {
+      width: 35px;
+    }
+  }
+
+  .happiness {
+    .lamp {
+      display: none;
+    }
+  }
+
+  .employer-branding .lamp,
+  .digital .lamp,
+  .internal .lamp,
+  .workspace .lamp {
+    top: -21%;
+
+    img {
+      width: 75px;
+    }
+  }
+
+  .employer-branding .grass,
+  .internal .grass,
+  .workspace .grass {
+    left: -43%;
+    bottom: -6%;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .happiness .grass {
+    bottom: -30px;
+    left: -37%;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .tabcontent {
+    .window-right {
+      top: 325px;
+    }
+  }
+
+  .tabs {
+    padding-top: 90px;
+  }
+
+  //scss for service inner page end
   //Scss for home page started
+  .contact-boy img,
+  .email img,
+  .contact-girl img {
+    width: 65%;
+  }
+
+  .social-icon ul li a {
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+  }
+
+  .about-people {
+    top: 245px;
+  }
+
   .ngu-2 .lamp-left img {
     width: 75px;
   }
@@ -276,10 +439,35 @@
     }
   }
 
+  .media {
+    .window-right {
+      width: 150px
+    }
+
+    .xerox img {
+      bottom: -42px;
+      width: 35px;
+    }
+
+    .pb140 {
+      padding-bottom: 90px;
+    }
+
+    .window-left {
+      left: 92% !important;
+    }
+  }
+
+  .contact-detail a,
+  .contact-detail span {
+    font-size: 14px;
+  }
+
   //scss for home page end
   .bg-unplugged,
   section#home,
-  .awsomeness {
+  .awsomeness,
+  .bg-contact {
     min-height: 0 !important;
   }
 
@@ -324,6 +512,10 @@
     bottom: 2%;
   }
 
+  .client-speaks .flexslider .slides>li {
+    margin: 20px 0 60px 0;
+  }
+
   //END section .gif-img
   // ruchira css jhol
   .hq-padding {
@@ -331,12 +523,6 @@
     // min-height: 626px !important;
     .pt100 {
       padding-top: 50px;
-    }
-
-    .about-us,
-    .contactus,
-      {
-      padding: 50px 0;
     }
   }
 
@@ -351,11 +537,6 @@
     margin-bottom: 68px;
   }
 
-  // Unplugged Section css
-  // .unplugged .stress-sec3 .gif-img {
-  //   bottom: -100%;
-  //   left: 20%;
-  // }
   .unplugged .stress-sec3 .gif-img {
     top: 185px;
     left: 10%;
@@ -511,7 +692,7 @@
     }
 
     .content {
-      padding-top: 60px;
+      padding-top: 20px;
     }
 
     .client-speak {
@@ -555,7 +736,11 @@
     display: none;
   }
 
-  S .subscribe {
+  .contactus {
+    padding: 0;
+  }
+
+  .subscribe {
     .subscribe-me input {
       display: inline-block;
     }
@@ -626,10 +811,6 @@
     }
   }
 
-  .payment .locker {
-    bottom: -75px;
-  }
-
   .img-awards img {
     top: 0;
     left: 0;
@@ -637,7 +818,7 @@
   }
 
   .navbar>.container .navbar-brand {
-    margin-left: -40px;
+    margin-left: -22px;
   }
 
   .navbar-brand {
