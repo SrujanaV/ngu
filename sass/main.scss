@@ -3246,6 +3246,10 @@ img.loading {
   font-size: 30px;
 }
 
+.scrolltotop {
+  display: none;
+}
+
 @import "animation.scss";
 @import "mobile.scss";
 @import "custom";
