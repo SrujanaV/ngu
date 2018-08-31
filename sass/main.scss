@@ -111,8 +111,9 @@ serif !default;
   color: $brand-yellow;
 
   &:hover,
-  &:active {
-    color: $brand-yellow;
+  &:active,
+  &:focus {
+    color: $brand-yellow !important;
   }
 }
 
@@ -799,6 +800,7 @@ p {
     p {
       color: $font-color;
       text-align: justify;
+      margin-bottom: 20px;
     }
   }
 
@@ -1230,7 +1232,7 @@ form {
   button.submit {
     padding: 10px 50px;
     margin-top: 20px;
-    border-radius: 0;
+    border-radius: 5px;
     border-color: $brand-white;
     background-color: $brand-white;
     font-family: "Montserrat-SemiBold";
@@ -1781,7 +1783,7 @@ form {
   .xerox img {
     position: absolute;
     bottom: -65px;
-    left: 53%;
+    left: 50%;
     width: 60px;
     z-index: 99999;
   }
@@ -2485,7 +2487,6 @@ img.loading {
 .contact-detail {
   width: 100%;
   padding: 0 20px;
-  letter-spacing: 2px;
 
   p {
     margin: 0;
@@ -3236,6 +3237,13 @@ img.loading {
   margin-bottom: -28px;
   z-index: 9;
   position: relative;
+}
+
+.scrolltotop {
+  position: fixed;
+  bottom: 0;
+  right: 2%;
+  font-size: 30px;
 }
 
 @import "animation.scss";

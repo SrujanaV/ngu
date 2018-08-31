@@ -149,8 +149,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav2();
     // TemplateService.footer = "views/footer2.html";
+    $scope.awesomenessArrow = $state.current.name;
+    console.log("floor", $state.current.name);
     $scope.menutitle = NavigationService.makeactive2($stateParams.id);
-    console.log($stateParams.id);
+    console.log("$stateParams.id", $stateParams.id);
 
     function AllTestimonial(data, status) {
 
@@ -437,5 +439,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService;
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
       $(window).scrollTop(0);
+    });
+    $scope.scrollTop = function () {
+      $('html, body').animate({
+        scrollTop: $('body,html').offset().top - 100
+      }, 3000);
+    }
+    $(window).scroll(function () {
+      if ($(document).scrollTop() < 100) {
+        $(".scrolltotop").css("display", 'none');
+      } else {
+        $(".scrolltotop").css("display", 'block');
+      }
     });
   });
