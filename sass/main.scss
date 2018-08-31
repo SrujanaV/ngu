@@ -525,7 +525,7 @@ p {
 }
 
 .awsomeness {
-  min-height: 650px;
+  min-height: 620px;
 
   .sky {
     height: 230px;
@@ -2919,12 +2919,6 @@ img.loading {
     height: 480px !important;
   }
 
-  .window-right {
-    img {
-      width: 400px;
-    }
-  }
-
   .wheel {
     bottom: -12px;
     z-index: 9;
@@ -2968,12 +2962,8 @@ img.loading {
     position: absolute;
     top: 175px !important;
     width: 100%;
-    right: 8%;
+    right: 2%;
     z-index: 999;
-
-    img {
-      width: 420px;
-    }
   }
 
   .grass {
@@ -3036,9 +3026,9 @@ img.loading {
 .employer-branding {
   .window-right {
     position: absolute;
-    top: 230px !important;
+    top: 195px !important;
     width: 100%;
-    right: 0%;
+    right: 5%;
     z-index: 999;
   }
 }
@@ -3051,12 +3041,6 @@ img.loading {
 
     img {
       width: 120px;
-    }
-  }
-
-  .window-right {
-    img {
-      width: 350px;
     }
   }
 }
@@ -3077,9 +3061,9 @@ img.loading {
 .internal {
   .window-right {
     position: absolute;
-    top: 60px !important;
-    width: 100%;
-    right: 0%;
+    top: 50px !important;
+    width: 90%;
+    right: 1%;
     z-index: 999;
   }
 
