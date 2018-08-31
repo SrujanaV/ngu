@@ -194,7 +194,90 @@
 
 @media (max-width: $screen-sm-max) {
 
-  //section .gif-img
+  //Scss for home page started
+  .ngu-2 .lamp-left img {
+    width: 75px;
+  }
+
+  .ngu-2 .grass {
+    bottom: 55px;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .ngu-2 .lamp {
+    top: -50px;
+
+    img {
+      width: 75px;
+    }
+  }
+
+  .services .services-info p,
+  p {
+    font-size: 12px;
+  }
+
+  .services {
+    .lamp {
+      width: 60px;
+      bottom: 45px;
+    }
+
+    .grass {
+      width: 50px;
+      bottom: 50px;
+    }
+
+    .slider {
+      width: 130px;
+      bottom: 45px;
+    }
+  }
+
+  .section-ngu .ngu {
+    top: 205px;
+  }
+
+  .navbar-brand {
+    top: 0
+  }
+
+  .services .services-badge .col-md-4 {
+    padding: 0 10px;
+  }
+
+  .pt50 {
+    padding-top: 30px;
+  }
+
+  .hq {
+    .lamp1 {
+      width: 75px;
+    }
+
+    .lamp2 {
+      top: -5%;
+      right: 6%;
+      width: 75px;
+    }
+  }
+
+  .hq-bg {
+    .hq-confess {
+      top: 238px;
+    }
+
+    .hq-logo img {
+      width: 150px !important;
+      margin-bottom: 0;
+    }
+  }
+
+  //scss for home page end
+  .bg-unplugged,
   section#home,
   .awsomeness {
     min-height: 0 !important;
@@ -225,16 +308,15 @@
   }
 
   .blue-bg .classroom .teacher {
-    bottom: 16%; // left: 16%;
+    bottom: 16%;
   }
 
   .blue-bg .music-headset {
     bottom: 8%;
-    left: 48%; // left: 41%;
+    left: 48%;
   }
 
   .blue-bg .floor-aside {
-    // left: 68%;
     bottom: 12%;
   }
 
@@ -275,9 +357,8 @@
   //   left: 20%;
   // }
   .unplugged .stress-sec3 .gif-img {
-    bottom: -38%;
-    left: 36%;
-    display: none;
+    top: 185px;
+    left: 10%;
   }
 
   .nav>li>a {
@@ -290,6 +371,14 @@
 
   .unplugged .unplugged-img .unplug__img {
     width: 100%;
+  }
+
+  .unplugged-img {
+    width: 160px;
+  }
+
+  .unplugged .unplug-relate .lamps {
+    width: 17%;
   }
 
   // .unplugged .stress .statistics {
@@ -310,15 +399,6 @@
     top: -10px;
     font-size: 20px;
     left: 4px;
-  }
-
-  .unplugged-img {
-    width: 350px;
-  }
-
-  .unplugged .unplug-relate .lamps {
-    right: 10px;
-    width: 80px;
   }
 
   // .unplugged .stress-sec3 p {
@@ -362,6 +442,7 @@
     .content {
       position: inherit;
       width: 100%;
+      padding-top: 30px;
     }
   }
 
@@ -485,10 +566,6 @@
     }
   }
 
-  .client-slider {
-    min-height: 950px;
-  }
-
   .boy {
     left: 35%;
   }
@@ -560,12 +637,12 @@
   }
 
   .navbar>.container .navbar-brand {
-    margin-left: -50px;
+    margin-left: -40px;
   }
 
   .navbar-brand {
     img {
-      width: 60px;
+      width: 55px;
     }
   }
 
