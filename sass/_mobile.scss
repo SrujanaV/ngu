@@ -9,8 +9,11 @@
     top: 245px !important;
   
   }
+  .blue-bg {
+    height: 80vh !important;
+}
   .section#home {
-  min-height: 670px ; 
+    min-height: 600px !important;
 }
 // .blue-bg {
 //   height: 40vh !important;
@@ -18,7 +21,9 @@
   .service-common .window-right {
     top: 230px;
   }
-
+  .hq-bg .hq-confess{
+    top: 57px ;
+  }
   .workshops .hq-cont-yellow {
     height: 510px !important;
   }

@@ -15,6 +15,9 @@
       left: 4%; 
       bottom: -8%;
 }
+.section#home {
+  min-height: 463px !important;
+}
 //scss for service inner page end
 
 //scss for payment page  start
@@ -77,7 +80,7 @@
     padding: 0 5px;
   }
   .blue-bg {
-    height: 50vh;
+    height: 50vh !important;
   }
   .section-ngu .content{
     padding-left: 0px;  

@@ -3231,8 +3231,9 @@ img.loading {
 }
 
 @import "animation.scss";
+@import "mobile.scss";
 @import "md.scss";
 @import "sm.scss";
 @import "xs.scss";
-@import "mobile.scss";
+
 @import "custom";
