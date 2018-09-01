@@ -1,0 +1,667 @@
+@media (max-width: $screen-sm-max) {
+
+    //scss for payment page start
+    .payment {
+      .account {
+        font-size: 12px;
+      }
+  
+      .locker {
+        top: 300px;
+      }
+  
+      h2 {
+        font-size: 30px;
+      }
+  
+      .sub-head {
+        font-size: 25px;
+      }
+    }
+  
+    //scss for payment page end
+    //scss for about-do start
+    .about .abt-cont h2 {
+      font-size: 30px;
+    }
+  
+    .abt-cont {
+      padding-top: 60px
+    }
+  
+    //scss for awesomeness start
+    .testimonials .flexslider-container {
+        width: 340px !important;
+        margin: 0 auto;
+    }
+    .client-speaks .slider-client .flexslider {
+        width: 300px !important;
+        margin: 0 auto;
+      }
+  
+    .work {
+      padding-top: 20px;
+    }
+  
+    .top40 {
+      width: 220px;
+    }
+  
+    .awsomeness-header section {
+      min-height: 0px !important;
+    }
+  
+    //scss for awesomeness end
+    //scss for service inner page start
+    .tabs p,
+    .tab-menu li {
+      font-size: 12px;
+    }
+  
+    .consulting {
+      .wheel {
+        left: -18%;
+      }
+  
+      .lamp {
+        top: -24%;
+  
+        img {
+          width: 40px;
+        }
+      }
+  
+      .grass {
+        left: -45%;
+  
+        img {
+          width: 50px;
+        }
+      }
+    }
+  
+    .workshops .lamp {
+      top: -30%;
+  
+      img {
+        width: 45px;
+      }
+    }
+  
+    .corporate .lamp {
+      top: -35%;
+  
+      img {
+        width: 45px;
+      }
+    }
+  
+    .quirky .lamp {
+      top: -22%;
+  
+      img {
+        width: 35px;
+      }
+    }
+  
+    .happiness {
+      .lamp {
+        display: none;
+      }
+    }
+    .unplugged .unplugged-img .unplug__img {
+        width: 90%;
+    }
+    .employer-branding .lamp,
+    .digital .lamp,
+    .internal .lamp,
+    .workspace .lamp {
+      top: -21%;
+  
+      img {
+        width: 75px;
+      }
+    }
+  
+    .employer-branding .grass,
+    .internal .grass,
+    .workspace .grass {
+      left: -43%;
+      bottom: -6%;
+  
+      img {
+        width: 50px;
+      }
+    }
+    .subscribe iframe{
+        min-height: 75vh;
+    }
+    .happiness .grass {
+      bottom: -30px;
+      left: -37%;
+  
+      img {
+        width: 50px;
+      }
+    }
+  
+    .tabcontent {
+      .window-right {
+        top: 325px;
+      }
+    }
+  
+    .tabs {
+      padding-top: 90px;
+    }
+  
+    //scss for service inner page end
+    //Scss for home page started
+    .contact-boy img,
+    .email img,
+    .contact-girl img {
+      width: 65%;
+    }
+  
+    .social-icon ul li a {
+      width: 40px;
+      height: 40px;
+      line-height: 45px;
+    }
+  
+    .about-people {
+      top: 245px !important;
+    }
+  
+    .ngu-2 .lamp-left img {
+      width: 75px;
+    }
+  
+    .ngu-2 .grass {
+      bottom: 55px;
+  
+      img {
+        width: 50px;
+      }
+    }
+  
+    .ngu-2 .lamp {
+      top: -50px;
+  
+      img {
+        width: 75px;
+      }
+    }
+  
+    .services .services-info p,
+    p {
+      font-size: 12px;
+    }
+  
+    .services {
+      .lamp {
+        width: 60px;
+        bottom: 45px;
+      }
+  
+      .grass {
+        width: 50px;
+        bottom: 50px;
+      }
+  
+      .slider {
+        width: 130px;
+        bottom: 45px;
+      }
+    }
+  
+    .section-ngu .ngu {
+      top: 205px;
+    }
+  
+    .navbar-brand {
+      top: 0
+    }
+  
+    .services .services-badge .col-md-4 {
+      padding: 0 10px;
+    }
+  
+    .pt50 {
+      padding-top: 30px;
+    }
+  
+    .hq {
+      .lamp1 {
+        width: 75px;
+      }
+  
+      .lamp2 {
+        top: -5%;
+        right: 6%;
+        width: 75px;
+      }
+    }
+  
+    .hq-bg {
+      .hq-confess {
+        top: 238px;
+      }
+  
+      .hq-logo img {
+        width: 150px !important;
+        margin-bottom: 0;
+      }
+    }
+  
+    .media {
+      .window-right {
+        width: 150px
+      }
+  
+      .xerox img {
+        bottom: -42px;
+        width: 35px;
+      }
+  
+      .pb140 {
+        padding-bottom: 90px;
+      }
+  
+      .window-left {
+        left: 92% !important;
+      }
+    }
+  
+    .contact-detail a,
+    .contact-detail span {
+      font-size: 14px;
+    }
+  
+    //scss for home page end
+    .bg-unplugged,
+    section#home,
+    .awsomeness,
+    .bg-contact {
+      min-height: 0 !important;
+    }
+  
+    .mb-planthide {
+      display: none;
+    }
+  
+    .blue-bg {
+      height: 30vh;
+    }
+  
+    .blue-bg .plant .mb-plantshow {
+      display: block;
+      width: 8% !important;
+      left: 14%;
+      bottom: 32%;
+    }
+  
+    .blue-bg .plant .plant-right {
+      right: 15%;
+      bottom: 32%;
+    }
+  
+    .blue-bg .center-img .floor-table {
+      bottom: -8%;
+    }
+  
+    .blue-bg .classroom .teacher {
+      bottom: 16%;
+    }
+  
+    .blue-bg .music-headset {
+      bottom: 8%;
+      left: 48%;
+    }
+  
+    .blue-bg .floor-aside {
+      bottom: 12%;
+    }
+  
+    .blue-bg .overboard {
+      bottom: 2%;
+    }
+  
+    .client-speaks .flexslider .slides>li {
+      margin: 20px 0 60px 0;
+    }
+  
+    //END section .gif-img
+    // ruchira css jhol
+    .hq-padding {
+  
+      // min-height: 626px !important;
+      .pt100 {
+        padding-top: 50px;
+      }
+    }
+  
+    // Awesomeness css here
+    .best-award {
+      h1 {
+        font-size: 26px;
+      }
+    }
+  
+    .encore {
+      margin-bottom: 68px;
+    }
+  
+    .unplugged .stress-sec3 .gif-img {
+      top: 185px;
+      left: 10%;
+    }
+  
+    .nav>li>a {
+      font-size: 12px;
+    }
+  
+    .unplugged .stress-sec3 p {
+      width: 100%;
+    }
+  
+    .unplugged .unplugged-img .unplug__img {
+      width: 100%;
+    }
+  
+    .unplugged-img {
+      width: 160px;
+    }
+  
+    .unplugged .unplug-relate .lamps {
+      width: 17%;
+    }
+  
+    // .unplugged .stress .statistics {
+    //   li+li {
+    //     padding: 0 0 0 18px;
+    //     &:before {
+    //       height: 76px;
+    //       top: 5px;
+    //       margin: 0 -36px;
+    //     }
+    //   }
+    .statistics li p:nth-child(1) {
+      font-size: 40px;
+      letter-spacing: -2px;
+    }
+  
+    li p>sup {
+      top: -10px;
+      font-size: 20px;
+      left: 4px;
+    }
+  
+    // .unplugged .stress-sec3 p {
+    //   width: 100%;
+    // }
+    //End Unplugged Section css
+    // .about-info,
+    // .services .services-info,
+    // .contact-detail,
+    // .hq-info,
+    // .media-head,
+    // .section-ngu .content p {
+    //   width: 90% !important;
+    // }
+    .box-white {
+      z-index: 1;
+      position: relative;
+    }
+  
+    .width90 {
+      width: auto;
+      padding-right: 0;
+    }
+  
+    .animate-dol-snail {
+      display: none;
+    }
+  
+    // .navbar-default .navbar-nav {
+    //   padding-left: 0;
+    // }
+    .nav>li>a {
+      padding: 15px 7px;
+    }
+  
+    .section-ngu {
+      .window-right {
+        display: none;
+      }
+  
+      .content {
+        position: inherit;
+        width: 100%;
+        padding-top: 30px;
+      }
+    }
+  
+    .tab-menu ul {
+      padding-left: 0;
+    }
+  
+    .tabcontent {
+      .window-right {
+        display: none;
+      }
+    }
+  
+    .services {
+      .services-info {
+        padding: 0;
+        position: relative;
+        top: 0;
+      }
+  
+      .services-badge figcaption {
+        margin-top: 10px;
+        height: 45px;
+      }
+  
+      .coffee {
+        width: 100px;
+      }
+  
+      .window-left {
+        display: none;
+      }
+    }
+  
+    .hq-bg {
+  
+      // .hq-confess {
+      //   display: none;
+      // }
+      .clock {
+        top: 10%;
+      }
+    }
+  
+    .client-speaks {
+      .client-desk {
+        .home-head {
+          padding-left: 35px;
+        }
+      }
+  
+      .flex-direction-nav .flex-prev {
+        left: -35px !important; // left: -70px !important;
+      }
+    }
+  
+    .about-us {
+      .window-full {
+        display: none;
+      }
+    }
+  
+    .work {
+      .bubble1 {
+        position: absolute;
+      }
+  
+      .content {
+        padding-top: 20px;
+      }
+  
+      .client-speak {
+        .content {
+          height: 380px;
+        }
+  
+        .shopper-stop {
+          .content {
+            height: auto;
+          }
+  
+          .prize {
+            width: 120px;
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+  
+    .window-left {
+      left: -270px;
+    }
+  
+    .window-right {
+      right: -350px;
+    }
+  
+    .contactus {
+      .window-left {
+        display: none;
+      }
+    }
+  
+    .testimonials .flexslider-container {
+      width: 340px;
+      margin: 0 auto;
+    }
+  
+    .door img {
+      display: none;
+    }
+  
+    .contactus {
+      padding: 0;
+    }
+  
+    .subscribe {
+      .subscribe-me input {
+        display: inline-block;
+      }
+  
+      form button.submit {
+        width: auto;
+        display: inline-block;
+      }
+    }
+  
+    .boy {
+      left: 35%;
+    }
+  
+    .tabs .people img {
+      display: none;
+    }
+  
+    .about {
+      .cont-main {
+        padding-right: 25px;
+  
+        .salute-left {
+          left: -40px;
+        }
+  
+        .clock-right {
+          right: -5px;
+        }
+  
+        h3 {
+          font-size: 24px;
+        }
+      }
+  
+      img.width-right-doit {
+        width: 8%;
+      }
+  
+      .abt-cont {
+        .guy1-abt {
+          bottom: -40px;
+          left: -100px;
+          width: 150px;
+        }
+      }
+    }
+  
+    .thought {
+      .logo-opt {
+        img {
+          width: 33%;
+          margin: 0;
+        }
+      }
+    }
+  
+    .head-main {
+      font-size: 30px;
+    }
+  
+    .about img.areoplane {
+      width: 70%;
+  
+      &.rocketfly {
+        top: 20%;
+        left: 500%;
+      }
+    }
+  
+    .img-awards img {
+      top: 0;
+      left: 0;
+      width: 150px;
+    }
+  
+    .navbar>.container .navbar-brand {
+      margin-left: -22px;
+    }
+  
+    .navbar-brand {
+      img {
+        width: 55px;
+      }
+    }
+  
+    .navbar-default .navbar-nav {
+      padding-left: 70px;
+    }
+  
+    //scss for home
+    .section-ngu {
+      .min-hgt {
+        min-height: 0px;
+      }
+    }
+  
+    .blue-bg .lamp {
+      .lamp-left {
+        left: 3%;
+      }
+  
+      .lamp-right {
+        top: -6%;
+        right: 20%;
+      }
+    }
+  }
+  
