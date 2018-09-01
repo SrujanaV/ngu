@@ -1210,6 +1210,7 @@ p {
     &:hover {
       color: #000072;
       font-weight: 600;
+      background: #ffca20;
     }
   }
 }
@@ -3231,4 +3232,5 @@ img.loading {
 
 @import "animation.scss";
 @import "mobile.scss";
+@import "xs.scss";
 @import "custom";
