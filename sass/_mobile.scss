@@ -852,6 +852,19 @@
 
 @media (max-width: $screen-xs-max) {
 
+  //scss for hearder start
+  .navbar-nav>li {
+    float: none;
+  }
+
+  .navbar-brand {
+    top: -8px;
+
+    img {
+      width: 70px;
+    }
+  }
+
   // .section {
   //   min-height: auto !important;
   // }
@@ -968,15 +981,6 @@
       .icon-bar {
         background-color: #fff;
       }
-    }
-  }
-
-  .navbar-brand {
-    top: -20px;
-    left: 18px;
-
-    img {
-      width: 80px;
     }
   }
 
