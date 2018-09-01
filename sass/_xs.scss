@@ -1,5 +1,12 @@
 @media (max-width: $screen-xs-max) {
 //scss for service inner page stratr
+.blue-bg .lamp .lamp-left,.blue-bg .lamp .lamp-right{
+  width: 8%;
+}form button.submit{
+  margin-bottom: 20px;
+}
+.client-speaks .slider-client .cont {
+  height: 270px;}
 .consulting{
     .grass {
     left: 0;
@@ -80,7 +87,7 @@
     padding: 0 5px;
   }
   .blue-bg {
-    height: 50vh !important;
+    height: 55vh !important;
   }
   .section-ngu .content{
     padding-left: 0px;  

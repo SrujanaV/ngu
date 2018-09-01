@@ -2,6 +2,12 @@
 @media (max-width: 1200px) {
 
   //scss for service page
+  .bg-contact{
+    min-height: 700px !important;
+  }
+  .bg-unpluged{
+    min-height: 650px;
+  }
   .payment .locker {
     top: 290px;
   }
