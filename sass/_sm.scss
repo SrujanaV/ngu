@@ -93,12 +93,24 @@
         }
     }
 
+    .workshops .window-right {
+        top: auto;
+        bottom: -58px;
+        width: 250px !important;
+    }
+
     .corporate .lamp {
         top: -35%;
 
         img {
             width: 45px;
         }
+    }
+
+    .corporate .window-right {
+        top: auto !important;
+        bottom: -50px !important;
+        width: 250px !important;
     }
 
     .quirky .lamp {
@@ -109,14 +121,16 @@
         }
     }
 
-    .happiness {
-        .lamp {
-            display: none;
-        }
-    }
-
     .unplugged .unplugged-img .unplug__img {
         width: 90%;
+    }
+
+    .happiness .lamp {
+        top: -22%;
+
+        img {
+            width: 70%;
+        }
     }
 
     .employer-branding .lamp,
@@ -156,31 +170,80 @@
 
     .consulting {
         .window-right {
-            top: -178px;
+            bottom: -40px;
             right: 0;
+            top: auto;
+            width: 300px;
 
             img {
-                width: 300px;
+                width: auto;
             }
         }
     }
 
+    .service-common .window-right {
+        top: auto;
+        bottom: -58px;
+        width: 300px;
+
+        img {
+            width: auto;
+        }
+    }
+
+    .quirky .window-right {
+        top: auto !important;
+        bottom: -40px;
+        right: 0;
+        width: 250px;
+
+        img {
+            width: auto;
+        }
+    }
+
+    .section#unplugged {
+        min-height: 615px !important;
+    }
+
+    .workspace .window-right {
+        top: auto;
+        bottom: -40px;
+        width: 270px;
+        right: 0;
+
+        img {
+            width: 270px;
+        }
+    }
+
+    .internal .window-right {
+        position: absolute;
+        top: auto !important;
+        width: 230px;
+        bottom: -62px;
+    }
+
     .employer-branding {
         .window-right {
-            top: -122px;
-            right: 0;
+            bottom: -42px;
+            right: -10px;
+            top: auto;
+            width: 240px;
 
             img {
-                width: 250px;
+                width: auto;
             }
         }
     }
 
     .happiness .window-right {
-        top: -170px !important;
+        top: auto !important;
+        width: 300px;
+        bottom: -40px;
 
         img {
-            width: 300px;
+            width: auto;
         }
     }
 
@@ -215,11 +278,9 @@
     }
 
     .digital .window-right {
-        top: -170px !important;
-
-        img {
-            width: 200px;
-        }
+        top: auto !important;
+        width: 200px;
+        bottom: -30px;
     }
 
     .workshops .wheel {
