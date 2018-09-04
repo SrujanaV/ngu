@@ -215,6 +215,11 @@ img.doneLoading {
 
 section#home {
   overflow: hidden;
+  min-height: 765px !important;
+}
+
+.section#unplugged {
+  min-height: 658px !important
 }
 
 .awsomeness-header {
@@ -3007,7 +3012,7 @@ img.loading {
 
   .window-right {
     position: absolute;
-    top: 108px !important;
+    top: 108px;
     width: 100%;
     right: 5%;
     z-index: 999;
@@ -3021,7 +3026,7 @@ img.loading {
 .employer-branding {
   .window-right {
     position: absolute;
-    top: 195px !important;
+    top: 195px;
     width: 100%;
     right: 5%;
     z-index: 999;
@@ -3057,7 +3062,7 @@ img.loading {
   .window-right {
     position: absolute;
     top: 50px !important;
-    width: 90%;
+    width: 80%;
     right: 1%;
     z-index: 999;
   }
@@ -3235,5 +3240,4 @@ img.loading {
 @import "md.scss";
 @import "sm.scss";
 @import "xs.scss";
-
 @import "custom";

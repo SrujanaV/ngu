@@ -1,35 +1,41 @@
-
 @media (max-width: 1200px) {
 
   //scss for service page
-  .bg-contact{
+  .bg-contact {
     min-height: 700px !important;
   }
-  .bg-unpluged{
+
+  .bg-unpluged {
     min-height: 650px;
   }
+
   .payment .locker {
-    top: 290px;
+    top: 180px;
   }
-  .employer-branding .window-right{
-    top: 245px !important;
-  
+
+  .employer-branding .window-right {
+    top: 245px;
   }
+
   .blue-bg {
-    height: 80vh !important;
-}
+    height: 80vh;
+  }
+
   .section#home {
     min-height: 600px !important;
-}
-// .blue-bg {
-//   height: 40vh !important;
-// }
+  }
+
+  // .blue-bg {
+  //   height: 40vh !important;
+  // }
   .service-common .window-right {
     top: 230px;
   }
-  .hq-bg .hq-confess{
-    top: 57px ;
+
+  .hq-bg .hq-confess {
+    top: 57px;
   }
+
   .workshops .hq-cont-yellow {
     height: 510px !important;
   }
@@ -217,9 +223,6 @@
   }
 }
 
-
-
-
 // @media (max-width:350px) and (max-width:600px) {}
 @media (max-width:480px) {
   .blue-bg .plant .mb-plantshow {
@@ -338,10 +341,9 @@
   }
 
   .client-speaks .slider-client .flexslider {
-        width: 300px !important;
-        margin: 0 auto;
-      }
-  
+    width: 300px !important;
+    margin: 0 auto;
+  }
 
   .talking {
     .row-flex {
@@ -393,7 +395,7 @@
   }
 
   .image-holder img {
-    height: auto !important;
+    height: 100px !important;
     width: 100px !important;
     margin: 0 auto;
   }
@@ -449,7 +451,6 @@
   // .about-info, .services .services-info, .contact-detail, .hq-info, .media-head{
   //     width: 100% !important;
   // }
-
   // .services .services-badge {
   //     width: 106%;
   //   }
@@ -527,5 +528,122 @@
 
   .subscribe {
     height: 450px;
+  }
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+  .nav>li>a {
+    padding: 14px 7px;
+  }
+
+  .services-minheight {
+    min-height: 550px;
+  }
+
+  .section#home,
+  .section#media,
+  .bg-unplugged,
+  .bg-contact {
+    min-height: 655px !important;
+  }
+
+  .hq-bg .hq-confess {
+    top: 226px
+  }
+
+  .section-ngu .ngu {
+    top: 215px;
+  }
+
+  .blue-bg {
+    height: 40vh;
+  }
+
+  .blue-bg .music-headset {
+    bottom: 6%;
+  }
+
+  .services .lamp {
+    width: 75px;
+  }
+
+  .service-common .window-right,
+    {
+    top: 300px;
+  }
+
+  .corporate .window-right {
+    top: 250px !important;
+  }
+
+  .workspace .window-right {
+    top: 200px !important;
+  }
+
+  .quirky .window-right {
+    top: 205px !important;
+  }
+
+  .employer-branding .window-right {
+    top: 300px;
+  }
+
+  .services .slider {
+    width: 130px;
+  }
+
+  .services .grass,
+  .ngu-2 .grass img,
+  .client .client-happy {
+    width: 60px
+  }
+
+  .unplugged .stress-sec3 .gif-img {
+    top: 130px;
+    left: 22%;
+  }
+
+  .client-speaks .flex-direction-nav .flex-prev {
+    left: -275px !important;
+  }
+
+  .about-people {
+    top: 245px;
+  }
+
+  .about-descp {
+    width: 100%;
+  }
+
+  .hq-cont-yellow {
+    height: 500px;
+  }
+
+  .happiness .window-right {
+    top: 320px !important;
+  }
+
+  .digital .window-right {
+    top: 210px !important;
+  }
+
+  .workshops .hq-cont-yellow {
+    height: 590px !important;
+  }
+
+  .workshops .window-right {
+    top: 350px !important;
+  }
+
+  .internal .window-right {
+    top: 200px !important;
+  }
+
+  .media .media-cont {
+    width: 90%;
+  }
+
+  .workspace .window-right img {
+    width: 320px;
   }
 }
