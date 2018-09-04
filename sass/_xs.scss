@@ -396,12 +396,16 @@
     }
   }
 
+  .consulting .lamp {
+    top: -17%;
+  }
+
   .tab-menu {
     position: absolute;
     right: 0;
     top: -25px;
     z-index: 99;
-    background: #fff;
+    background: transparent;
     width: 100%;
 
     button.navbar-toggle {
@@ -421,10 +425,49 @@
     ul {
       padding-left: 0;
     }
+
+    .navbar-collapse {
+      background: white;
+    }
+  }
+
+  .employer-branding .lamp img,
+  .digital .lamp img,
+  .internal .lamp img,
+  .workspace .lamp img {
+    width: 80px;
+  }
+
+  .quirky .lamp {
+    top: -15%;
+  }
+
+  .employer-branding .lamp,
+  .digital .lamp,
+  .internal .lamp,
+  .workspace .lamp {
+    top: -14%;
+  }
+
+  .corporate .lamp {
+    top: -22%;
+
+    img {
+      width: 45px;
+    }
+  }
+
+  .workshops .wheel {
+    left: 10%;
   }
 
   .tabs .people img {
     display: none;
+  }
+
+  .workshops .lamp {
+    top: -14%;
+    right: 11.5%;
   }
 
   .hq-cont-yellow {
@@ -433,7 +476,7 @@
   }
 
   .workshops .hq-cont-yellow {
-    height: 810px !important;
+    height: 750px !important;
   }
 
   .workspace .window-right {
