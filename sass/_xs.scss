@@ -42,8 +42,23 @@
 
   //scss for service inner page end
   //scss for payment page  start
-  .payment .locker img {
-    display: none;
+  .payment {
+    .cont {
+      min-height: 450px
+    }
+  }
+
+  .payment .locker {
+    top: auto;
+    right: 0;
+    bottom: -90px;
+    width: 180px;
+
+    img {
+      width: 100%;
+    }
+
+    /* margin: 0 auto; */
   }
 
   .payment .sub-head {
@@ -57,7 +72,9 @@
   //scss for payment page end
   //scss for about-do page started
   .about-do-people img {
-    display: none;
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: -75px;
   }
 
   .about .abt-cont .container {
