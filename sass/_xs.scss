@@ -113,7 +113,7 @@
   }
 
   .navbar-fixed-top .navbar-collapse {
-    max-height: 362px;
+    max-height: 210px;
   }
 
   //scss for hearder end
@@ -189,10 +189,18 @@
   .services {
 
     .lamp,
-    .grass,
-    .slider {
+      {
       display: none;
     }
+  }
+
+  .services .slider {
+    width: 80px;
+  }
+
+  .services .grass {
+    width: 35px;
+    left: 12%;
   }
 
   .subscribe {
@@ -428,6 +436,7 @@
 
     .navbar-collapse {
       background: white;
+      max-height: 210px;
     }
   }
 
@@ -472,7 +481,7 @@
 
   .hq-cont-yellow {
     padding-top: 30px;
-    min-height: 600px;
+    min-height: 590px;
   }
 
   .workshops .hq-cont-yellow {
@@ -768,14 +777,18 @@
   .contact-boy,
   .email,
   .contact-girl,
-  .xerox,
-  .news,
-  .client .client-happy {
+  .news {
     display: none;
   }
 
   .abt-cont {
     padding: 50px 0 50px 0px;
+  }
+
+  .client .client-happy {
+    bottom: 35px;
+    right: 8%;
+    width: 8%;
   }
 
   .about {
@@ -814,13 +827,13 @@
   }
 
   footer .nav-footer ul {
-    li {
-      display: block;
-    }
-
-    li+li {
-      border-left: 0;
-    }
+    font-size: 11px;
+    // li {
+    //   display: block;
+    // }
+    // li+li {
+    //   border-left: 0;
+    // }
   }
 
   .thought .logo-opt img {
@@ -960,7 +973,7 @@
   }
 
   .ngu-2 .lamp {
-    top: -30px;
+    top: -10px;
 
     img {
       width: 50px;

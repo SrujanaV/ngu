@@ -215,7 +215,7 @@ img.doneLoading {
 
 section#home {
   overflow: hidden;
-  min-height: 765px !important;
+  min-height: 640px !important;
 }
 
 .section#unplugged {
@@ -1215,7 +1215,7 @@ p {
     &:hover {
       color: #000072;
       font-weight: 600;
-      background: #ffca20;
+      // background: #ffca20;
     }
   }
 }
@@ -1400,7 +1400,7 @@ form {
     height: 90px;
   }
 
-  a:before {
+  a.flex-prev:before {
     content: url('../img/awsomeness/section5/prev.png') !important;
     cursor: pointer;
   }
@@ -2670,22 +2670,20 @@ img.loading {
   }
 
   .flex-direction-nav {
-    a {
-      opacity: 1 !important;
-      z-index: 1 !important;
-      height: 90px;
-    }
 
-    a:before {
-      content: url('../img/awsomeness/section5/prev.png') !important;
-      cursor: pointer;
-    }
-
-    a.flex-next:before {
-      content: url('../img/awsomeness/section5/nxt.png') !important;
-      cursor: pointer;
-    }
-
+    // a {
+    //   opacity: 1 !important;
+    //   z-index: 1 !important;
+    //   height: 90px;
+    // }
+    // a.flex-prev:before {
+    //   content: url('../img/awsomeness/section5/prev.png') !important;
+    //   cursor: pointer;
+    // }
+    // a.flex-next:before {
+    //   content: url('../img/awsomeness/section5/nxt.png') !important;
+    //   cursor: pointer;
+    // }
     .flex-disabled {
       opacity: 1 !important;
       z-index: 1 !important;
