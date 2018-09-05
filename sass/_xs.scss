@@ -114,6 +114,7 @@
 
   .navbar-fixed-top .navbar-collapse {
     max-height: 210px;
+    overflow: scroll;
   }
 
   //scss for hearder end
@@ -142,7 +143,7 @@
 
   .unplugged .unplug-relate .padd20 {
     padding: 0 5px;
-    min-height: 800px;
+    min-height: 770px;
   }
 
   .blue-bg {
@@ -156,6 +157,16 @@
 
   .services .container {
     padding: 0 20px;
+  }
+
+  .ngu-2 {
+    .home-head {
+      padding-bottom: 10px
+    }
+  }
+
+  .services .home-head {
+    padding: 20px 0 15px 0;
   }
 
   .home-head,
@@ -199,7 +210,7 @@
   }
 
   .services .grass {
-    width: 35px;
+    width: 30px;
     left: 12%;
     bottom: 32px;
   }
@@ -214,8 +225,12 @@
 
   .hq-bg .hq-info {
     min-height: 650px;
-    padding-top: 60px;
+    padding-top: 65px;
     padding-bottom: 0px;
+  }
+
+  .hq .hq-descp {
+    padding-top: 30px;
   }
 
   .client-speaks {
@@ -237,7 +252,7 @@
 
   .contact-detail a,
   .contact-detail span {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   //scss for home page end
@@ -279,7 +294,7 @@
     .hq-confess {
       top: auto !important;
       bottom: -30px;
-      width: 250px;
+      width: 275px;
       left: 0;
     }
   }
@@ -296,6 +311,15 @@
   // Unplugged Section css
   .unplugged-img {
     width: initial;
+    padding-bottom: 15px;
+  }
+
+  .contact-detail {
+    padding: 0 0 15px 0;
+  }
+
+  .unplugged .unplug-relate .lamps {
+    display: none;
   }
 
   .unplugged .unplugged-img .unplug__img {
@@ -303,9 +327,9 @@
   }
 
   .unplugged .stress-sec3 .gif-img {
-    top: 530px;
+    top: 498px;
     right: 0;
-    width: 200px;
+    width: 180px;
   }
 
   // .unplugged .stress-sec3 p {
@@ -356,7 +380,7 @@
     }
 
     .navbar-toggle {
-      border-color: #fff;
+      border-color: transparent;
 
       &:hover,
       &:focus {
@@ -422,9 +446,9 @@
     width: 100%;
 
     button.navbar-toggle {
-      border: 1px solid #FFCA20;
+      border: 1px solid transparent;
       float: left;
-      margin-left: 15px;
+      margin-left: 5px;
 
       &.collapsed {
         float: left;
@@ -476,7 +500,15 @@
   }
 
   .workshops .wheel {
-    left: 10%;
+    display: none;
+  }
+
+  .blue-bg,
+  .client-speak,
+  .bg-unplugged,
+  .hq-bg,
+  .section-ngu {
+    background-size: 265%;
   }
 
   .tabs .people img {
@@ -495,6 +527,10 @@
 
   .workshops .hq-cont-yellow {
     height: 750px !important;
+  }
+
+  .hq-cont-yellow .head-yellow {
+    font-family: "Montserrat-Semibold";
   }
 
   .happiness .lamp img {
@@ -744,11 +780,11 @@
       }
 
       .flex-direction-nav .flex-next {
-        right: -50px !important;
+        right: -100px !important;
       }
 
       .flex-direction-nav .flex-prev {
-        left: -50px !important;
+        left: -100px !important;
       }
     }
   }
@@ -827,22 +863,26 @@
     }
   }
 
-  .contact-detail {
-    padding: 0;
-  }
-
   .social-icon {
     margin: 20px 0;
   }
 
   footer .nav-footer ul {
-    font-size: 11px;
+    font-size: 12px;
     // li {
     //   display: block;
     // }
     // li+li {
     //   border-left: 0;
     // }
+  }
+
+  footer .footer-cont p {
+    font-size: 10px
+  }
+
+  .font-12 {
+    font-size: 12px;
   }
 
   .thought .logo-opt img {
@@ -921,6 +961,11 @@
 
   .media .media-cont .media-head {
     padding-left: 0;
+    padding-top: 20px;
+
+    .home-head {
+      padding-bottom: 15px
+    }
   }
 
   .services {
