@@ -131,7 +131,7 @@
   }
 
   .section-ngu .content {
-    min-height: 630px;
+    min-height: 590px;
   }
 
   .about-people {
@@ -201,6 +201,11 @@
   .services .grass {
     width: 35px;
     left: 12%;
+    bottom: 32px;
+  }
+
+  .media .xerox img {
+    left: 45%;
   }
 
   .subscribe {
@@ -411,7 +416,7 @@
   .tab-menu {
     position: absolute;
     right: 0;
-    top: -25px;
+    top: -20px;
     z-index: 99;
     background: transparent;
     width: 100%;
@@ -454,8 +459,12 @@
   .employer-branding .lamp,
   .digital .lamp,
   .internal .lamp,
-  .workspace .lamp {
+    {
     top: -14%;
+  }
+
+  .workspace .lamp {
+    top: -16%;
   }
 
   .corporate .lamp {
