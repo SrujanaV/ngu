@@ -1067,7 +1067,7 @@
   .tab-menu {
     .menu {
       position: fixed;
-      top: 14%;
+      top: 8%;
       left: -50%;
       width: 42%;
       height: 100%;
@@ -1076,7 +1076,7 @@
       text-align: left;
       color: white;
       font-size: 22px;
-      padding: 20px 0;
+      padding: 60px 0;
       @include transition(all 700ms ease);
       @include transform(translateX(-100%));
 
@@ -1099,15 +1099,15 @@
   }
 
   .menu-circle {
-    background-color: #FFCA20;
-    height: 35px;
-    width: 35px;
-    padding: 5px;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    padding: 2px;
     position: fixed;
-    left: 12px;
-    top: 75px;
+    left: 4%;
+    top: 10%;
     z-index: 9999;
-    border-radius: 100%;
+    /* border-radius: 100%; */
     cursor: pointer;
     text-align: center;
 
@@ -1134,7 +1134,7 @@
       display: block;
       height: 2px;
       width: 24px;
-      background-color: white;
+      background-color: #3b2415;
       margin: 5px auto;
       @include transition(all 700ms ease);
     }
