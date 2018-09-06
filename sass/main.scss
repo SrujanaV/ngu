@@ -1522,11 +1522,23 @@ form {
 
       figure {
         @include transition(all ease 300ms);
+
+        .ring {
+          position: absolute;
+          top: 0;
+          left: 14%;
+          width: 100%;
+
+          img {
+            width: 70%;
+          }
+        }
       }
 
       &:hover {
-        figure {
-          @include transform(scale(1.1));
+        figure .ring img {
+          @include transition(all ease 700ms);
+          @include transform(rotate(180deg));
         }
       }
     }
