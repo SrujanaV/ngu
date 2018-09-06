@@ -452,4 +452,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $(".scrolltotop").css("display", 'block');
       }
     });
+    $scope.showMenu = false;
+    $scope.toggleMenu = function () {
+      $scope.showMenu = !$scope.showMenu;
+      console.log("inside menu");
+    };
+    $scope.closeMenu = function () {
+      $scope.showMenu = false;
+    };
   });

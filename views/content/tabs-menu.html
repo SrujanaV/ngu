@@ -1,14 +1,10 @@
-<div class="tab-menu">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse1"
-      aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+<div class="tab-menu" ng-controller="headerctrl">
+  <div class="menu-circle" ng-class="{'closer': showMenu == true}" ng-click="toggleMenu();">
+    <span class="bar bar1"></span>
+    <span class="bar bar2"></span>
+    <span class="bar bar3"></span>
   </div>
-  <div class="collapse navbar-collapse" id="nav-collapse1">
+  <div class="menu" ng-class="{'show': showMenu == true}">
     <ul>
       <li ui-sref="consulting" ui-sref-active="active">Talent Consulting</li>
       <li ui-sref="employer-branding" ui-sref-active="active">Employer Branding</li>
