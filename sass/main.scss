@@ -3233,6 +3233,80 @@ img.loading {
   display: none;
 }
 
+//scss for contact animation
+@keyframes cf4FadeInOut {
+  0% {
+    opacity: 1;
+  }
+
+  17% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.girlface img:nth-of-type(1) {
+  animation-delay: 10s;
+}
+
+.girlface img:nth-of-type(2) {
+  animation-delay: 8s;
+}
+
+.girlface img:nth-of-type(3) {
+  animation-delay: 6s;
+}
+
+.girlface img:nth-of-type(4) {
+  animation-delay: 4s;
+}
+
+.girlface img:nth-of-type(5) {
+  animation-delay: 2s;
+}
+
+.girlface img:nth-of-type(6) {
+  animation-delay: 0s;
+}
+
+.girlface img {
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 10s;
+  -moz-animation-name: cf4FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 10s;
+  -o-animation-name: cf4FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 10s;
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+.girlface {
+  position: relative;
+
+  img {
+    position: absolute;
+  }
+}
+
 @import "animation.scss";
 @import "mobile.scss";
 @import "md.scss";
