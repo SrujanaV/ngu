@@ -1,18 +1,17 @@
-<header>
-   <nav class="navbar navbar-default navbar-fixed-top sticky-bottom-abtpay" scroll>
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" ui-sref="home"><img src="img/logo.png" alt="logo" width="120"> </a>
+<header ng-controller="headerctrl">
+    <nav class="navbar navbar-default navbar-fixed-top sticky-bottom-abtpay" scroll>
+        <div class="container">
+            <div class="navbar-header">
+                <div class="menu-circle visible-xs" ng-class="{'closer': showMenu == true}" ng-click="toggleMenu();">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </div>
+                <a class="navbar-brand" ui-sref="home"><img src="img/logo.png" alt="logo" width="120"> </a>
+            </div>
+            <div class="menu-new" ng-class="{'show': showMenu == true}">
+                <div ng-include="template.menu" class="template menu"></div>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="nav-collapse">
-               <div ng-include="template.menu" class="template menu"></div>
-        </div>
-    </div>
-</nav>
+    </nav>
 </header>

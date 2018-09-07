@@ -1163,15 +1163,15 @@
 
     .menu-new {
       position: fixed;
-      top: 10%;
+      top: 8%;
       right: -150%;
       width: 50%;
       height: 100%;
+      padding: 15px 0;
       z-index: 999;
       background-color: #3b2415;
       text-align: left;
       color: white;
-      font-size: 22px;
       @include transition(all 700ms ease);
       @include transform(translateX(-100%));
 
