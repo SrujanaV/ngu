@@ -1526,11 +1526,11 @@ form {
         .ring {
           position: absolute;
           top: 0;
-          left: 14%;
+          left: 16%;
           width: 100%;
 
           img {
-            width: 70%;
+            width: 67%;
           }
         }
       }
@@ -3317,6 +3317,46 @@ img.loading {
   img {
     position: absolute;
   }
+}
+
+.animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-5px);
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
 }
 
 @import "animation.scss";

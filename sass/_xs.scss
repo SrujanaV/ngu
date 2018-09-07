@@ -374,7 +374,7 @@
 
       li {
         a {
-          padding: 10px 8px;
+          padding: 10px 15px;
         }
       }
     }
@@ -869,12 +869,13 @@
 
   footer .nav-footer ul {
     font-size: 12px;
+
     // li {
     //   display: block;
     // }
-    // li+li {
-    //   border-left: 0;
-    // }
+    li+li {
+      border-left: 0;
+    }
   }
 
   footer .footer-cont p {
@@ -1096,61 +1097,167 @@
         @include transition(all 700ms ease);
       }
     }
+
+    .menu-circle {
+      background-color: transparent;
+      height: 30px;
+      width: 30px;
+      padding: 2px;
+      position: fixed;
+      left: 4%;
+      top: 14%;
+      z-index: 9999;
+      /* border-radius: 100%; */
+      cursor: pointer;
+      text-align: center;
+
+      .hide-it {
+        opacity: 0;
+      }
+
+      .show-it {
+        opacity: 1;
+      }
+
+      i.fa-angle-up {
+        color: white;
+        font-size: 35px;
+        line-height: 23px;
+      }
+
+      &.bottom {
+        top: auto;
+        bottom: 35px;
+      }
+
+      .bar {
+        display: block;
+        height: 2px;
+        width: 24px;
+        background-color: #3b2415;
+        margin: 5px auto;
+        @include transition(all 700ms ease);
+      }
+    }
+
+    .closer {
+      .bar2 {
+        opacity: 0;
+      }
+
+      .bar1 {
+        transform: rotate(45deg) translate(4px, 6px);
+      }
+
+      .bar3 {
+        transform: rotate(-45deg) translate(4px, -6px);
+      }
+    }
   }
 
-  .menu-circle {
-    background-color: transparent;
-    height: 30px;
-    width: 30px;
-    padding: 2px;
-    position: fixed;
-    left: 4%;
-    top: 14%;
-    z-index: 9999;
-    /* border-radius: 100%; */
-    cursor: pointer;
-    text-align: center;
-
-    .hide-it {
-      opacity: 0;
+  //scss for header
+  header {
+    .navbar-default .navbar-nav {
+      padding-left: 15px !important;
     }
 
-    .show-it {
-      opacity: 1;
-    }
-
-    i.fa-angle-up {
-      color: white;
-      font-size: 35px;
-      line-height: 23px;
-    }
-
-    &.bottom {
-      top: auto;
-      bottom: 35px;
-    }
-
-    .bar {
-      display: block;
-      height: 2px;
-      width: 24px;
+    .menu-new {
+      position: fixed;
+      top: 10%;
+      right: -150%;
+      width: 50%;
+      height: 100%;
+      z-index: 999;
       background-color: #3b2415;
-      margin: 5px auto;
+      text-align: left;
+      color: white;
+      font-size: 22px;
       @include transition(all 700ms ease);
+      @include transform(translateX(-100%));
+
+      &.show {
+        @include transform(translateX(0));
+        right: 0%;
+      }
+
+      a {
+        color: white;
+        padding: 10px 0;
+        display: block;
+        max-width: 230px;
+        text-align: left;
+        margin: 0 auto;
+        font-size: 12px;
+        @include transition(all 700ms ease);
+      }
+
+      .navbar-default .navbar-nav {
+        padding-left: 15px;
+      }
+    }
+
+    .menu-circle {
+      background-color: transparent;
+      height: 30px;
+      width: 30px;
+      padding: 2px;
+      position: fixed;
+      right: 5%;
+      top: 5%;
+      z-index: 9999;
+      /* border-radius: 100%; */
+      cursor: pointer;
+      text-align: center;
+
+      .hide-it {
+        opacity: 0;
+      }
+
+      .show-it {
+        opacity: 1;
+      }
+
+      i.fa-angle-up {
+        color: white;
+        font-size: 35px;
+        line-height: 23px;
+      }
+
+      &.bottom {
+        top: auto;
+        bottom: 35px;
+      }
+
+      .bar {
+        display: block;
+        height: 2px;
+        width: 24px;
+        background-color: white;
+        margin: 5px auto;
+        @include transition(all 700ms ease);
+      }
+    }
+
+    .closer {
+      .bar2 {
+        opacity: 0;
+      }
+
+      .bar1 {
+        transform: rotate(45deg) translate(4px, 6px);
+      }
+
+      .bar3 {
+        transform: rotate(-45deg) translate(4px, -6px);
+      }
     }
   }
 
-  .closer {
-    .bar2 {
-      opacity: 0;
-    }
+  .services .services-badge .col-md-4 figure .ring {
+    left: 8%;
 
-    .bar1 {
-      transform: rotate(45deg) translate(4px, 6px);
-    }
-
-    .bar3 {
-      transform: rotate(-45deg) translate(4px, -6px);
+    img {
+      width: 84%;
     }
   }
 }
