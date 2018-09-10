@@ -128,6 +128,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       nine: "views/content/section/home/section9.html",
       ten: "views/content/section/home/section10.html",
       eleven: "views/content/section/home/section11.html",
+      twelve: "views/content/section/home/section12.html",
     };
     // $scope.myData = [];
 
@@ -139,7 +140,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       });
       $scope.unpluggedFormComplete = true;
     };
-
+    $scope.showList = false;
+    $scope.showDropdown = function () {
+      $scope.showList = !$scope.showList;
+    }
   })
 
   .controller('AwesomenessCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {

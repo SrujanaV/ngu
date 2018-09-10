@@ -16,7 +16,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
 
     .state('home', {
       url: "/",
-      templateUrl: "views/template.html",
+      templateUrl: "views/templatehome.html",
       controller: 'HomeCtrl'
     })
     .state('about', {
@@ -81,7 +81,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
     })
     .state('homeid', {
       url: "/:id",
-      templateUrl: "views/template.html",
+      templateUrl: "views/templatehome.html",
       controller: 'HomeCtrl'
     })
     .state('awesomenessid', {

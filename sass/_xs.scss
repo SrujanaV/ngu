@@ -1,4 +1,15 @@
 @media (max-width: $screen-xs-max) {
+  .mike {
+    right: 9%;
+
+    img {
+      width: 18%;
+    }
+  }
+
+  .dropdown-info {
+    width: 55%;
+  }
 
   //scss for service inner page stratr
   .blue-bg .lamp .lamp-left,
