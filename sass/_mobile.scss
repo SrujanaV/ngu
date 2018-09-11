@@ -229,6 +229,7 @@
 
 // @media (max-width:350px) and (max-width:600px) {}
 @media (max-width:480px) {
+
   .blue-bg .plant .mb-plantshow {
     bottom: 34%;
     left: 2%;
@@ -472,6 +473,8 @@
 }
 
 @media (max-width: $screen-xs-max) and (orientation: landscape) {
+
+
   .awsomeness {
     .puppet {
 
@@ -528,6 +531,15 @@
 }
 
 @media (max-width:1199px) and (min-width:992px) {
+  .mike {
+
+    right: 14%;
+
+    img {
+      width: 50%;
+    }
+  }
+
   .services .services-badge .col-md-4 figure .ring {
     left: 20%;
 
