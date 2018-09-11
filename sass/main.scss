@@ -103,6 +103,11 @@ serif !default;
   font-family: "Myriad-Regular";
 }
 
+@font-face {
+  src: url("../fonts/Boogaloo-Regular.otf");
+  font-family: "Boogaloo-Regular";
+}
+
 .red-color {
   color: $red;
 }
@@ -3396,7 +3401,12 @@ img.loading {
 }
 
 .dropdown-info {
-  padding: 30px 0
+  padding: 30px 0;
+
+  h5 {
+    font-weight: 600;
+
+  }
 }
 
 @import "animation.scss";
