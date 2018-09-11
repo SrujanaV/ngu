@@ -143,6 +143,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.showList = false;
     $scope.showDropdown = function () {
       $scope.showList = !$scope.showList;
+      $('html, body').animate({
+        scrollTop: $('body,html').offset().top + 9000
+      }, 3000);
+
     }
   })
 
