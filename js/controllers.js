@@ -151,6 +151,31 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
     }
+
+    // $(document).ready(function () {
+    //   $(document).on("scroll", onScroll);
+
+    //   //smoothscroll
+    //   function onScroll(event) {
+
+    //     var scrollPos = $(document).scrollTop();
+    //     $('section').each(function () {
+    //       var currLink = $(this);
+
+    //       var refElement = $(currLink.attr("id"));
+
+    //       if (refElement.position().top <= scrollPos) {
+    //         $('section').removeClass("active");
+    //         currLink.addClass("active");
+    //         alert("hello");
+    //       } else {
+    //         currLink.removeClass("active");
+    //       }
+    //     });
+
+    //   }
+
+    // });
   })
 
   .controller('AwesomenessCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
