@@ -152,6 +152,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     }
 
+    // scroll bar r&D
+
     // $(document).ready(function () {
     //   $(document).on("scroll", onScroll);
 
@@ -159,23 +161,25 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     //   function onScroll(event) {
 
     //     var scrollPos = $(document).scrollTop();
-    //     $('section').each(function () {
+    //     $('.home-main section').each(function () {
     //       var currLink = $(this);
 
     //       var refElement = $(currLink.attr("id"));
+    //       console.log("refElement");
+    //       // if (refElement.position().top <= scrollPos) {
+    //       //   $('ul li a').removeClass("active");
+    //       //   currLink.addClass("active");
 
-    //       if (refElement.position().top <= scrollPos) {
-    //         $('section').removeClass("active");
-    //         currLink.addClass("active");
-    //         alert("hello");
-    //       } else {
-    //         currLink.removeClass("active");
-    //       }
+    //       // } else {
+    //       //   currLink.removeClass("active");
+    //       // }
     //     });
 
     //   }
 
     // });
+
+
   })
 
   .controller('AwesomenessCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
@@ -496,4 +500,27 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.closeMenu = function () {
       $scope.showMenu = false;
     };
+    // $(document).ready(function () {
+    //   $(document).on("scroll", onScroll);
+
+    //   //smoothscroll
+    //   function onScroll(event) {
+
+    //     var scrollPos = $(document).scrollTop();
+    //     $('ul li a').each(function () {
+    //       var currLink = $(this);
+
+    //       var refElement = $(currLink.attr("href"));
+    //       if (refElement.position().top <= scrollPos) {
+    //         $('ul li a').removeClass("active");
+    //         currLink.addClass("active");
+
+    //       } else {
+    //         currLink.removeClass("active");
+    //       }
+    //     });
+
+    //   }
+
+    // });
   });
