@@ -4,7 +4,6 @@ w/
 .sass-cache/
 *.tar
 production/
-css/
 img2/
 production.zip
 *.zip
