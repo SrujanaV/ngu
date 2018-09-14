@@ -1,8 +1,8 @@
-var admin = "http://admin.willnevergrowup.com/";
+var admin = "https://admin.willnevergrowup.com/";
 // var admin = "http://localhost/ngubackend/";
 var adminUrl = admin + "index.php/json/";
 // var imageUrl = admin + "uploads/";
-var imageUrl = "http://admin.willnevergrowup.com/uploads/";
+var imageUrl = "https://admin.willnevergrowup.com/uploads/";
 
 var navigationservice = angular.module('navigationservice', [])
 
