@@ -188,7 +188,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // $scope.menutitle = NavigationService.makeactive2("Awesomeness");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav2();
-    // TemplateService.footer = "views/footer2.html";
+    TemplateService.footer = "views/footer2.html";
     $scope.awesomenessArrow = $state.current.name;
     console.log("floor", $state.current.name);
     $scope.menutitle = NavigationService.makeactive2($stateParams.id);
@@ -230,6 +230,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       });
       makeAnimation(id);
       $location.replace();
+    };
+    $scope.changeURLFooter = function (id) {
+      console.log(id);
+      $location.path("" + id);
     };
     $scope.section = {
       one: "views/content/section/awesomeness/section1.html",
