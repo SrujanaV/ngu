@@ -2349,6 +2349,14 @@ img.loading {
 
 .top40 {
   width: 300px;
+
+}
+
+.mt-60 {
+  margin-top: -60px
+}
+
+.mb30 {
   margin-bottom: 30px;
 }
 
@@ -3445,6 +3453,12 @@ img.loading {
 
 .para-bottom {
   padding-bottom: 8px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+
 }
 
 @import "animation.scss";
