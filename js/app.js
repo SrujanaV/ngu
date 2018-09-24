@@ -45,7 +45,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
       controller: 'HappynessCtrl'
     })
     .state('workshops', {
-      url: "/Workshops- and-Interventions",
+      url: "/Workshops-and-Interventions",
       templateUrl: "views/template-tabs.html",
       controller: 'WorkshopsCtrl'
     })
