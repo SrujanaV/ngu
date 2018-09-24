@@ -10,29 +10,29 @@ var navigationservice = angular.module('navigationservice', [])
     var navigation = [{
         name: "About Us",
         classis: "active",
-        anchor: "about",
+        anchor: "about-us",
         target: "_self",
       }, {
         name: "Services",
         classis: "active",
-        anchor: "employeeengagement",
+        anchor: "employee-engagement",
         target: "_self",
       }, {
         name: "Happyness  Quotient",
         classis: "active",
-        anchor: "happynessquotient",
+        anchor: "happyness-quotient",
         target: "_self",
       },
       {
         name: "ROE",
         classis: "active",
-        anchor: "ROE",
+        anchor: "Return-on-Engagement",
         target: "_self",
       },
       {
         name: "Unpluggd",
         classis: "active",
-        anchor: "unplugged",
+        anchor: "fun-at-workplace",
         target: "_self",
       },
       {
@@ -44,7 +44,7 @@ var navigationservice = angular.module('navigationservice', [])
       {
         name: "Media",
         classis: "active",
-        anchor: "media",
+        anchor: "media-platforms",
         target: "_self",
       },
       {
@@ -55,7 +55,7 @@ var navigationservice = angular.module('navigationservice', [])
       }, {
         name: "Contact Us",
         classis: "active",
-        anchor: "contact",
+        anchor: "contact-us",
         target: "_self",
       },
     ];

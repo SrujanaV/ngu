@@ -35,47 +35,47 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
       controller: 'AwesomenessCtrl'
     })
     .state('consulting', {
-      url: "/TalentConsulting",
+      url: "/Talent-Consulting",
       templateUrl: "views/template-tabs.html",
       controller: 'ConsultingCtrl'
     })
     .state('happyness', {
-      url: "/happyness",
+      url: "/happiness-at-work",
       templateUrl: "views/template-tabs.html",
       controller: 'HappynessCtrl'
     })
     .state('workshops', {
-      url: "/Workshops&Interventions",
+      url: "/Workshops- and-Interventions",
       templateUrl: "views/template-tabs.html",
       controller: 'WorkshopsCtrl'
     })
     .state('employer-branding', {
-      url: "/employerbranding",
+      url: "/employer-branding",
       templateUrl: "views/template-tabs.html",
       controller: 'EmployerCtrl'
     })
     .state('internal', {
-      url: "/communicationdesign",
+      url: "/communication-and-creative-design",
       templateUrl: "views/template-tabs.html",
       controller: 'InternalCtrl'
     })
     .state('workspace', {
-      url: "/publicrelations",
+      url: "/PR",
       templateUrl: "views/template-tabs.html",
       controller: 'WorkspaceCtrl'
     })
     .state('corporate', {
-      url: "/csr",
+      url: "/CSR",
       templateUrl: "views/template-tabs.html",
       controller: 'CorporateCtrl'
     })
     .state('digital', {
-      url: "/technology&content",
+      url: "/content-marketing",
       templateUrl: "views/template-tabs.html",
       controller: 'DigitalCtrl'
     })
     .state('quirky', {
-      url: "/officequirkies",
+      url: "/office-quirkies",
       templateUrl: "views/template-tabs.html",
       controller: 'QuirkyCtrl'
     })
