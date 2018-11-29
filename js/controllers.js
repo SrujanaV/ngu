@@ -299,6 +299,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // }];
     // new WOW().init();
   })
+
+  .controller('ErrorCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
+    console.log("inside error");
+    //Used to name the .html file
+    $scope.template = TemplateService.changecontent("error");
+    $scope.menutitle = NavigationService.makeactive("Error");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+    TemplateService.header = "";
+    TemplateService.header2 = "";
+    TemplateService.footer = "";
+  })
+
   .controller('AboutCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("about");
@@ -320,6 +333,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     //   }
     // });
   })
+
   .controller('PaymentCtrl', function ($scope, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("payment");
@@ -341,6 +355,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     //   }
     // });
   })
+
   .controller('ConsultingCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("consulting");
@@ -356,6 +371,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     };
 
   })
+
   .controller('HappynessCtrl', function ($scope, $state, TemplateService, NavigationService, $state, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("happyness");
@@ -370,6 +386,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $location.path("" + id);
     };
   })
+
   .controller('WorkshopsCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("workshops");
@@ -394,6 +411,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     //   }
     // });
   })
+
   .controller('EmployerCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("employer-branding");
@@ -408,6 +426,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $location.path("" + id);
     };
   })
+
   .controller('InternalCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("internal");
@@ -422,6 +441,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $location.path("" + id);
     };
   })
+
   .controller('WorkspaceCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("workspace");
@@ -436,6 +456,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $location.path("" + id);
     };
   })
+
   .controller('CorporateCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("corporate");
@@ -450,6 +471,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $location.path("" + id);
     };
   })
+
   .controller('DigitalCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("digital");
@@ -464,6 +486,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $location.path("" + id);
     };
   })
+
   .controller('QuirkyCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changetabcontent("quirky");

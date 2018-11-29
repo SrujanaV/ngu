@@ -24,6 +24,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
       templateUrl: "views/template.html",
       controller: 'AboutCtrl'
     })
+    .state('error', {
+      url: "/error",
+      templateUrl: "views/template.html",
+      controller: 'ErrorCtrl'
+    })
     .state('payment', {
       url: "/payment",
       templateUrl: "views/template.html",
